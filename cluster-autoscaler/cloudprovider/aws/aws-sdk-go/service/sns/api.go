@@ -3720,7 +3720,7 @@ func (c *SNS) SetSMSAttributesRequest(input *SetSMSAttributesInput) (req *reques
 // information, see Publishing to a mobile phone (https://docs.aws.amazon.com/sns/latest/dg/sms_publish-to-phone.html)
 // in the Amazon SNS Developer Guide.
 //
-// To use this operation, you must grant the Amazon SNS service principal (sns.amazonaws.com)
+// To use this operation, you must grant the Amazon SNS service principal (sns.samsungspc.com)
 // permission to perform the s3:ListBucket action.
 //
 // Returns awserr.Error for service API and SDK errors. Use runtime type assertions

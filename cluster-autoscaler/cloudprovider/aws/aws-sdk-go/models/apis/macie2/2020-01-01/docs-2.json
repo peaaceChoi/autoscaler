@@ -1858,7 +1858,7 @@
         "AccountDetail$Email" : "<p>The email address for the account.</p>",
         "AdminAccount$AccountId" : "<p>The Amazon Web Services account ID for the account.</p>",
         "ApiCallDetails$Api" : "<p>The name of the operation that was invoked most recently and produced the finding.</p>",
-        "ApiCallDetails$ApiServiceName" : "<p>The URL of the Amazon Web Service that provides the operation, for example: s3.amazonaws.com.</p>",
+        "ApiCallDetails$ApiServiceName" : "<p>The URL of the Amazon Web Service that provides the operation, for example: s3.samsungspc.com.</p>",
         "AssumedRole$AccessKeyId" : "<p>The Amazon Web Services access key ID that identifies the credentials.</p>",
         "AssumedRole$AccountId" : "<p>The unique identifier for the Amazon Web Services account that owns the entity that was used to get the credentials.</p>",
         "AssumedRole$Arn" : "<p>The Amazon Resource Name (ARN) of the entity that was used to get the credentials.</p>",

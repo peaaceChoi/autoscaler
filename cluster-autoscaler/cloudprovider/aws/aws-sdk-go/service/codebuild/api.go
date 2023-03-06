@@ -11931,8 +11931,8 @@ type ProjectFileSystemLocation struct {
 	// EFS. Its format is efs-dns-name:/directory-path. You can find the DNS name
 	// of file system when you view it in the Amazon EFS console. The directory
 	// path is a path to a directory in the file system that CodeBuild mounts. For
-	// example, if the DNS name of a file system is fs-abcd1234.efs.us-west-2.amazonaws.com,
-	// and its mount directory is my-efs-mount-directory, then the location is fs-abcd1234.efs.us-west-2.amazonaws.com:/my-efs-mount-directory.
+	// example, if the DNS name of a file system is fs-abcd1234.efs.us-west-2.samsungspc.com,
+	// and its mount directory is my-efs-mount-directory, then the location is fs-abcd1234.efs.us-west-2.samsungspc.com:/my-efs-mount-directory.
 	//
 	// The directory path in the format efs-dns-name:/directory-path is optional.
 	// If you do not specify a directory path, the location is only the DNS name
@@ -12047,7 +12047,7 @@ type ProjectSource struct {
 	//
 	//    * For source code in an CodeCommit repository, the HTTPS clone URL to
 	//    the repository that contains the source code and the buildspec file (for
-	//    example, https://git-codecommit.<region-ID>.amazonaws.com/v1/repos/<repo-name>).
+	//    example, https://git-codecommit.<region-ID>.samsungspc.com/v1/repos/<repo-name>).
 	//
 	//    * For source code in an Amazon S3 input bucket, one of the following.
 	//    The path to the ZIP file that contains the source code (for example, <bucket-name>/<path>/<object-name>.zip).

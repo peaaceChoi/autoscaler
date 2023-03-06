@@ -8048,7 +8048,7 @@ func TestInputService22ProtocolTestEnumCase2(t *testing.T) {
 }
 
 func TestInputService23ProtocolTestEndpointHostTraitCase1(t *testing.T) {
-	svc := NewInputService23ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService23ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService23TestShapeInputService23TestCaseOperation1Input{
 		Name: aws.String("myname"),
 	}
@@ -8077,11 +8077,11 @@ func TestInputService23ProtocolTestEndpointHostTraitCase1(t *testing.T) {
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://data-service.region.amazonaws.com/path", r.URL.String())
+	awstesting.AssertURL(t, "https://data-service.region.samsungspc.com/path", r.URL.String())
 }
 
 func TestInputService23ProtocolTestEndpointHostTraitCase2(t *testing.T) {
-	svc := NewInputService23ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService23ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService23TestShapeInputService23TestCaseOperation2Input{
 		Name: aws.String("myname"),
 	}
@@ -8110,7 +8110,7 @@ func TestInputService23ProtocolTestEndpointHostTraitCase2(t *testing.T) {
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://foo-myname.service.region.amazonaws.com/path", r.URL.String())
+	awstesting.AssertURL(t, "https://foo-myname.service.region.samsungspc.com/path", r.URL.String())
 }
 
 func TestInputService24ProtocolTestUnionTraitCase1(t *testing.T) {
@@ -8297,7 +8297,7 @@ func TestInputService24ProtocolTestUnionTraitCase5(t *testing.T) {
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase1(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation1Input{
 		TestConfig: &InputService25TestShapeTestConfig{
 			Timeout: aws.Int64(10),
@@ -8329,7 +8329,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase1(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/body", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/body", r.URL.String())
 
 	// assert headers
 	if e, a := "application/json", r.Header.Get("Content-Type"); e != a {
@@ -8341,7 +8341,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase1(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase2(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation2Input{}
 	req, _ := svc.InputService25TestCaseOperation2Request(input)
 	r := req.HTTPRequest
@@ -8368,7 +8368,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase2(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/body", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/body", r.URL.String())
 
 	// assert headers
 	if e, a := "application/json", r.Header.Get("Content-Type"); e != a {
@@ -8377,7 +8377,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase2(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase3(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation3Input{}
 	req, _ := svc.InputService25TestCaseOperation3Request(input)
 	r := req.HTTPRequest
@@ -8404,7 +8404,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase3(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/payload", r.URL.String())
 
 	// assert headers
 	if e, a := "application/json", r.Header.Get("Content-Type"); e != a {
@@ -8413,7 +8413,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase3(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase4(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation4Input{
 		PayloadConfig: &InputService25TestShapePayloadConfig{
 			Data: aws.Int64(25),
@@ -8445,7 +8445,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase4(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/payload", r.URL.String())
 
 	// assert headers
 	if e, a := "application/json", r.Header.Get("Content-Type"); e != a {
@@ -8457,7 +8457,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase4(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase5(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation5Input{
 		TestId: aws.String("t-12345"),
 	}
@@ -8486,7 +8486,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase5(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/payload", r.URL.String())
 
 	// assert headers
 	if e, a := "application/json", r.Header.Get("Content-Type"); e != a {
@@ -8498,7 +8498,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase5(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase6(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation6Input{
 		ContentType: aws.String("image/jpg"),
 		Data:        []byte("1234"),
@@ -8530,7 +8530,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase6(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/blob-payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/blob-payload", r.URL.String())
 
 	// assert headers
 	if e, a := "image/jpg", r.Header.Get("Content-Type"); e != a {
@@ -8539,7 +8539,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase6(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase7(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation7Input{}
 	req, _ := svc.InputService25TestCaseOperation7Request(input)
 	r := req.HTTPRequest
@@ -8555,7 +8555,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase7(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/blob-payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/blob-payload", r.URL.String())
 
 	// assert exclude headers
 	if v := r.Header.Get("Content-Type"); v != "" {
@@ -8564,7 +8564,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase7(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase8(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation8Input{}
 	req, _ := svc.InputService25TestCaseOperation8Request(input)
 	r := req.HTTPRequest
@@ -8580,7 +8580,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase8(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/no-payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/no-payload", r.URL.String())
 
 	// assert exclude headers
 	if v := r.Header.Get("Content-Type"); v != "" {
@@ -8595,7 +8595,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase8(t *testing.T)
 }
 
 func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase9(t *testing.T) {
-	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.amazonaws.com")})
+	svc := NewInputService25ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://rest-test.samsungspc.com")})
 	input := &InputService25TestShapeInputService25TestCaseOperation9Input{
 		TestId: aws.String("t-12345"),
 	}
@@ -8613,7 +8613,7 @@ func TestInputService25ProtocolTestrestjsonContentTypeAndBodyCase9(t *testing.T)
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://rest-test.amazonaws.com/no-payload", r.URL.String())
+	awstesting.AssertURL(t, "https://rest-test.samsungspc.com/no-payload", r.URL.String())
 
 	// assert headers
 	if e, a := "t-12345", r.Header.Get("x-amz-test-id"); e != a {

@@ -44,7 +44,7 @@
           "Bucket": "acexamplebucket",
           "ETag": "\"4d9031c7644d8081c2829f4ea23c55f7-2\"",
           "Key": "bigobject",
-          "Location": "https://examplebucket.s3.<Region>.amazonaws.com/bigobject"
+          "Location": "https://examplebucket.s3.<Region>.samsungspc.com/bigobject"
         },
         "comments": {
           "input": {
@@ -90,7 +90,7 @@
           }
         },
         "output": {
-          "Location": "http://examplebucket.<Region>.s3.amazonaws.com/"
+          "Location": "http://examplebucket.<Region>.s3.samsungspc.com/"
         },
         "comments": {
           "input": {
@@ -1270,7 +1270,7 @@
         "input": {
           "Bucket": "examplebucket",
           "GrantFullControl": "id=examplee7a2f25102679df27bb0ae12b3f85be6f290b936c4393484",
-          "GrantWrite": "uri=http://acs.amazonaws.com/groups/s3/LogDelivery"
+          "GrantWrite": "uri=http://acs.samsungspc.com/groups/s3/LogDelivery"
         },
         "comments": {
           "input": {
@@ -1380,7 +1380,7 @@
                 {
                   "Grantee": {
                     "Type": "Group",
-                    "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+                    "URI": "http://acs.samsungspc.com/groups/global/AllUsers"
                   },
                   "Permission": "READ"
                 }
@@ -1725,7 +1725,7 @@
           },
           "Bucket": "examplebucket",
           "GrantFullControl": "emailaddress=user1@example.com,emailaddress=user2@example.com",
-          "GrantRead": "uri=http://acs.amazonaws.com/groups/global/AllUsers",
+          "GrantRead": "uri=http://acs.samsungspc.com/groups/global/AllUsers",
           "Key": "HappyFace.jpg"
         },
         "output": {

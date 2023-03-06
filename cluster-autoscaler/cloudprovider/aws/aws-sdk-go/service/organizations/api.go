@@ -255,7 +255,7 @@ func (c *Organizations) AcceptHandshakeRequest(input *AcceptHandshakeInput) (req
 //
 //   - AccessDeniedForDependencyException
 //     The operation that you attempted requires you to have the iam:CreateServiceLinkedRole
-//     for organizations.amazonaws.com permission so that Organizations can create
+//     for organizations.samsungspc.com permission so that Organizations can create
 //     the required service-linked role. You don't have that permission.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/organizations-2016-11-28/AcceptHandshake
@@ -2458,7 +2458,7 @@ func (c *Organizations) CreateOrganizationRequest(input *CreateOrganizationInput
 //
 //   - AccessDeniedForDependencyException
 //     The operation that you attempted requires you to have the iam:CreateServiceLinkedRole
-//     for organizations.amazonaws.com permission so that Organizations can create
+//     for organizations.samsungspc.com permission so that Organizations can create
 //     the required service-linked role. You don't have that permission.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/organizations-2016-11-28/CreateOrganization
@@ -15612,7 +15612,7 @@ func (s *AccessDeniedException) RequestID() string {
 }
 
 // The operation that you attempted requires you to have the iam:CreateServiceLinkedRole
-// for organizations.amazonaws.com permission so that Organizations can create
+// for organizations.samsungspc.com permission so that Organizations can create
 // the required service-linked role. You don't have that permission.
 type AccessDeniedForDependencyException struct {
 	_            struct{}                  `type:"structure"`
@@ -18129,7 +18129,7 @@ type DelegatedService struct {
 
 	// The name of an Amazon Web Services service that can request an operation
 	// for the specified service. This is typically in the form of a URL, such as:
-	// servicename.amazonaws.com.
+	// servicename.samsungspc.com.
 	ServicePrincipal *string `min:"1" type:"string"`
 }
 
@@ -19183,7 +19183,7 @@ type DisableAWSServiceAccessInput struct {
 
 	// The service principal name of the Amazon Web Services service for which you
 	// want to disable integration with your organization. This is typically in
-	// the form of a URL, such as service-abbreviation.amazonaws.com.
+	// the form of a URL, such as service-abbreviation.samsungspc.com.
 	//
 	// ServicePrincipal is a required field
 	ServicePrincipal *string `min:"1" type:"string" required:"true"`
@@ -19812,7 +19812,7 @@ type EnableAWSServiceAccessInput struct {
 
 	// The service principal name of the Amazon Web Services service for which you
 	// want to enable integration with your organization. This is typically in the
-	// form of a URL, such as service-abbreviation.amazonaws.com.
+	// form of a URL, such as service-abbreviation.samsungspc.com.
 	//
 	// ServicePrincipal is a required field
 	ServicePrincipal *string `min:"1" type:"string" required:"true"`
@@ -20047,7 +20047,7 @@ type EnabledServicePrincipal struct {
 	DateEnabled *time.Time `type:"timestamp"`
 
 	// The name of the service principal. This is typically in the form of a URL,
-	// such as: servicename.amazonaws.com.
+	// such as: servicename.samsungspc.com.
 	ServicePrincipal *string `min:"1" type:"string"`
 }
 

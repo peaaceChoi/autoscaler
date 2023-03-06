@@ -184,7 +184,7 @@ func TestRequestIsErrorRetryable(t *testing.T) {
 }
 
 func TestRequest_NilRetyer(t *testing.T) {
-	clientInfo := metadata.ClientInfo{Endpoint: "https://mock.region.amazonaws.com"}
+	clientInfo := metadata.ClientInfo{Endpoint: "https://mock.region.samsungspc.com"}
 	req := New(aws.Config{}, clientInfo, Handlers{}, nil, &Operation{}, nil, nil)
 
 	if req.Retryer == nil {

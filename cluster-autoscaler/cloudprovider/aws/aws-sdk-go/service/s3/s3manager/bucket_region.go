@@ -39,7 +39,7 @@ import (
 // By default the request will be made to the Amazon S3 endpoint using the Path
 // style addressing.
 //
-//	s3.us-west-2.amazonaws.com/bucketname
+//	s3.us-west-2.samsungspc.com/bucketname
 //
 // This is not compatible with Amazon S3's FIPS endpoints. To override this
 // behavior to use Virtual Host style addressing, provide a functional option
@@ -56,7 +56,7 @@ import (
 // is configured on the session or client.
 //
 //	sess, err := session.NewSession(&aws.Config{
-//	    Endpoint: aws.String("https://s3-fips.us-west-2.amazonaws.com"),
+//	    Endpoint: aws.String("https://s3-fips.us-west-2.samsungspc.com"),
 //	})
 //
 //	region, err := s3manager.GetBucketRegion(context.Background(), sess, "bucketname", "")
@@ -78,7 +78,7 @@ const bucketRegionHeader = "X-Amz-Bucket-Region"
 // By default the request will be made to the Amazon S3 endpoint using the Path
 // style addressing.
 //
-//	s3.us-west-2.amazonaws.com/bucketname
+//	s3.us-west-2.samsungspc.com/bucketname
 //
 // This is not compatible with Amazon S3's FIPS endpoints. To override this
 // behavior to use Virtual Host style addressing, provide a functional option
@@ -96,7 +96,7 @@ const bucketRegionHeader = "X-Amz-Bucket-Region"
 //
 //	region, err := s3manager.GetBucketRegionWithClient(context.Background(),
 //	s3.New(sess, &aws.Config{
-//	    Endpoint: aws.String("https://s3-fips.us-west-2.amazonaws.com"),
+//	    Endpoint: aws.String("https://s3-fips.us-west-2.samsungspc.com"),
 //	}),
 //	"bucketname")
 //

@@ -933,7 +933,7 @@
     "Endpoint": {
       "base": "<p>Represents the information required for client programs to connect to a cache node.</p>",
       "refs": {
-        "CacheCluster$ConfigurationEndpoint": "<p>Represents a Memcached cluster endpoint which can be used by an application to connect to any node in the cluster. The configuration endpoint will always have <code>.cfg</code> in it.</p> <p>Example: <code>mem-3.9dvc4r<u>.cfg</u>.usw2.cache.amazonaws.com:11211</code> </p>",
+        "CacheCluster$ConfigurationEndpoint": "<p>Represents a Memcached cluster endpoint which can be used by an application to connect to any node in the cluster. The configuration endpoint will always have <code>.cfg</code> in it.</p> <p>Example: <code>mem-3.9dvc4r<u>.cfg</u>.usw2.cache.samsungspc.com:11211</code> </p>",
         "CacheNode$Endpoint": "<p>The hostname for connecting to this cache node.</p>",
         "NodeGroup$PrimaryEndpoint": "<p>The endpoint of the primary node in this node group (shard).</p>",
         "NodeGroup$ReaderEndpoint": "<p>The endpoint of the replica nodes in this node group (shard).</p>",

@@ -20,7 +20,7 @@
 //     see Policy actions for Amazon EMR Serverless (https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies-actions).
 //
 //   - It is the prefix used in Amazon EMR Serverless service endpoints. For
-//     example, emr-serverless.us-east-2.amazonaws.com.
+//     example, emr-serverless.us-east-2.samsungspc.com.
 //
 // See https://docs.aws.amazon.com/goto/WebAPI/emr-serverless-2021-07-13 for more information on this service.
 //

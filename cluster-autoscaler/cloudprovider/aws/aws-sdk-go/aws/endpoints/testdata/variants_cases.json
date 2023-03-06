@@ -4,63 +4,63 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "default-pattern-service.us-west-2.amazonaws.com"
+    "Endpoint": "default-pattern-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
     "Region": "us-west-2",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "default-pattern-service-fips.us-west-2.amazonaws.com"
+    "Endpoint": "default-pattern-service-fips.us-west-2.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "default-pattern-service.af-south-1.amazonaws.com"
+    "Endpoint": "default-pattern-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
     "Region": "af-south-1",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "default-pattern-service-fips.af-south-1.amazonaws.com"
+    "Endpoint": "default-pattern-service-fips.af-south-1.samsungspc.com"
   },
   {
     "Service": "global-service",
     "Region": "aws-global",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "global-service.amazonaws.com"
+    "Endpoint": "global-service.samsungspc.com"
   },
   {
     "Service": "global-service",
     "Region": "aws-global",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "global-service-fips.amazonaws.com"
+    "Endpoint": "global-service-fips.samsungspc.com"
   },
   {
     "Service": "global-service",
     "Region": "foo",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "global-service.amazonaws.com"
+    "Endpoint": "global-service.samsungspc.com"
   },
   {
     "Service": "global-service",
     "Region": "foo",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "global-service-fips.amazonaws.com"
+    "Endpoint": "global-service-fips.samsungspc.com"
   },
   {
     "Service": "override-variant-service",
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-service",
@@ -74,7 +74,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-service",
@@ -88,7 +88,7 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-dns-suffix-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-dns-suffix-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-dns-suffix-service",
@@ -102,7 +102,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-dns-suffix-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-dns-suffix-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-dns-suffix-service",
@@ -116,63 +116,63 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-hostname-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-hostname-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-hostname-service",
     "Region": "us-west-2",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "fips.override-variant-hostname-service.us-west-2.amazonaws.com"
+    "Endpoint": "fips.override-variant-hostname-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-hostname-service",
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-hostname-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-hostname-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-hostname-service",
     "Region": "af-south-1",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "fips.override-variant-hostname-service.af-south-1.amazonaws.com"
+    "Endpoint": "fips.override-variant-hostname-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-endpoint-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "us-west-2",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "fips.override-endpoint-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "fips.override-endpoint-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-endpoint-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "af-south-1",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "override-endpoint-variant-service-fips.af-south-1.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service-fips.af-south-1.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "default-pattern-service.us-west-2.amazonaws.com"
+    "Endpoint": "default-pattern-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
@@ -186,7 +186,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "default-pattern-service.af-south-1.amazonaws.com"
+    "Endpoint": "default-pattern-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "default-pattern-service",
@@ -200,7 +200,7 @@
     "Region": "aws-global",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "global-service.amazonaws.com"
+    "Endpoint": "global-service.samsungspc.com"
   },
   {
     "Service": "global-service",
@@ -214,7 +214,7 @@
     "Region": "foo",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "global-service.amazonaws.com"
+    "Endpoint": "global-service.samsungspc.com"
   },
   {
     "Service": "global-service",
@@ -228,7 +228,7 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-service",
@@ -242,7 +242,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-service",
@@ -256,7 +256,7 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-dns-suffix-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-dns-suffix-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-dns-suffix-service",
@@ -270,7 +270,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-dns-suffix-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-dns-suffix-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-dns-suffix-service",
@@ -284,7 +284,7 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-hostname-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-variant-hostname-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-variant-hostname-service",
@@ -298,7 +298,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-variant-hostname-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-variant-hostname-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-variant-hostname-service",
@@ -312,21 +312,21 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-endpoint-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": true,
-    "Endpoint": "override-endpoint-variant-service.dualstack.us-west-2.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service.dualstack.us-west-2.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "override-endpoint-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "override-endpoint-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "override-endpoint-variant-service",
@@ -340,7 +340,7 @@
     "Region": "us-west-2",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "multi-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "multi-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "multi-variant-service",
@@ -354,7 +354,7 @@
     "Region": "us-west-2",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "fips.multi-variant-service.us-west-2.amazonaws.com"
+    "Endpoint": "fips.multi-variant-service.us-west-2.samsungspc.com"
   },
   {
     "Service": "multi-variant-service",
@@ -368,7 +368,7 @@
     "Region": "af-south-1",
     "FIPS": false,
     "DualStack": false,
-    "Endpoint": "multi-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "multi-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "multi-variant-service",
@@ -382,7 +382,7 @@
     "Region": "af-south-1",
     "FIPS": true,
     "DualStack": false,
-    "Endpoint": "fips.multi-variant-service.af-south-1.amazonaws.com"
+    "Endpoint": "fips.multi-variant-service.af-south-1.samsungspc.com"
   },
   {
     "Service": "multi-variant-service",

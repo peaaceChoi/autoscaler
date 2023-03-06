@@ -20633,7 +20633,7 @@ type CreateActivationInput struct {
 
 	// The name of the Identity and Access Management (IAM) role that you want to
 	// assign to the managed node. This IAM role must provide AssumeRole permissions
-	// for the Amazon Web Services Systems Manager service principal ssm.amazonaws.com.
+	// for the Amazon Web Services Systems Manager service principal ssm.samsungspc.com.
 	// For more information, see Create an IAM service role for a hybrid environment
 	// (https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-service-role.html)
 	// in the Amazon Web Services Systems Manager User Guide.
@@ -51325,7 +51325,7 @@ type ResumeSessionOutput struct {
 	SessionId *string `min:"1" type:"string"`
 
 	// A URL back to SSM Agent on the managed node that the Session Manager client
-	// uses to send commands and receive output from the managed node. Format: wss://ssmmessages.region.amazonaws.com/v1/data-channel/session-id?stream=(input|output).
+	// uses to send commands and receive output from the managed node. Format: wss://ssmmessages.region.samsungspc.com/v1/data-channel/session-id?stream=(input|output).
 	//
 	// region represents the Region identifier for an Amazon Web Services Region
 	// supported by Amazon Web Services Systems Manager, such as us-east-2 for the
@@ -53353,7 +53353,7 @@ type StartSessionOutput struct {
 	SessionId *string `min:"1" type:"string"`
 
 	// A URL back to SSM Agent on the managed node that the Session Manager client
-	// uses to send commands and receive output from the node. Format: wss://ssmmessages.region.amazonaws.com/v1/data-channel/session-id?stream=(input|output)
+	// uses to send commands and receive output from the node. Format: wss://ssmmessages.region.samsungspc.com/v1/data-channel/session-id?stream=(input|output)
 	//
 	// region represents the Region identifier for an Amazon Web Services Region
 	// supported by Amazon Web Services Systems Manager, such as us-east-2 for the

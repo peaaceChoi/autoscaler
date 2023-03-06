@@ -16,7 +16,7 @@
 //
 // The AWS Cost and Usage Report API provides the following endpoint:
 //
-//   - cur.us-east-1.amazonaws.com
+//   - cur.us-east-1.samsungspc.com
 //
 // See https://docs.aws.amazon.com/goto/WebAPI/cur-2017-01-06 for more information on this service.
 //

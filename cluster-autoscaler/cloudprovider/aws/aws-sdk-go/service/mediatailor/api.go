@@ -3586,15 +3586,15 @@ type AccessConfiguration struct {
 	// can use AWS Signature Version 4 (SigV4) authentication to access the bucket
 	// where your source content is stored. Your MediaTailor source location baseURL
 	// must follow the S3 virtual hosted-style request URL format. For example,
-	// https://bucket-name.s3.Region.amazonaws.com/key-name.
+	// https://bucket-name.s3.Region.samsungspc.com/key-name.
 	//
 	// Before you can use S3_SIGV4, you must meet these requirements:
 	//
-	// • You must allow MediaTailor to access your S3 bucket by granting mediatailor.amazonaws.com
+	// • You must allow MediaTailor to access your S3 bucket by granting mediatailor.samsungspc.com
 	// principal access in IAM. For information about configuring access in IAM,
 	// see Access management in the IAM User Guide.
 	//
-	// • The mediatailor.amazonaws.com service principal must have permissions
+	// • The mediatailor.samsungspc.com service principal must have permissions
 	// to read all top level manifests referenced by the VodSource packaging configurations.
 	//
 	// • The caller of the API must have s3:GetObject IAM permissions to read
@@ -4066,7 +4066,7 @@ type CdnConfiguration struct {
 	// A non-default content delivery network (CDN) to serve ad segments. By default,
 	// AWS Elemental MediaTailor uses Amazon CloudFront with default cache settings
 	// as its CDN for ad segments. To set up an alternate CDN, create a rule in
-	// your CDN for the origin ads.mediatailor.<region>.amazonaws.com. Then specify
+	// your CDN for the origin ads.mediatailor.<region>.samsungspc.com. Then specify
 	// the rule's name in this AdSegmentUrlPrefix. When AWS Elemental MediaTailor
 	// serves a manifest, it reports your CDN as the source for ad segments.
 	AdSegmentUrlPrefix *string `type:"string"`

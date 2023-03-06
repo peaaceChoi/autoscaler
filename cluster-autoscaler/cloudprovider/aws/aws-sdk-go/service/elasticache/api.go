@@ -8077,7 +8077,7 @@ type CacheCluster struct {
 	// to connect to any node in the cluster. The configuration endpoint will always
 	// have .cfg in it.
 	//
-	// Example: mem-3.9dvc4r.cfg.usw2.cache.amazonaws.com:11211
+	// Example: mem-3.9dvc4r.cfg.usw2.cache.samsungspc.com:11211
 	ConfigurationEndpoint *Endpoint `type:"structure"`
 
 	// The name of the cache engine (memcached or redis) to be used for this cluster.

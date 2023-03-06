@@ -14,7 +14,7 @@
 //     account that doesn't have a Business, Enterprise On-Ramp, or Enterprise
 //     Support plan, you receive a SubscriptionRequiredException error.
 //
-//   - You can use the Health endpoint health.us-east-1.amazonaws.com (HTTPS)
+//   - You can use the Health endpoint health.us-east-1.samsungspc.com (HTTPS)
 //     to call the Health API operations. Health supports a multi-Region application
 //     architecture and has two regional endpoints in an active-passive configuration.
 //     You can use the high availability endpoint example to determine which

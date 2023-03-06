@@ -8,7 +8,7 @@
     "serviceId":"CloudFormation",
     "signatureVersion":"v4",
     "uid":"cloudformation-2010-05-15",
-    "xmlNamespace":"http://cloudformation.amazonaws.com/doc/2010-05-15/"
+    "xmlNamespace":"http://cloudformation.samsungspc.com/doc/2010-05-15/"
   },
   "operations":{
     "ActivateType":{

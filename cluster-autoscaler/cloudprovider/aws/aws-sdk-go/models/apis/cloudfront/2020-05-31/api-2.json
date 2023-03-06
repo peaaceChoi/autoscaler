@@ -3,7 +3,7 @@
   "metadata":{
     "apiVersion":"2020-05-31",
     "endpointPrefix":"cloudfront",
-    "globalEndpoint":"cloudfront.amazonaws.com",
+    "globalEndpoint":"cloudfront.samsungspc.com",
     "protocol":"rest-xml",
     "serviceAbbreviation":"CloudFront",
     "serviceFullName":"Amazon CloudFront",
@@ -258,7 +258,7 @@
       "input":{
         "shape":"CreateFunctionRequest",
         "locationName":"CreateFunctionRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"CreateFunctionResult"},
       "errors":[
@@ -363,7 +363,7 @@
       "input":{
         "shape":"CreateRealtimeLogConfigRequest",
         "locationName":"CreateRealtimeLogConfigRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"CreateRealtimeLogConfigResult"},
       "errors":[
@@ -610,7 +610,7 @@
       "input":{
         "shape":"DeleteRealtimeLogConfigRequest",
         "locationName":"DeleteRealtimeLogConfigRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "errors":[
         {"shape":"NoSuchRealtimeLogConfig"},
@@ -921,7 +921,7 @@
       "input":{
         "shape":"GetRealtimeLogConfigRequest",
         "locationName":"GetRealtimeLogConfigRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"GetRealtimeLogConfigResult"},
       "errors":[
@@ -1084,7 +1084,7 @@
       "input":{
         "shape":"ListDistributionsByRealtimeLogConfigRequest",
         "locationName":"ListDistributionsByRealtimeLogConfigRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"ListDistributionsByRealtimeLogConfigResult"},
       "errors":[
@@ -1302,7 +1302,7 @@
       "input":{
         "shape":"TestFunctionRequest",
         "locationName":"TestFunctionRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"TestFunctionResult"},
       "errors":[
@@ -1493,7 +1493,7 @@
       "input":{
         "shape":"UpdateFunctionRequest",
         "locationName":"UpdateFunctionRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"UpdateFunctionResult"},
       "errors":[
@@ -1571,7 +1571,7 @@
       "input":{
         "shape":"UpdateRealtimeLogConfigRequest",
         "locationName":"UpdateRealtimeLogConfigRequest",
-        "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+        "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
       },
       "output":{"shape":"UpdateRealtimeLogConfigResult"},
       "errors":[
@@ -2153,7 +2153,7 @@
         "CachePolicyConfig":{
           "shape":"CachePolicyConfig",
           "locationName":"CachePolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"CachePolicyConfig"
@@ -2182,7 +2182,7 @@
         "CloudFrontOriginAccessIdentityConfig":{
           "shape":"CloudFrontOriginAccessIdentityConfig",
           "locationName":"CloudFrontOriginAccessIdentityConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"CloudFrontOriginAccessIdentityConfig"
@@ -2211,7 +2211,7 @@
         "DistributionConfig":{
           "shape":"DistributionConfig",
           "locationName":"DistributionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"DistributionConfig"
@@ -2240,7 +2240,7 @@
         "DistributionConfigWithTags":{
           "shape":"DistributionConfigWithTags",
           "locationName":"DistributionConfigWithTags",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"DistributionConfigWithTags"
@@ -2269,7 +2269,7 @@
         "FieldLevelEncryptionConfig":{
           "shape":"FieldLevelEncryptionConfig",
           "locationName":"FieldLevelEncryptionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"FieldLevelEncryptionConfig"
@@ -2298,7 +2298,7 @@
         "FieldLevelEncryptionProfileConfig":{
           "shape":"FieldLevelEncryptionProfileConfig",
           "locationName":"FieldLevelEncryptionProfileConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"FieldLevelEncryptionProfileConfig"
@@ -2365,7 +2365,7 @@
         "InvalidationBatch":{
           "shape":"InvalidationBatch",
           "locationName":"InvalidationBatch",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"InvalidationBatch"
@@ -2389,7 +2389,7 @@
         "KeyGroupConfig":{
           "shape":"KeyGroupConfig",
           "locationName":"KeyGroupConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"KeyGroupConfig"
@@ -2426,7 +2426,7 @@
         "MonitoringSubscription":{
           "shape":"MonitoringSubscription",
           "locationName":"MonitoringSubscription",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"MonitoringSubscription"
@@ -2445,7 +2445,7 @@
         "OriginRequestPolicyConfig":{
           "shape":"OriginRequestPolicyConfig",
           "locationName":"OriginRequestPolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"OriginRequestPolicyConfig"
@@ -2474,7 +2474,7 @@
         "PublicKeyConfig":{
           "shape":"PublicKeyConfig",
           "locationName":"PublicKeyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"PublicKeyConfig"
@@ -2524,7 +2524,7 @@
         "ResponseHeadersPolicyConfig":{
           "shape":"ResponseHeadersPolicyConfig",
           "locationName":"ResponseHeadersPolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"ResponseHeadersPolicyConfig"
@@ -2553,7 +2553,7 @@
         "StreamingDistributionConfig":{
           "shape":"StreamingDistributionConfig",
           "locationName":"StreamingDistributionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"StreamingDistributionConfig"
@@ -2582,7 +2582,7 @@
         "StreamingDistributionConfigWithTags":{
           "shape":"StreamingDistributionConfigWithTags",
           "locationName":"StreamingDistributionConfigWithTags",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"StreamingDistributionConfigWithTags"
@@ -6367,7 +6367,7 @@
         "Tags":{
           "shape":"Tags",
           "locationName":"Tags",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"Tags"
@@ -6885,7 +6885,7 @@
         "TagKeys":{
           "shape":"TagKeys",
           "locationName":"TagKeys",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         }
       },
       "payload":"TagKeys"
@@ -6900,7 +6900,7 @@
         "CachePolicyConfig":{
           "shape":"CachePolicyConfig",
           "locationName":"CachePolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -6937,7 +6937,7 @@
         "CloudFrontOriginAccessIdentityConfig":{
           "shape":"CloudFrontOriginAccessIdentityConfig",
           "locationName":"CloudFrontOriginAccessIdentityConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -6974,7 +6974,7 @@
         "DistributionConfig":{
           "shape":"DistributionConfig",
           "locationName":"DistributionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7011,7 +7011,7 @@
         "FieldLevelEncryptionConfig":{
           "shape":"FieldLevelEncryptionConfig",
           "locationName":"FieldLevelEncryptionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7048,7 +7048,7 @@
         "FieldLevelEncryptionProfileConfig":{
           "shape":"FieldLevelEncryptionProfileConfig",
           "locationName":"FieldLevelEncryptionProfileConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7120,7 +7120,7 @@
         "KeyGroupConfig":{
           "shape":"KeyGroupConfig",
           "locationName":"KeyGroupConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7157,7 +7157,7 @@
         "OriginRequestPolicyConfig":{
           "shape":"OriginRequestPolicyConfig",
           "locationName":"OriginRequestPolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7194,7 +7194,7 @@
         "PublicKeyConfig":{
           "shape":"PublicKeyConfig",
           "locationName":"PublicKeyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7247,7 +7247,7 @@
         "ResponseHeadersPolicyConfig":{
           "shape":"ResponseHeadersPolicyConfig",
           "locationName":"ResponseHeadersPolicyConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",
@@ -7284,7 +7284,7 @@
         "StreamingDistributionConfig":{
           "shape":"StreamingDistributionConfig",
           "locationName":"StreamingDistributionConfig",
-          "xmlNamespace":{"uri":"http://cloudfront.amazonaws.com/doc/2020-05-31/"}
+          "xmlNamespace":{"uri":"http://cloudfront.samsungspc.com/doc/2020-05-31/"}
         },
         "Id":{
           "shape":"string",

@@ -7,7 +7,7 @@
         "signatureVersions" : [ "v4" ],
         "variants" : [
           {
-            "dnsSuffix" : "amazonaws.com",
+            "dnsSuffix" : "samsungspc.com",
             "hostname" : "{service}-fips.{region}.{dnsSuffix}",
             "tags" : [ "fips" ]
           },
@@ -23,7 +23,7 @@
           }
         ]
       },
-      "dnsSuffix" : "amazonaws.com",
+      "dnsSuffix" : "samsungspc.com",
       "partition" : "aws",
       "regionRegex" : "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
       "regions" : {
@@ -41,7 +41,7 @@
             "us-west-2" : {
               "variants" : [
                 {
-                  "hostname" : "default-pattern-service-fips.us-west-2.amazonaws.com",
+                  "hostname" : "default-pattern-service-fips.us-west-2.samsungspc.com",
                   "tags" : [ "fips" ]
                 },
                 {
@@ -58,10 +58,10 @@
               "credentialScope" : {
                 "region" : "us-east-1"
               },
-              "hostname" : "global-service.amazonaws.com",
+              "hostname" : "global-service.samsungspc.com",
               "variants" : [
                 {
-                  "hostname" : "global-service-fips.amazonaws.com",
+                  "hostname" : "global-service-fips.samsungspc.com",
                   "tags" : [ "fips" ]
                 },
                 {
@@ -152,7 +152,7 @@
             "us-west-2" : {
               "variants" : [
                 {
-                  "hostname" : "fips.override-variant-hostname-service.us-west-2.amazonaws.com",
+                  "hostname" : "fips.override-variant-hostname-service.us-west-2.samsungspc.com",
                   "tags" : [ "fips" ]
                 },
                 {
@@ -169,11 +169,11 @@
             "us-west-2" : {
               "variants" : [
                 {
-                  "hostname" : "fips.override-endpoint-variant-service.us-west-2.amazonaws.com",
+                  "hostname" : "fips.override-endpoint-variant-service.us-west-2.samsungspc.com",
                   "tags" : [ "fips" ]
                 },
                 {
-                  "hostname" : "override-endpoint-variant-service.dualstack.us-west-2.amazonaws.com",
+                  "hostname" : "override-endpoint-variant-service.dualstack.us-west-2.samsungspc.com",
                   "tags" : [ "dualstack" ]
                 }
               ]

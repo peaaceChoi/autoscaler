@@ -20,7 +20,7 @@
       "input":{
         "shape":"CreateAccessPointRequest",
         "locationName":"CreateAccessPointRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"CreateAccessPointResult"},
       "endpoint":{
@@ -36,7 +36,7 @@
       "input":{
         "shape":"CreateAccessPointForObjectLambdaRequest",
         "locationName":"CreateAccessPointForObjectLambdaRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"CreateAccessPointForObjectLambdaResult"},
       "endpoint":{
@@ -66,7 +66,7 @@
       "input":{
         "shape":"CreateJobRequest",
         "locationName":"CreateJobRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"CreateJobResult"},
       "errors":[
@@ -88,7 +88,7 @@
       "input":{
         "shape":"CreateMultiRegionAccessPointRequest",
         "locationName":"CreateMultiRegionAccessPointRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"CreateMultiRegionAccessPointResult"},
       "endpoint":{
@@ -211,7 +211,7 @@
       "input":{
         "shape":"DeleteMultiRegionAccessPointRequest",
         "locationName":"DeleteMultiRegionAccessPointRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"DeleteMultiRegionAccessPointResult"},
       "endpoint":{
@@ -598,7 +598,7 @@
       "input":{
         "shape":"PutAccessPointConfigurationForObjectLambdaRequest",
         "locationName":"PutAccessPointConfigurationForObjectLambdaRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "endpoint":{
         "hostPrefix":"{AccountId}."
@@ -613,7 +613,7 @@
       "input":{
         "shape":"PutAccessPointPolicyRequest",
         "locationName":"PutAccessPointPolicyRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "endpoint":{
         "hostPrefix":"{AccountId}."
@@ -628,7 +628,7 @@
       "input":{
         "shape":"PutAccessPointPolicyForObjectLambdaRequest",
         "locationName":"PutAccessPointPolicyForObjectLambdaRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "endpoint":{
         "hostPrefix":"{AccountId}."
@@ -655,7 +655,7 @@
       "input":{
         "shape":"PutBucketPolicyRequest",
         "locationName":"PutBucketPolicyRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "endpoint":{
         "hostPrefix":"{AccountId}."
@@ -683,7 +683,7 @@
       "input":{
         "shape":"PutJobTaggingRequest",
         "locationName":"PutJobTaggingRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"PutJobTaggingResult"},
       "errors":[
@@ -705,7 +705,7 @@
       "input":{
         "shape":"PutMultiRegionAccessPointPolicyRequest",
         "locationName":"PutMultiRegionAccessPointPolicyRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"PutMultiRegionAccessPointPolicyResult"},
       "endpoint":{
@@ -733,7 +733,7 @@
       "input":{
         "shape":"PutStorageLensConfigurationRequest",
         "locationName":"PutStorageLensConfigurationRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "endpoint":{
         "hostPrefix":"{AccountId}."
@@ -748,7 +748,7 @@
       "input":{
         "shape":"PutStorageLensConfigurationTaggingRequest",
         "locationName":"PutStorageLensConfigurationTaggingRequest",
-        "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+        "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
       },
       "output":{"shape":"PutStorageLensConfigurationTaggingResult"},
       "endpoint":{
@@ -1080,7 +1080,7 @@
         "CreateBucketConfiguration":{
           "shape":"CreateBucketConfiguration",
           "locationName":"CreateBucketConfiguration",
-          "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+          "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
         },
         "GrantFullControl":{
           "shape":"GrantFullControl",
@@ -3152,7 +3152,7 @@
         "LifecycleConfiguration":{
           "shape":"LifecycleConfiguration",
           "locationName":"LifecycleConfiguration",
-          "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+          "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
         }
       },
       "payload":"LifecycleConfiguration"
@@ -3206,7 +3206,7 @@
         "Tagging":{
           "shape":"Tagging",
           "locationName":"Tagging",
-          "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+          "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
         }
       },
       "payload":"Tagging"
@@ -3286,7 +3286,7 @@
         "PublicAccessBlockConfiguration":{
           "shape":"PublicAccessBlockConfiguration",
           "locationName":"PublicAccessBlockConfiguration",
-          "xmlNamespace":{"uri":"http://awss3control.amazonaws.com/doc/2018-08-20/"}
+          "xmlNamespace":{"uri":"http://awss3control.samsungspc.com/doc/2018-08-20/"}
         },
         "AccountId":{
           "shape":"AccountId",

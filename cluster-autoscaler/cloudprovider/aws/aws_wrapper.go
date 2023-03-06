@@ -92,7 +92,7 @@ func (m *awsWrapper) getManagedNodegroupInfo(nodegroupName string, clusterName s
 	}
 
 	if r.Nodegroup.NodegroupName != nil && len(*r.Nodegroup.NodegroupName) > 0 {
-		labels["eks.amazonaws.com/nodegroup"] = *r.Nodegroup.NodegroupName
+		labels["eks.samsungspc.com/nodegroup"] = *r.Nodegroup.NodegroupName
 	}
 
 	if r.Nodegroup.Labels != nil && len(r.Nodegroup.Labels) > 0 {

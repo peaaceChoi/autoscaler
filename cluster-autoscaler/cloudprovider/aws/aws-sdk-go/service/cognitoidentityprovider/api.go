@@ -463,7 +463,7 @@ func (c *CognitoIdentityProvider) AdminCreateUserRequest(input *AdminCreateUserI
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -1456,7 +1456,7 @@ func (c *CognitoIdentityProvider) AdminInitiateAuthRequest(input *AdminInitiateA
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -2261,7 +2261,7 @@ func (c *CognitoIdentityProvider) AdminResetUserPasswordRequest(input *AdminRese
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -2417,7 +2417,7 @@ func (c *CognitoIdentityProvider) AdminRespondToAuthChallengeRequest(input *Admi
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -3115,7 +3115,7 @@ func (c *CognitoIdentityProvider) AdminUpdateUserAttributesRequest(input *AdminU
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -4342,7 +4342,7 @@ func (c *CognitoIdentityProvider) CreateUserPoolRequest(input *CreateUserPoolInp
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -6254,7 +6254,7 @@ func (c *CognitoIdentityProvider) ForgotPasswordRequest(input *ForgotPasswordInp
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -7081,7 +7081,7 @@ func (c *CognitoIdentityProvider) GetUserAttributeVerificationCodeRequest(input 
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -7453,7 +7453,7 @@ func (c *CognitoIdentityProvider) InitiateAuthRequest(input *InitiateAuthInput) 
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -8948,7 +8948,7 @@ func (c *CognitoIdentityProvider) ResendConfirmationCodeRequest(input *ResendCon
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -9119,7 +9119,7 @@ func (c *CognitoIdentityProvider) RespondToAuthChallengeRequest(input *RespondTo
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -9672,7 +9672,7 @@ func (c *CognitoIdentityProvider) SetUserPoolMfaConfigRequest(input *SetUserPool
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -9925,7 +9925,7 @@ func (c *CognitoIdentityProvider) SignUpRequest(input *SignUpInput) (req *reques
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -10979,7 +10979,7 @@ func (c *CognitoIdentityProvider) UpdateUserAttributesRequest(input *UpdateUserA
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -11131,7 +11131,7 @@ func (c *CognitoIdentityProvider) UpdateUserPoolRequest(input *UpdateUserPoolInp
 //
 //   - InvalidSmsRoleTrustRelationshipException
 //     This exception is thrown when the trust relationship is not valid for the
-//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+//     role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 //     or the external ID provided in the role does not match what is provided in
 //     the SMS configuration for the user pool.
 //
@@ -23696,7 +23696,7 @@ func (s *InvalidSmsRoleAccessPolicyException) RequestID() string {
 }
 
 // This exception is thrown when the trust relationship is not valid for the
-// role provided for SMS configuration. This can happen if you don't trust cognito-idp.amazonaws.com
+// role provided for SMS configuration. This can happen if you don't trust cognito-idp.samsungspc.com
 // or the external ID provided in the role does not match what is provided in
 // the SMS configuration for the user pool.
 type InvalidSmsRoleTrustRelationshipException struct {
@@ -32482,7 +32482,7 @@ type UserPoolType struct {
 	// messages tfrom your user pool.
 	EmailConfiguration *EmailConfigurationType `type:"structure"`
 
-	// Deprecated. Review error codes from API requests with EventSource:cognito-idp.amazonaws.com
+	// Deprecated. Review error codes from API requests with EventSource:cognito-idp.samsungspc.com
 	// in CloudTrail for information about problems with user pool email configuration.
 	EmailConfigurationFailure *string `type:"string"`
 

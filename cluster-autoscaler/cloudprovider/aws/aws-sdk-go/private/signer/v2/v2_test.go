@@ -25,7 +25,7 @@ type signerBuilder struct {
 }
 
 func (sb signerBuilder) BuildSigner() signer {
-	endpoint := "https://" + sb.ServiceName + "." + sb.Region + ".amazonaws.com"
+	endpoint := "https://" + sb.ServiceName + "." + sb.Region + ".samsungspc.com"
 	var req *http.Request
 	if sb.Method == "POST" {
 		body := []byte(sb.Query.Encode())

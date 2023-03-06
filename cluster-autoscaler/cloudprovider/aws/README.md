@@ -277,7 +277,7 @@ before it joins the cluster by passing it the `--node-labels` flag. The label
 format is as follows:
 
 - Cluster Autoscaler < 1.15: `cloud.google.com/gke-accelerator=<gpu-type>`
-- Cluster Autoscaler >= 1.15: `k8s.amazonaws.com/accelerator=<gpu-type>`
+- Cluster Autoscaler >= 1.15: `k8s.samsungspc.com/accelerator=<gpu-type>`
 
 `<gpu-type>` varies by instance type. On P2 instances, for example, the
 value is `nvidia-tesla-k80`.

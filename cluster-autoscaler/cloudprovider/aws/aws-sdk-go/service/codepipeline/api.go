@@ -5560,7 +5560,7 @@ type ActionTypeExecutor struct {
 	// account that are needed to successfully run an action.
 	//
 	// To grant permission to another account, specify the account ID as the Principal,
-	// a domain-style identifier defined by the service, for example codepipeline.amazonaws.com.
+	// a domain-style identifier defined by the service, for example codepipeline.samsungspc.com.
 	//
 	// The size of the passed JSON policy document cannot exceed 2048 characters.
 	PolicyStatementsTemplate *string `locationName:"policyStatementsTemplate" min:"1" type:"string"`

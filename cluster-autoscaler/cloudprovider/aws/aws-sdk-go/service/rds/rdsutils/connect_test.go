@@ -16,13 +16,13 @@ func TestBuildAuthToken(t *testing.T) {
 		expectedRegex string
 	}{
 		{
-			"https://prod-instance.us-east-1.rds.amazonaws.com:3306",
+			"https://prod-instance.us-east-1.rds.samsungspc.com:3306",
 			"us-west-2",
 			"mysqlUser",
 			`^prod-instance\.us-east-1\.rds\.amazonaws\.com:3306\?Action=connect.*?DBUser=mysqlUser.*`,
 		},
 		{
-			"prod-instance.us-east-1.rds.amazonaws.com:3306",
+			"prod-instance.us-east-1.rds.samsungspc.com:3306",
 			"us-west-2",
 			"mysqlUser",
 			`^prod-instance\.us-east-1\.rds\.amazonaws\.com:3306\?Action=connect.*?DBUser=mysqlUser.*`,

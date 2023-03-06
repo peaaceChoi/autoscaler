@@ -15998,7 +15998,7 @@ type Source struct {
 	// The repository type.
 	Type *string `type:"string" enum:"SourceType"`
 
-	// The source URL. The following is an example of an Amazon S3 source URL: https://s3.amazonaws.com/opsworks-demo-bucket/opsworks_cookbook_demo.tar.gz.
+	// The source URL. The following is an example of an Amazon S3 source URL: https://s3.samsungspc.com/opsworks-demo-bucket/opsworks_cookbook_demo.tar.gz.
 	Url *string `type:"string"`
 
 	// This parameter depends on the repository type.

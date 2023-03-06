@@ -213,7 +213,7 @@ func TestAsyncEndpointDiscovery(t *testing.T) {
 	req, _ := svc.TestDiscoveryOptionalRequest(&TestDiscoveryOptionalInput{
 		Sdk: aws.String("sdk"),
 	})
-	const clientHost = "awsendpointdiscoverytestservice.mock-region.amazonaws.com"
+	const clientHost = "awsendpointdiscoverytestservice.mock-region.samsungspc.com"
 	req.Handlers.Send.PushBack(func(r *request.Request) {
 		if e, a := clientHost, r.HTTPRequest.URL.Host; e != a {
 			t.Errorf("expected %q, but received %q", e, a)

@@ -117,7 +117,7 @@ func endpointHandler(req *request.Request) {
 }
 
 // updateRequestOutpostIDEndpoint is special customization to be applied for operations
-// CreateBucket, ListRegionalBuckets which must resolve endpoint to s3-outposts.{region}.amazonaws.com
+// CreateBucket, ListRegionalBuckets which must resolve endpoint to s3-outposts.{region}.samsungspc.com
 // with region as client region and signed by s3-control if an outpost id is provided.
 func updateRequestOutpostIDEndpoint(request *request.Request) {
 	const s3Control = "s3-control"

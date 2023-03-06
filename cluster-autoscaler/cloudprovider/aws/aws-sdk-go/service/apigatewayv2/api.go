@@ -6424,7 +6424,7 @@ func (s *AccessLogSettings) SetFormat(v string) *AccessLogSettings {
 type Api struct {
 	_ struct{} `type:"structure"`
 
-	// The URI of the API, of the form {api-id}.execute-api.{region}.amazonaws.com.
+	// The URI of the API, of the form {api-id}.execute-api.{region}.samsungspc.com.
 	// The stage name is typically appended to this URI to form a complete path
 	// to a deployed API stage.
 	ApiEndpoint *string `locationName:"apiEndpoint" type:"string"`
@@ -6451,7 +6451,7 @@ type Api struct {
 	Description *string `locationName:"description" type:"string"`
 
 	// Specifies whether clients can invoke your API by using the default execute-api
-	// endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.amazonaws.com
+	// endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.samsungspc.com
 	// endpoint. To require that clients use a custom domain name to invoke your
 	// API, disable the default endpoint.
 	DisableExecuteApiEndpoint *bool `locationName:"disableExecuteApiEndpoint" type:"boolean"`
@@ -15855,7 +15855,7 @@ type JWTConfiguration struct {
 	Audience []*string `locationName:"audience" type:"list"`
 
 	// The base domain of the identity provider that issues JSON Web Tokens. For
-	// example, an Amazon Cognito user pool has the following format: https://cognito-idp.{region}.amazonaws.com/{userPoolId}
+	// example, an Amazon Cognito user pool has the following format: https://cognito-idp.{region}.samsungspc.com/{userPoolId}
 	// . Required for the JWT authorizer type. Supported only for HTTP APIs.
 	Issuer *string `locationName:"issuer" type:"string"`
 }

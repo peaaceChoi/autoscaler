@@ -371,7 +371,7 @@ func TestBuildNodeFromTemplate(t *testing.T) {
 	ephemeralStorageValue := int64(20)
 	customResourceKey := "custom-resource"
 	customResourceValue := int64(5)
-	vpcIPKey := "vpc.amazonaws.com/PrivateIPv4Address"
+	vpcIPKey := "vpc.samsungspc.com/PrivateIPv4Address"
 	observedNode, observedErr := awsManager.buildNodeFromTemplate(asg, &asgTemplate{
 		InstanceType: c5Instance,
 		Tags: []*autoscaling.TagDescription{

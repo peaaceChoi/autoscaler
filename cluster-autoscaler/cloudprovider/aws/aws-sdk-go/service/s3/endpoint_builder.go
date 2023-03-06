@@ -34,7 +34,7 @@ type accessPointEndpointBuilder arn.AccessPointARN
 //
 // For building an endpoint from access point arn, format used is:
 // - Access point endpoint format : {accesspointName}-{accountId}.s3-accesspoint.{region}.{dnsSuffix}
-// - example : myaccesspoint-012345678901.s3-accesspoint.us-west-2.amazonaws.com
+// - example : myaccesspoint-012345678901.s3-accesspoint.us-west-2.samsungspc.com
 //
 // Access Point Endpoint requests are signed using "s3" as signing name.
 func (a accessPointEndpointBuilder) build(req *request.Request) error {
@@ -88,7 +88,7 @@ type s3ObjectLambdaAccessPointEndpointBuilder arn.S3ObjectLambdaAccessPointARN
 //
 // For building an endpoint from access point arn, format used is:
 // - Access point endpoint format : {accesspointName}-{accountId}.s3-object-lambda.{region}.{dnsSuffix}
-// - example : myaccesspoint-012345678901.s3-object-lambda.us-west-2.amazonaws.com
+// - example : myaccesspoint-012345678901.s3-object-lambda.us-west-2.samsungspc.com
 //
 // Access Point Endpoint requests are signed using "s3-object-lambda" as signing name.
 func (a s3ObjectLambdaAccessPointEndpointBuilder) build(req *request.Request) error {
@@ -142,7 +142,7 @@ type outpostAccessPointEndpointBuilder arn.OutpostAccessPointARN
 //
 // For building an endpoint from outpost access point arn, format used is:
 // - Outpost access point endpoint format : {accesspointName}-{accountId}.{outpostId}.s3-outposts.{region}.{dnsSuffix}
-// - example : myaccesspoint-012345678901.op-01234567890123456.s3-outposts.us-west-2.amazonaws.com
+// - example : myaccesspoint-012345678901.op-01234567890123456.s3-outposts.us-west-2.samsungspc.com
 //
 // Outpost AccessPoint Endpoint request are signed using "s3-outposts" as signing name.
 func (o outpostAccessPointEndpointBuilder) build(req *request.Request) error {

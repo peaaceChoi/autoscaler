@@ -1556,7 +1556,7 @@
       "protocol": "rest-json",
       "apiVersion": "2014-01-01"
     },
-    "clientEndpoint": "https://service.region.amazonaws.com",
+    "clientEndpoint": "https://service.region.samsungspc.com",
     "shapes": {
       "StaticInputShape": {
         "type": "structure",
@@ -1600,7 +1600,7 @@
         "serialized": {
           "uri": "/path",
           "body": "{\"Name\": \"myname\"}",
-          "host": "data-service.region.amazonaws.com"
+          "host": "data-service.region.samsungspc.com"
         }
       },
       {
@@ -1623,7 +1623,7 @@
         "serialized": {
           "uri": "/path",
           "body": "{\"Name\": \"myname\"}",
-          "host": "foo-myname.service.region.amazonaws.com"
+          "host": "foo-myname.service.region.samsungspc.com"
         }
       }
     ]
@@ -1777,7 +1777,7 @@
       "protocol": "rest-json",
       "apiVersion": "2021-05-13"
     },
-    "clientEndpoint": "https://rest-test.amazonaws.com",
+    "clientEndpoint": "https://rest-test.samsungspc.com",
     "shapes":{
       "Integer":{
         "type":"integer"
@@ -1902,7 +1902,7 @@
             "x-amz-test-id": "t-12345",
             "Content-Type": "application/json"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -1923,7 +1923,7 @@
           "headers": {
             "Content-Type": "application/json"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -1944,7 +1944,7 @@
           "headers": {
             "Content-Type": "application/json"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -1971,7 +1971,7 @@
             "x-amz-test-id": "t-12345",
             "Content-Type": "application/json"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -1995,7 +1995,7 @@
             "x-amz-test-id": "t-12345",
             "Content-Type": "application/json"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -2019,7 +2019,7 @@
           "headers": {
             "Content-Type": "image/jpg"
           },
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -2042,7 +2042,7 @@
           "forbidHeaders": [
             "Content-Type"
           ],
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -2064,7 +2064,7 @@
             "Content-Type",
             "Content-Length"
           ],
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       },
       {
@@ -2091,7 +2091,7 @@
             "Content-Type",
             "Content-Length"
           ],
-          "host": "rest-test.amazonaws.com"
+          "host": "rest-test.samsungspc.com"
         }
       }
     ]

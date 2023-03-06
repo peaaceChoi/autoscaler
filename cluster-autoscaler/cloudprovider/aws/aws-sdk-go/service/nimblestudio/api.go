@@ -12433,7 +12433,7 @@ func (s *StreamingSessionStream) SetUrl(v string) *StreamingSessionStream {
 // The admin role must have the AmazonNimbleStudio-StudioAdmin managed policy
 // attached for the portal to function properly.
 //
-// Your studio roles must trust the identity.nimble.amazonaws.com service principal
+// Your studio roles must trust the identity.nimble.samsungspc.com service principal
 // to function properly.
 type Studio struct {
 	_ struct{} `type:"structure"`

@@ -9312,7 +9312,7 @@ type DomainStatus struct {
 	Endpoint *string `type:"string"`
 
 	// Map containing the domain endpoints used to submit index and search requests.
-	// Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'.
+	// Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.samsungspc.com'.
 	Endpoints map[string]*string `type:"map"`
 
 	EngineVersion *string `min:"14" type:"string"`

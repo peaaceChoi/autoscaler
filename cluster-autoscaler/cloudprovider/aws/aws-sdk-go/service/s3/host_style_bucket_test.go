@@ -23,40 +23,40 @@ type s3BucketTest struct {
 
 var (
 	sslTests = []s3BucketTest{
-		{"abc", "https://abc.s3.mock-region.amazonaws.com/", ""},
-		{"a$b$c", "https://s3.mock-region.amazonaws.com/a%24b%24c", ""},
-		{"a.b.c", "https://s3.mock-region.amazonaws.com/a.b.c", ""},
-		{"a..bc", "https://s3.mock-region.amazonaws.com/a..bc", ""},
+		{"abc", "https://abc.s3.mock-region.samsungspc.com/", ""},
+		{"a$b$c", "https://s3.mock-region.samsungspc.com/a%24b%24c", ""},
+		{"a.b.c", "https://s3.mock-region.samsungspc.com/a.b.c", ""},
+		{"a..bc", "https://s3.mock-region.samsungspc.com/a..bc", ""},
 	}
 
 	nosslTests = []s3BucketTest{
-		{"a.b.c", "http://a.b.c.s3.mock-region.amazonaws.com/", ""},
-		{"a..bc", "http://s3.mock-region.amazonaws.com/a..bc", ""},
+		{"a.b.c", "http://a.b.c.s3.mock-region.samsungspc.com/", ""},
+		{"a..bc", "http://s3.mock-region.samsungspc.com/a..bc", ""},
 	}
 
 	forcepathTests = []s3BucketTest{
-		{"abc", "https://s3.mock-region.amazonaws.com/abc", ""},
-		{"a$b$c", "https://s3.mock-region.amazonaws.com/a%24b%24c", ""},
-		{"a.b.c", "https://s3.mock-region.amazonaws.com/a.b.c", ""},
-		{"a..bc", "https://s3.mock-region.amazonaws.com/a..bc", ""},
+		{"abc", "https://s3.mock-region.samsungspc.com/abc", ""},
+		{"a$b$c", "https://s3.mock-region.samsungspc.com/a%24b%24c", ""},
+		{"a.b.c", "https://s3.mock-region.samsungspc.com/a.b.c", ""},
+		{"a..bc", "https://s3.mock-region.samsungspc.com/a..bc", ""},
 	}
 
 	accelerateTests = []s3BucketTest{
-		{"abc", "https://abc.s3-accelerate.amazonaws.com/", ""},
-		{"a.b.c", "https://s3.mock-region.amazonaws.com/%7BBucket%7D", "InvalidParameterException"},
-		{"a$b$c", "https://s3.mock-region.amazonaws.com/%7BBucket%7D", "InvalidParameterException"},
+		{"abc", "https://abc.s3-accelerate.samsungspc.com/", ""},
+		{"a.b.c", "https://s3.mock-region.samsungspc.com/%7BBucket%7D", "InvalidParameterException"},
+		{"a$b$c", "https://s3.mock-region.samsungspc.com/%7BBucket%7D", "InvalidParameterException"},
 	}
 
 	accelerateNoSSLTests = []s3BucketTest{
-		{"abc", "http://abc.s3-accelerate.amazonaws.com/", ""},
-		{"a.b.c", "http://a.b.c.s3-accelerate.amazonaws.com/", ""},
-		{"a$b$c", "http://s3.mock-region.amazonaws.com/%7BBucket%7D", "InvalidParameterException"},
+		{"abc", "http://abc.s3-accelerate.samsungspc.com/", ""},
+		{"a.b.c", "http://a.b.c.s3-accelerate.samsungspc.com/", ""},
+		{"a$b$c", "http://s3.mock-region.samsungspc.com/%7BBucket%7D", "InvalidParameterException"},
 	}
 
 	accelerateDualstack = []s3BucketTest{
-		{"abc", "https://abc.s3-accelerate.dualstack.amazonaws.com/", ""},
-		{"a.b.c", "https://s3.dualstack.us-west-2.amazonaws.com/%7BBucket%7D", "InvalidParameterException"},
-		{"a$b$c", "https://s3.dualstack.us-west-2.amazonaws.com/%7BBucket%7D", "InvalidParameterException"},
+		{"abc", "https://abc.s3-accelerate.dualstack.samsungspc.com/", ""},
+		{"a.b.c", "https://s3.dualstack.us-west-2.samsungspc.com/%7BBucket%7D", "InvalidParameterException"},
+		{"a$b$c", "https://s3.dualstack.us-west-2.samsungspc.com/%7BBucket%7D", "InvalidParameterException"},
 	}
 )
 

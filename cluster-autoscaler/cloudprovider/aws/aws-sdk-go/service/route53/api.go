@@ -5167,7 +5167,7 @@ func (c *Route53) ListHostedZonesByVPCRequest(input *ListHostedZonesByVPCInput) 
 //   - An OwningService element, which identifies the Amazon Web Services service
 //     that created and owns the hosted zone. For example, if a hosted zone was
 //     created by Amazon Elastic File System (Amazon EFS), the value of Owner
-//     is efs.amazonaws.com.
+//     is efs.samsungspc.com.
 //
 // When listing private hosted zones, the hosted zone and the Amazon VPC must
 // belong to the same partition where the hosted zones were created. A partition
@@ -7141,7 +7141,7 @@ type AliasTarget struct {
 	//
 	// Amazon Virtual Private Cloud interface VPC endpoint
 	//
-	// Enter the API endpoint for the interface endpoint, such as vpce-123456789abcdef01-example-us-east-1a.elasticloadbalancing.us-east-1.vpce.amazonaws.com.
+	// Enter the API endpoint for the interface endpoint, such as vpce-123456789abcdef01-example-us-east-1a.elasticloadbalancing.us-east-1.vpce.samsungspc.com.
 	// For edge-optimized APIs, this is the domain name for the corresponding CloudFront
 	// distribution. You can get the value of DnsName using the CLI command describe-vpc-endpoints
 	// (https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-vpc-endpoints.html).
@@ -7234,7 +7234,7 @@ type AliasTarget struct {
 	// Amazon S3 bucket that is configured as a static website
 	//
 	// Specify the domain name of the Amazon S3 website endpoint that you created
-	// the bucket in, for example, s3-website.us-east-2.amazonaws.com. For more
+	// the bucket in, for example, s3-website.us-east-2.samsungspc.com. For more
 	// information about valid values, see the table Amazon S3 Website Endpoints
 	// (https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints)
 	// in the Amazon Web Services General Reference. For more information about
@@ -7467,7 +7467,7 @@ func (s *AliasTarget) SetHostedZoneId(v string) *AliasTarget {
 // A complex type that contains information about the request to associate a
 // VPC with a private hosted zone.
 type AssociateVPCWithHostedZoneInput struct {
-	_ struct{} `locationName:"AssociateVPCWithHostedZoneRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"AssociateVPCWithHostedZoneRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// Optional: A comment about the association request.
 	Comment *string `type:"string"`
@@ -7805,7 +7805,7 @@ func (s *ChangeInfo) SetSubmittedAt(v time.Time) *ChangeInfo {
 
 // A complex type that contains change information for the resource record set.
 type ChangeResourceRecordSetsInput struct {
-	_ struct{} `locationName:"ChangeResourceRecordSetsRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"ChangeResourceRecordSetsRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A complex type that contains an optional comment and the Changes element.
 	//
@@ -7914,7 +7914,7 @@ func (s *ChangeResourceRecordSetsOutput) SetChangeInfo(v *ChangeInfo) *ChangeRes
 // A complex type that contains information about the tags that you want to
 // add, edit, or delete.
 type ChangeTagsForResourceInput struct {
-	_ struct{} `locationName:"ChangeTagsForResourceRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"ChangeTagsForResourceRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A complex type that contains a list of the tags that you want to add to the
 	// specified health check or hosted zone and/or the tags that you want to edit
@@ -8157,7 +8157,7 @@ func (s *CloudWatchAlarmConfiguration) SetThreshold(v float64) *CloudWatchAlarmC
 
 // A complex type that contains the health check request information.
 type CreateHealthCheckInput struct {
-	_ struct{} `locationName:"CreateHealthCheckRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateHealthCheckRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A unique string that identifies the request and that allows you to retry
 	// a failed CreateHealthCheck request without the risk of creating two identical
@@ -8291,7 +8291,7 @@ func (s *CreateHealthCheckOutput) SetLocation(v string) *CreateHealthCheckOutput
 // A complex type that contains information about the request to create a public
 // or private hosted zone.
 type CreateHostedZoneInput struct {
-	_ struct{} `locationName:"CreateHostedZoneRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateHostedZoneRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A unique string that identifies the request and that allows failed CreateHostedZone
 	// requests to be retried without the risk of executing the operation twice.
@@ -8494,7 +8494,7 @@ func (s *CreateHostedZoneOutput) SetVPC(v *VPC) *CreateHostedZoneOutput {
 }
 
 type CreateKeySigningKeyInput struct {
-	_ struct{} `locationName:"CreateKeySigningKeyRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateKeySigningKeyRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A unique string that identifies the request.
 	//
@@ -8538,7 +8538,7 @@ type CreateKeySigningKeyInput struct {
 	// The key policy must also include the Amazon Route 53 service in the principal
 	// for your account. Specify the following:
 	//
-	//    * "Service": "dnssec-route53.amazonaws.com"
+	//    * "Service": "dnssec-route53.samsungspc.com"
 	//
 	// For more information about working with a customer managed key in KMS, see
 	// Key Management Service concepts (https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html).
@@ -8699,7 +8699,7 @@ func (s *CreateKeySigningKeyOutput) SetLocation(v string) *CreateKeySigningKeyOu
 }
 
 type CreateQueryLoggingConfigInput struct {
-	_ struct{} `locationName:"CreateQueryLoggingConfigRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateQueryLoggingConfigRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The Amazon Resource Name (ARN) for the log group that you want to Amazon
 	// Route 53 to send query logs to. This is the format of the ARN:
@@ -8814,7 +8814,7 @@ func (s *CreateQueryLoggingConfigOutput) SetQueryLoggingConfig(v *QueryLoggingCo
 }
 
 type CreateReusableDelegationSetInput struct {
-	_ struct{} `locationName:"CreateReusableDelegationSetRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateReusableDelegationSetRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A unique string that identifies the request, and that allows you to retry
 	// failed CreateReusableDelegationSet requests without the risk of executing
@@ -8923,7 +8923,7 @@ func (s *CreateReusableDelegationSetOutput) SetLocation(v string) *CreateReusabl
 // A complex type that contains information about the traffic policy that you
 // want to create.
 type CreateTrafficPolicyInput struct {
-	_ struct{} `locationName:"CreateTrafficPolicyRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateTrafficPolicyRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// (Optional) Any comments that you want to include about the traffic policy.
 	Comment *string `type:"string"`
@@ -8995,7 +8995,7 @@ func (s *CreateTrafficPolicyInput) SetName(v string) *CreateTrafficPolicyInput {
 // A complex type that contains information about the resource record sets that
 // you want to create based on a specified traffic policy.
 type CreateTrafficPolicyInstanceInput struct {
-	_ struct{} `locationName:"CreateTrafficPolicyInstanceRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateTrafficPolicyInstanceRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The ID of the hosted zone that you want Amazon Route 53 to create resource
 	// record sets in by using the configuration in a traffic policy.
@@ -9203,7 +9203,7 @@ func (s *CreateTrafficPolicyOutput) SetTrafficPolicy(v *TrafficPolicy) *CreateTr
 // A complex type that contains information about the traffic policy that you
 // want to create a new version for.
 type CreateTrafficPolicyVersionInput struct {
-	_ struct{} `locationName:"CreateTrafficPolicyVersionRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateTrafficPolicyVersionRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The comment that you specified in the CreateTrafficPolicyVersion request,
 	// if any.
@@ -9328,7 +9328,7 @@ func (s *CreateTrafficPolicyVersionOutput) SetTrafficPolicy(v *TrafficPolicy) *C
 // a VPC with your private hosted zone. Authorization is only required when
 // a private hosted zone and a VPC were created by using different accounts.
 type CreateVPCAssociationAuthorizationInput struct {
-	_ struct{} `locationName:"CreateVPCAssociationAuthorizationRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"CreateVPCAssociationAuthorizationRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The ID of the private hosted zone that you want to authorize associating
 	// a VPC with.
@@ -10241,7 +10241,7 @@ func (s DeleteTrafficPolicyOutput) GoString() string {
 // to associate a VPC that was created by one Amazon Web Services account with
 // a hosted zone that was created with a different Amazon Web Services account.
 type DeleteVPCAssociationAuthorizationInput struct {
-	_ struct{} `locationName:"DeleteVPCAssociationAuthorizationRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"DeleteVPCAssociationAuthorizationRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// When removing authorization to associate a VPC that was created by one Amazon
 	// Web Services account with a hosted zone that was created with a different
@@ -10470,7 +10470,7 @@ func (s *DisableHostedZoneDNSSECOutput) SetChangeInfo(v *ChangeInfo) *DisableHos
 // A complex type that contains information about the VPC that you want to disassociate
 // from a specified private hosted zone.
 type DisassociateVPCFromHostedZoneInput struct {
-	_ struct{} `locationName:"DisassociateVPCFromHostedZoneRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"DisassociateVPCFromHostedZoneRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// Optional: A comment about the disassociation request.
 	Comment *string `type:"string"`
@@ -13304,7 +13304,7 @@ type HostedZoneOwner struct {
 	// zone and associate the specified VPC with that hosted zone, OwningService
 	// contains an abbreviation that identifies the service. For example, if Amazon
 	// Elastic File System (Amazon EFS) created a hosted zone and associated a VPC
-	// with the hosted zone, the value of OwningService is efs.amazonaws.com.
+	// with the hosted zone, the value of OwningService is efs.samsungspc.com.
 	OwningService *string `type:"string"`
 }
 
@@ -13471,7 +13471,7 @@ type KeySigningKey struct {
 	// The key policy must also include the Amazon Route 53 service in the principal
 	// for your account. Specify the following:
 	//
-	//    * "Service": "dnssec-route53.amazonaws.com"
+	//    * "Service": "dnssec-route53.samsungspc.com"
 	//
 	// For more information about working with the customer managed key in KMS,
 	// see Key Management Service concepts (https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html).
@@ -15096,7 +15096,7 @@ func (s *ListTagsForResourceOutput) SetResourceTagSet(v *ResourceTagSet) *ListTa
 // A complex type that contains information about the health checks or hosted
 // zones for which you want to list tags.
 type ListTagsForResourcesInput struct {
-	_ struct{} `locationName:"ListTagsForResourcesRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"ListTagsForResourcesRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A complex type that contains the ResourceId element for each resource for
 	// which you want to get a list of tags.
@@ -17670,7 +17670,7 @@ func (s *TrafficPolicySummary) SetType(v string) *TrafficPolicySummary {
 // A complex type that contains information about a request to update a health
 // check.
 type UpdateHealthCheckInput struct {
-	_ struct{} `locationName:"UpdateHealthCheckRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"UpdateHealthCheckRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// A complex type that identifies the CloudWatch alarm that you want Amazon
 	// Route 53 health checkers to use to determine whether the specified health
@@ -18132,7 +18132,7 @@ func (s *UpdateHealthCheckOutput) SetHealthCheck(v *HealthCheck) *UpdateHealthCh
 
 // A request to update the comment for a hosted zone.
 type UpdateHostedZoneCommentInput struct {
-	_ struct{} `locationName:"UpdateHostedZoneCommentRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"UpdateHostedZoneCommentRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The new comment for the hosted zone. If you don't specify a value for Comment,
 	// Amazon Route 53 deletes the existing value of the Comment element, if any.
@@ -18229,7 +18229,7 @@ func (s *UpdateHostedZoneCommentOutput) SetHostedZone(v *HostedZone) *UpdateHost
 // A complex type that contains information about the traffic policy that you
 // want to update the comment for.
 type UpdateTrafficPolicyCommentInput struct {
-	_ struct{} `locationName:"UpdateTrafficPolicyCommentRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"UpdateTrafficPolicyCommentRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The new comment for the specified traffic policy and version.
 	//
@@ -18347,7 +18347,7 @@ func (s *UpdateTrafficPolicyCommentOutput) SetTrafficPolicy(v *TrafficPolicy) *U
 // A complex type that contains information about the resource record sets that
 // you want to update based on a specified traffic policy instance.
 type UpdateTrafficPolicyInstanceInput struct {
-	_ struct{} `locationName:"UpdateTrafficPolicyInstanceRequest" type:"structure" xmlURI:"https://route53.amazonaws.com/doc/2013-04-01/"`
+	_ struct{} `locationName:"UpdateTrafficPolicyInstanceRequest" type:"structure" xmlURI:"https://route53.samsungspc.com/doc/2013-04-01/"`
 
 	// The ID of the traffic policy instance that you want to update.
 	//

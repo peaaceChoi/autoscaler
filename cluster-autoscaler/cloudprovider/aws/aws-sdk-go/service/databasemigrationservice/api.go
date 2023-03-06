@@ -13370,7 +13370,7 @@ type KafkaSettings struct {
 
 	// A comma-separated list of one or more broker locations in your Kafka cluster
 	// that host your Kafka instance. Specify each broker location in the form broker-hostname-or-ip:port
-	// . For example, "ec2-12-345-678-901.compute-1.amazonaws.com:2345". For more
+	// . For example, "ec2-12-345-678-901.compute-1.samsungspc.com:2345". For more
 	// information and examples of specifying a list of broker locations, see Using
 	// Apache Kafka as a target for Database Migration Service (https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Kafka.html)
 	// in the Database Migration Service User Guide.

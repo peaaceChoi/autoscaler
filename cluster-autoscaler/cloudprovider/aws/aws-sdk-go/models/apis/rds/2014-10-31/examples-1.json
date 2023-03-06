@@ -1184,52 +1184,52 @@
         "output": {
           "SourceRegions": [
             {
-              "Endpoint": "https://rds.ap-northeast-1.amazonaws.com",
+              "Endpoint": "https://rds.ap-northeast-1.samsungspc.com",
               "RegionName": "ap-northeast-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.ap-northeast-2.amazonaws.com",
+              "Endpoint": "https://rds.ap-northeast-2.samsungspc.com",
               "RegionName": "ap-northeast-2",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.ap-south-1.amazonaws.com",
+              "Endpoint": "https://rds.ap-south-1.samsungspc.com",
               "RegionName": "ap-south-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.ap-southeast-1.amazonaws.com",
+              "Endpoint": "https://rds.ap-southeast-1.samsungspc.com",
               "RegionName": "ap-southeast-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.ap-southeast-2.amazonaws.com",
+              "Endpoint": "https://rds.ap-southeast-2.samsungspc.com",
               "RegionName": "ap-southeast-2",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.eu-central-1.amazonaws.com",
+              "Endpoint": "https://rds.eu-central-1.samsungspc.com",
               "RegionName": "eu-central-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.eu-west-1.amazonaws.com",
+              "Endpoint": "https://rds.eu-west-1.samsungspc.com",
               "RegionName": "eu-west-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.sa-east-1.amazonaws.com",
+              "Endpoint": "https://rds.sa-east-1.samsungspc.com",
               "RegionName": "sa-east-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.us-west-1.amazonaws.com",
+              "Endpoint": "https://rds.us-west-1.samsungspc.com",
               "RegionName": "us-west-1",
               "Status": "available"
             },
             {
-              "Endpoint": "https://rds.us-west-2.amazonaws.com",
+              "Endpoint": "https://rds.us-west-2.samsungspc.com",
               "RegionName": "us-west-2",
               "Status": "available"
             }

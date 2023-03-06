@@ -33256,7 +33256,7 @@ type RegisterUserInput struct {
 	// Management(IAM) role. The type of supported external login provider can be
 	// one of the following.
 	//
-	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.amazonaws.com.
+	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.samsungspc.com.
 	//    When choosing the COGNITO provider type, don’t use the "CustomFederationProviderUrl"
 	//    parameter which is only needed when the external provider is custom.
 	//
@@ -42468,7 +42468,7 @@ type UpdateUserInput struct {
 	// Management(IAM) role. The type of supported external login provider can be
 	// one of the following.
 	//
-	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.amazonaws.com.
+	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.samsungspc.com.
 	//    When choosing the COGNITO provider type, don’t use the "CustomFederationProviderUrl"
 	//    parameter which is only needed when the external provider is custom.
 	//
@@ -42788,7 +42788,7 @@ type User struct {
 	// the user federate into Amazon QuickSight with an associated IAM role. The
 	// type can be one of the following.
 	//
-	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.amazonaws.com.
+	//    * COGNITO: Amazon Cognito. The provider URL is cognito-identity.samsungspc.com.
 	//
 	//    * CUSTOM_OIDC: Custom OpenID Connect (OIDC) provider.
 	ExternalLoginFederationProviderType *string `type:"string"`

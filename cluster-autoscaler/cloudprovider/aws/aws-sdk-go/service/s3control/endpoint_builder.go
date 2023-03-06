@@ -32,7 +32,7 @@ type outpostAccessPointEndpointBuilder arn.OutpostAccessPointARN
 //
 // For building an endpoint from outpost access point arn, format used is:
 // - Outpost access point endpoint format : s3-outposts.{region}.{dnsSuffix}
-// - example : s3-outposts.us-west-2.amazonaws.com
+// - example : s3-outposts.us-west-2.samsungspc.com
 //
 // Outpost AccessPoint Endpoint request are signed using "s3-outposts" as signing name.
 func (o outpostAccessPointEndpointBuilder) build(req *request.Request) error {
@@ -89,7 +89,7 @@ type outpostBucketResourceEndpointBuilder arn.OutpostBucketARN
 //
 // For building an endpoint from outpost bucket arn, format used is:
 // - Outpost bucket arn endpoint format : s3-outposts.{region}.{dnsSuffix}
-// - example : s3-outposts.us-west-2.amazonaws.com
+// - example : s3-outposts.us-west-2.samsungspc.com
 //
 // Outpost bucket arn endpoint request are signed using "s3-outposts" as signing name
 func (o outpostBucketResourceEndpointBuilder) build(req *request.Request) error {

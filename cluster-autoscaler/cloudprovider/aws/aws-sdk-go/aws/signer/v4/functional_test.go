@@ -55,7 +55,7 @@ func TestPresignHandler(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	expectedHost := "bucket.s3.mock-region.amazonaws.com"
+	expectedHost := "bucket.s3.mock-region.samsungspc.com"
 	expectedDate := "19700101T000000Z"
 	expectedHeaders := "content-disposition;host;x-amz-acl"
 	expectedSig := "2d76a414208c0eac2a23ef9c834db9635ecd5a0fbb447a00ad191f82d854f55b"
@@ -112,7 +112,7 @@ func TestPresignRequest(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	expectedHost := "bucket.s3.mock-region.amazonaws.com"
+	expectedHost := "bucket.s3.mock-region.samsungspc.com"
 	expectedDate := "19700101T000000Z"
 	expectedHeaders := "content-disposition;host;x-amz-acl"
 	expectedSig := "2d76a414208c0eac2a23ef9c834db9635ecd5a0fbb447a00ad191f82d854f55b"
@@ -162,14 +162,14 @@ func TestStandaloneSign_CustomURIEscape(t *testing.T) {
 		s.DisableURIPathEscaping = true
 	})
 
-	host := "https://subdomain.us-east-1.es.amazonaws.com"
+	host := "https://subdomain.us-east-1.es.samsungspc.com"
 	req, err := http.NewRequest("GET", host, nil)
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
 	req.URL.Path = `/log-*/_search`
-	req.URL.Opaque = "//subdomain.us-east-1.es.amazonaws.com/log-%2A/_search"
+	req.URL.Opaque = "//subdomain.us-east-1.es.samsungspc.com/log-%2A/_search"
 
 	_, err = signer.Sign(req, nil, "es", "us-east-1", epochTime())
 	if err != nil {
@@ -191,7 +191,7 @@ func TestStandaloneSign_WithPort(t *testing.T) {
 	}{
 		{
 			"default HTTPS port",
-			"https://estest.us-east-1.es.amazonaws.com:443/_search",
+			"https://estest.us-east-1.es.samsungspc.com:443/_search",
 			"AWS4-HMAC-SHA256 Credential=AKID/19700101/us-east-1/es/aws4_request, SignedHeaders=host;x-amz-date;x-amz-security-token, Signature=e573fc9aa3a156b720976419319be98fb2824a3abc2ddd895ecb1d1611c6a82d",
 		},
 		{
@@ -235,7 +235,7 @@ func TestStandalonePresign_WithPort(t *testing.T) {
 	}{
 		{
 			"default HTTPS port",
-			"https://estest.us-east-1.es.amazonaws.com:443/_search",
+			"https://estest.us-east-1.es.samsungspc.com:443/_search",
 			"0abcf61a351063441296febf4b485734d780634fba8cf1e7d9769315c35255d6",
 		},
 		{

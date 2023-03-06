@@ -19136,7 +19136,7 @@ type Certificate struct {
 	//    measure, such as when the domain ranks within the Alexa top 1000 websites.
 	//    To provide the required information, use the AWS Support Center (https://console.aws.amazon.com/support/home)
 	//    to contact AWS Support. You cannot request a certificate for Amazon-owned
-	//    domain names such as those ending in amazonaws.com, cloudfront.net, or
+	//    domain names such as those ending in samsungspc.com, cloudfront.net, or
 	//    elasticbeanstalk.com.
 	//
 	//    * DOMAIN_NOT_ALLOWED - One or more of the domain names in the certificate
@@ -27466,7 +27466,7 @@ type DomainEntry struct {
 
 	// The target IP address (e.g., 192.0.2.0), or AWS name server (e.g., ns-111.awsdns-22.com.).
 	//
-	// For Lightsail load balancers, the value looks like ab1234c56789c6b86aba6fb203d443bc-123456789.us-east-2.elb.amazonaws.com.
+	// For Lightsail load balancers, the value looks like ab1234c56789c6b86aba6fb203d443bc-123456789.us-east-2.elb.samsungspc.com.
 	// For Lightsail distributions, the value looks like exampled1182ne.cloudfront.net.
 	// For Lightsail container services, the value looks like container-service-1.example23scljs.us-west-2.cs.amazonlightsail.com.
 	// Be sure to also set isAlias to true when setting up an A record for a Lightsail
@@ -36750,7 +36750,7 @@ type LoadBalancerTlsCertificate struct {
 	//    measure, such as when the domain ranks within the Alexa top 1000 websites.
 	//    To provide the required information, use the AWS Support Center (https://console.aws.amazon.com/support/home)
 	//    to contact AWS Support. You cannot request a certificate for Amazon-owned
-	//    domain names such as those ending in amazonaws.com, cloudfront.net, or
+	//    domain names such as those ending in samsungspc.com, cloudfront.net, or
 	//    elasticbeanstalk.com.
 	//
 	//    * DOMAIN_NOT_ALLOWED - One or more of the domain names in the certificate

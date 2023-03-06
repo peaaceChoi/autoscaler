@@ -42,23 +42,23 @@
 // to one of the following endpoints. Your servers can only be accessed or managed
 // within the endpoint in which they are created.
 //
-//   - opsworks-cm.us-east-1.amazonaws.com
+//   - opsworks-cm.us-east-1.samsungspc.com
 //
-//   - opsworks-cm.us-east-2.amazonaws.com
+//   - opsworks-cm.us-east-2.samsungspc.com
 //
-//   - opsworks-cm.us-west-1.amazonaws.com
+//   - opsworks-cm.us-west-1.samsungspc.com
 //
-//   - opsworks-cm.us-west-2.amazonaws.com
+//   - opsworks-cm.us-west-2.samsungspc.com
 //
-//   - opsworks-cm.ap-northeast-1.amazonaws.com
+//   - opsworks-cm.ap-northeast-1.samsungspc.com
 //
-//   - opsworks-cm.ap-southeast-1.amazonaws.com
+//   - opsworks-cm.ap-southeast-1.samsungspc.com
 //
-//   - opsworks-cm.ap-southeast-2.amazonaws.com
+//   - opsworks-cm.ap-southeast-2.samsungspc.com
 //
-//   - opsworks-cm.eu-central-1.amazonaws.com
+//   - opsworks-cm.eu-central-1.samsungspc.com
 //
-//   - opsworks-cm.eu-west-1.amazonaws.com
+//   - opsworks-cm.eu-west-1.samsungspc.com
 //
 // For more information, see AWS OpsWorks endpoints and quotas (https://docs.aws.amazon.com/general/latest/gr/opsworks-service.html)
 // in the AWS General Reference.

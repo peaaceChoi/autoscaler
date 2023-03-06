@@ -103,7 +103,7 @@ func AwsPartition() Partition {
 var awsPartition = partition{
 	ID:        "aws",
 	Name:      "AWS Standard",
-	DNSSuffix: "amazonaws.com",
+	DNSSuffix: "samsungspc.com",
 	RegionRegex: regionRegex{
 		Regexp: func() *regexp.Regexp {
 			reg, _ := regexp.Compile("^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$")
@@ -128,7 +128,7 @@ var awsPartition = partition{
 			Variant: fipsVariant,
 		}: endpoint{
 			Hostname:          "{service}-fips.{region}.{dnsSuffix}",
-			DNSSuffix:         "amazonaws.com",
+			DNSSuffix:         "samsungspc.com",
 			Protocols:         []string{"https"},
 			SignatureVersions: []string{"v4"},
 		},
@@ -268,7 +268,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "access-analyzer-fips.ca-central-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -297,7 +297,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "access-analyzer-fips.ca-central-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -306,7 +306,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-east-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -315,7 +315,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-east-2.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -324,7 +324,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-west-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -333,7 +333,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-west-2.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -355,7 +355,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-east-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -364,7 +364,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-east-2.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -373,7 +373,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-west-1.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -382,7 +382,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "access-analyzer-fips.us-west-2.amazonaws.com",
+					Hostname: "access-analyzer-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -393,7 +393,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "account.us-east-1.amazonaws.com",
+					Hostname: "account.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -439,12 +439,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-fips.ca-central-1.amazonaws.com",
+					Hostname: "acm-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "acm-fips.ca-central-1.amazonaws.com",
+					Hostname: "acm-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -490,12 +490,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-fips.us-east-1.amazonaws.com",
+					Hostname: "acm-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "acm-fips.us-east-1.amazonaws.com",
+					Hostname: "acm-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -508,12 +508,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-fips.us-east-2.amazonaws.com",
+					Hostname: "acm-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "acm-fips.us-east-2.amazonaws.com",
+					Hostname: "acm-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -526,12 +526,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-fips.us-west-1.amazonaws.com",
+					Hostname: "acm-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "acm-fips.us-west-1.amazonaws.com",
+					Hostname: "acm-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -544,12 +544,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-fips.us-west-2.amazonaws.com",
+					Hostname: "acm-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "acm-fips.us-west-2.amazonaws.com",
+					Hostname: "acm-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -598,7 +598,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca-fips.ca-central-1.amazonaws.com",
+					Hostname: "acm-pca-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -621,7 +621,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "acm-pca-fips.ca-central-1.amazonaws.com",
+					Hostname: "acm-pca-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -630,7 +630,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-east-1.amazonaws.com",
+					Hostname: "acm-pca-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -639,7 +639,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-east-2.amazonaws.com",
+					Hostname: "acm-pca-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -648,7 +648,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-west-1.amazonaws.com",
+					Hostname: "acm-pca-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -657,7 +657,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-west-2.amazonaws.com",
+					Hostname: "acm-pca-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -676,7 +676,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-east-1.amazonaws.com",
+					Hostname: "acm-pca-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -685,7 +685,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-east-2.amazonaws.com",
+					Hostname: "acm-pca-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -694,7 +694,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-west-1.amazonaws.com",
+					Hostname: "acm-pca-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -703,7 +703,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca-fips.us-west-2.amazonaws.com",
+					Hostname: "acm-pca-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -989,12 +989,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-east-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-east-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1007,12 +1007,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-east-2.amazonaws.com",
+					Hostname: "api.detective-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-east-2.amazonaws.com",
+					Hostname: "api.detective-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1025,12 +1025,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-west-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-west-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1043,12 +1043,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-west-2.amazonaws.com",
+					Hostname: "api.detective-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-west-2.amazonaws.com",
+					Hostname: "api.detective-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1069,7 +1069,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "af-south-1",
 				}: endpoint{
-					Hostname: "api.ecr.af-south-1.amazonaws.com",
+					Hostname: "api.ecr.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -1077,7 +1077,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "api.ecr.ap-east-1.amazonaws.com",
+					Hostname: "api.ecr.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -1085,7 +1085,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "api.ecr.ap-northeast-1.amazonaws.com",
+					Hostname: "api.ecr.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -1093,7 +1093,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "api.ecr.ap-northeast-2.amazonaws.com",
+					Hostname: "api.ecr.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -1101,7 +1101,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "api.ecr.ap-northeast-3.amazonaws.com",
+					Hostname: "api.ecr.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -1109,7 +1109,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "api.ecr.ap-south-1.amazonaws.com",
+					Hostname: "api.ecr.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -1117,7 +1117,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-2",
 				}: endpoint{
-					Hostname: "api.ecr.ap-south-2.amazonaws.com",
+					Hostname: "api.ecr.ap-south-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-2",
 					},
@@ -1125,7 +1125,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "api.ecr.ap-southeast-1.amazonaws.com",
+					Hostname: "api.ecr.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -1133,7 +1133,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "api.ecr.ap-southeast-2.amazonaws.com",
+					Hostname: "api.ecr.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -1141,7 +1141,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-3",
 				}: endpoint{
-					Hostname: "api.ecr.ap-southeast-3.amazonaws.com",
+					Hostname: "api.ecr.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -1149,7 +1149,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "api.ecr.ca-central-1.amazonaws.com",
+					Hostname: "api.ecr.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -1166,7 +1166,7 @@ var awsPartition = partition{
 					Region:  "dkr-us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1184,7 +1184,7 @@ var awsPartition = partition{
 					Region:  "dkr-us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-2.amazonaws.com",
+					Hostname: "ecr-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1202,7 +1202,7 @@ var awsPartition = partition{
 					Region:  "dkr-us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1220,7 +1220,7 @@ var awsPartition = partition{
 					Region:  "dkr-us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-2.amazonaws.com",
+					Hostname: "ecr-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1229,7 +1229,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "api.ecr.eu-central-1.amazonaws.com",
+					Hostname: "api.ecr.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -1237,7 +1237,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-2",
 				}: endpoint{
-					Hostname: "api.ecr.eu-central-2.amazonaws.com",
+					Hostname: "api.ecr.eu-central-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-2",
 					},
@@ -1245,7 +1245,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "api.ecr.eu-north-1.amazonaws.com",
+					Hostname: "api.ecr.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -1253,7 +1253,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "api.ecr.eu-south-1.amazonaws.com",
+					Hostname: "api.ecr.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -1261,7 +1261,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-2",
 				}: endpoint{
-					Hostname: "api.ecr.eu-south-2.amazonaws.com",
+					Hostname: "api.ecr.eu-south-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-2",
 					},
@@ -1269,7 +1269,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "api.ecr.eu-west-1.amazonaws.com",
+					Hostname: "api.ecr.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -1277,7 +1277,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "api.ecr.eu-west-2.amazonaws.com",
+					Hostname: "api.ecr.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -1285,7 +1285,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "api.ecr.eu-west-3.amazonaws.com",
+					Hostname: "api.ecr.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -1293,7 +1293,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-east-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1302,7 +1302,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-east-2",
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-2.amazonaws.com",
+					Hostname: "ecr-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1311,7 +1311,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-west-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1320,7 +1320,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-west-2",
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-2.amazonaws.com",
+					Hostname: "ecr-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1329,7 +1329,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1338,7 +1338,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-2.amazonaws.com",
+					Hostname: "ecr-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1347,7 +1347,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1356,7 +1356,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-2.amazonaws.com",
+					Hostname: "ecr-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1365,7 +1365,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-central-1",
 				}: endpoint{
-					Hostname: "api.ecr.me-central-1.amazonaws.com",
+					Hostname: "api.ecr.me-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-central-1",
 					},
@@ -1373,7 +1373,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "api.ecr.me-south-1.amazonaws.com",
+					Hostname: "api.ecr.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -1381,7 +1381,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "api.ecr.sa-east-1.amazonaws.com",
+					Hostname: "api.ecr.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -1389,7 +1389,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "api.ecr.us-east-1.amazonaws.com",
+					Hostname: "api.ecr.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1398,7 +1398,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1406,7 +1406,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "api.ecr.us-east-2.amazonaws.com",
+					Hostname: "api.ecr.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1415,7 +1415,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-east-2.amazonaws.com",
+					Hostname: "ecr-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1423,7 +1423,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname: "api.ecr.us-west-1.amazonaws.com",
+					Hostname: "api.ecr.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1432,7 +1432,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1440,7 +1440,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "api.ecr.us-west-2.amazonaws.com",
+					Hostname: "api.ecr.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1449,7 +1449,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-west-2.amazonaws.com",
+					Hostname: "ecr-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1461,32 +1461,32 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "api.elastic-inference.ap-northeast-1.amazonaws.com",
+					Hostname: "api.elastic-inference.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "api.elastic-inference.ap-northeast-2.amazonaws.com",
+					Hostname: "api.elastic-inference.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "api.elastic-inference.eu-west-1.amazonaws.com",
+					Hostname: "api.elastic-inference.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "api.elastic-inference.us-east-1.amazonaws.com",
+					Hostname: "api.elastic-inference.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "api.elastic-inference.us-east-2.amazonaws.com",
+					Hostname: "api.elastic-inference.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "api.elastic-inference.us-west-2.amazonaws.com",
+					Hostname: "api.elastic-inference.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -1514,7 +1514,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -1531,7 +1531,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -1540,7 +1540,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1549,7 +1549,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1558,7 +1558,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1571,7 +1571,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -1580,7 +1580,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -1589,7 +1589,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.fleethub.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.fleethub.iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -1598,7 +1598,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "api.iotdeviceadvisor.ap-northeast-1.amazonaws.com",
+					Hostname: "api.iotdeviceadvisor.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -1606,7 +1606,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "api.iotdeviceadvisor.eu-west-1.amazonaws.com",
+					Hostname: "api.iotdeviceadvisor.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -1614,7 +1614,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "api.iotdeviceadvisor.us-east-1.amazonaws.com",
+					Hostname: "api.iotdeviceadvisor.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1622,7 +1622,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "api.iotdeviceadvisor.us-west-2.amazonaws.com",
+					Hostname: "api.iotdeviceadvisor.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1634,7 +1634,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.ap-northeast-1.amazonaws.com",
+					Hostname: "api.iotwireless.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -1642,7 +1642,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "api.iotwireless.ap-southeast-2.amazonaws.com",
+					Hostname: "api.iotwireless.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -1650,7 +1650,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.eu-central-1.amazonaws.com",
+					Hostname: "api.iotwireless.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -1658,7 +1658,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.eu-west-1.amazonaws.com",
+					Hostname: "api.iotwireless.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -1666,7 +1666,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.sa-east-1.amazonaws.com",
+					Hostname: "api.iotwireless.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -1674,7 +1674,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.us-east-1.amazonaws.com",
+					Hostname: "api.iotwireless.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1682,7 +1682,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "api.iotwireless.us-west-2.amazonaws.com",
+					Hostname: "api.iotwireless.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1802,12 +1802,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-east-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-east-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1820,12 +1820,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-east-2.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-east-2.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1838,12 +1838,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-west-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-west-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1856,12 +1856,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-west-2.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-west-2.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1904,7 +1904,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -1924,7 +1924,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -1933,7 +1933,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -1942,7 +1942,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -1951,7 +1951,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -1960,7 +1960,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -1979,7 +1979,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -1988,7 +1988,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -1997,7 +1997,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -2006,7 +2006,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -2049,7 +2049,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apigateway-fips.ca-central-1.amazonaws.com",
+					Hostname: "apigateway-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -2078,7 +2078,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "apigateway-fips.ca-central-1.amazonaws.com",
+					Hostname: "apigateway-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -2087,7 +2087,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "apigateway-fips.us-east-1.amazonaws.com",
+					Hostname: "apigateway-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -2096,7 +2096,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "apigateway-fips.us-east-2.amazonaws.com",
+					Hostname: "apigateway-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -2105,7 +2105,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "apigateway-fips.us-west-1.amazonaws.com",
+					Hostname: "apigateway-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -2114,7 +2114,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "apigateway-fips.us-west-2.amazonaws.com",
+					Hostname: "apigateway-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -2136,7 +2136,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apigateway-fips.us-east-1.amazonaws.com",
+					Hostname: "apigateway-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -2145,7 +2145,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apigateway-fips.us-east-2.amazonaws.com",
+					Hostname: "apigateway-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -2154,7 +2154,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apigateway-fips.us-west-1.amazonaws.com",
+					Hostname: "apigateway-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -2163,7 +2163,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apigateway-fips.us-west-2.amazonaws.com",
+					Hostname: "apigateway-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -2652,7 +2652,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appmesh-fips.ca-central-1.amazonaws.com",
+					Hostname: "appmesh-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "ca-central-1",
@@ -2663,7 +2663,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "appmesh-fips.ca-central-1.amazonaws.com",
+					Hostname: "appmesh-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -2754,7 +2754,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appmesh-fips.us-east-1.amazonaws.com",
+					Hostname: "appmesh-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-east-1",
@@ -2765,7 +2765,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "appmesh-fips.us-east-1.amazonaws.com",
+					Hostname: "appmesh-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -2784,7 +2784,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appmesh-fips.us-east-2.amazonaws.com",
+					Hostname: "appmesh-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-east-2",
@@ -2795,7 +2795,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "appmesh-fips.us-east-2.amazonaws.com",
+					Hostname: "appmesh-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -2814,7 +2814,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appmesh-fips.us-west-1.amazonaws.com",
+					Hostname: "appmesh-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-west-1",
@@ -2825,7 +2825,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "appmesh-fips.us-west-1.amazonaws.com",
+					Hostname: "appmesh-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -2844,7 +2844,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appmesh-fips.us-west-2.amazonaws.com",
+					Hostname: "appmesh-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-west-2",
@@ -2855,7 +2855,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "appmesh-fips.us-west-2.amazonaws.com",
+					Hostname: "appmesh-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -2874,7 +2874,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "apprunner-fips.us-east-1.amazonaws.com",
+					Hostname: "apprunner-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -2883,7 +2883,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "apprunner-fips.us-east-2.amazonaws.com",
+					Hostname: "apprunner-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -2892,7 +2892,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "apprunner-fips.us-west-2.amazonaws.com",
+					Hostname: "apprunner-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -2905,7 +2905,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apprunner-fips.us-east-1.amazonaws.com",
+					Hostname: "apprunner-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -2914,7 +2914,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apprunner-fips.us-east-2.amazonaws.com",
+					Hostname: "apprunner-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -2923,7 +2923,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "apprunner-fips.us-west-2.amazonaws.com",
+					Hostname: "apprunner-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -2967,7 +2967,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "appstream2-fips.us-west-2.amazonaws.com",
+					Hostname: "appstream2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -2980,12 +2980,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appstream2-fips.us-east-1.amazonaws.com",
+					Hostname: "appstream2-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "appstream2-fips.us-east-1.amazonaws.com",
+					Hostname: "appstream2-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -3001,12 +3001,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appstream2-fips.us-west-2.amazonaws.com",
+					Hostname: "appstream2-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "appstream2-fips.us-west-2.amazonaws.com",
+					Hostname: "appstream2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -3303,7 +3303,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "athena-fips.us-east-1.amazonaws.com",
+					Hostname: "athena-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -3312,7 +3312,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "athena-fips.us-east-2.amazonaws.com",
+					Hostname: "athena-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -3321,7 +3321,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "athena-fips.us-west-1.amazonaws.com",
+					Hostname: "athena-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -3330,7 +3330,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "athena-fips.us-west-2.amazonaws.com",
+					Hostname: "athena-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -3367,7 +3367,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-east-1.amazonaws.com",
+					Hostname: "athena-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -3382,7 +3382,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-east-2.amazonaws.com",
+					Hostname: "athena-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -3397,7 +3397,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-west-1.amazonaws.com",
+					Hostname: "athena-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -3412,7 +3412,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-west-2.amazonaws.com",
+					Hostname: "athena-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -3832,7 +3832,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "fips.batch.us-east-1.amazonaws.com",
+					Hostname: "fips.batch.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -3841,7 +3841,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "fips.batch.us-east-2.amazonaws.com",
+					Hostname: "fips.batch.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -3850,7 +3850,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "fips.batch.us-west-1.amazonaws.com",
+					Hostname: "fips.batch.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -3859,7 +3859,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "fips.batch.us-west-2.amazonaws.com",
+					Hostname: "fips.batch.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -3878,7 +3878,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.batch.us-east-1.amazonaws.com",
+					Hostname: "fips.batch.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -3887,7 +3887,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.batch.us-east-2.amazonaws.com",
+					Hostname: "fips.batch.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -3896,7 +3896,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.batch.us-west-1.amazonaws.com",
+					Hostname: "fips.batch.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -3905,7 +3905,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.batch.us-west-2.amazonaws.com",
+					Hostname: "fips.batch.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -3916,7 +3916,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "billingconductor.us-east-1.amazonaws.com",
+					Hostname: "billingconductor.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -3946,7 +3946,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "budgets.amazonaws.com",
+					Hostname: "budgets.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4004,7 +4004,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "cassandra-fips.us-east-1.amazonaws.com",
+					Hostname: "cassandra-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4013,7 +4013,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "cassandra-fips.us-west-2.amazonaws.com",
+					Hostname: "cassandra-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -4032,7 +4032,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cassandra-fips.us-east-1.amazonaws.com",
+					Hostname: "cassandra-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -4047,7 +4047,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cassandra-fips.us-west-2.amazonaws.com",
+					Hostname: "cassandra-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -4065,7 +4065,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "ce.us-east-1.amazonaws.com",
+					Hostname: "ce.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4084,7 +4084,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname:  "chime.us-east-1.amazonaws.com",
+					Hostname:  "chime.us-east-1.samsungspc.com",
 					Protocols: []string{"https"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -4198,7 +4198,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.ca-central-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -4227,7 +4227,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.ca-central-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -4236,7 +4236,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4245,7 +4245,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -4254,7 +4254,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -4263,7 +4263,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -4285,7 +4285,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -4294,7 +4294,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -4303,7 +4303,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -4312,7 +4312,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -4422,12 +4422,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudformation-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudformation-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4440,12 +4440,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudformation-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudformation-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -4458,12 +4458,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudformation-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudformation-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -4476,12 +4476,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudformation-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "cloudformation-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudformation-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -4496,7 +4496,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname:  "cloudfront.amazonaws.com",
+					Hostname:  "cloudfront.samsungspc.com",
 					Protocols: []string{"http", "https"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -4687,7 +4687,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4696,7 +4696,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -4705,7 +4705,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -4714,7 +4714,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -4736,7 +4736,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-east-1.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -4745,7 +4745,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-east-2.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -4754,7 +4754,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-west-1.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -4763,7 +4763,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail-fips.us-west-2.amazonaws.com",
+					Hostname: "cloudtrail-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -4873,12 +4873,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-east-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-east-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -4891,12 +4891,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-east-2.amazonaws.com",
+					Hostname: "codebuild-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-east-2.amazonaws.com",
+					Hostname: "codebuild-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -4909,12 +4909,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-west-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-west-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -4927,12 +4927,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-west-2.amazonaws.com",
+					Hostname: "codebuild-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-west-2.amazonaws.com",
+					Hostname: "codebuild-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -4973,12 +4973,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.ca-central-1.amazonaws.com",
+					Hostname: "codecommit-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.ca-central-1.amazonaws.com",
+					Hostname: "codecommit-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -5005,7 +5005,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.ca-central-1.amazonaws.com",
+					Hostname: "codecommit-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -5024,12 +5024,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-east-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-east-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5042,12 +5042,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-east-2.amazonaws.com",
+					Hostname: "codecommit-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-east-2.amazonaws.com",
+					Hostname: "codecommit-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5060,12 +5060,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-west-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-west-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -5078,12 +5078,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-west-2.amazonaws.com",
+					Hostname: "codecommit-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-west-2.amazonaws.com",
+					Hostname: "codecommit-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5166,12 +5166,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-east-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-east-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5184,12 +5184,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-east-2.amazonaws.com",
+					Hostname: "codedeploy-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-east-2.amazonaws.com",
+					Hostname: "codedeploy-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5202,12 +5202,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-west-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-west-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -5220,12 +5220,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-west-2.amazonaws.com",
+					Hostname: "codedeploy-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-west-2.amazonaws.com",
+					Hostname: "codedeploy-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5294,7 +5294,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.ca-central-1.amazonaws.com",
+					Hostname: "codepipeline-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -5317,7 +5317,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "codepipeline-fips.ca-central-1.amazonaws.com",
+					Hostname: "codepipeline-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -5326,7 +5326,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-east-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5335,7 +5335,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-east-2.amazonaws.com",
+					Hostname: "codepipeline-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5344,7 +5344,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-west-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -5353,7 +5353,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-west-2.amazonaws.com",
+					Hostname: "codepipeline-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5369,7 +5369,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-east-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -5378,7 +5378,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-east-2.amazonaws.com",
+					Hostname: "codepipeline-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -5387,7 +5387,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-west-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -5396,7 +5396,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-west-2.amazonaws.com",
+					Hostname: "codepipeline-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -5591,7 +5591,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-east-1.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5600,7 +5600,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-east-2.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5609,7 +5609,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-west-2.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5628,7 +5628,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-east-1.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -5637,7 +5637,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-east-2.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -5649,7 +5649,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-west-2.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -5691,7 +5691,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-east-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5700,7 +5700,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-east-2.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5709,7 +5709,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-west-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -5718,7 +5718,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-west-2.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5737,7 +5737,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-east-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -5746,7 +5746,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-east-2.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -5755,7 +5755,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-west-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -5764,7 +5764,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-west-2.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -5842,7 +5842,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "comprehend-fips.us-east-1.amazonaws.com",
+					Hostname: "comprehend-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5851,7 +5851,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "comprehend-fips.us-east-2.amazonaws.com",
+					Hostname: "comprehend-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5860,7 +5860,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "comprehend-fips.us-west-2.amazonaws.com",
+					Hostname: "comprehend-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5873,7 +5873,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehend-fips.us-east-1.amazonaws.com",
+					Hostname: "comprehend-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -5882,7 +5882,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehend-fips.us-east-2.amazonaws.com",
+					Hostname: "comprehend-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -5891,7 +5891,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehend-fips.us-west-2.amazonaws.com",
+					Hostname: "comprehend-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -5912,7 +5912,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-east-1.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -5921,7 +5921,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-east-2.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -5930,7 +5930,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-west-2.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -5943,7 +5943,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-east-1.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -5952,7 +5952,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-east-2.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -5961,7 +5961,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-west-2.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -5970,7 +5970,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "af-south-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.af-south-1.amazonaws.com",
+					Hostname: "compute-optimizer.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -5978,7 +5978,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-east-1.amazonaws.com",
+					Hostname: "compute-optimizer.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -5986,7 +5986,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-northeast-1.amazonaws.com",
+					Hostname: "compute-optimizer.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -5994,7 +5994,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-northeast-2.amazonaws.com",
+					Hostname: "compute-optimizer.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -6002,7 +6002,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-northeast-3.amazonaws.com",
+					Hostname: "compute-optimizer.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -6010,7 +6010,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-south-1.amazonaws.com",
+					Hostname: "compute-optimizer.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -6018,7 +6018,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-southeast-1.amazonaws.com",
+					Hostname: "compute-optimizer.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -6026,7 +6026,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "compute-optimizer.ap-southeast-2.amazonaws.com",
+					Hostname: "compute-optimizer.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -6034,7 +6034,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.ca-central-1.amazonaws.com",
+					Hostname: "compute-optimizer.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -6042,7 +6042,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-central-1.amazonaws.com",
+					Hostname: "compute-optimizer.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -6050,7 +6050,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-north-1.amazonaws.com",
+					Hostname: "compute-optimizer.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -6058,7 +6058,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-south-1.amazonaws.com",
+					Hostname: "compute-optimizer.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -6066,7 +6066,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-west-1.amazonaws.com",
+					Hostname: "compute-optimizer.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -6074,7 +6074,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-west-2.amazonaws.com",
+					Hostname: "compute-optimizer.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -6082,7 +6082,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "compute-optimizer.eu-west-3.amazonaws.com",
+					Hostname: "compute-optimizer.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -6090,7 +6090,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.me-south-1.amazonaws.com",
+					Hostname: "compute-optimizer.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -6098,7 +6098,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.sa-east-1.amazonaws.com",
+					Hostname: "compute-optimizer.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -6106,7 +6106,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.us-east-1.amazonaws.com",
+					Hostname: "compute-optimizer.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6114,7 +6114,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "compute-optimizer.us-east-2.amazonaws.com",
+					Hostname: "compute-optimizer.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -6122,7 +6122,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.us-west-1.amazonaws.com",
+					Hostname: "compute-optimizer.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -6130,7 +6130,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "compute-optimizer.us-west-2.amazonaws.com",
+					Hostname: "compute-optimizer.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6199,7 +6199,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "config-fips.us-east-1.amazonaws.com",
+					Hostname: "config-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6208,7 +6208,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "config-fips.us-east-2.amazonaws.com",
+					Hostname: "config-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -6217,7 +6217,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "config-fips.us-west-1.amazonaws.com",
+					Hostname: "config-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -6226,7 +6226,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "config-fips.us-west-2.amazonaws.com",
+					Hostname: "config-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6248,7 +6248,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config-fips.us-east-1.amazonaws.com",
+					Hostname: "config-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -6257,7 +6257,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config-fips.us-east-2.amazonaws.com",
+					Hostname: "config-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -6266,7 +6266,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config-fips.us-west-1.amazonaws.com",
+					Hostname: "config-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -6275,7 +6275,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config-fips.us-west-2.amazonaws.com",
+					Hostname: "config-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -6324,7 +6324,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "connect-campaigns-fips.us-east-1.amazonaws.com",
+					Hostname: "connect-campaigns-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6333,7 +6333,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "connect-campaigns-fips.us-west-2.amazonaws.com",
+					Hostname: "connect-campaigns-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6346,7 +6346,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "connect-campaigns-fips.us-east-1.amazonaws.com",
+					Hostname: "connect-campaigns-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -6355,7 +6355,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "connect-campaigns-fips.us-west-2.amazonaws.com",
+					Hostname: "connect-campaigns-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -6411,12 +6411,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "controltower-fips.ca-central-1.amazonaws.com",
+					Hostname: "controltower-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "controltower-fips.ca-central-1.amazonaws.com",
+					Hostname: "controltower-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -6447,12 +6447,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "controltower-fips.us-east-1.amazonaws.com",
+					Hostname: "controltower-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "controltower-fips.us-east-1.amazonaws.com",
+					Hostname: "controltower-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6465,12 +6465,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "controltower-fips.us-east-2.amazonaws.com",
+					Hostname: "controltower-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "controltower-fips.us-east-2.amazonaws.com",
+					Hostname: "controltower-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -6483,12 +6483,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "controltower-fips.us-west-2.amazonaws.com",
+					Hostname: "controltower-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "controltower-fips.us-west-2.amazonaws.com",
+					Hostname: "controltower-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6538,7 +6538,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -6558,7 +6558,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "data.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -6567,7 +6567,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -6576,7 +6576,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "data.iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -6585,7 +6585,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -6594,7 +6594,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "data.iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -6616,7 +6616,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -6625,7 +6625,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "data.iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -6634,7 +6634,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -6643,7 +6643,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "data.iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -6674,7 +6674,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -6694,7 +6694,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -6703,7 +6703,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6712,7 +6712,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -6721,7 +6721,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -6730,7 +6730,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6749,7 +6749,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -6758,7 +6758,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -6767,7 +6767,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -6776,7 +6776,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -6858,7 +6858,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "databrew-fips.us-east-1.amazonaws.com",
+					Hostname: "databrew-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -6867,7 +6867,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "databrew-fips.us-east-2.amazonaws.com",
+					Hostname: "databrew-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -6876,7 +6876,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "databrew-fips.us-west-1.amazonaws.com",
+					Hostname: "databrew-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -6885,7 +6885,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "databrew-fips.us-west-2.amazonaws.com",
+					Hostname: "databrew-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -6901,7 +6901,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "databrew-fips.us-east-1.amazonaws.com",
+					Hostname: "databrew-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -6910,7 +6910,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "databrew-fips.us-east-2.amazonaws.com",
+					Hostname: "databrew-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -6919,7 +6919,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "databrew-fips.us-west-1.amazonaws.com",
+					Hostname: "databrew-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -6928,7 +6928,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "databrew-fips.us-west-2.amazonaws.com",
+					Hostname: "databrew-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -7024,7 +7024,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.ca-central-1.amazonaws.com",
+					Hostname: "datasync-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -7047,7 +7047,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "datasync-fips.ca-central-1.amazonaws.com",
+					Hostname: "datasync-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -7056,7 +7056,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "datasync-fips.us-east-1.amazonaws.com",
+					Hostname: "datasync-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7065,7 +7065,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "datasync-fips.us-east-2.amazonaws.com",
+					Hostname: "datasync-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7074,7 +7074,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "datasync-fips.us-west-1.amazonaws.com",
+					Hostname: "datasync-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7083,7 +7083,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "datasync-fips.us-west-2.amazonaws.com",
+					Hostname: "datasync-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7105,7 +7105,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-east-1.amazonaws.com",
+					Hostname: "datasync-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -7114,7 +7114,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-east-2.amazonaws.com",
+					Hostname: "datasync-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -7123,7 +7123,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-west-1.amazonaws.com",
+					Hostname: "datasync-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -7132,7 +7132,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-west-2.amazonaws.com",
+					Hostname: "datasync-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -7229,7 +7229,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-east-1.amazonaws.com",
+					Hostname: "devops-guru-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7238,7 +7238,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-east-2.amazonaws.com",
+					Hostname: "devops-guru-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7247,7 +7247,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-west-2.amazonaws.com",
+					Hostname: "devops-guru-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7263,7 +7263,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-east-1.amazonaws.com",
+					Hostname: "devops-guru-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -7272,7 +7272,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-east-2.amazonaws.com",
+					Hostname: "devops-guru-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -7284,7 +7284,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "devops-guru-fips.us-west-2.amazonaws.com",
+					Hostname: "devops-guru-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -7350,7 +7350,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "directconnect-fips.us-east-1.amazonaws.com",
+					Hostname: "directconnect-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7359,7 +7359,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "directconnect-fips.us-east-2.amazonaws.com",
+					Hostname: "directconnect-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7368,7 +7368,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "directconnect-fips.us-west-1.amazonaws.com",
+					Hostname: "directconnect-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7377,7 +7377,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "directconnect-fips.us-west-2.amazonaws.com",
+					Hostname: "directconnect-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7399,7 +7399,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "directconnect-fips.us-east-1.amazonaws.com",
+					Hostname: "directconnect-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -7408,7 +7408,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "directconnect-fips.us-east-2.amazonaws.com",
+					Hostname: "directconnect-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -7417,7 +7417,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "directconnect-fips.us-west-1.amazonaws.com",
+					Hostname: "directconnect-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -7426,7 +7426,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "directconnect-fips.us-west-2.amazonaws.com",
+					Hostname: "directconnect-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -7572,7 +7572,7 @@ var awsPartition = partition{
 					Region:  "dms",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms-fips.us-west-1.amazonaws.com",
+					Hostname: "dms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7581,7 +7581,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "dms-fips",
 				}: endpoint{
-					Hostname: "dms-fips.us-west-1.amazonaws.com",
+					Hostname: "dms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7627,12 +7627,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms-fips.us-east-1.amazonaws.com",
+					Hostname: "dms-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "dms-fips.us-east-1.amazonaws.com",
+					Hostname: "dms-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7645,12 +7645,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms-fips.us-east-2.amazonaws.com",
+					Hostname: "dms-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "dms-fips.us-east-2.amazonaws.com",
+					Hostname: "dms-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7663,12 +7663,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms-fips.us-west-1.amazonaws.com",
+					Hostname: "dms-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "dms-fips.us-west-1.amazonaws.com",
+					Hostname: "dms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7681,12 +7681,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms-fips.us-west-2.amazonaws.com",
+					Hostname: "dms-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "dms-fips.us-west-2.amazonaws.com",
+					Hostname: "dms-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7699,7 +7699,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "rds.ap-northeast-1.amazonaws.com",
+					Hostname: "rds.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -7707,7 +7707,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "rds.ap-northeast-2.amazonaws.com",
+					Hostname: "rds.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -7715,7 +7715,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "rds.ap-south-1.amazonaws.com",
+					Hostname: "rds.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -7723,7 +7723,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "rds.ap-southeast-1.amazonaws.com",
+					Hostname: "rds.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -7731,7 +7731,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "rds.ap-southeast-2.amazonaws.com",
+					Hostname: "rds.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -7739,7 +7739,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "rds.ca-central-1.amazonaws.com",
+					Hostname: "rds.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -7747,7 +7747,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "rds.eu-central-1.amazonaws.com",
+					Hostname: "rds.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -7755,7 +7755,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "rds.eu-west-1.amazonaws.com",
+					Hostname: "rds.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -7763,7 +7763,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "rds.eu-west-2.amazonaws.com",
+					Hostname: "rds.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -7771,7 +7771,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "rds.eu-west-3.amazonaws.com",
+					Hostname: "rds.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -7779,7 +7779,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "rds.sa-east-1.amazonaws.com",
+					Hostname: "rds.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -7787,7 +7787,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "rds.us-east-1.amazonaws.com",
+					Hostname: "rds.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7795,7 +7795,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "rds.us-east-2.amazonaws.com",
+					Hostname: "rds.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7803,7 +7803,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "rds.us-west-2.amazonaws.com",
+					Hostname: "rds.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7916,7 +7916,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.ca-central-1.amazonaws.com",
+					Hostname: "ds-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -7939,7 +7939,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "ds-fips.ca-central-1.amazonaws.com",
+					Hostname: "ds-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -7948,7 +7948,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ds-fips.us-east-1.amazonaws.com",
+					Hostname: "ds-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -7957,7 +7957,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ds-fips.us-east-2.amazonaws.com",
+					Hostname: "ds-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -7966,7 +7966,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ds-fips.us-west-1.amazonaws.com",
+					Hostname: "ds-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -7975,7 +7975,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ds-fips.us-west-2.amazonaws.com",
+					Hostname: "ds-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -7997,7 +7997,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-east-1.amazonaws.com",
+					Hostname: "ds-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -8006,7 +8006,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-east-2.amazonaws.com",
+					Hostname: "ds-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -8015,7 +8015,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-west-1.amazonaws.com",
+					Hostname: "ds-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -8024,7 +8024,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-west-2.amazonaws.com",
+					Hostname: "ds-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -8072,12 +8072,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb-fips.ca-central-1.amazonaws.com",
+					Hostname: "dynamodb-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "dynamodb-fips.ca-central-1.amazonaws.com",
+					Hostname: "dynamodb-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -8132,12 +8132,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-east-1.amazonaws.com",
+					Hostname: "dynamodb-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-east-1.amazonaws.com",
+					Hostname: "dynamodb-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8150,12 +8150,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-east-2.amazonaws.com",
+					Hostname: "dynamodb-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-east-2.amazonaws.com",
+					Hostname: "dynamodb-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8168,12 +8168,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-west-1.amazonaws.com",
+					Hostname: "dynamodb-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-west-1.amazonaws.com",
+					Hostname: "dynamodb-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8186,12 +8186,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-west-2.amazonaws.com",
+					Hostname: "dynamodb-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "dynamodb-fips.us-west-2.amazonaws.com",
+					Hostname: "dynamodb-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -8235,7 +8235,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ebs-fips.ca-central-1.amazonaws.com",
+					Hostname: "ebs-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -8258,7 +8258,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "ebs-fips.ca-central-1.amazonaws.com",
+					Hostname: "ebs-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -8267,7 +8267,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ebs-fips.us-east-1.amazonaws.com",
+					Hostname: "ebs-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8276,7 +8276,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ebs-fips.us-east-2.amazonaws.com",
+					Hostname: "ebs-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8285,7 +8285,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ebs-fips.us-west-1.amazonaws.com",
+					Hostname: "ebs-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8294,7 +8294,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ebs-fips.us-west-2.amazonaws.com",
+					Hostname: "ebs-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -8316,7 +8316,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ebs-fips.us-east-1.amazonaws.com",
+					Hostname: "ebs-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -8325,7 +8325,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ebs-fips.us-east-2.amazonaws.com",
+					Hostname: "ebs-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -8334,7 +8334,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ebs-fips.us-west-1.amazonaws.com",
+					Hostname: "ebs-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -8343,7 +8343,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ebs-fips.us-west-2.amazonaws.com",
+					Hostname: "ebs-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -8397,7 +8397,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ec2-fips.ca-central-1.amazonaws.com",
+					Hostname: "ec2-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -8432,7 +8432,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "ec2-fips.ca-central-1.amazonaws.com",
+					Hostname: "ec2-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -8441,7 +8441,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ec2-fips.us-east-1.amazonaws.com",
+					Hostname: "ec2-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8450,7 +8450,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ec2-fips.us-east-2.amazonaws.com",
+					Hostname: "ec2-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8459,7 +8459,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ec2-fips.us-west-1.amazonaws.com",
+					Hostname: "ec2-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8468,7 +8468,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ec2-fips.us-west-2.amazonaws.com",
+					Hostname: "ec2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -8502,7 +8502,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ec2-fips.us-east-1.amazonaws.com",
+					Hostname: "ec2-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -8517,7 +8517,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ec2-fips.us-east-2.amazonaws.com",
+					Hostname: "ec2-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -8526,7 +8526,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ec2-fips.us-west-1.amazonaws.com",
+					Hostname: "ec2-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -8541,7 +8541,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ec2-fips.us-west-2.amazonaws.com",
+					Hostname: "ec2-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -8607,7 +8607,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ecs-fips.us-east-1.amazonaws.com",
+					Hostname: "ecs-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8616,7 +8616,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ecs-fips.us-east-2.amazonaws.com",
+					Hostname: "ecs-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8625,7 +8625,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ecs-fips.us-west-1.amazonaws.com",
+					Hostname: "ecs-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8634,7 +8634,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ecs-fips.us-west-2.amazonaws.com",
+					Hostname: "ecs-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -8656,7 +8656,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-east-1.amazonaws.com",
+					Hostname: "ecs-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -8665,7 +8665,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-east-2.amazonaws.com",
+					Hostname: "ecs-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -8674,7 +8674,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-west-1.amazonaws.com",
+					Hostname: "ecs-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -8683,7 +8683,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-west-2.amazonaws.com",
+					Hostname: "ecs-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -8773,7 +8773,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "fips.eks.us-east-1.amazonaws.com",
+					Hostname: "fips.eks.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8782,7 +8782,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "fips.eks.us-east-2.amazonaws.com",
+					Hostname: "fips.eks.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8791,7 +8791,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "fips.eks.us-west-1.amazonaws.com",
+					Hostname: "fips.eks.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8800,7 +8800,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "fips.eks.us-west-2.amazonaws.com",
+					Hostname: "fips.eks.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -8822,7 +8822,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.eks.us-east-1.amazonaws.com",
+					Hostname: "fips.eks.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -8831,7 +8831,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.eks.us-east-2.amazonaws.com",
+					Hostname: "fips.eks.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -8840,7 +8840,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.eks.us-west-1.amazonaws.com",
+					Hostname: "fips.eks.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -8849,7 +8849,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.eks.us-west-2.amazonaws.com",
+					Hostname: "fips.eks.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -8915,7 +8915,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "elasticache-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticache-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8937,12 +8937,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticache-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticache-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "elasticache-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticache-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -8955,12 +8955,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticache-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticache-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "elasticache-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticache-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -8973,12 +8973,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticache-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticache-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "elasticache-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticache-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -8991,12 +8991,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticache-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticache-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "elasticache-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticache-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9057,7 +9057,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -9066,7 +9066,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -9075,7 +9075,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -9084,7 +9084,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9103,7 +9103,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -9112,7 +9112,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -9121,7 +9121,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -9130,7 +9130,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticbeanstalk-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticbeanstalk-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -9143,7 +9143,7 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.af-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.af-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-east-1",
@@ -9152,7 +9152,7 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-1",
@@ -9161,7 +9161,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-2",
@@ -9170,7 +9170,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-3",
@@ -9179,7 +9179,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-1",
@@ -9188,7 +9188,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1",
@@ -9197,7 +9197,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-2",
@@ -9206,7 +9206,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-3",
@@ -9215,7 +9215,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1",
@@ -9224,7 +9224,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ca-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -9233,7 +9233,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1",
@@ -9242,7 +9242,7 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-north-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-north-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-south-1",
@@ -9251,7 +9251,7 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1",
@@ -9260,7 +9260,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-2",
@@ -9269,7 +9269,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-3",
@@ -9278,12 +9278,12 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "fips-af-south-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.af-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -9292,7 +9292,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-east-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -9301,7 +9301,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -9310,7 +9310,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-2",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -9319,7 +9319,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-3",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -9328,7 +9328,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-south-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -9337,7 +9337,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -9346,7 +9346,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-2",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -9355,7 +9355,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-3",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -9364,7 +9364,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.ca-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -9373,7 +9373,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-central-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -9382,7 +9382,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-north-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-north-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -9391,7 +9391,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-south-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -9400,7 +9400,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -9409,7 +9409,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-2",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -9418,7 +9418,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-3",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.eu-west-3.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -9427,7 +9427,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-me-central-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.me-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.me-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-central-1",
 					},
@@ -9436,7 +9436,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-me-south-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.me-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -9445,7 +9445,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-sa-east-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.sa-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -9454,7 +9454,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -9463,7 +9463,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -9472,7 +9472,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -9481,7 +9481,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9494,7 +9494,7 @@ var awsPartition = partition{
 					Region:  "me-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.me-central-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.me-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "me-south-1",
@@ -9503,7 +9503,7 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.me-south-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.me-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "sa-east-1",
@@ -9512,7 +9512,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.sa-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.sa-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
@@ -9521,7 +9521,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -9530,7 +9530,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -9539,7 +9539,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -9548,7 +9548,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -9619,7 +9619,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -9628,7 +9628,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -9637,7 +9637,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -9646,7 +9646,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9668,7 +9668,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -9677,7 +9677,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -9686,7 +9686,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -9695,7 +9695,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticloadbalancing-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticloadbalancing-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -9744,7 +9744,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.ca-central-1.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -9775,7 +9775,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.ca-central-1.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -9784,7 +9784,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-east-1.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -9793,7 +9793,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -9802,7 +9802,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -9811,7 +9811,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9835,7 +9835,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:      "elasticmapreduce-fips.us-east-1.amazonaws.com",
+					Hostname:      "elasticmapreduce-fips.us-east-1.samsungspc.com",
 					SSLCommonName: "{service}.{region}.{dnsSuffix}",
 				},
 				endpointKey{
@@ -9845,7 +9845,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-east-2.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -9854,7 +9854,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-west-1.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -9863,7 +9863,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticmapreduce-fips.us-west-2.amazonaws.com",
+					Hostname: "elasticmapreduce-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -9945,7 +9945,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "email-fips.us-east-1.amazonaws.com",
+					Hostname: "email-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -9954,7 +9954,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "email-fips.us-west-2.amazonaws.com",
+					Hostname: "email-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -9973,7 +9973,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "email-fips.us-east-1.amazonaws.com",
+					Hostname: "email-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -9988,7 +9988,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "email-fips.us-west-2.amazonaws.com",
+					Hostname: "email-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10016,7 +10016,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-containers-fips.ca-central-1.amazonaws.com",
+					Hostname: "emr-containers-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -10036,7 +10036,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "emr-containers-fips.ca-central-1.amazonaws.com",
+					Hostname: "emr-containers-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -10045,7 +10045,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-east-1.amazonaws.com",
+					Hostname: "emr-containers-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -10054,7 +10054,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-east-2.amazonaws.com",
+					Hostname: "emr-containers-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -10063,7 +10063,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-west-1.amazonaws.com",
+					Hostname: "emr-containers-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10072,7 +10072,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-west-2.amazonaws.com",
+					Hostname: "emr-containers-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -10088,7 +10088,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-east-1.amazonaws.com",
+					Hostname: "emr-containers-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -10097,7 +10097,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-east-2.amazonaws.com",
+					Hostname: "emr-containers-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -10106,7 +10106,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-west-1.amazonaws.com",
+					Hostname: "emr-containers-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -10115,7 +10115,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-containers-fips.us-west-2.amazonaws.com",
+					Hostname: "emr-containers-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10143,7 +10143,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-serverless-fips.ca-central-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -10163,7 +10163,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "emr-serverless-fips.ca-central-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -10172,7 +10172,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-east-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -10181,7 +10181,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-east-2.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -10190,7 +10190,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-west-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10199,7 +10199,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-west-2.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -10215,7 +10215,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-east-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -10224,7 +10224,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-east-2.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -10233,7 +10233,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-west-1.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -10242,7 +10242,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "emr-serverless-fips.us-west-2.amazonaws.com",
+					Hostname: "emr-serverless-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10322,7 +10322,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "es-fips.us-west-1.amazonaws.com",
+					Hostname: "es-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10344,12 +10344,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-east-1.amazonaws.com",
+					Hostname: "es-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-east-1.amazonaws.com",
+					Hostname: "es-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -10362,12 +10362,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-east-2.amazonaws.com",
+					Hostname: "es-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-east-2.amazonaws.com",
+					Hostname: "es-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -10380,12 +10380,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-west-1.amazonaws.com",
+					Hostname: "es-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-west-1.amazonaws.com",
+					Hostname: "es-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10398,12 +10398,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-west-2.amazonaws.com",
+					Hostname: "es-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-west-2.amazonaws.com",
+					Hostname: "es-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -10473,7 +10473,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "events-fips.us-east-1.amazonaws.com",
+					Hostname: "events-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -10482,7 +10482,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "events-fips.us-east-2.amazonaws.com",
+					Hostname: "events-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -10491,7 +10491,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "events-fips.us-west-1.amazonaws.com",
+					Hostname: "events-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10500,7 +10500,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "events-fips.us-west-2.amazonaws.com",
+					Hostname: "events-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -10522,7 +10522,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events-fips.us-east-1.amazonaws.com",
+					Hostname: "events-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -10531,7 +10531,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events-fips.us-east-2.amazonaws.com",
+					Hostname: "events-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -10540,7 +10540,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events-fips.us-west-1.amazonaws.com",
+					Hostname: "events-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -10549,7 +10549,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events-fips.us-west-2.amazonaws.com",
+					Hostname: "events-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10558,47 +10558,47 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "evidently.ap-northeast-1.amazonaws.com",
+					Hostname: "evidently.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "evidently.ap-southeast-1.amazonaws.com",
+					Hostname: "evidently.ap-southeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "evidently.ap-southeast-2.amazonaws.com",
+					Hostname: "evidently.ap-southeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "evidently.eu-central-1.amazonaws.com",
+					Hostname: "evidently.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "evidently.eu-north-1.amazonaws.com",
+					Hostname: "evidently.eu-north-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "evidently.eu-west-1.amazonaws.com",
+					Hostname: "evidently.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "evidently.us-east-1.amazonaws.com",
+					Hostname: "evidently.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "evidently.us-east-2.amazonaws.com",
+					Hostname: "evidently.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "evidently.us-west-2.amazonaws.com",
+					Hostname: "evidently.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10693,7 +10693,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "firehose-fips.us-east-1.amazonaws.com",
+					Hostname: "firehose-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -10702,7 +10702,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "firehose-fips.us-east-2.amazonaws.com",
+					Hostname: "firehose-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -10711,7 +10711,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "firehose-fips.us-west-1.amazonaws.com",
+					Hostname: "firehose-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -10720,7 +10720,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "firehose-fips.us-west-2.amazonaws.com",
+					Hostname: "firehose-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -10742,7 +10742,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-east-1.amazonaws.com",
+					Hostname: "firehose-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -10751,7 +10751,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-east-2.amazonaws.com",
+					Hostname: "firehose-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -10760,7 +10760,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-west-1.amazonaws.com",
+					Hostname: "firehose-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -10769,7 +10769,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-west-2.amazonaws.com",
+					Hostname: "firehose-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -10787,7 +10787,7 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.af-south-1.amazonaws.com",
+					Hostname: "fms-fips.af-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-east-1",
@@ -10796,7 +10796,7 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-east-1.amazonaws.com",
+					Hostname: "fms-fips.ap-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-1",
@@ -10805,7 +10805,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "fms-fips.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-2",
@@ -10814,7 +10814,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "fms-fips.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-3",
@@ -10826,7 +10826,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-south-1.amazonaws.com",
+					Hostname: "fms-fips.ap-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1",
@@ -10835,7 +10835,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "fms-fips.ap-southeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-2",
@@ -10844,7 +10844,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "fms-fips.ap-southeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1",
@@ -10853,7 +10853,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.ca-central-1.amazonaws.com",
+					Hostname: "fms-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -10862,7 +10862,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.eu-central-1.amazonaws.com",
+					Hostname: "fms-fips.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1",
@@ -10874,7 +10874,7 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.eu-south-1.amazonaws.com",
+					Hostname: "fms-fips.eu-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1",
@@ -10883,7 +10883,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-1.amazonaws.com",
+					Hostname: "fms-fips.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-2",
@@ -10892,7 +10892,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-2.amazonaws.com",
+					Hostname: "fms-fips.eu-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-3",
@@ -10901,12 +10901,12 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-3.amazonaws.com",
+					Hostname: "fms-fips.eu-west-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "fips-af-south-1",
 				}: endpoint{
-					Hostname: "fms-fips.af-south-1.amazonaws.com",
+					Hostname: "fms-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -10915,7 +10915,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-east-1",
 				}: endpoint{
-					Hostname: "fms-fips.ap-east-1.amazonaws.com",
+					Hostname: "fms-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -10924,7 +10924,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-1",
 				}: endpoint{
-					Hostname: "fms-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "fms-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -10933,7 +10933,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-2",
 				}: endpoint{
-					Hostname: "fms-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "fms-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -10942,7 +10942,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-south-1",
 				}: endpoint{
-					Hostname: "fms-fips.ap-south-1.amazonaws.com",
+					Hostname: "fms-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -10951,7 +10951,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-1",
 				}: endpoint{
-					Hostname: "fms-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "fms-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -10960,7 +10960,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-2",
 				}: endpoint{
-					Hostname: "fms-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "fms-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -10969,7 +10969,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "fms-fips.ca-central-1.amazonaws.com",
+					Hostname: "fms-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -10978,7 +10978,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-central-1",
 				}: endpoint{
-					Hostname: "fms-fips.eu-central-1.amazonaws.com",
+					Hostname: "fms-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -10987,7 +10987,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-south-1",
 				}: endpoint{
-					Hostname: "fms-fips.eu-south-1.amazonaws.com",
+					Hostname: "fms-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -10996,7 +10996,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-1",
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-1.amazonaws.com",
+					Hostname: "fms-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -11005,7 +11005,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-2",
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-2.amazonaws.com",
+					Hostname: "fms-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -11014,7 +11014,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-3",
 				}: endpoint{
-					Hostname: "fms-fips.eu-west-3.amazonaws.com",
+					Hostname: "fms-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -11023,7 +11023,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-me-south-1",
 				}: endpoint{
-					Hostname: "fms-fips.me-south-1.amazonaws.com",
+					Hostname: "fms-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -11032,7 +11032,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-sa-east-1",
 				}: endpoint{
-					Hostname: "fms-fips.sa-east-1.amazonaws.com",
+					Hostname: "fms-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -11041,7 +11041,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "fms-fips.us-east-1.amazonaws.com",
+					Hostname: "fms-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11050,7 +11050,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "fms-fips.us-east-2.amazonaws.com",
+					Hostname: "fms-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11059,7 +11059,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "fms-fips.us-west-1.amazonaws.com",
+					Hostname: "fms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11068,7 +11068,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "fms-fips.us-west-2.amazonaws.com",
+					Hostname: "fms-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11081,7 +11081,7 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.me-south-1.amazonaws.com",
+					Hostname: "fms-fips.me-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "sa-east-1",
@@ -11090,7 +11090,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.sa-east-1.amazonaws.com",
+					Hostname: "fms-fips.sa-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
@@ -11099,7 +11099,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-east-1.amazonaws.com",
+					Hostname: "fms-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11108,7 +11108,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-east-2.amazonaws.com",
+					Hostname: "fms-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -11117,7 +11117,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-west-1.amazonaws.com",
+					Hostname: "fms-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11126,7 +11126,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-west-2.amazonaws.com",
+					Hostname: "fms-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11156,7 +11156,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "forecast-fips.us-east-1.amazonaws.com",
+					Hostname: "forecast-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11165,7 +11165,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "forecast-fips.us-east-2.amazonaws.com",
+					Hostname: "forecast-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11174,7 +11174,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "forecast-fips.us-west-2.amazonaws.com",
+					Hostname: "forecast-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11187,7 +11187,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecast-fips.us-east-1.amazonaws.com",
+					Hostname: "forecast-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11196,7 +11196,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecast-fips.us-east-2.amazonaws.com",
+					Hostname: "forecast-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11205,7 +11205,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecast-fips.us-west-2.amazonaws.com",
+					Hostname: "forecast-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11235,7 +11235,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-east-1.amazonaws.com",
+					Hostname: "forecastquery-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11244,7 +11244,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-east-2.amazonaws.com",
+					Hostname: "forecastquery-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11253,7 +11253,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-west-2.amazonaws.com",
+					Hostname: "forecastquery-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11266,7 +11266,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-east-1.amazonaws.com",
+					Hostname: "forecastquery-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11275,7 +11275,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-east-2.amazonaws.com",
+					Hostname: "forecastquery-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11284,7 +11284,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "forecastquery-fips.us-west-2.amazonaws.com",
+					Hostname: "forecastquery-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11346,7 +11346,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.ca-central-1.amazonaws.com",
+					Hostname: "fsx-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -11369,7 +11369,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "fsx-fips.ca-central-1.amazonaws.com",
+					Hostname: "fsx-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -11378,7 +11378,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-prod-ca-central-1",
 				}: endpoint{
-					Hostname: "fsx-fips.ca-central-1.amazonaws.com",
+					Hostname: "fsx-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -11387,7 +11387,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-east-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11396,7 +11396,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-east-2",
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-2.amazonaws.com",
+					Hostname: "fsx-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11405,7 +11405,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-west-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11414,7 +11414,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-west-2",
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-2.amazonaws.com",
+					Hostname: "fsx-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11423,7 +11423,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11432,7 +11432,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-2.amazonaws.com",
+					Hostname: "fsx-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11441,7 +11441,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11450,7 +11450,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-2.amazonaws.com",
+					Hostname: "fsx-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11471,7 +11471,7 @@ var awsPartition = partition{
 					Region:  "prod-ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.ca-central-1.amazonaws.com",
+					Hostname: "fsx-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -11489,7 +11489,7 @@ var awsPartition = partition{
 					Region:  "prod-us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11507,7 +11507,7 @@ var awsPartition = partition{
 					Region:  "prod-us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-2.amazonaws.com",
+					Hostname: "fsx-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11525,7 +11525,7 @@ var awsPartition = partition{
 					Region:  "prod-us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11543,7 +11543,7 @@ var awsPartition = partition{
 					Region:  "prod-us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-2.amazonaws.com",
+					Hostname: "fsx-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11559,7 +11559,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11568,7 +11568,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-east-2.amazonaws.com",
+					Hostname: "fsx-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -11577,7 +11577,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11586,7 +11586,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-west-2.amazonaws.com",
+					Hostname: "fsx-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11739,7 +11739,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glacier-fips.ca-central-1.amazonaws.com",
+					Hostname: "glacier-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -11762,7 +11762,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "glacier-fips.ca-central-1.amazonaws.com",
+					Hostname: "glacier-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -11771,7 +11771,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "glacier-fips.us-east-1.amazonaws.com",
+					Hostname: "glacier-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11780,7 +11780,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "glacier-fips.us-east-2.amazonaws.com",
+					Hostname: "glacier-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11789,7 +11789,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "glacier-fips.us-west-1.amazonaws.com",
+					Hostname: "glacier-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11798,7 +11798,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "glacier-fips.us-west-2.amazonaws.com",
+					Hostname: "glacier-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11817,7 +11817,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glacier-fips.us-east-1.amazonaws.com",
+					Hostname: "glacier-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11826,7 +11826,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glacier-fips.us-east-2.amazonaws.com",
+					Hostname: "glacier-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -11835,7 +11835,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glacier-fips.us-west-1.amazonaws.com",
+					Hostname: "glacier-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11844,7 +11844,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glacier-fips.us-west-2.amazonaws.com",
+					Hostname: "glacier-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11901,7 +11901,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "glue-fips.us-east-1.amazonaws.com",
+					Hostname: "glue-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -11910,7 +11910,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "glue-fips.us-east-2.amazonaws.com",
+					Hostname: "glue-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -11919,7 +11919,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "glue-fips.us-west-1.amazonaws.com",
+					Hostname: "glue-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -11928,7 +11928,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "glue-fips.us-west-2.amazonaws.com",
+					Hostname: "glue-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -11947,7 +11947,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-east-1.amazonaws.com",
+					Hostname: "glue-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -11956,7 +11956,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-east-2.amazonaws.com",
+					Hostname: "glue-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -11965,7 +11965,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-west-1.amazonaws.com",
+					Hostname: "glue-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -11974,7 +11974,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-west-2.amazonaws.com",
+					Hostname: "glue-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -11983,7 +11983,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "grafana.ap-northeast-1.amazonaws.com",
+					Hostname: "grafana.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -11991,7 +11991,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "grafana.ap-northeast-2.amazonaws.com",
+					Hostname: "grafana.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -11999,7 +11999,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "grafana.ap-southeast-1.amazonaws.com",
+					Hostname: "grafana.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -12007,7 +12007,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "grafana.ap-southeast-2.amazonaws.com",
+					Hostname: "grafana.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -12015,7 +12015,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "grafana.eu-central-1.amazonaws.com",
+					Hostname: "grafana.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -12023,7 +12023,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "grafana.eu-west-1.amazonaws.com",
+					Hostname: "grafana.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -12031,7 +12031,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "grafana.eu-west-2.amazonaws.com",
+					Hostname: "grafana.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -12039,7 +12039,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "grafana.us-east-1.amazonaws.com",
+					Hostname: "grafana.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12047,7 +12047,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "grafana.us-east-2.amazonaws.com",
+					Hostname: "grafana.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12055,7 +12055,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "grafana.us-west-2.amazonaws.com",
+					Hostname: "grafana.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12091,7 +12091,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "dataplane-ap-south-1",
 				}: endpoint{
-					Hostname: "greengrass-ats.iot.ap-south-1.amazonaws.com",
+					Hostname: "greengrass-ats.iot.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -12099,7 +12099,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "dataplane-us-east-2",
 				}: endpoint{
-					Hostname: "greengrass-ats.iot.us-east-2.amazonaws.com",
+					Hostname: "greengrass-ats.iot.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12150,7 +12150,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "groundstation-fips.us-east-1.amazonaws.com",
+					Hostname: "groundstation-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12159,7 +12159,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "groundstation-fips.us-east-2.amazonaws.com",
+					Hostname: "groundstation-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12168,7 +12168,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "groundstation-fips.us-west-2.amazonaws.com",
+					Hostname: "groundstation-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12187,7 +12187,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "groundstation-fips.us-east-1.amazonaws.com",
+					Hostname: "groundstation-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -12196,7 +12196,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "groundstation-fips.us-east-2.amazonaws.com",
+					Hostname: "groundstation-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -12205,7 +12205,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "groundstation-fips.us-west-2.amazonaws.com",
+					Hostname: "groundstation-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -12281,12 +12281,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty-fips.us-east-1.amazonaws.com",
+					Hostname: "guardduty-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "guardduty-fips.us-east-1.amazonaws.com",
+					Hostname: "guardduty-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12299,12 +12299,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty-fips.us-east-2.amazonaws.com",
+					Hostname: "guardduty-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "guardduty-fips.us-east-2.amazonaws.com",
+					Hostname: "guardduty-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12317,12 +12317,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty-fips.us-west-1.amazonaws.com",
+					Hostname: "guardduty-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "guardduty-fips.us-west-1.amazonaws.com",
+					Hostname: "guardduty-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -12335,12 +12335,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty-fips.us-west-2.amazonaws.com",
+					Hostname: "guardduty-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "guardduty-fips.us-west-2.amazonaws.com",
+					Hostname: "guardduty-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12353,7 +12353,7 @@ var awsPartition = partition{
 			IsRegionalized:    boxedFalse,
 			Defaults: endpointDefaults{
 				defaultKey{}: endpoint{
-					SSLCommonName: "health.us-east-1.amazonaws.com",
+					SSLCommonName: "health.us-east-1.samsungspc.com",
 					Protocols:     []string{"https"},
 				},
 			},
@@ -12361,7 +12361,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "global.health.amazonaws.com",
+					Hostname: "global.health.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12369,7 +12369,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "health-fips.us-east-2.amazonaws.com",
+					Hostname: "health-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12387,7 +12387,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "health-fips.us-east-2.amazonaws.com",
+					Hostname: "health-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12427,7 +12427,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "iam.amazonaws.com",
+					Hostname: "iam.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12436,7 +12436,7 @@ var awsPartition = partition{
 					Region:  "aws-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iam-fips.amazonaws.com",
+					Hostname: "iam-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12444,7 +12444,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global-fips",
 				}: endpoint{
-					Hostname: "iam-fips.amazonaws.com",
+					Hostname: "iam-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12462,7 +12462,7 @@ var awsPartition = partition{
 					Region:  "iam",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iam-fips.amazonaws.com",
+					Hostname: "iam-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12471,7 +12471,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "iam-fips",
 				}: endpoint{
-					Hostname: "iam-fips.amazonaws.com",
+					Hostname: "iam-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12491,12 +12491,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "identity-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "identity-chime-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "identity-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "identity-chime-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12554,7 +12554,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname:          "importexport.amazonaws.com",
+					Hostname:          "importexport.samsungspc.com",
 					SignatureVersions: []string{"v2", "v4"},
 					CredentialScope: credentialScope{
 						Region:  "us-east-1",
@@ -12580,7 +12580,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ingest-fips-us-east-1",
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-east-1.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12589,7 +12589,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ingest-fips-us-east-2",
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-east-2.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12598,7 +12598,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ingest-fips-us-west-2",
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-west-2.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12616,7 +12616,7 @@ var awsPartition = partition{
 					Region:  "ingest-us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-east-1.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12634,7 +12634,7 @@ var awsPartition = partition{
 					Region:  "ingest-us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-east-2.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12652,7 +12652,7 @@ var awsPartition = partition{
 					Region:  "ingest-us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ingest.timestream-fips.us-west-2.amazonaws.com",
+					Hostname: "ingest.timestream-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12698,7 +12698,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "inspector-fips.us-east-1.amazonaws.com",
+					Hostname: "inspector-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -12707,7 +12707,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "inspector-fips.us-east-2.amazonaws.com",
+					Hostname: "inspector-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -12716,7 +12716,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "inspector-fips.us-west-1.amazonaws.com",
+					Hostname: "inspector-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -12725,7 +12725,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "inspector-fips.us-west-2.amazonaws.com",
+					Hostname: "inspector-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -12738,7 +12738,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-east-1.amazonaws.com",
+					Hostname: "inspector-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -12747,7 +12747,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-east-2.amazonaws.com",
+					Hostname: "inspector-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -12756,7 +12756,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-west-1.amazonaws.com",
+					Hostname: "inspector-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -12765,7 +12765,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-west-2.amazonaws.com",
+					Hostname: "inspector-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -12864,7 +12864,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -12884,7 +12884,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -12893,7 +12893,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "iot-fips.us-east-1.amazonaws.com",
+					Hostname: "iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -12902,7 +12902,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "iot-fips.us-east-2.amazonaws.com",
+					Hostname: "iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -12911,7 +12911,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "iot-fips.us-west-1.amazonaws.com",
+					Hostname: "iot-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -12920,7 +12920,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "iot-fips.us-west-2.amazonaws.com",
+					Hostname: "iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -12942,7 +12942,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-east-1.amazonaws.com",
+					Hostname: "iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -12951,7 +12951,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-east-2.amazonaws.com",
+					Hostname: "iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -12960,7 +12960,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-west-1.amazonaws.com",
+					Hostname: "iot-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -12969,7 +12969,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-west-2.amazonaws.com",
+					Hostname: "iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -13025,7 +13025,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotevents-fips.ca-central-1.amazonaws.com",
+					Hostname: "iotevents-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -13039,7 +13039,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "iotevents-fips.ca-central-1.amazonaws.com",
+					Hostname: "iotevents-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13048,7 +13048,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "iotevents-fips.us-east-1.amazonaws.com",
+					Hostname: "iotevents-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13057,7 +13057,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "iotevents-fips.us-east-2.amazonaws.com",
+					Hostname: "iotevents-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13066,7 +13066,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "iotevents-fips.us-west-2.amazonaws.com",
+					Hostname: "iotevents-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13079,7 +13079,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotevents-fips.us-east-1.amazonaws.com",
+					Hostname: "iotevents-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -13088,7 +13088,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotevents-fips.us-east-2.amazonaws.com",
+					Hostname: "iotevents-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -13097,7 +13097,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotevents-fips.us-west-2.amazonaws.com",
+					Hostname: "iotevents-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -13106,7 +13106,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "data.iotevents.ap-northeast-1.amazonaws.com",
+					Hostname: "data.iotevents.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -13114,7 +13114,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "data.iotevents.ap-northeast-2.amazonaws.com",
+					Hostname: "data.iotevents.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -13122,7 +13122,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "data.iotevents.ap-south-1.amazonaws.com",
+					Hostname: "data.iotevents.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -13130,7 +13130,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "data.iotevents.ap-southeast-1.amazonaws.com",
+					Hostname: "data.iotevents.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -13138,7 +13138,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "data.iotevents.ap-southeast-2.amazonaws.com",
+					Hostname: "data.iotevents.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -13146,7 +13146,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "data.iotevents.ca-central-1.amazonaws.com",
+					Hostname: "data.iotevents.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13155,7 +13155,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iotevents-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13163,7 +13163,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "data.iotevents.eu-central-1.amazonaws.com",
+					Hostname: "data.iotevents.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -13171,7 +13171,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "data.iotevents.eu-west-1.amazonaws.com",
+					Hostname: "data.iotevents.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -13179,7 +13179,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "data.iotevents.eu-west-2.amazonaws.com",
+					Hostname: "data.iotevents.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -13187,7 +13187,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "data.iotevents-fips.ca-central-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13196,7 +13196,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-east-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13205,7 +13205,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-east-2.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13214,7 +13214,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-west-2.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13223,7 +13223,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "data.iotevents.us-east-1.amazonaws.com",
+					Hostname: "data.iotevents.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13232,7 +13232,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-east-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13240,7 +13240,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "data.iotevents.us-east-2.amazonaws.com",
+					Hostname: "data.iotevents.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13249,7 +13249,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-east-2.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13257,7 +13257,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "data.iotevents.us-west-2.amazonaws.com",
+					Hostname: "data.iotevents.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13266,7 +13266,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-west-2.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13328,7 +13328,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -13348,7 +13348,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.ca-central-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13357,7 +13357,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13366,7 +13366,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13375,7 +13375,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -13384,7 +13384,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13403,7 +13403,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -13412,7 +13412,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-east-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -13421,7 +13421,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -13430,7 +13430,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-west-2.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -13458,7 +13458,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotsitewise-fips.ca-central-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -13469,7 +13469,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "iotsitewise-fips.ca-central-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -13478,7 +13478,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-east-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13487,7 +13487,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-east-2.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13496,7 +13496,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-west-2.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13509,7 +13509,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-east-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -13518,7 +13518,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-east-2.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -13527,7 +13527,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-west-2.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -13587,7 +13587,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.ap-northeast-1.amazonaws.com",
+					Hostname: "api.iotwireless.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -13595,7 +13595,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "api.iotwireless.ap-southeast-2.amazonaws.com",
+					Hostname: "api.iotwireless.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -13603,7 +13603,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.eu-west-1.amazonaws.com",
+					Hostname: "api.iotwireless.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -13611,7 +13611,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "api.iotwireless.us-east-1.amazonaws.com",
+					Hostname: "api.iotwireless.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13619,7 +13619,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "api.iotwireless.us-west-2.amazonaws.com",
+					Hostname: "api.iotwireless.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13815,7 +13815,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "kendra-fips.us-east-1.amazonaws.com",
+					Hostname: "kendra-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13824,7 +13824,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "kendra-fips.us-east-2.amazonaws.com",
+					Hostname: "kendra-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13833,7 +13833,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "kendra-fips.us-west-2.amazonaws.com",
+					Hostname: "kendra-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13846,7 +13846,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kendra-fips.us-east-1.amazonaws.com",
+					Hostname: "kendra-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -13855,7 +13855,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kendra-fips.us-east-2.amazonaws.com",
+					Hostname: "kendra-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -13864,7 +13864,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kendra-fips.us-west-2.amazonaws.com",
+					Hostname: "kendra-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -13930,7 +13930,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "kinesis-fips.us-east-1.amazonaws.com",
+					Hostname: "kinesis-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -13939,7 +13939,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "kinesis-fips.us-east-2.amazonaws.com",
+					Hostname: "kinesis-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -13948,7 +13948,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "kinesis-fips.us-west-1.amazonaws.com",
+					Hostname: "kinesis-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -13957,7 +13957,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "kinesis-fips.us-west-2.amazonaws.com",
+					Hostname: "kinesis-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -13979,7 +13979,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kinesis-fips.us-east-1.amazonaws.com",
+					Hostname: "kinesis-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -13988,7 +13988,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kinesis-fips.us-east-2.amazonaws.com",
+					Hostname: "kinesis-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -13997,7 +13997,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kinesis-fips.us-west-1.amazonaws.com",
+					Hostname: "kinesis-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -14006,7 +14006,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kinesis-fips.us-west-2.amazonaws.com",
+					Hostname: "kinesis-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -14137,7 +14137,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ProdFips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-central-2.amazonaws.com",
+					Hostname: "kms-fips.eu-central-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-2",
 					},
@@ -14150,12 +14150,12 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.af-south-1.amazonaws.com",
+					Hostname: "kms-fips.af-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "af-south-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.af-south-1.amazonaws.com",
+					Hostname: "kms-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -14168,12 +14168,12 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-east-1.amazonaws.com",
+					Hostname: "kms-fips.ap-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-east-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-east-1.amazonaws.com",
+					Hostname: "kms-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -14186,12 +14186,12 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -14204,12 +14204,12 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -14222,12 +14222,12 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-3-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "kms-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -14240,12 +14240,12 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-south-1.amazonaws.com",
+					Hostname: "kms-fips.ap-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-south-1.amazonaws.com",
+					Hostname: "kms-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -14258,12 +14258,12 @@ var awsPartition = partition{
 					Region:  "ap-south-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-south-2.amazonaws.com",
+					Hostname: "kms-fips.ap-south-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-south-2.amazonaws.com",
+					Hostname: "kms-fips.ap-south-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-2",
 					},
@@ -14276,12 +14276,12 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -14294,12 +14294,12 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -14312,12 +14312,12 @@ var awsPartition = partition{
 					Region:  "ap-southeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-3-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "kms-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -14330,12 +14330,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.ca-central-1.amazonaws.com",
+					Hostname: "kms-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.ca-central-1.amazonaws.com",
+					Hostname: "kms-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -14348,12 +14348,12 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-central-1.amazonaws.com",
+					Hostname: "kms-fips.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-central-1.amazonaws.com",
+					Hostname: "kms-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -14366,12 +14366,12 @@ var awsPartition = partition{
 					Region:  "eu-central-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-central-2.amazonaws.com",
+					Hostname: "kms-fips.eu-central-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-central-2.amazonaws.com",
+					Hostname: "kms-fips.eu-central-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-2",
 					},
@@ -14384,12 +14384,12 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-north-1.amazonaws.com",
+					Hostname: "kms-fips.eu-north-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-north-1.amazonaws.com",
+					Hostname: "kms-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -14402,12 +14402,12 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-south-1.amazonaws.com",
+					Hostname: "kms-fips.eu-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-south-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-south-1.amazonaws.com",
+					Hostname: "kms-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -14420,12 +14420,12 @@ var awsPartition = partition{
 					Region:  "eu-south-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-south-2.amazonaws.com",
+					Hostname: "kms-fips.eu-south-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-south-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-south-2.amazonaws.com",
+					Hostname: "kms-fips.eu-south-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-2",
 					},
@@ -14438,12 +14438,12 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-1.amazonaws.com",
+					Hostname: "kms-fips.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-1.amazonaws.com",
+					Hostname: "kms-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -14456,12 +14456,12 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-2.amazonaws.com",
+					Hostname: "kms-fips.eu-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-2.amazonaws.com",
+					Hostname: "kms-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -14474,12 +14474,12 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-3.amazonaws.com",
+					Hostname: "kms-fips.eu-west-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-3-fips",
 				}: endpoint{
-					Hostname: "kms-fips.eu-west-3.amazonaws.com",
+					Hostname: "kms-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -14492,12 +14492,12 @@ var awsPartition = partition{
 					Region:  "me-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.me-central-1.amazonaws.com",
+					Hostname: "kms-fips.me-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "me-central-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.me-central-1.amazonaws.com",
+					Hostname: "kms-fips.me-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-central-1",
 					},
@@ -14510,12 +14510,12 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.me-south-1.amazonaws.com",
+					Hostname: "kms-fips.me-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "me-south-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.me-south-1.amazonaws.com",
+					Hostname: "kms-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -14528,12 +14528,12 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.sa-east-1.amazonaws.com",
+					Hostname: "kms-fips.sa-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "sa-east-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.sa-east-1.amazonaws.com",
+					Hostname: "kms-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -14546,12 +14546,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-east-1.amazonaws.com",
+					Hostname: "kms-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-east-1.amazonaws.com",
+					Hostname: "kms-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -14564,12 +14564,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-east-2.amazonaws.com",
+					Hostname: "kms-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-east-2.amazonaws.com",
+					Hostname: "kms-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -14582,12 +14582,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-west-1.amazonaws.com",
+					Hostname: "kms-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-west-1.amazonaws.com",
+					Hostname: "kms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -14600,12 +14600,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-west-2.amazonaws.com",
+					Hostname: "kms-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-west-2.amazonaws.com",
+					Hostname: "kms-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -14663,7 +14663,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-east-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -14672,7 +14672,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-east-2.amazonaws.com",
+					Hostname: "lakeformation-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -14681,7 +14681,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-west-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -14690,7 +14690,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-west-2.amazonaws.com",
+					Hostname: "lakeformation-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -14709,7 +14709,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-east-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -14718,7 +14718,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-east-2.amazonaws.com",
+					Hostname: "lakeformation-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -14727,7 +14727,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-west-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -14736,7 +14736,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-west-2.amazonaws.com",
+					Hostname: "lakeformation-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -14916,7 +14916,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "lambda-fips.us-east-1.amazonaws.com",
+					Hostname: "lambda-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -14925,7 +14925,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "lambda-fips.us-east-2.amazonaws.com",
+					Hostname: "lambda-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -14934,7 +14934,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "lambda-fips.us-west-1.amazonaws.com",
+					Hostname: "lambda-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -14943,7 +14943,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "lambda-fips.us-west-2.amazonaws.com",
+					Hostname: "lambda-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -14989,7 +14989,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-east-1.amazonaws.com",
+					Hostname: "lambda-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -15004,7 +15004,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-east-2.amazonaws.com",
+					Hostname: "lambda-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -15019,7 +15019,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-west-1.amazonaws.com",
+					Hostname: "lambda-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15034,7 +15034,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-west-2.amazonaws.com",
+					Hostname: "lambda-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15091,7 +15091,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-east-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15100,7 +15100,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-east-2.amazonaws.com",
+					Hostname: "license-manager-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -15109,7 +15109,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-west-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -15118,7 +15118,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-west-2.amazonaws.com",
+					Hostname: "license-manager-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15137,7 +15137,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-east-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -15146,7 +15146,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-east-2.amazonaws.com",
+					Hostname: "license-manager-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -15155,7 +15155,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-west-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15164,7 +15164,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-west-2.amazonaws.com",
+					Hostname: "license-manager-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15218,7 +15218,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-east-1.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15227,7 +15227,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-east-2.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -15236,7 +15236,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-west-1.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -15245,7 +15245,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-west-2.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15264,7 +15264,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-east-1.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -15273,7 +15273,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-east-2.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -15282,7 +15282,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-west-1.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15291,7 +15291,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-user-subscriptions-fips.us-west-2.amazonaws.com",
+					Hostname: "license-manager-user-subscriptions-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15403,7 +15403,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "logs-fips.us-east-1.amazonaws.com",
+					Hostname: "logs-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15412,7 +15412,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "logs-fips.us-east-2.amazonaws.com",
+					Hostname: "logs-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -15421,7 +15421,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "logs-fips.us-west-1.amazonaws.com",
+					Hostname: "logs-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -15430,7 +15430,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "logs-fips.us-west-2.amazonaws.com",
+					Hostname: "logs-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15452,7 +15452,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs-fips.us-east-1.amazonaws.com",
+					Hostname: "logs-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -15461,7 +15461,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs-fips.us-east-2.amazonaws.com",
+					Hostname: "logs-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -15470,7 +15470,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs-fips.us-west-1.amazonaws.com",
+					Hostname: "logs-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15479,7 +15479,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs-fips.us-west-2.amazonaws.com",
+					Hostname: "logs-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15607,7 +15607,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "macie-fips.us-east-1.amazonaws.com",
+					Hostname: "macie-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15616,7 +15616,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "macie-fips.us-west-2.amazonaws.com",
+					Hostname: "macie-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15629,7 +15629,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie-fips.us-east-1.amazonaws.com",
+					Hostname: "macie-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15638,7 +15638,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie-fips.us-west-2.amazonaws.com",
+					Hostname: "macie-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15692,7 +15692,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "macie2-fips.us-east-1.amazonaws.com",
+					Hostname: "macie2-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15701,7 +15701,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "macie2-fips.us-east-2.amazonaws.com",
+					Hostname: "macie2-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -15710,7 +15710,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "macie2-fips.us-west-1.amazonaws.com",
+					Hostname: "macie2-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -15719,7 +15719,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "macie2-fips.us-west-2.amazonaws.com",
+					Hostname: "macie2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15738,7 +15738,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie2-fips.us-east-1.amazonaws.com",
+					Hostname: "macie2-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -15747,7 +15747,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie2-fips.us-east-2.amazonaws.com",
+					Hostname: "macie2-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -15756,7 +15756,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie2-fips.us-west-1.amazonaws.com",
+					Hostname: "macie2-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -15765,7 +15765,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "macie2-fips.us-west-2.amazonaws.com",
+					Hostname: "macie2-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -15813,12 +15813,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "media-pipelines-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "media-pipelines-chime-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "media-pipelines-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "media-pipelines-chime-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15831,12 +15831,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "media-pipelines-chime-fips.us-west-2.amazonaws.com",
+					Hostname: "media-pipelines-chime-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "media-pipelines-chime-fips.us-west-2.amazonaws.com",
+					Hostname: "media-pipelines-chime-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15920,7 +15920,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mediaconvert-fips.ca-central-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -15940,7 +15940,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "mediaconvert-fips.ca-central-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -15949,7 +15949,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-east-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -15958,7 +15958,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-east-2.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -15967,7 +15967,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-west-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -15976,7 +15976,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-west-2.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -15992,7 +15992,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-east-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -16001,7 +16001,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-east-2.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -16010,7 +16010,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-west-1.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -16019,7 +16019,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mediaconvert-fips.us-west-2.amazonaws.com",
+					Hostname: "mediaconvert-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -16058,7 +16058,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "medialive-fips.us-east-1.amazonaws.com",
+					Hostname: "medialive-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16067,7 +16067,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "medialive-fips.us-east-2.amazonaws.com",
+					Hostname: "medialive-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -16076,7 +16076,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "medialive-fips.us-west-2.amazonaws.com",
+					Hostname: "medialive-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -16092,7 +16092,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "medialive-fips.us-east-1.amazonaws.com",
+					Hostname: "medialive-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -16101,7 +16101,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "medialive-fips.us-east-2.amazonaws.com",
+					Hostname: "medialive-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -16110,7 +16110,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "medialive-fips.us-west-2.amazonaws.com",
+					Hostname: "medialive-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -16258,12 +16258,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16276,12 +16276,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-west-2.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-west-2.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -16333,7 +16333,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "memory-db-fips.us-west-1.amazonaws.com",
+					Hostname: "memory-db-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -16367,12 +16367,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "messaging-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "messaging-chime-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "messaging-chime-fips.us-east-1.amazonaws.com",
+					Hostname: "messaging-chime-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16700,12 +16700,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "models-fips.lex.us-east-1.amazonaws.com",
+					Hostname: "models-fips.lex.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "models-fips.lex.us-east-1.amazonaws.com",
+					Hostname: "models-fips.lex.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16718,12 +16718,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "models-fips.lex.us-west-2.amazonaws.com",
+					Hostname: "models-fips.lex.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "models-fips.lex.us-west-2.amazonaws.com",
+					Hostname: "models-fips.lex.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -16798,7 +16798,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "monitoring-fips.us-east-1.amazonaws.com",
+					Hostname: "monitoring-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16807,7 +16807,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "monitoring-fips.us-east-2.amazonaws.com",
+					Hostname: "monitoring-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -16816,7 +16816,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "monitoring-fips.us-west-1.amazonaws.com",
+					Hostname: "monitoring-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -16825,7 +16825,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "monitoring-fips.us-west-2.amazonaws.com",
+					Hostname: "monitoring-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -16847,7 +16847,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring-fips.us-east-1.amazonaws.com",
+					Hostname: "monitoring-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -16856,7 +16856,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring-fips.us-east-2.amazonaws.com",
+					Hostname: "monitoring-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -16865,7 +16865,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring-fips.us-west-1.amazonaws.com",
+					Hostname: "monitoring-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -16874,7 +16874,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring-fips.us-west-2.amazonaws.com",
+					Hostname: "monitoring-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -16931,7 +16931,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "mq-fips.us-east-1.amazonaws.com",
+					Hostname: "mq-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -16940,7 +16940,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "mq-fips.us-east-2.amazonaws.com",
+					Hostname: "mq-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -16949,7 +16949,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "mq-fips.us-west-1.amazonaws.com",
+					Hostname: "mq-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -16958,7 +16958,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "mq-fips.us-west-2.amazonaws.com",
+					Hostname: "mq-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -16977,7 +16977,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-east-1.amazonaws.com",
+					Hostname: "mq-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -16986,7 +16986,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-east-2.amazonaws.com",
+					Hostname: "mq-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -16995,7 +16995,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-west-1.amazonaws.com",
+					Hostname: "mq-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -17004,7 +17004,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-west-2.amazonaws.com",
+					Hostname: "mq-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -17014,7 +17014,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sandbox",
 				}: endpoint{
-					Hostname: "mturk-requester-sandbox.us-east-1.amazonaws.com",
+					Hostname: "mturk-requester-sandbox.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
@@ -17026,7 +17026,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "rds.ap-east-1.amazonaws.com",
+					Hostname: "rds.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -17034,7 +17034,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "rds.ap-northeast-1.amazonaws.com",
+					Hostname: "rds.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -17042,7 +17042,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "rds.ap-northeast-2.amazonaws.com",
+					Hostname: "rds.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -17050,7 +17050,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "rds.ap-south-1.amazonaws.com",
+					Hostname: "rds.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -17058,7 +17058,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "rds.ap-southeast-1.amazonaws.com",
+					Hostname: "rds.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -17066,7 +17066,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "rds.ap-southeast-2.amazonaws.com",
+					Hostname: "rds.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -17074,7 +17074,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "rds.ca-central-1.amazonaws.com",
+					Hostname: "rds.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -17082,7 +17082,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "rds.eu-central-1.amazonaws.com",
+					Hostname: "rds.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -17090,7 +17090,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "rds.eu-north-1.amazonaws.com",
+					Hostname: "rds.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -17098,7 +17098,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "rds.eu-west-1.amazonaws.com",
+					Hostname: "rds.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -17106,7 +17106,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "rds.eu-west-2.amazonaws.com",
+					Hostname: "rds.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -17114,7 +17114,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "rds.eu-west-3.amazonaws.com",
+					Hostname: "rds.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -17122,7 +17122,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "rds.me-south-1.amazonaws.com",
+					Hostname: "rds.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -17130,7 +17130,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "rds.sa-east-1.amazonaws.com",
+					Hostname: "rds.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -17138,7 +17138,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "rds.us-east-1.amazonaws.com",
+					Hostname: "rds.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17146,7 +17146,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "rds.us-east-2.amazonaws.com",
+					Hostname: "rds.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -17154,7 +17154,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname: "rds.us-west-1.amazonaws.com",
+					Hostname: "rds.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -17162,7 +17162,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "rds.us-west-2.amazonaws.com",
+					Hostname: "rds.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17202,7 +17202,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.ca-central-1.amazonaws.com",
+					Hostname: "network-firewall-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -17225,7 +17225,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "network-firewall-fips.ca-central-1.amazonaws.com",
+					Hostname: "network-firewall-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -17234,7 +17234,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-east-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17243,7 +17243,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-east-2.amazonaws.com",
+					Hostname: "network-firewall-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -17252,7 +17252,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-west-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -17261,7 +17261,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-west-2.amazonaws.com",
+					Hostname: "network-firewall-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17280,7 +17280,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-east-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -17289,7 +17289,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-east-2.amazonaws.com",
+					Hostname: "network-firewall-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -17298,7 +17298,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-west-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -17307,7 +17307,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-west-2.amazonaws.com",
+					Hostname: "network-firewall-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -17318,7 +17318,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "networkmanager.us-west-2.amazonaws.com",
+					Hostname: "networkmanager.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17434,7 +17434,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "oidc.ap-east-1.amazonaws.com",
+					Hostname: "oidc.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -17442,7 +17442,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "oidc.ap-northeast-1.amazonaws.com",
+					Hostname: "oidc.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -17450,7 +17450,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "oidc.ap-northeast-2.amazonaws.com",
+					Hostname: "oidc.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -17458,7 +17458,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "oidc.ap-northeast-3.amazonaws.com",
+					Hostname: "oidc.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -17466,7 +17466,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "oidc.ap-south-1.amazonaws.com",
+					Hostname: "oidc.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -17474,7 +17474,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "oidc.ap-southeast-1.amazonaws.com",
+					Hostname: "oidc.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -17482,7 +17482,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "oidc.ap-southeast-2.amazonaws.com",
+					Hostname: "oidc.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -17490,7 +17490,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "oidc.ca-central-1.amazonaws.com",
+					Hostname: "oidc.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -17498,7 +17498,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "oidc.eu-central-1.amazonaws.com",
+					Hostname: "oidc.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -17506,7 +17506,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "oidc.eu-north-1.amazonaws.com",
+					Hostname: "oidc.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -17514,7 +17514,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "oidc.eu-south-1.amazonaws.com",
+					Hostname: "oidc.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -17522,7 +17522,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "oidc.eu-west-1.amazonaws.com",
+					Hostname: "oidc.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -17530,7 +17530,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "oidc.eu-west-2.amazonaws.com",
+					Hostname: "oidc.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -17538,7 +17538,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "oidc.eu-west-3.amazonaws.com",
+					Hostname: "oidc.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -17546,7 +17546,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "oidc.me-south-1.amazonaws.com",
+					Hostname: "oidc.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -17554,7 +17554,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "oidc.sa-east-1.amazonaws.com",
+					Hostname: "oidc.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -17562,7 +17562,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "oidc.us-east-1.amazonaws.com",
+					Hostname: "oidc.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17570,7 +17570,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "oidc.us-east-2.amazonaws.com",
+					Hostname: "oidc.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -17578,7 +17578,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "oidc.us-west-2.amazonaws.com",
+					Hostname: "oidc.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17672,7 +17672,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "organizations.us-east-1.amazonaws.com",
+					Hostname: "organizations.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17681,7 +17681,7 @@ var awsPartition = partition{
 					Region:  "aws-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "organizations-fips.us-east-1.amazonaws.com",
+					Hostname: "organizations-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17689,7 +17689,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-aws-global",
 				}: endpoint{
-					Hostname: "organizations-fips.us-east-1.amazonaws.com",
+					Hostname: "organizations-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17733,7 +17733,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "outposts-fips.ca-central-1.amazonaws.com",
+					Hostname: "outposts-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -17756,7 +17756,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "outposts-fips.ca-central-1.amazonaws.com",
+					Hostname: "outposts-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -17765,7 +17765,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "outposts-fips.us-east-1.amazonaws.com",
+					Hostname: "outposts-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17774,7 +17774,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "outposts-fips.us-east-2.amazonaws.com",
+					Hostname: "outposts-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -17783,7 +17783,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "outposts-fips.us-west-1.amazonaws.com",
+					Hostname: "outposts-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -17792,7 +17792,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "outposts-fips.us-west-2.amazonaws.com",
+					Hostname: "outposts-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17811,7 +17811,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "outposts-fips.us-east-1.amazonaws.com",
+					Hostname: "outposts-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -17820,7 +17820,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "outposts-fips.us-east-2.amazonaws.com",
+					Hostname: "outposts-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -17829,7 +17829,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "outposts-fips.us-west-1.amazonaws.com",
+					Hostname: "outposts-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -17838,7 +17838,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "outposts-fips.us-west-2.amazonaws.com",
+					Hostname: "outposts-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -17871,7 +17871,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "participant.connect-fips.us-east-1.amazonaws.com",
+					Hostname: "participant.connect-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -17880,7 +17880,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "participant.connect-fips.us-west-2.amazonaws.com",
+					Hostname: "participant.connect-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -17893,7 +17893,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "participant.connect-fips.us-east-1.amazonaws.com",
+					Hostname: "participant.connect-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -17902,7 +17902,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "participant.connect-fips.us-west-2.amazonaws.com",
+					Hostname: "participant.connect-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -18052,7 +18052,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "pinpoint.ca-central-1.amazonaws.com",
+					Hostname: "pinpoint.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18061,7 +18061,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "pinpoint-fips.ca-central-1.amazonaws.com",
+					Hostname: "pinpoint-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18078,7 +18078,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "pinpoint-fips.ca-central-1.amazonaws.com",
+					Hostname: "pinpoint-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18087,7 +18087,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-east-1.amazonaws.com",
+					Hostname: "pinpoint-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18096,7 +18096,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-east-2.amazonaws.com",
+					Hostname: "pinpoint-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18105,7 +18105,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-west-2.amazonaws.com",
+					Hostname: "pinpoint-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18114,7 +18114,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "pinpoint.us-east-1.amazonaws.com",
+					Hostname: "pinpoint.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18123,7 +18123,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-east-1.amazonaws.com",
+					Hostname: "pinpoint-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18131,7 +18131,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "pinpoint.us-east-2.amazonaws.com",
+					Hostname: "pinpoint.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18140,7 +18140,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-east-2.amazonaws.com",
+					Hostname: "pinpoint-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18148,7 +18148,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "pinpoint.us-west-2.amazonaws.com",
+					Hostname: "pinpoint.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18157,7 +18157,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-west-2.amazonaws.com",
+					Hostname: "pinpoint-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18208,7 +18208,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "polly-fips.us-east-1.amazonaws.com",
+					Hostname: "polly-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18217,7 +18217,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "polly-fips.us-east-2.amazonaws.com",
+					Hostname: "polly-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18226,7 +18226,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "polly-fips.us-west-1.amazonaws.com",
+					Hostname: "polly-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -18235,7 +18235,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "polly-fips.us-west-2.amazonaws.com",
+					Hostname: "polly-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18254,7 +18254,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "polly-fips.us-east-1.amazonaws.com",
+					Hostname: "polly-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -18263,7 +18263,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "polly-fips.us-east-2.amazonaws.com",
+					Hostname: "polly-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -18272,7 +18272,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "polly-fips.us-west-1.amazonaws.com",
+					Hostname: "polly-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -18281,7 +18281,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "polly-fips.us-west-2.amazonaws.com",
+					Hostname: "polly-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -18290,7 +18290,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "portal.sso.ap-east-1.amazonaws.com",
+					Hostname: "portal.sso.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -18298,7 +18298,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "portal.sso.ap-northeast-1.amazonaws.com",
+					Hostname: "portal.sso.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -18306,7 +18306,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "portal.sso.ap-northeast-2.amazonaws.com",
+					Hostname: "portal.sso.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -18314,7 +18314,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "portal.sso.ap-northeast-3.amazonaws.com",
+					Hostname: "portal.sso.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -18322,7 +18322,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "portal.sso.ap-south-1.amazonaws.com",
+					Hostname: "portal.sso.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -18330,7 +18330,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "portal.sso.ap-southeast-1.amazonaws.com",
+					Hostname: "portal.sso.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -18338,7 +18338,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "portal.sso.ap-southeast-2.amazonaws.com",
+					Hostname: "portal.sso.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -18346,7 +18346,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "portal.sso.ca-central-1.amazonaws.com",
+					Hostname: "portal.sso.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18354,7 +18354,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "portal.sso.eu-central-1.amazonaws.com",
+					Hostname: "portal.sso.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -18362,7 +18362,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "portal.sso.eu-north-1.amazonaws.com",
+					Hostname: "portal.sso.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -18370,7 +18370,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "portal.sso.eu-south-1.amazonaws.com",
+					Hostname: "portal.sso.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -18378,7 +18378,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "portal.sso.eu-west-1.amazonaws.com",
+					Hostname: "portal.sso.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -18386,7 +18386,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "portal.sso.eu-west-2.amazonaws.com",
+					Hostname: "portal.sso.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -18394,7 +18394,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "portal.sso.eu-west-3.amazonaws.com",
+					Hostname: "portal.sso.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -18402,7 +18402,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "portal.sso.me-south-1.amazonaws.com",
+					Hostname: "portal.sso.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -18410,7 +18410,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "portal.sso.sa-east-1.amazonaws.com",
+					Hostname: "portal.sso.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -18418,7 +18418,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "portal.sso.us-east-1.amazonaws.com",
+					Hostname: "portal.sso.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18426,7 +18426,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "portal.sso.us-east-2.amazonaws.com",
+					Hostname: "portal.sso.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18434,7 +18434,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "portal.sso.us-west-2.amazonaws.com",
+					Hostname: "portal.sso.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18558,7 +18558,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "qldb-fips.ca-central-1.amazonaws.com",
+					Hostname: "qldb-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -18572,7 +18572,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "qldb-fips.ca-central-1.amazonaws.com",
+					Hostname: "qldb-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18581,7 +18581,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "qldb-fips.us-east-1.amazonaws.com",
+					Hostname: "qldb-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18590,7 +18590,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "qldb-fips.us-east-2.amazonaws.com",
+					Hostname: "qldb-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18599,7 +18599,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "qldb-fips.us-west-2.amazonaws.com",
+					Hostname: "qldb-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18612,7 +18612,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "qldb-fips.us-east-1.amazonaws.com",
+					Hostname: "qldb-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -18621,7 +18621,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "qldb-fips.us-east-2.amazonaws.com",
+					Hostname: "qldb-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -18630,7 +18630,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "qldb-fips.us-west-2.amazonaws.com",
+					Hostname: "qldb-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -18716,7 +18716,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ram-fips.ca-central-1.amazonaws.com",
+					Hostname: "ram-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -18739,7 +18739,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "ram-fips.ca-central-1.amazonaws.com",
+					Hostname: "ram-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18748,7 +18748,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ram-fips.us-east-1.amazonaws.com",
+					Hostname: "ram-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18757,7 +18757,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ram-fips.us-east-2.amazonaws.com",
+					Hostname: "ram-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18766,7 +18766,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ram-fips.us-west-1.amazonaws.com",
+					Hostname: "ram-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -18775,7 +18775,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ram-fips.us-west-2.amazonaws.com",
+					Hostname: "ram-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18797,7 +18797,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ram-fips.us-east-1.amazonaws.com",
+					Hostname: "ram-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -18806,7 +18806,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ram-fips.us-east-2.amazonaws.com",
+					Hostname: "ram-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -18815,7 +18815,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ram-fips.us-west-1.amazonaws.com",
+					Hostname: "ram-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -18824,7 +18824,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ram-fips.us-west-2.amazonaws.com",
+					Hostname: "ram-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -18864,7 +18864,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.ca-central-1.amazonaws.com",
+					Hostname: "rbin-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -18893,7 +18893,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "rbin-fips.ca-central-1.amazonaws.com",
+					Hostname: "rbin-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -18902,7 +18902,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "rbin-fips.us-east-1.amazonaws.com",
+					Hostname: "rbin-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -18911,7 +18911,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "rbin-fips.us-east-2.amazonaws.com",
+					Hostname: "rbin-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -18920,7 +18920,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "rbin-fips.us-west-1.amazonaws.com",
+					Hostname: "rbin-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -18929,7 +18929,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "rbin-fips.us-west-2.amazonaws.com",
+					Hostname: "rbin-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -18951,7 +18951,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-east-1.amazonaws.com",
+					Hostname: "rbin-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -18960,7 +18960,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-east-2.amazonaws.com",
+					Hostname: "rbin-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -18969,7 +18969,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-west-1.amazonaws.com",
+					Hostname: "rbin-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -18978,7 +18978,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-west-2.amazonaws.com",
+					Hostname: "rbin-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -19021,12 +19021,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.ca-central-1.amazonaws.com",
+					Hostname: "rds-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "rds-fips.ca-central-1.amazonaws.com",
+					Hostname: "rds-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19065,7 +19065,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rds-fips.ca-central-1",
 				}: endpoint{
-					Hostname: "rds-fips.ca-central-1.amazonaws.com",
+					Hostname: "rds-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19074,7 +19074,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rds-fips.us-east-1",
 				}: endpoint{
-					Hostname: "rds-fips.us-east-1.amazonaws.com",
+					Hostname: "rds-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19083,7 +19083,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rds-fips.us-east-2",
 				}: endpoint{
-					Hostname: "rds-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19092,7 +19092,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rds-fips.us-west-1",
 				}: endpoint{
-					Hostname: "rds-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19101,7 +19101,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rds-fips.us-west-2",
 				}: endpoint{
-					Hostname: "rds-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19119,7 +19119,7 @@ var awsPartition = partition{
 					Region:  "rds.ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.ca-central-1.amazonaws.com",
+					Hostname: "rds-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19137,7 +19137,7 @@ var awsPartition = partition{
 					Region:  "rds.us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-east-1.amazonaws.com",
+					Hostname: "rds-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19155,7 +19155,7 @@ var awsPartition = partition{
 					Region:  "rds.us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19173,7 +19173,7 @@ var awsPartition = partition{
 					Region:  "rds.us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19191,7 +19191,7 @@ var awsPartition = partition{
 					Region:  "rds.us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19209,13 +19209,13 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:      "rds-fips.us-east-1.amazonaws.com",
+					Hostname:      "rds-fips.us-east-1.samsungspc.com",
 					SSLCommonName: "{service}.{dnsSuffix}",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "rds-fips.us-east-1.amazonaws.com",
+					Hostname: "rds-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19228,12 +19228,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "rds-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19246,12 +19246,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "rds-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19264,12 +19264,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "rds-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19312,7 +19312,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "rds-data-fips.us-east-1.amazonaws.com",
+					Hostname: "rds-data-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19321,7 +19321,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "rds-data-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-data-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19330,7 +19330,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "rds-data-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-data-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19339,7 +19339,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "rds-data-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-data-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19352,7 +19352,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-data-fips.us-east-1.amazonaws.com",
+					Hostname: "rds-data-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -19361,7 +19361,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-data-fips.us-east-2.amazonaws.com",
+					Hostname: "rds-data-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -19370,7 +19370,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-data-fips.us-west-1.amazonaws.com",
+					Hostname: "rds-data-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -19379,7 +19379,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds-data-fips.us-west-2.amazonaws.com",
+					Hostname: "rds-data-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -19422,7 +19422,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "redshift-fips.ca-central-1.amazonaws.com",
+					Hostname: "redshift-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -19451,7 +19451,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "redshift-fips.ca-central-1.amazonaws.com",
+					Hostname: "redshift-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19460,7 +19460,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "redshift-fips.us-east-1.amazonaws.com",
+					Hostname: "redshift-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19469,7 +19469,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "redshift-fips.us-east-2.amazonaws.com",
+					Hostname: "redshift-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19478,7 +19478,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "redshift-fips.us-west-1.amazonaws.com",
+					Hostname: "redshift-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19487,7 +19487,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "redshift-fips.us-west-2.amazonaws.com",
+					Hostname: "redshift-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19509,7 +19509,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "redshift-fips.us-east-1.amazonaws.com",
+					Hostname: "redshift-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -19518,7 +19518,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "redshift-fips.us-east-2.amazonaws.com",
+					Hostname: "redshift-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -19527,7 +19527,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "redshift-fips.us-west-1.amazonaws.com",
+					Hostname: "redshift-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -19536,7 +19536,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "redshift-fips.us-west-2.amazonaws.com",
+					Hostname: "redshift-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -19601,12 +19601,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.ca-central-1.amazonaws.com",
+					Hostname: "rekognition-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.ca-central-1.amazonaws.com",
+					Hostname: "rekognition-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19624,7 +19624,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.ca-central-1",
 				}: endpoint{
-					Hostname: "rekognition-fips.ca-central-1.amazonaws.com",
+					Hostname: "rekognition-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19633,7 +19633,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.us-east-1",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19642,7 +19642,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.us-east-2",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19651,7 +19651,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.us-west-1",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19660,7 +19660,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.us-west-2",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19678,7 +19678,7 @@ var awsPartition = partition{
 					Region:  "rekognition.ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.ca-central-1.amazonaws.com",
+					Hostname: "rekognition-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -19696,7 +19696,7 @@ var awsPartition = partition{
 					Region:  "rekognition.us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19714,7 +19714,7 @@ var awsPartition = partition{
 					Region:  "rekognition.us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19732,7 +19732,7 @@ var awsPartition = partition{
 					Region:  "rekognition.us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19750,7 +19750,7 @@ var awsPartition = partition{
 					Region:  "rekognition.us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -19763,12 +19763,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -19781,12 +19781,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-east-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -19799,12 +19799,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -19817,12 +19817,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-west-2.amazonaws.com",
+					Hostname: "rekognition-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20065,7 +20065,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-east-1.amazonaws.com",
+					Hostname: "resource-groups-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20074,7 +20074,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-east-2.amazonaws.com",
+					Hostname: "resource-groups-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -20083,7 +20083,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-west-1.amazonaws.com",
+					Hostname: "resource-groups-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -20092,7 +20092,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-west-2.amazonaws.com",
+					Hostname: "resource-groups-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20114,7 +20114,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-east-1.amazonaws.com",
+					Hostname: "resource-groups-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -20123,7 +20123,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-east-2.amazonaws.com",
+					Hostname: "resource-groups-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -20132,7 +20132,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-west-1.amazonaws.com",
+					Hostname: "resource-groups-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -20141,7 +20141,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups-fips.us-west-2.amazonaws.com",
+					Hostname: "resource-groups-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -20247,7 +20247,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "route53.amazonaws.com",
+					Hostname: "route53.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20256,7 +20256,7 @@ var awsPartition = partition{
 					Region:  "aws-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "route53-fips.amazonaws.com",
+					Hostname: "route53-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20264,7 +20264,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-aws-global",
 				}: endpoint{
-					Hostname: "route53-fips.amazonaws.com",
+					Hostname: "route53-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20277,7 +20277,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "route53-recovery-control-config.us-west-2.amazonaws.com",
+					Hostname: "route53-recovery-control-config.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20479,12 +20479,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-east-1.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-east-1.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20497,12 +20497,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-west-2.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-west-2.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20581,12 +20581,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-east-1.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-east-1.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20599,12 +20599,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-east-2.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-east-2.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -20617,12 +20617,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-west-1.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-west-1.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -20635,12 +20635,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-west-2.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.sagemaker.us-west-2.amazonaws.com",
+					Hostname: "runtime-fips.sagemaker.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20660,7 +20660,7 @@ var awsPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"http", "https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -20668,7 +20668,7 @@ var awsPartition = partition{
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}-fips.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"http", "https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -20681,7 +20681,7 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.af-south-1.amazonaws.com",
+					Hostname: "s3.dualstack.af-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-east-1",
@@ -20690,19 +20690,19 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-east-1.amazonaws.com",
+					Hostname: "s3.dualstack.ap-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname:          "s3.ap-northeast-1.amazonaws.com",
+					Hostname:          "s3.ap-northeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "ap-northeast-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.ap-northeast-1.amazonaws.com",
+					Hostname:          "s3.dualstack.ap-northeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
@@ -20712,7 +20712,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-northeast-2.amazonaws.com",
+					Hostname: "s3.dualstack.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-3",
@@ -20721,7 +20721,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-northeast-3.amazonaws.com",
+					Hostname: "s3.dualstack.ap-northeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-1",
@@ -20730,7 +20730,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-south-1.amazonaws.com",
+					Hostname: "s3.dualstack.ap-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-2",
@@ -20739,32 +20739,32 @@ var awsPartition = partition{
 					Region:  "ap-south-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-south-2.amazonaws.com",
+					Hostname: "s3.dualstack.ap-south-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname:          "s3.ap-southeast-1.amazonaws.com",
+					Hostname:          "s3.ap-southeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "ap-southeast-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.ap-southeast-1.amazonaws.com",
+					Hostname:          "s3.dualstack.ap-southeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname:          "s3.ap-southeast-2.amazonaws.com",
+					Hostname:          "s3.ap-southeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "ap-southeast-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.ap-southeast-2.amazonaws.com",
+					Hostname:          "s3.dualstack.ap-southeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
@@ -20774,12 +20774,12 @@ var awsPartition = partition{
 					Region:  "ap-southeast-3",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ap-southeast-3.amazonaws.com",
+					Hostname: "s3.dualstack.ap-southeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname:          "s3.amazonaws.com",
+					Hostname:          "s3.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -20792,19 +20792,19 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.ca-central-1.amazonaws.com",
+					Hostname: "s3.dualstack.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "s3-fips.ca-central-1.amazonaws.com",
+					Hostname: "s3-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "ca-central-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname: "s3-fips.dualstack.ca-central-1.amazonaws.com",
+					Hostname: "s3-fips.dualstack.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -20813,7 +20813,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-central-1.amazonaws.com",
+					Hostname: "s3.dualstack.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-2",
@@ -20822,7 +20822,7 @@ var awsPartition = partition{
 					Region:  "eu-central-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-central-2.amazonaws.com",
+					Hostname: "s3.dualstack.eu-central-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1",
@@ -20831,7 +20831,7 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-north-1.amazonaws.com",
+					Hostname: "s3.dualstack.eu-north-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-south-1",
@@ -20840,7 +20840,7 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-south-1.amazonaws.com",
+					Hostname: "s3.dualstack.eu-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-south-2",
@@ -20849,19 +20849,19 @@ var awsPartition = partition{
 					Region:  "eu-south-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-south-2.amazonaws.com",
+					Hostname: "s3.dualstack.eu-south-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname:          "s3.eu-west-1.amazonaws.com",
+					Hostname:          "s3.eu-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "eu-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.eu-west-1.amazonaws.com",
+					Hostname:          "s3.dualstack.eu-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
@@ -20871,7 +20871,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-west-2.amazonaws.com",
+					Hostname: "s3.dualstack.eu-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-3",
@@ -20880,12 +20880,12 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.eu-west-3.amazonaws.com",
+					Hostname: "s3.dualstack.eu-west-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "s3-fips.ca-central-1.amazonaws.com",
+					Hostname: "s3-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -20894,7 +20894,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "s3-fips.us-east-1.amazonaws.com",
+					Hostname: "s3-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -20903,7 +20903,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "s3-fips.us-east-2.amazonaws.com",
+					Hostname: "s3-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -20912,7 +20912,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "s3-fips.us-west-1.amazonaws.com",
+					Hostname: "s3-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -20921,7 +20921,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "s3-fips.us-west-2.amazonaws.com",
+					Hostname: "s3-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -20934,7 +20934,7 @@ var awsPartition = partition{
 					Region:  "me-central-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.me-central-1.amazonaws.com",
+					Hostname: "s3.dualstack.me-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "me-south-1",
@@ -20943,12 +20943,12 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.me-south-1.amazonaws.com",
+					Hostname: "s3.dualstack.me-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "s3-external-1",
 				}: endpoint{
-					Hostname:          "s3-external-1.amazonaws.com",
+					Hostname:          "s3-external-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -20957,41 +20957,41 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname:          "s3.sa-east-1.amazonaws.com",
+					Hostname:          "s3.sa-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "sa-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.sa-east-1.amazonaws.com",
+					Hostname:          "s3.dualstack.sa-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname:          "s3.us-east-1.amazonaws.com",
+					Hostname:          "s3.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.us-east-1.amazonaws.com",
+					Hostname:          "s3.dualstack.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.us-east-1.amazonaws.com",
+					Hostname:          "s3-fips.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-east-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.dualstack.us-east-1.amazonaws.com",
+					Hostname:          "s3-fips.dualstack.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
@@ -21001,72 +21001,72 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.us-east-2.amazonaws.com",
+					Hostname: "s3.dualstack.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "s3-fips.us-east-2.amazonaws.com",
+					Hostname: "s3-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region:  "us-east-2",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname: "s3-fips.dualstack.us-east-2.amazonaws.com",
+					Hostname: "s3-fips.dualstack.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname:          "s3.us-west-1.amazonaws.com",
+					Hostname:          "s3.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.us-west-1.amazonaws.com",
+					Hostname:          "s3.dualstack.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.us-west-1.amazonaws.com",
+					Hostname:          "s3-fips.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.dualstack.us-west-1.amazonaws.com",
+					Hostname:          "s3-fips.dualstack.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname:          "s3.us-west-2.amazonaws.com",
+					Hostname:          "s3.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3.dualstack.us-west-2.amazonaws.com",
+					Hostname:          "s3.dualstack.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.us-west-2.amazonaws.com",
+					Hostname:          "s3-fips.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				endpointKey{
 					Region:  "us-west-2",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-fips.dualstack.us-west-2.amazonaws.com",
+					Hostname:          "s3-fips.dualstack.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 			},
@@ -21081,7 +21081,7 @@ var awsPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -21089,7 +21089,7 @@ var awsPartition = partition{
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}-fips.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -21098,7 +21098,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname:          "s3-control.ap-northeast-1.amazonaws.com",
+					Hostname:          "s3-control.ap-northeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
@@ -21108,7 +21108,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-northeast-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-northeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
@@ -21117,7 +21117,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname:          "s3-control.ap-northeast-2.amazonaws.com",
+					Hostname:          "s3-control.ap-northeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
@@ -21127,7 +21127,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-northeast-2.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-northeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
@@ -21136,7 +21136,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname:          "s3-control.ap-northeast-3.amazonaws.com",
+					Hostname:          "s3-control.ap-northeast-3.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
@@ -21146,7 +21146,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-northeast-3.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-northeast-3.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
@@ -21155,7 +21155,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname:          "s3-control.ap-south-1.amazonaws.com",
+					Hostname:          "s3-control.ap-south-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
@@ -21165,7 +21165,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-south-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-south-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
@@ -21174,7 +21174,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname:          "s3-control.ap-southeast-1.amazonaws.com",
+					Hostname:          "s3-control.ap-southeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
@@ -21184,7 +21184,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-southeast-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-southeast-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
@@ -21193,7 +21193,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname:          "s3-control.ap-southeast-2.amazonaws.com",
+					Hostname:          "s3-control.ap-southeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
@@ -21203,7 +21203,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ap-southeast-2.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ap-southeast-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
@@ -21212,7 +21212,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname:          "s3-control.ca-central-1.amazonaws.com",
+					Hostname:          "s3-control.ca-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
@@ -21222,7 +21222,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.ca-central-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.ca-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
@@ -21232,7 +21232,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.ca-central-1.amazonaws.com",
+					Hostname:          "s3-control-fips.ca-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
@@ -21242,7 +21242,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.ca-central-1.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.ca-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
@@ -21251,7 +21251,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.ca-central-1.amazonaws.com",
+					Hostname:          "s3-control-fips.ca-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
@@ -21261,7 +21261,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname:          "s3-control.eu-central-1.amazonaws.com",
+					Hostname:          "s3-control.eu-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
@@ -21271,7 +21271,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.eu-central-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.eu-central-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
@@ -21280,7 +21280,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname:          "s3-control.eu-north-1.amazonaws.com",
+					Hostname:          "s3-control.eu-north-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
@@ -21290,7 +21290,7 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.eu-north-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.eu-north-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
@@ -21299,7 +21299,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname:          "s3-control.eu-west-1.amazonaws.com",
+					Hostname:          "s3-control.eu-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
@@ -21309,7 +21309,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.eu-west-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.eu-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
@@ -21318,7 +21318,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname:          "s3-control.eu-west-2.amazonaws.com",
+					Hostname:          "s3-control.eu-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
@@ -21328,7 +21328,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.eu-west-2.amazonaws.com",
+					Hostname:          "s3-control.dualstack.eu-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
@@ -21337,7 +21337,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname:          "s3-control.eu-west-3.amazonaws.com",
+					Hostname:          "s3-control.eu-west-3.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
@@ -21347,7 +21347,7 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.eu-west-3.amazonaws.com",
+					Hostname:          "s3-control.dualstack.eu-west-3.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
@@ -21356,7 +21356,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname:          "s3-control.sa-east-1.amazonaws.com",
+					Hostname:          "s3-control.sa-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
@@ -21366,7 +21366,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.sa-east-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.sa-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
@@ -21375,7 +21375,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname:          "s3-control.us-east-1.amazonaws.com",
+					Hostname:          "s3-control.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -21385,7 +21385,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-east-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -21395,7 +21395,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -21405,7 +21405,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -21414,7 +21414,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
@@ -21424,7 +21424,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname:          "s3-control.us-east-2.amazonaws.com",
+					Hostname:          "s3-control.us-east-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
@@ -21434,7 +21434,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-east-2.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-east-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
@@ -21444,7 +21444,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-east-2.amazonaws.com",
+					Hostname:          "s3-control-fips.us-east-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
@@ -21454,7 +21454,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-east-2.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-east-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
@@ -21463,7 +21463,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-east-2.amazonaws.com",
+					Hostname:          "s3-control-fips.us-east-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
@@ -21473,7 +21473,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname:          "s3-control.us-west-1.amazonaws.com",
+					Hostname:          "s3-control.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
@@ -21483,7 +21483,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-west-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
@@ -21493,7 +21493,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
@@ -21503,7 +21503,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
@@ -21512,7 +21512,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
@@ -21522,7 +21522,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname:          "s3-control.us-west-2.amazonaws.com",
+					Hostname:          "s3-control.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
@@ -21532,7 +21532,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-west-2.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
@@ -21542,7 +21542,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-west-2.amazonaws.com",
+					Hostname:          "s3-control-fips.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
@@ -21552,7 +21552,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-west-2.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
@@ -21561,7 +21561,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-west-2.amazonaws.com",
+					Hostname:          "s3-control-fips.us-west-2.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
@@ -21697,7 +21697,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "savingsplans.amazonaws.com",
+					Hostname: "savingsplans.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -21816,7 +21816,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "sdb.amazonaws.com",
+					Hostname: "sdb.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -21865,12 +21865,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.ca-central-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.ca-central-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -21916,12 +21916,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-east-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-east-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -21934,12 +21934,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-east-2.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-east-2.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -21952,12 +21952,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-west-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-west-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -21970,12 +21970,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-west-2.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-west-2.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22036,7 +22036,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-east-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22045,7 +22045,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-east-2.amazonaws.com",
+					Hostname: "securityhub-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22054,7 +22054,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-west-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -22063,7 +22063,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-west-2.amazonaws.com",
+					Hostname: "securityhub-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22082,7 +22082,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-east-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -22091,7 +22091,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-east-2.amazonaws.com",
+					Hostname: "securityhub-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -22100,7 +22100,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-west-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -22109,7 +22109,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-west-2.amazonaws.com",
+					Hostname: "securityhub-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -22275,12 +22275,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-east-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-east-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22293,12 +22293,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-east-2.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-east-2.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22311,12 +22311,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-west-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-west-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -22329,12 +22329,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-west-2.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-west-2.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22378,7 +22378,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -22401,7 +22401,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -22410,7 +22410,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-east-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22419,7 +22419,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-east-2.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22428,7 +22428,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-west-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -22437,7 +22437,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-west-2.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22456,7 +22456,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-east-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -22465,7 +22465,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-east-2.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -22474,7 +22474,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-west-1.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -22483,7 +22483,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-appregistry-fips.us-west-2.amazonaws.com",
+					Hostname: "servicecatalog-appregistry-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -22523,12 +22523,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -22573,7 +22573,7 @@ var awsPartition = partition{
 					Region:  "servicediscovery",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -22582,7 +22582,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "servicediscovery-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.ca-central-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -22595,12 +22595,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-east-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-east-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22613,12 +22613,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-east-2.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-east-2.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22631,12 +22631,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -22649,12 +22649,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-west-2.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-west-2.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22766,7 +22766,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-east-1.amazonaws.com",
+					Hostname: "session.qldb-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22775,7 +22775,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-east-2.amazonaws.com",
+					Hostname: "session.qldb-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22784,7 +22784,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-west-2.amazonaws.com",
+					Hostname: "session.qldb-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22797,7 +22797,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-east-1.amazonaws.com",
+					Hostname: "session.qldb-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -22806,7 +22806,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-east-2.amazonaws.com",
+					Hostname: "session.qldb-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -22815,7 +22815,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "session.qldb-fips.us-west-2.amazonaws.com",
+					Hostname: "session.qldb-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -22824,7 +22824,7 @@ var awsPartition = partition{
 			IsRegionalized:    boxedFalse,
 			Defaults: endpointDefaults{
 				defaultKey{}: endpoint{
-					SSLCommonName: "shield.us-east-1.amazonaws.com",
+					SSLCommonName: "shield.us-east-1.samsungspc.com",
 					Protocols:     []string{"https"},
 				},
 			},
@@ -22832,7 +22832,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "shield.us-east-1.amazonaws.com",
+					Hostname: "shield.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22841,7 +22841,7 @@ var awsPartition = partition{
 					Region:  "aws-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "shield-fips.us-east-1.amazonaws.com",
+					Hostname: "shield-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22849,7 +22849,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-aws-global",
 				}: endpoint{
-					Hostname: "shield-fips.us-east-1.amazonaws.com",
+					Hostname: "shield-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22904,7 +22904,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "sms-fips.us-east-1.amazonaws.com",
+					Hostname: "sms-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -22913,7 +22913,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "sms-fips.us-east-2.amazonaws.com",
+					Hostname: "sms-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -22922,7 +22922,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "sms-fips.us-west-1.amazonaws.com",
+					Hostname: "sms-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -22931,7 +22931,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "sms-fips.us-west-2.amazonaws.com",
+					Hostname: "sms-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -22950,7 +22950,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-east-1.amazonaws.com",
+					Hostname: "sms-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -22959,7 +22959,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-east-2.amazonaws.com",
+					Hostname: "sms-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -22968,7 +22968,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-west-1.amazonaws.com",
+					Hostname: "sms-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -22977,7 +22977,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-west-2.amazonaws.com",
+					Hostname: "sms-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -23030,7 +23030,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-2",
@@ -23039,7 +23039,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-northeast-3",
@@ -23048,7 +23048,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-south-1",
@@ -23057,7 +23057,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-south-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-south-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-1",
@@ -23066,7 +23066,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-southeast-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-2",
@@ -23075,7 +23075,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "snowball-fips.ap-southeast-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ap-southeast-3",
@@ -23087,7 +23087,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.ca-central-1.amazonaws.com",
+					Hostname: "snowball-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -23096,7 +23096,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.eu-central-1.amazonaws.com",
+					Hostname: "snowball-fips.eu-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-north-1",
@@ -23111,7 +23111,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-1.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-2",
@@ -23120,7 +23120,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-2.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-west-3",
@@ -23129,12 +23129,12 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-3.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-3.samsungspc.com",
 				},
 				endpointKey{
 					Region: "fips-ap-northeast-1",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -23143,7 +23143,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-2",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -23152,7 +23152,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-3",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "snowball-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -23161,7 +23161,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-south-1",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-south-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -23170,7 +23170,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-1",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "snowball-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -23179,7 +23179,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-2",
 				}: endpoint{
-					Hostname: "snowball-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "snowball-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -23188,7 +23188,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "snowball-fips.ca-central-1.amazonaws.com",
+					Hostname: "snowball-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -23197,7 +23197,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-central-1",
 				}: endpoint{
-					Hostname: "snowball-fips.eu-central-1.amazonaws.com",
+					Hostname: "snowball-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -23206,7 +23206,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-1",
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-1.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -23215,7 +23215,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-2",
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-2.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -23224,7 +23224,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-3",
 				}: endpoint{
-					Hostname: "snowball-fips.eu-west-3.amazonaws.com",
+					Hostname: "snowball-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -23233,7 +23233,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-sa-east-1",
 				}: endpoint{
-					Hostname: "snowball-fips.sa-east-1.amazonaws.com",
+					Hostname: "snowball-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -23242,7 +23242,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "snowball-fips.us-east-1.amazonaws.com",
+					Hostname: "snowball-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -23251,7 +23251,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "snowball-fips.us-east-2.amazonaws.com",
+					Hostname: "snowball-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -23260,7 +23260,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "snowball-fips.us-west-1.amazonaws.com",
+					Hostname: "snowball-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -23269,7 +23269,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "snowball-fips.us-west-2.amazonaws.com",
+					Hostname: "snowball-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -23282,7 +23282,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.sa-east-1.amazonaws.com",
+					Hostname: "snowball-fips.sa-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1",
@@ -23291,7 +23291,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-east-1.amazonaws.com",
+					Hostname: "snowball-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -23300,7 +23300,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-east-2.amazonaws.com",
+					Hostname: "snowball-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -23309,7 +23309,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-west-1.amazonaws.com",
+					Hostname: "snowball-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -23318,7 +23318,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-west-2.amazonaws.com",
+					Hostname: "snowball-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -23389,7 +23389,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "sns-fips.us-east-1.amazonaws.com",
+					Hostname: "sns-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -23398,7 +23398,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "sns-fips.us-east-2.amazonaws.com",
+					Hostname: "sns-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -23407,7 +23407,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "sns-fips.us-west-1.amazonaws.com",
+					Hostname: "sns-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -23416,7 +23416,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "sns-fips.us-west-2.amazonaws.com",
+					Hostname: "sns-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -23438,7 +23438,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sns-fips.us-east-1.amazonaws.com",
+					Hostname: "sns-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -23447,7 +23447,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sns-fips.us-east-2.amazonaws.com",
+					Hostname: "sns-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -23456,7 +23456,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sns-fips.us-west-1.amazonaws.com",
+					Hostname: "sns-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -23465,7 +23465,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sns-fips.us-west-2.amazonaws.com",
+					Hostname: "sns-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -23537,7 +23537,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "sqs-fips.us-east-1.amazonaws.com",
+					Hostname: "sqs-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -23546,7 +23546,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "sqs-fips.us-east-2.amazonaws.com",
+					Hostname: "sqs-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -23555,7 +23555,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "sqs-fips.us-west-1.amazonaws.com",
+					Hostname: "sqs-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -23564,7 +23564,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "sqs-fips.us-west-2.amazonaws.com",
+					Hostname: "sqs-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -23588,7 +23588,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:      "sqs-fips.us-east-1.amazonaws.com",
+					Hostname:      "sqs-fips.us-east-1.samsungspc.com",
 					SSLCommonName: "queue.{dnsSuffix}",
 				},
 				endpointKey{
@@ -23598,7 +23598,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sqs-fips.us-east-2.amazonaws.com",
+					Hostname: "sqs-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -23607,7 +23607,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sqs-fips.us-west-1.amazonaws.com",
+					Hostname: "sqs-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -23616,7 +23616,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sqs-fips.us-west-2.amazonaws.com",
+					Hostname: "sqs-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -23659,7 +23659,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm-fips.ca-central-1.amazonaws.com",
+					Hostname: "ssm-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -23688,7 +23688,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "ssm-fips.ca-central-1.amazonaws.com",
+					Hostname: "ssm-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -23697,7 +23697,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "ssm-fips.us-east-1.amazonaws.com",
+					Hostname: "ssm-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -23706,7 +23706,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "ssm-fips.us-east-2.amazonaws.com",
+					Hostname: "ssm-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -23715,7 +23715,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "ssm-fips.us-west-1.amazonaws.com",
+					Hostname: "ssm-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -23724,7 +23724,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "ssm-fips.us-west-2.amazonaws.com",
+					Hostname: "ssm-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -23746,7 +23746,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm-fips.us-east-1.amazonaws.com",
+					Hostname: "ssm-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -23755,7 +23755,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm-fips.us-east-2.amazonaws.com",
+					Hostname: "ssm-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -23764,7 +23764,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm-fips.us-west-1.amazonaws.com",
+					Hostname: "ssm-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -23773,7 +23773,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm-fips.us-west-2.amazonaws.com",
+					Hostname: "ssm-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -23952,7 +23952,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "states-fips.us-east-1.amazonaws.com",
+					Hostname: "states-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -23961,7 +23961,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "states-fips.us-east-2.amazonaws.com",
+					Hostname: "states-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -23970,7 +23970,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "states-fips.us-west-1.amazonaws.com",
+					Hostname: "states-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -23979,7 +23979,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "states-fips.us-west-2.amazonaws.com",
+					Hostname: "states-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24001,7 +24001,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states-fips.us-east-1.amazonaws.com",
+					Hostname: "states-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -24010,7 +24010,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states-fips.us-east-2.amazonaws.com",
+					Hostname: "states-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -24019,7 +24019,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states-fips.us-west-1.amazonaws.com",
+					Hostname: "states-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -24028,7 +24028,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states-fips.us-west-2.amazonaws.com",
+					Hostname: "states-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -24068,12 +24068,12 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.ca-central-1.amazonaws.com",
+					Hostname: "storagegateway-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "ca-central-1-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.ca-central-1.amazonaws.com",
+					Hostname: "storagegateway-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -24100,7 +24100,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.ca-central-1.amazonaws.com",
+					Hostname: "storagegateway-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -24122,12 +24122,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-east-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-east-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24140,12 +24140,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-east-2.amazonaws.com",
+					Hostname: "storagegateway-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-east-2.amazonaws.com",
+					Hostname: "storagegateway-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -24158,12 +24158,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-west-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-west-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -24176,12 +24176,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-west-2.amazonaws.com",
+					Hostname: "storagegateway-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-west-2.amazonaws.com",
+					Hostname: "storagegateway-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24324,7 +24324,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "sts.amazonaws.com",
+					Hostname: "sts.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24372,12 +24372,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts-fips.us-east-1.amazonaws.com",
+					Hostname: "sts-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "sts-fips.us-east-1.amazonaws.com",
+					Hostname: "sts-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24390,12 +24390,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts-fips.us-east-2.amazonaws.com",
+					Hostname: "sts-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "sts-fips.us-east-2.amazonaws.com",
+					Hostname: "sts-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -24408,12 +24408,12 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts-fips.us-west-1.amazonaws.com",
+					Hostname: "sts-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1-fips",
 				}: endpoint{
-					Hostname: "sts-fips.us-west-1.amazonaws.com",
+					Hostname: "sts-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -24426,12 +24426,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts-fips.us-west-2.amazonaws.com",
+					Hostname: "sts-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "sts-fips.us-west-2.amazonaws.com",
+					Hostname: "sts-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24445,7 +24445,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "support.us-east-1.amazonaws.com",
+					Hostname: "support.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24527,7 +24527,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "swf-fips.us-east-1.amazonaws.com",
+					Hostname: "swf-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24536,7 +24536,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "swf-fips.us-east-2.amazonaws.com",
+					Hostname: "swf-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -24545,7 +24545,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "swf-fips.us-west-1.amazonaws.com",
+					Hostname: "swf-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -24554,7 +24554,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "swf-fips.us-west-2.amazonaws.com",
+					Hostname: "swf-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24576,7 +24576,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "swf-fips.us-east-1.amazonaws.com",
+					Hostname: "swf-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -24585,7 +24585,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "swf-fips.us-east-2.amazonaws.com",
+					Hostname: "swf-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -24594,7 +24594,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "swf-fips.us-west-1.amazonaws.com",
+					Hostname: "swf-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -24603,7 +24603,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "swf-fips.us-west-2.amazonaws.com",
+					Hostname: "swf-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -24669,7 +24669,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-east-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24678,7 +24678,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-east-2.amazonaws.com",
+					Hostname: "synthetics-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -24687,7 +24687,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-west-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -24696,7 +24696,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-west-2.amazonaws.com",
+					Hostname: "synthetics-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24718,7 +24718,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-east-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -24727,7 +24727,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-east-2.amazonaws.com",
+					Hostname: "synthetics-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -24736,7 +24736,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-west-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -24745,7 +24745,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-west-2.amazonaws.com",
+					Hostname: "synthetics-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -24852,7 +24852,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.ca-central-1.amazonaws.com",
+					Hostname: "textract-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -24869,7 +24869,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "textract-fips.ca-central-1.amazonaws.com",
+					Hostname: "textract-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -24878,7 +24878,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "textract-fips.us-east-1.amazonaws.com",
+					Hostname: "textract-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -24887,7 +24887,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "textract-fips.us-east-2.amazonaws.com",
+					Hostname: "textract-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -24896,7 +24896,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "textract-fips.us-west-1.amazonaws.com",
+					Hostname: "textract-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -24905,7 +24905,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "textract-fips.us-west-2.amazonaws.com",
+					Hostname: "textract-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -24918,7 +24918,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-east-1.amazonaws.com",
+					Hostname: "textract-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -24927,7 +24927,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-east-2.amazonaws.com",
+					Hostname: "textract-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -24936,7 +24936,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-west-1.amazonaws.com",
+					Hostname: "textract-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -24945,7 +24945,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-west-2.amazonaws.com",
+					Hostname: "textract-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -24990,7 +24990,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.ca-central-1.amazonaws.com",
+					Hostname: "fips.transcribe.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -25010,7 +25010,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "fips.transcribe.ca-central-1.amazonaws.com",
+					Hostname: "fips.transcribe.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25019,7 +25019,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-east-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25028,7 +25028,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-east-2.amazonaws.com",
+					Hostname: "fips.transcribe.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -25037,7 +25037,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-west-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -25046,7 +25046,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-west-2.amazonaws.com",
+					Hostname: "fips.transcribe.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25065,7 +25065,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-east-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -25074,7 +25074,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-east-2.amazonaws.com",
+					Hostname: "fips.transcribe.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -25083,7 +25083,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-west-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -25092,7 +25092,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-west-2.amazonaws.com",
+					Hostname: "fips.transcribe.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -25134,7 +25134,7 @@ var awsPartition = partition{
 					Region:  "transcribestreaming-ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.ca-central-1.amazonaws.com",
+					Hostname: "transcribestreaming-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25143,7 +25143,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "transcribestreaming-fips-ca-central-1",
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.ca-central-1.amazonaws.com",
+					Hostname: "transcribestreaming-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25152,7 +25152,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "transcribestreaming-fips-us-east-1",
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-east-1.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25161,7 +25161,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "transcribestreaming-fips-us-east-2",
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-east-2.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -25170,7 +25170,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "transcribestreaming-fips-us-west-2",
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-west-2.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25188,7 +25188,7 @@ var awsPartition = partition{
 					Region:  "transcribestreaming-us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-east-1.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25206,7 +25206,7 @@ var awsPartition = partition{
 					Region:  "transcribestreaming-us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-east-2.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -25224,7 +25224,7 @@ var awsPartition = partition{
 					Region:  "transcribestreaming-us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transcribestreaming-fips.us-west-2.amazonaws.com",
+					Hostname: "transcribestreaming-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25277,7 +25277,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.ca-central-1.amazonaws.com",
+					Hostname: "transfer-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -25300,7 +25300,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "transfer-fips.ca-central-1.amazonaws.com",
+					Hostname: "transfer-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25309,7 +25309,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "transfer-fips.us-east-1.amazonaws.com",
+					Hostname: "transfer-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25318,7 +25318,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "transfer-fips.us-east-2.amazonaws.com",
+					Hostname: "transfer-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -25327,7 +25327,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "transfer-fips.us-west-1.amazonaws.com",
+					Hostname: "transfer-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -25336,7 +25336,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "transfer-fips.us-west-2.amazonaws.com",
+					Hostname: "transfer-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25355,7 +25355,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-east-1.amazonaws.com",
+					Hostname: "transfer-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -25364,7 +25364,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-east-2.amazonaws.com",
+					Hostname: "transfer-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -25373,7 +25373,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-west-1.amazonaws.com",
+					Hostname: "transfer-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -25382,7 +25382,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-west-2.amazonaws.com",
+					Hostname: "transfer-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -25436,12 +25436,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "translate-fips.us-east-1.amazonaws.com",
+					Hostname: "translate-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "translate-fips.us-east-1.amazonaws.com",
+					Hostname: "translate-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25454,12 +25454,12 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "translate-fips.us-east-2.amazonaws.com",
+					Hostname: "translate-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2-fips",
 				}: endpoint{
-					Hostname: "translate-fips.us-east-2.amazonaws.com",
+					Hostname: "translate-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -25475,12 +25475,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "translate-fips.us-west-2.amazonaws.com",
+					Hostname: "translate-fips.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "translate-fips.us-west-2.amazonaws.com",
+					Hostname: "translate-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25518,12 +25518,12 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.voice-chime.us-east-1.amazonaws.com",
+					Hostname: "fips.voice-chime.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-1-fips",
 				}: endpoint{
-					Hostname: "fips.voice-chime.us-east-1.amazonaws.com",
+					Hostname: "fips.voice-chime.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25536,12 +25536,12 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.voice-chime.us-west-2.amazonaws.com",
+					Hostname: "fips.voice-chime.us-west-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2-fips",
 				}: endpoint{
-					Hostname: "fips.voice-chime.us-west-2.amazonaws.com",
+					Hostname: "fips.voice-chime.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25567,7 +25567,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "voiceid-fips.ca-central-1.amazonaws.com",
+					Hostname: "voiceid-fips.ca-central-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "eu-central-1",
@@ -25578,7 +25578,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "voiceid-fips.ca-central-1.amazonaws.com",
+					Hostname: "voiceid-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25587,7 +25587,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "voiceid-fips.us-east-1.amazonaws.com",
+					Hostname: "voiceid-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25596,7 +25596,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "voiceid-fips.us-west-2.amazonaws.com",
+					Hostname: "voiceid-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -25609,7 +25609,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "voiceid-fips.us-east-1.amazonaws.com",
+					Hostname: "voiceid-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -25618,7 +25618,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "voiceid-fips.us-west-2.amazonaws.com",
+					Hostname: "voiceid-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -25638,7 +25638,7 @@ var awsPartition = partition{
 					Region:  "aws",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-fips.amazonaws.com",
+					Hostname: "waf-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25647,7 +25647,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-fips",
 				}: endpoint{
-					Hostname: "waf-fips.amazonaws.com",
+					Hostname: "waf-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25656,7 +25656,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global",
 				}: endpoint{
-					Hostname: "waf.amazonaws.com",
+					Hostname: "waf.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25665,7 +25665,7 @@ var awsPartition = partition{
 					Region:  "aws-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-fips.amazonaws.com",
+					Hostname: "waf-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25673,7 +25673,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "aws-global-fips",
 				}: endpoint{
-					Hostname: "waf-fips.amazonaws.com",
+					Hostname: "waf-fips.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -25686,7 +25686,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "af-south-1",
 				}: endpoint{
-					Hostname: "waf-regional.af-south-1.amazonaws.com",
+					Hostname: "waf-regional.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -25695,7 +25695,7 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.af-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -25703,7 +25703,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "waf-regional.ap-east-1.amazonaws.com",
+					Hostname: "waf-regional.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -25712,7 +25712,7 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -25720,7 +25720,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "waf-regional.ap-northeast-1.amazonaws.com",
+					Hostname: "waf-regional.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -25729,7 +25729,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -25737,7 +25737,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "waf-regional.ap-northeast-2.amazonaws.com",
+					Hostname: "waf-regional.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -25746,7 +25746,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -25754,7 +25754,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "waf-regional.ap-northeast-3.amazonaws.com",
+					Hostname: "waf-regional.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -25763,7 +25763,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -25771,7 +25771,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "waf-regional.ap-south-1.amazonaws.com",
+					Hostname: "waf-regional.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -25780,7 +25780,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -25788,7 +25788,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "waf-regional.ap-southeast-1.amazonaws.com",
+					Hostname: "waf-regional.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -25797,7 +25797,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -25805,7 +25805,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "waf-regional.ap-southeast-2.amazonaws.com",
+					Hostname: "waf-regional.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -25814,7 +25814,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -25822,7 +25822,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-3",
 				}: endpoint{
-					Hostname: "waf-regional.ap-southeast-3.amazonaws.com",
+					Hostname: "waf-regional.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -25831,7 +25831,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -25839,7 +25839,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "waf-regional.ca-central-1.amazonaws.com",
+					Hostname: "waf-regional.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25848,7 +25848,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.ca-central-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -25856,7 +25856,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "waf-regional.eu-central-1.amazonaws.com",
+					Hostname: "waf-regional.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -25865,7 +25865,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-central-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -25873,7 +25873,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "waf-regional.eu-north-1.amazonaws.com",
+					Hostname: "waf-regional.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -25882,7 +25882,7 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-north-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -25890,7 +25890,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "waf-regional.eu-south-1.amazonaws.com",
+					Hostname: "waf-regional.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -25899,7 +25899,7 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -25907,7 +25907,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "waf-regional.eu-west-1.amazonaws.com",
+					Hostname: "waf-regional.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -25916,7 +25916,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -25924,7 +25924,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "waf-regional.eu-west-2.amazonaws.com",
+					Hostname: "waf-regional.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -25933,7 +25933,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-2.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -25941,7 +25941,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "waf-regional.eu-west-3.amazonaws.com",
+					Hostname: "waf-regional.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -25950,7 +25950,7 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-3.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -25958,7 +25958,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-af-south-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.af-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -25967,7 +25967,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-east-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -25976,7 +25976,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -25985,7 +25985,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-2",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -25994,7 +25994,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-3",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -26003,7 +26003,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-south-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -26012,7 +26012,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -26021,7 +26021,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-2",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -26030,7 +26030,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-3",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "waf-regional-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -26039,7 +26039,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.ca-central-1.amazonaws.com",
+					Hostname: "waf-regional-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -26048,7 +26048,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-central-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-central-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -26057,7 +26057,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-north-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-north-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -26066,7 +26066,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-south-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -26075,7 +26075,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -26084,7 +26084,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-2",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-2.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -26093,7 +26093,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-3",
 				}: endpoint{
-					Hostname: "waf-regional-fips.eu-west-3.amazonaws.com",
+					Hostname: "waf-regional-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -26102,7 +26102,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-me-south-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.me-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26111,7 +26111,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-sa-east-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.sa-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26120,7 +26120,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26129,7 +26129,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-east-2.amazonaws.com",
+					Hostname: "waf-regional-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26138,7 +26138,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26147,7 +26147,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-west-2.amazonaws.com",
+					Hostname: "waf-regional-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26156,7 +26156,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "waf-regional.me-south-1.amazonaws.com",
+					Hostname: "waf-regional.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26165,7 +26165,7 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.me-south-1.amazonaws.com",
+					Hostname: "waf-regional-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26173,7 +26173,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "waf-regional.sa-east-1.amazonaws.com",
+					Hostname: "waf-regional.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26182,7 +26182,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.sa-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26190,7 +26190,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "waf-regional.us-east-1.amazonaws.com",
+					Hostname: "waf-regional.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26199,7 +26199,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26207,7 +26207,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "waf-regional.us-east-2.amazonaws.com",
+					Hostname: "waf-regional.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26216,7 +26216,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-east-2.amazonaws.com",
+					Hostname: "waf-regional-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26224,7 +26224,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname: "waf-regional.us-west-1.amazonaws.com",
+					Hostname: "waf-regional.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26233,7 +26233,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26241,7 +26241,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "waf-regional.us-west-2.amazonaws.com",
+					Hostname: "waf-regional.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26250,7 +26250,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-west-2.amazonaws.com",
+					Hostname: "waf-regional-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26262,7 +26262,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "af-south-1",
 				}: endpoint{
-					Hostname: "wafv2.af-south-1.amazonaws.com",
+					Hostname: "wafv2.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -26271,7 +26271,7 @@ var awsPartition = partition{
 					Region:  "af-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.af-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -26279,7 +26279,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-east-1",
 				}: endpoint{
-					Hostname: "wafv2.ap-east-1.amazonaws.com",
+					Hostname: "wafv2.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -26288,7 +26288,7 @@ var awsPartition = partition{
 					Region:  "ap-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -26296,7 +26296,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-1",
 				}: endpoint{
-					Hostname: "wafv2.ap-northeast-1.amazonaws.com",
+					Hostname: "wafv2.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -26305,7 +26305,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -26313,7 +26313,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-2",
 				}: endpoint{
-					Hostname: "wafv2.ap-northeast-2.amazonaws.com",
+					Hostname: "wafv2.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -26322,7 +26322,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -26330,7 +26330,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-northeast-3",
 				}: endpoint{
-					Hostname: "wafv2.ap-northeast-3.amazonaws.com",
+					Hostname: "wafv2.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -26339,7 +26339,7 @@ var awsPartition = partition{
 					Region:  "ap-northeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -26347,7 +26347,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-south-1",
 				}: endpoint{
-					Hostname: "wafv2.ap-south-1.amazonaws.com",
+					Hostname: "wafv2.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -26356,7 +26356,7 @@ var awsPartition = partition{
 					Region:  "ap-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -26364,7 +26364,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-1",
 				}: endpoint{
-					Hostname: "wafv2.ap-southeast-1.amazonaws.com",
+					Hostname: "wafv2.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -26373,7 +26373,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -26381,7 +26381,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-2",
 				}: endpoint{
-					Hostname: "wafv2.ap-southeast-2.amazonaws.com",
+					Hostname: "wafv2.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -26390,7 +26390,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -26398,7 +26398,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ap-southeast-3",
 				}: endpoint{
-					Hostname: "wafv2.ap-southeast-3.amazonaws.com",
+					Hostname: "wafv2.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -26407,7 +26407,7 @@ var awsPartition = partition{
 					Region:  "ap-southeast-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -26415,7 +26415,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "ca-central-1",
 				}: endpoint{
-					Hostname: "wafv2.ca-central-1.amazonaws.com",
+					Hostname: "wafv2.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -26424,7 +26424,7 @@ var awsPartition = partition{
 					Region:  "ca-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.ca-central-1.amazonaws.com",
+					Hostname: "wafv2-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -26432,7 +26432,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-central-1",
 				}: endpoint{
-					Hostname: "wafv2.eu-central-1.amazonaws.com",
+					Hostname: "wafv2.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -26441,7 +26441,7 @@ var awsPartition = partition{
 					Region:  "eu-central-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-central-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -26449,7 +26449,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-north-1",
 				}: endpoint{
-					Hostname: "wafv2.eu-north-1.amazonaws.com",
+					Hostname: "wafv2.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -26458,7 +26458,7 @@ var awsPartition = partition{
 					Region:  "eu-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-north-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -26466,7 +26466,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-south-1",
 				}: endpoint{
-					Hostname: "wafv2.eu-south-1.amazonaws.com",
+					Hostname: "wafv2.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -26475,7 +26475,7 @@ var awsPartition = partition{
 					Region:  "eu-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -26483,7 +26483,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-1",
 				}: endpoint{
-					Hostname: "wafv2.eu-west-1.amazonaws.com",
+					Hostname: "wafv2.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -26492,7 +26492,7 @@ var awsPartition = partition{
 					Region:  "eu-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -26500,7 +26500,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-2",
 				}: endpoint{
-					Hostname: "wafv2.eu-west-2.amazonaws.com",
+					Hostname: "wafv2.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -26509,7 +26509,7 @@ var awsPartition = partition{
 					Region:  "eu-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-2.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -26517,7 +26517,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "eu-west-3",
 				}: endpoint{
-					Hostname: "wafv2.eu-west-3.amazonaws.com",
+					Hostname: "wafv2.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -26526,7 +26526,7 @@ var awsPartition = partition{
 					Region:  "eu-west-3",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-3.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -26534,7 +26534,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-af-south-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.af-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.af-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "af-south-1",
 					},
@@ -26543,7 +26543,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-east-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-east-1",
 					},
@@ -26552,7 +26552,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-1",
 					},
@@ -26561,7 +26561,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-2",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-2.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-2",
 					},
@@ -26570,7 +26570,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-northeast-3",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-northeast-3.amazonaws.com",
+					Hostname: "wafv2-fips.ap-northeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-northeast-3",
 					},
@@ -26579,7 +26579,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-south-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-south-1",
 					},
@@ -26588,7 +26588,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-1.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-1",
 					},
@@ -26597,7 +26597,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-2",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-2.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-2",
 					},
@@ -26606,7 +26606,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ap-southeast-3",
 				}: endpoint{
-					Hostname: "wafv2-fips.ap-southeast-3.amazonaws.com",
+					Hostname: "wafv2-fips.ap-southeast-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ap-southeast-3",
 					},
@@ -26615,7 +26615,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-ca-central-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.ca-central-1.amazonaws.com",
+					Hostname: "wafv2-fips.ca-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "ca-central-1",
 					},
@@ -26624,7 +26624,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-central-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-central-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-central-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-central-1",
 					},
@@ -26633,7 +26633,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-north-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-north-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-north-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-north-1",
 					},
@@ -26642,7 +26642,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-south-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-south-1",
 					},
@@ -26651,7 +26651,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-1",
 					},
@@ -26660,7 +26660,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-2",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-2.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-2",
 					},
@@ -26669,7 +26669,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-eu-west-3",
 				}: endpoint{
-					Hostname: "wafv2-fips.eu-west-3.amazonaws.com",
+					Hostname: "wafv2-fips.eu-west-3.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "eu-west-3",
 					},
@@ -26678,7 +26678,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-me-south-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.me-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26687,7 +26687,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-sa-east-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.sa-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26696,7 +26696,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26705,7 +26705,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-east-2.amazonaws.com",
+					Hostname: "wafv2-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26714,7 +26714,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26723,7 +26723,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-west-2.amazonaws.com",
+					Hostname: "wafv2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26732,7 +26732,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "me-south-1",
 				}: endpoint{
-					Hostname: "wafv2.me-south-1.amazonaws.com",
+					Hostname: "wafv2.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26741,7 +26741,7 @@ var awsPartition = partition{
 					Region:  "me-south-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.me-south-1.amazonaws.com",
+					Hostname: "wafv2-fips.me-south-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "me-south-1",
 					},
@@ -26749,7 +26749,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "sa-east-1",
 				}: endpoint{
-					Hostname: "wafv2.sa-east-1.amazonaws.com",
+					Hostname: "wafv2.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26758,7 +26758,7 @@ var awsPartition = partition{
 					Region:  "sa-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.sa-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.sa-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "sa-east-1",
 					},
@@ -26766,7 +26766,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-1",
 				}: endpoint{
-					Hostname: "wafv2.us-east-1.amazonaws.com",
+					Hostname: "wafv2.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26775,7 +26775,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26783,7 +26783,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-east-2",
 				}: endpoint{
-					Hostname: "wafv2.us-east-2.amazonaws.com",
+					Hostname: "wafv2.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26792,7 +26792,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-east-2.amazonaws.com",
+					Hostname: "wafv2-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -26800,7 +26800,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-1",
 				}: endpoint{
-					Hostname: "wafv2.us-west-1.amazonaws.com",
+					Hostname: "wafv2.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26809,7 +26809,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -26817,7 +26817,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "us-west-2",
 				}: endpoint{
-					Hostname: "wafv2.us-west-2.amazonaws.com",
+					Hostname: "wafv2.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26826,7 +26826,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-west-2.amazonaws.com",
+					Hostname: "wafv2-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26968,7 +26968,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "workdocs-fips.us-east-1.amazonaws.com",
+					Hostname: "workdocs-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -26977,7 +26977,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "workdocs-fips.us-west-2.amazonaws.com",
+					Hostname: "workdocs-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -26990,7 +26990,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "workdocs-fips.us-east-1.amazonaws.com",
+					Hostname: "workdocs-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -26999,7 +26999,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "workdocs-fips.us-west-2.amazonaws.com",
+					Hostname: "workdocs-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -27056,7 +27056,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "workspaces-fips.us-east-1.amazonaws.com",
+					Hostname: "workspaces-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -27065,7 +27065,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "workspaces-fips.us-west-2.amazonaws.com",
+					Hostname: "workspaces-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -27081,7 +27081,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "workspaces-fips.us-east-1.amazonaws.com",
+					Hostname: "workspaces-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -27090,7 +27090,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "workspaces-fips.us-west-2.amazonaws.com",
+					Hostname: "workspaces-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -27190,7 +27190,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-1",
 				}: endpoint{
-					Hostname: "xray-fips.us-east-1.amazonaws.com",
+					Hostname: "xray-fips.us-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-1",
 					},
@@ -27199,7 +27199,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-east-2",
 				}: endpoint{
-					Hostname: "xray-fips.us-east-2.amazonaws.com",
+					Hostname: "xray-fips.us-east-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-east-2",
 					},
@@ -27208,7 +27208,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-1",
 				}: endpoint{
-					Hostname: "xray-fips.us-west-1.amazonaws.com",
+					Hostname: "xray-fips.us-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-1",
 					},
@@ -27217,7 +27217,7 @@ var awsPartition = partition{
 				endpointKey{
 					Region: "fips-us-west-2",
 				}: endpoint{
-					Hostname: "xray-fips.us-west-2.amazonaws.com",
+					Hostname: "xray-fips.us-west-2.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-west-2",
 					},
@@ -27239,7 +27239,7 @@ var awsPartition = partition{
 					Region:  "us-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-east-1.amazonaws.com",
+					Hostname: "xray-fips.us-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-east-2",
@@ -27248,7 +27248,7 @@ var awsPartition = partition{
 					Region:  "us-east-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-east-2.amazonaws.com",
+					Hostname: "xray-fips.us-east-2.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-1",
@@ -27257,7 +27257,7 @@ var awsPartition = partition{
 					Region:  "us-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-west-1.amazonaws.com",
+					Hostname: "xray-fips.us-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-west-2",
@@ -27266,7 +27266,7 @@ var awsPartition = partition{
 					Region:  "us-west-2",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-west-2.amazonaws.com",
+					Hostname: "xray-fips.us-west-2.samsungspc.com",
 				},
 			},
 		},
@@ -27281,7 +27281,7 @@ func AwsCnPartition() Partition {
 var awscnPartition = partition{
 	ID:        "aws-cn",
 	Name:      "AWS China",
-	DNSSuffix: "amazonaws.com.cn",
+	DNSSuffix: "samsungspc.com.cn",
 	RegionRegex: regionRegex{
 		Regexp: func() *regexp.Regexp {
 			reg, _ := regexp.Compile("^cn\\-\\w+\\-\\d+$")
@@ -27306,7 +27306,7 @@ var awscnPartition = partition{
 			Variant: fipsVariant,
 		}: endpoint{
 			Hostname:          "{service}-fips.{region}.{dnsSuffix}",
-			DNSSuffix:         "amazonaws.com.cn",
+			DNSSuffix:         "samsungspc.com.cn",
 			Protocols:         []string{"https"},
 			SignatureVersions: []string{"v4"},
 		},
@@ -27345,7 +27345,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "account.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "account.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27367,7 +27367,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "api.ecr.cn-north-1.amazonaws.com.cn",
+					Hostname: "api.ecr.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -27375,7 +27375,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "api.ecr.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "api.ecr.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27556,7 +27556,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "budgets.amazonaws.com.cn",
+					Hostname: "budgets.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27580,7 +27580,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "ce.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "ce.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27614,7 +27614,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname:  "cloudfront.cn-northwest-1.amazonaws.com.cn",
+					Hostname:  "cloudfront.cn-northwest-1.samsungspc.com.cn",
 					Protocols: []string{"http", "https"},
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
@@ -27684,7 +27684,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.cn-north-1.amazonaws.com.cn",
+					Hostname: "compute-optimizer.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -27692,7 +27692,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "compute-optimizer.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "compute-optimizer.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27799,7 +27799,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "rds.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "rds.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -27910,7 +27910,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "elasticfilesystem-fips.cn-north-1.samsungspc.com.cn",
 				},
 				endpointKey{
 					Region: "cn-northwest-1",
@@ -27919,12 +27919,12 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "elasticfilesystem-fips.cn-northwest-1.samsungspc.com.cn",
 				},
 				endpointKey{
 					Region: "fips-cn-north-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "elasticfilesystem-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -27933,7 +27933,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-northwest-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "elasticfilesystem-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28097,7 +28097,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "dataplane-cn-north-1",
 				}: endpoint{
-					Hostname: "greengrass.ats.iot.cn-north-1.amazonaws.com.cn",
+					Hostname: "greengrass.ats.iot.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28125,7 +28125,7 @@ var awscnPartition = partition{
 			IsRegionalized:    boxedFalse,
 			Defaults: endpointDefaults{
 				defaultKey{}: endpoint{
-					SSLCommonName: "health.cn-northwest-1.amazonaws.com.cn",
+					SSLCommonName: "health.cn-northwest-1.samsungspc.com.cn",
 					Protocols:     []string{"https"},
 				},
 			},
@@ -28133,7 +28133,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "global.health.amazonaws.com.cn",
+					Hostname: "global.health.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28147,7 +28147,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "iam.cn-north-1.amazonaws.com.cn",
+					Hostname: "iam.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28190,7 +28190,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "data.iotevents.cn-north-1.amazonaws.com.cn",
+					Hostname: "data.iotevents.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28311,7 +28311,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "subscribe.mediaconvert.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "subscribe.mediaconvert.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28358,7 +28358,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "rds.cn-north-1.amazonaws.com.cn",
+					Hostname: "rds.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28366,7 +28366,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "rds.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "rds.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28380,7 +28380,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "organizations.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "organizations.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28491,7 +28491,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "route53.amazonaws.com.cn",
+					Hostname: "route53.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28533,7 +28533,7 @@ var awscnPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com.cn",
+					DNSSuffix:         "samsungspc.com.cn",
 					Protocols:         []string{"http", "https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -28546,7 +28546,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.cn-north-1.amazonaws.com.cn",
+					Hostname: "s3.dualstack.cn-north-1.samsungspc.com.cn",
 				},
 				endpointKey{
 					Region: "cn-northwest-1",
@@ -28555,7 +28555,7 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname: "s3.dualstack.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "s3.dualstack.cn-northwest-1.samsungspc.com.cn",
 				},
 			},
 		},
@@ -28569,7 +28569,7 @@ var awscnPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com.cn",
+					DNSSuffix:         "samsungspc.com.cn",
 					Protocols:         []string{"https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -28578,7 +28578,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname:          "s3-control.cn-north-1.amazonaws.com.cn",
+					Hostname:          "s3-control.cn-north-1.samsungspc.com.cn",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
@@ -28588,7 +28588,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.cn-north-1.amazonaws.com.cn",
+					Hostname:          "s3-control.dualstack.cn-north-1.samsungspc.com.cn",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
@@ -28597,7 +28597,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname:          "s3-control.cn-northwest-1.amazonaws.com.cn",
+					Hostname:          "s3-control.cn-northwest-1.samsungspc.com.cn",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
@@ -28607,7 +28607,7 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.cn-northwest-1.amazonaws.com.cn",
+					Hostname:          "s3-control.dualstack.cn-northwest-1.samsungspc.com.cn",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
@@ -28693,7 +28693,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "snowball-fips.cn-north-1.samsungspc.com.cn",
 				},
 				endpointKey{
 					Region: "cn-northwest-1",
@@ -28702,12 +28702,12 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "snowball-fips.cn-northwest-1.samsungspc.com.cn",
 				},
 				endpointKey{
 					Region: "fips-cn-north-1",
 				}: endpoint{
-					Hostname: "snowball-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "snowball-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28716,7 +28716,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-northwest-1",
 				}: endpoint{
-					Hostname: "snowball-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "snowball-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28819,7 +28819,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "aws-cn-global",
 				}: endpoint{
-					Hostname: "support.cn-north-1.amazonaws.com.cn",
+					Hostname: "support.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28866,7 +28866,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "cn.transcribe.cn-north-1.amazonaws.com.cn",
+					Hostname: "cn.transcribe.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28874,7 +28874,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "cn.transcribe.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "cn.transcribe.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28906,7 +28906,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "waf-regional.cn-north-1.amazonaws.com.cn",
+					Hostname: "waf-regional.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28915,7 +28915,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "waf-regional-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28923,7 +28923,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "waf-regional.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "waf-regional.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28932,7 +28932,7 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "waf-regional-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28940,7 +28940,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-north-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "waf-regional-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28949,7 +28949,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-northwest-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "waf-regional-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28962,7 +28962,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-north-1",
 				}: endpoint{
-					Hostname: "wafv2.cn-north-1.amazonaws.com.cn",
+					Hostname: "wafv2.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28971,7 +28971,7 @@ var awscnPartition = partition{
 					Region:  "cn-north-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "wafv2-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -28979,7 +28979,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "cn-northwest-1",
 				}: endpoint{
-					Hostname: "wafv2.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "wafv2.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28988,7 +28988,7 @@ var awscnPartition = partition{
 					Region:  "cn-northwest-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "wafv2-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -28996,7 +28996,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-north-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.cn-north-1.amazonaws.com.cn",
+					Hostname: "wafv2-fips.cn-north-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-north-1",
 					},
@@ -29005,7 +29005,7 @@ var awscnPartition = partition{
 				endpointKey{
 					Region: "fips-cn-northwest-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.cn-northwest-1.amazonaws.com.cn",
+					Hostname: "wafv2-fips.cn-northwest-1.samsungspc.com.cn",
 					CredentialScope: credentialScope{
 						Region: "cn-northwest-1",
 					},
@@ -29041,7 +29041,7 @@ func AwsUsGovPartition() Partition {
 var awsusgovPartition = partition{
 	ID:        "aws-us-gov",
 	Name:      "AWS GovCloud (US)",
-	DNSSuffix: "amazonaws.com",
+	DNSSuffix: "samsungspc.com",
 	RegionRegex: regionRegex{
 		Regexp: func() *regexp.Regexp {
 			reg, _ := regexp.Compile("^us\\-gov\\-\\w+\\-\\d+$")
@@ -29066,7 +29066,7 @@ var awsusgovPartition = partition{
 			Variant: fipsVariant,
 		}: endpoint{
 			Hostname:          "{service}-fips.{region}.{dnsSuffix}",
-			DNSSuffix:         "amazonaws.com",
+			DNSSuffix:         "samsungspc.com",
 			Protocols:         []string{"https"},
 			SignatureVersions: []string{"v4"},
 		},
@@ -29093,7 +29093,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "access-analyzer.us-gov-east-1.amazonaws.com",
+					Hostname: "access-analyzer.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29101,7 +29101,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "access-analyzer.us-gov-west-1.amazonaws.com",
+					Hostname: "access-analyzer.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29121,7 +29121,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "acm.us-gov-east-1.amazonaws.com",
+					Hostname: "acm.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29129,7 +29129,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "acm.us-gov-west-1.amazonaws.com",
+					Hostname: "acm.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29152,7 +29152,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "acm-pca.us-gov-east-1.amazonaws.com",
+					Hostname: "acm-pca.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29161,7 +29161,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "acm-pca.us-gov-west-1.amazonaws.com",
+					Hostname: "acm-pca.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29174,7 +29174,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca.us-gov-east-1.amazonaws.com",
+					Hostname: "acm-pca.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29183,7 +29183,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "acm-pca.us-gov-west-1.amazonaws.com",
+					Hostname: "acm-pca.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29201,12 +29201,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29219,12 +29219,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.detective-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "api.detective-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.detective-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29254,7 +29254,7 @@ var awsusgovPartition = partition{
 					Region:  "dkr-us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29272,7 +29272,7 @@ var awsusgovPartition = partition{
 					Region:  "dkr-us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29281,7 +29281,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-gov-east-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29290,7 +29290,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-dkr-us-gov-west-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29299,7 +29299,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29308,7 +29308,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29317,7 +29317,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "api.ecr.us-gov-east-1.amazonaws.com",
+					Hostname: "api.ecr.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29326,7 +29326,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29334,7 +29334,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "api.ecr.us-gov-west-1.amazonaws.com",
+					Hostname: "api.ecr.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29343,7 +29343,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecr-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecr-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29367,12 +29367,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "api-fips.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "api-fips.sagemaker.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29381,7 +29381,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1-fips-secondary",
 				}: endpoint{
-					Hostname: "api.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "api.sagemaker.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29399,7 +29399,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1-secondary",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "api.sagemaker.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29420,7 +29420,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29429,7 +29429,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29442,7 +29442,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29451,7 +29451,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29470,7 +29470,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "appconfig.us-gov-east-1.amazonaws.com",
+					Hostname: "appconfig.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29479,7 +29479,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "appconfig.us-gov-west-1.amazonaws.com",
+					Hostname: "appconfig.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29492,7 +29492,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appconfig.us-gov-east-1.amazonaws.com",
+					Hostname: "appconfig.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29501,7 +29501,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appconfig.us-gov-west-1.amazonaws.com",
+					Hostname: "appconfig.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29518,7 +29518,7 @@ var awsusgovPartition = partition{
 		"application-autoscaling": service{
 			Defaults: endpointDefaults{
 				defaultKey{}: endpoint{
-					Hostname:  "autoscaling.{region}.amazonaws.com",
+					Hostname:  "autoscaling.{region}.samsungspc.com",
 					Protocols: []string{"http", "https"},
 					CredentialScope: credentialScope{
 						Service: "application-autoscaling",
@@ -29543,7 +29543,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "applicationinsights.us-gov-east-1.amazonaws.com",
+					Hostname: "applicationinsights.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29551,7 +29551,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "applicationinsights.us-gov-west-1.amazonaws.com",
+					Hostname: "applicationinsights.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29571,7 +29571,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "appstream2-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "appstream2-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29584,12 +29584,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "appstream2-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "appstream2-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "appstream2-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "appstream2-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29602,7 +29602,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "athena-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "athena-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29611,7 +29611,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "athena-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "athena-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29624,7 +29624,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "athena-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29633,7 +29633,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "athena-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "athena-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29711,7 +29711,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "batch.us-gov-east-1.amazonaws.com",
+					Hostname: "batch.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29720,7 +29720,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "batch.us-gov-west-1.amazonaws.com",
+					Hostname: "batch.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29733,7 +29733,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "batch.us-gov-east-1.amazonaws.com",
+					Hostname: "batch.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29742,7 +29742,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "batch.us-gov-west-1.amazonaws.com",
+					Hostname: "batch.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29751,7 +29751,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "cassandra.us-gov-east-1.amazonaws.com",
+					Hostname: "cassandra.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29759,7 +29759,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "cassandra.us-gov-west-1.amazonaws.com",
+					Hostname: "cassandra.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29771,7 +29771,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29780,7 +29780,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29793,7 +29793,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29802,7 +29802,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudcontrolapi-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudcontrolapi-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29818,7 +29818,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "cloudformation.us-gov-east-1.amazonaws.com",
+					Hostname: "cloudformation.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29826,7 +29826,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "cloudformation.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudformation.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29863,14 +29863,14 @@ var awsusgovPartition = partition{
 				defaultKey{
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudtrail.us-gov-west-1.samsungspc.com",
 				},
 			},
 			Endpoints: serviceEndpoints{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "cloudtrail.us-gov-east-1.amazonaws.com",
+					Hostname: "cloudtrail.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29879,7 +29879,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "cloudtrail.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudtrail.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29892,7 +29892,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail.us-gov-east-1.amazonaws.com",
+					Hostname: "cloudtrail.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -29901,7 +29901,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cloudtrail.us-gov-west-1.amazonaws.com",
+					Hostname: "cloudtrail.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -29914,12 +29914,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29932,12 +29932,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codebuild-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "codebuild-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codebuild-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29950,7 +29950,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -29963,12 +29963,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -29981,12 +29981,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codecommit-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "codecommit-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codecommit-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30003,12 +30003,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30021,12 +30021,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "codedeploy-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codedeploy-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30039,7 +30039,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30052,7 +30052,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "codepipeline-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "codepipeline-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30061,7 +30061,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30074,7 +30074,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-identity-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cognito-identity-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30083,7 +30083,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30096,7 +30096,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "cognito-idp-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "cognito-idp-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30110,7 +30110,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "comprehend-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "comprehend-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30123,7 +30123,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehend-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "comprehend-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30132,7 +30132,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30145,7 +30145,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "comprehendmedical-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "comprehendmedical-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30162,7 +30162,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "config.us-gov-east-1.amazonaws.com",
+					Hostname: "config.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30171,7 +30171,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "config.us-gov-west-1.amazonaws.com",
+					Hostname: "config.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30184,7 +30184,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config.us-gov-east-1.amazonaws.com",
+					Hostname: "config.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30193,7 +30193,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "config.us-gov-west-1.amazonaws.com",
+					Hostname: "config.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30227,7 +30227,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -30236,7 +30236,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "data.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "iotdata",
 					},
@@ -30249,7 +30249,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30258,7 +30258,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.iot-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30267,7 +30267,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30276,7 +30276,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30289,7 +30289,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30298,7 +30298,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.jobs.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.jobs.iot-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30314,7 +30314,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "datasync-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "datasync-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30323,7 +30323,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "datasync-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "datasync-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30336,7 +30336,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "datasync-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30345,7 +30345,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "datasync-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "datasync-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30354,7 +30354,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "directconnect.us-gov-east-1.amazonaws.com",
+					Hostname: "directconnect.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30362,7 +30362,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "directconnect.us-gov-west-1.amazonaws.com",
+					Hostname: "directconnect.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30401,7 +30401,7 @@ var awsusgovPartition = partition{
 					Region:  "dms",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms.us-gov-west-1.amazonaws.com",
+					Hostname: "dms.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30410,7 +30410,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "dms-fips",
 				}: endpoint{
-					Hostname: "dms.us-gov-west-1.amazonaws.com",
+					Hostname: "dms.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30423,12 +30423,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms.us-gov-east-1.amazonaws.com",
+					Hostname: "dms.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "dms.us-gov-east-1.amazonaws.com",
+					Hostname: "dms.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30441,12 +30441,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dms.us-gov-west-1.amazonaws.com",
+					Hostname: "dms.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "dms.us-gov-west-1.amazonaws.com",
+					Hostname: "dms.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30459,7 +30459,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "rds.us-gov-west-1.amazonaws.com",
+					Hostname: "rds.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30471,7 +30471,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "ds-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ds-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30480,7 +30480,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "ds-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ds-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30493,7 +30493,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ds-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30502,7 +30502,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ds-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ds-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30523,12 +30523,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb.us-gov-east-1.amazonaws.com",
+					Hostname: "dynamodb.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "dynamodb.us-gov-east-1.amazonaws.com",
+					Hostname: "dynamodb.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30541,12 +30541,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "dynamodb.us-gov-west-1.amazonaws.com",
+					Hostname: "dynamodb.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "dynamodb.us-gov-west-1.amazonaws.com",
+					Hostname: "dynamodb.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30577,7 +30577,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "ec2.us-gov-east-1.amazonaws.com",
+					Hostname: "ec2.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30594,7 +30594,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "ec2.us-gov-west-1.amazonaws.com",
+					Hostname: "ec2.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30615,7 +30615,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "ecs-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecs-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30624,7 +30624,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "ecs-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecs-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30637,7 +30637,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "ecs-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30646,7 +30646,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ecs-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "ecs-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30666,7 +30666,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "eks.us-gov-east-1.amazonaws.com",
+					Hostname: "eks.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30675,7 +30675,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "eks.us-gov-west-1.amazonaws.com",
+					Hostname: "eks.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30688,7 +30688,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "eks.us-gov-east-1.amazonaws.com",
+					Hostname: "eks.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30697,7 +30697,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "eks.us-gov-west-1.amazonaws.com",
+					Hostname: "eks.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30714,7 +30714,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "elasticache.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticache.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30730,12 +30730,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticache.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticache.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "elasticache.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticache.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30748,7 +30748,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "elasticbeanstalk.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticbeanstalk.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30756,7 +30756,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "elasticbeanstalk.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticbeanstalk.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30768,7 +30768,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30777,7 +30777,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30790,7 +30790,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30799,7 +30799,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticfilesystem-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticfilesystem-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30816,7 +30816,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "elasticloadbalancing.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticloadbalancing.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30825,7 +30825,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "elasticloadbalancing.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticloadbalancing.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30838,7 +30838,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticloadbalancing.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticloadbalancing.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30849,7 +30849,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:  "elasticloadbalancing.us-gov-west-1.amazonaws.com",
+					Hostname:  "elasticloadbalancing.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 			},
@@ -30867,7 +30867,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "elasticmapreduce.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticmapreduce.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30876,7 +30876,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "elasticmapreduce.us-gov-west-1.amazonaws.com",
+					Hostname: "elasticmapreduce.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30889,7 +30889,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "elasticmapreduce.us-gov-east-1.amazonaws.com",
+					Hostname: "elasticmapreduce.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -30900,7 +30900,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:  "elasticmapreduce.us-gov-west-1.amazonaws.com",
+					Hostname:  "elasticmapreduce.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"https"},
 				},
 			},
@@ -30910,7 +30910,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "email-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "email-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30923,7 +30923,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "email-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "email-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -30932,7 +30932,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "es-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "es-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30945,12 +30945,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "es-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "es-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30963,12 +30963,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "es-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "es-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "es-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "es-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -30981,7 +30981,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "events.us-gov-east-1.amazonaws.com",
+					Hostname: "events.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -30990,7 +30990,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "events.us-gov-west-1.amazonaws.com",
+					Hostname: "events.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31003,7 +31003,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events.us-gov-east-1.amazonaws.com",
+					Hostname: "events.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31012,7 +31012,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "events.us-gov-west-1.amazonaws.com",
+					Hostname: "events.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31021,7 +31021,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "firehose-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "firehose-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31030,7 +31030,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "firehose-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "firehose-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31043,7 +31043,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "firehose-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31052,7 +31052,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "firehose-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "firehose-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31066,7 +31066,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "fms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fms-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31075,7 +31075,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "fms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fms-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31088,7 +31088,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fms-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31097,7 +31097,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fms-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31106,7 +31106,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-gov-east-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31115,7 +31115,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-prod-us-gov-west-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31124,7 +31124,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31133,7 +31133,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31151,7 +31151,7 @@ var awsusgovPartition = partition{
 					Region:  "prod-us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31169,7 +31169,7 @@ var awsusgovPartition = partition{
 					Region:  "prod-us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31182,7 +31182,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31191,7 +31191,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fsx-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "fsx-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31200,7 +31200,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "glacier.us-gov-east-1.amazonaws.com",
+					Hostname: "glacier.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31208,7 +31208,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname:  "glacier.us-gov-west-1.amazonaws.com",
+					Hostname:  "glacier.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -31221,7 +31221,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "glue-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "glue-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31230,7 +31230,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "glue-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "glue-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31243,7 +31243,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "glue-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31252,7 +31252,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "glue-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "glue-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31267,7 +31267,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "dataplane-us-gov-east-1",
 				}: endpoint{
-					Hostname: "greengrass-ats.iot.us-gov-east-1.amazonaws.com",
+					Hostname: "greengrass-ats.iot.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31275,7 +31275,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "dataplane-us-gov-west-1",
 				}: endpoint{
-					Hostname: "greengrass-ats.iot.us-gov-west-1.amazonaws.com",
+					Hostname: "greengrass-ats.iot.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31283,7 +31283,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "greengrass-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "greengrass-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31292,7 +31292,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "greengrass.us-gov-east-1.amazonaws.com",
+					Hostname: "greengrass.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31301,7 +31301,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "greengrass-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "greengrass-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31309,7 +31309,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "greengrass.us-gov-west-1.amazonaws.com",
+					Hostname: "greengrass.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31337,12 +31337,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty.us-gov-east-1.amazonaws.com",
+					Hostname: "guardduty.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "guardduty.us-gov-east-1.amazonaws.com",
+					Hostname: "guardduty.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31355,12 +31355,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "guardduty.us-gov-west-1.amazonaws.com",
+					Hostname: "guardduty.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "guardduty.us-gov-west-1.amazonaws.com",
+					Hostname: "guardduty.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31373,7 +31373,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "health-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "health-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31391,7 +31391,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "health-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "health-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31406,7 +31406,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global",
 				}: endpoint{
-					Hostname: "iam.us-gov.amazonaws.com",
+					Hostname: "iam.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31415,7 +31415,7 @@ var awsusgovPartition = partition{
 					Region:  "aws-us-gov-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iam.us-gov.amazonaws.com",
+					Hostname: "iam.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31423,7 +31423,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global-fips",
 				}: endpoint{
-					Hostname: "iam.us-gov.amazonaws.com",
+					Hostname: "iam.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31441,7 +31441,7 @@ var awsusgovPartition = partition{
 					Region:  "iam-govcloud",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iam.us-gov.amazonaws.com",
+					Hostname: "iam.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31450,7 +31450,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "iam-govcloud-fips",
 				}: endpoint{
-					Hostname: "iam.us-gov.amazonaws.com",
+					Hostname: "iam.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31471,7 +31471,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "identitystore.us-gov-east-1.amazonaws.com",
+					Hostname: "identitystore.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31480,7 +31480,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "identitystore.us-gov-west-1.amazonaws.com",
+					Hostname: "identitystore.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31493,7 +31493,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "identitystore.us-gov-east-1.amazonaws.com",
+					Hostname: "identitystore.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31502,7 +31502,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "identitystore.us-gov-west-1.amazonaws.com",
+					Hostname: "identitystore.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31518,7 +31518,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "inspector-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "inspector-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31527,7 +31527,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "inspector-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "inspector-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31540,7 +31540,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "inspector-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31549,7 +31549,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "inspector-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "inspector-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31565,7 +31565,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "iot-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -31574,7 +31574,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iot-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Service: "execute-api",
 					},
@@ -31587,7 +31587,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "iot-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31596,7 +31596,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iot-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31605,7 +31605,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "iotevents-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iotevents-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31618,7 +31618,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotevents-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iotevents-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31627,7 +31627,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31636,7 +31636,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "data.iotevents.us-gov-west-1.amazonaws.com",
+					Hostname: "data.iotevents.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31645,7 +31645,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "data.iotevents-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "data.iotevents-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31665,7 +31665,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31674,7 +31674,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31687,7 +31687,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31696,7 +31696,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "api.tunneling.iot-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "api.tunneling.iot-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31705,7 +31705,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31718,7 +31718,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "iotsitewise-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "iotsitewise-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31737,7 +31737,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "kendra-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "kendra-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31750,7 +31750,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kendra-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "kendra-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31759,7 +31759,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "kinesis.us-gov-east-1.amazonaws.com",
+					Hostname: "kinesis.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31767,7 +31767,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "kinesis.us-gov-west-1.amazonaws.com",
+					Hostname: "kinesis.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31789,7 +31789,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "ProdFips",
 				}: endpoint{
-					Hostname: "kms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "kms-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31802,12 +31802,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "kms-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "kms-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31820,12 +31820,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "kms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "kms-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "kms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "kms-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31838,7 +31838,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31847,7 +31847,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31860,7 +31860,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31869,7 +31869,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lakeformation-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "lakeformation-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31878,7 +31878,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "lambda-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "lambda-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31887,7 +31887,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "lambda-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "lambda-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31906,7 +31906,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "lambda-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31921,7 +31921,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "lambda-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "lambda-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31930,7 +31930,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31939,7 +31939,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "license-manager-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31952,7 +31952,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -31961,7 +31961,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "license-manager-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "license-manager-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -31970,7 +31970,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "logs.us-gov-east-1.amazonaws.com",
+					Hostname: "logs.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -31979,7 +31979,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "logs.us-gov-west-1.amazonaws.com",
+					Hostname: "logs.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -31992,7 +31992,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs.us-gov-east-1.amazonaws.com",
+					Hostname: "logs.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32001,7 +32001,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "logs.us-gov-west-1.amazonaws.com",
+					Hostname: "logs.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32017,7 +32017,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "mediaconvert.us-gov-west-1.amazonaws.com",
+					Hostname: "mediaconvert.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32033,12 +32033,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32051,12 +32051,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "meetings-chime-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "meetings-chime-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32105,12 +32105,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "models-fips.lex.us-gov-west-1.amazonaws.com",
+					Hostname: "models-fips.lex.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "models-fips.lex.us-gov-west-1.amazonaws.com",
+					Hostname: "models-fips.lex.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32131,7 +32131,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "monitoring.us-gov-east-1.amazonaws.com",
+					Hostname: "monitoring.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32140,7 +32140,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "monitoring.us-gov-west-1.amazonaws.com",
+					Hostname: "monitoring.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32153,7 +32153,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring.us-gov-east-1.amazonaws.com",
+					Hostname: "monitoring.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32162,7 +32162,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "monitoring.us-gov-west-1.amazonaws.com",
+					Hostname: "monitoring.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32171,7 +32171,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "mq-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "mq-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32180,7 +32180,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "mq-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "mq-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32193,7 +32193,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "mq-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32202,7 +32202,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "mq-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "mq-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32211,7 +32211,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "rds.us-gov-east-1.amazonaws.com",
+					Hostname: "rds.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32219,7 +32219,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "rds.us-gov-west-1.amazonaws.com",
+					Hostname: "rds.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32231,7 +32231,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32240,7 +32240,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32253,7 +32253,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32262,7 +32262,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "network-firewall-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "network-firewall-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32273,7 +32273,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global",
 				}: endpoint{
-					Hostname: "networkmanager.us-gov-west-1.amazonaws.com",
+					Hostname: "networkmanager.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32285,7 +32285,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "oidc.us-gov-east-1.amazonaws.com",
+					Hostname: "oidc.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32293,7 +32293,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "oidc.us-gov-west-1.amazonaws.com",
+					Hostname: "oidc.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32307,7 +32307,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global",
 				}: endpoint{
-					Hostname: "organizations.us-gov-west-1.amazonaws.com",
+					Hostname: "organizations.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32316,7 +32316,7 @@ var awsusgovPartition = partition{
 					Region:  "aws-us-gov-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "organizations.us-gov-west-1.amazonaws.com",
+					Hostname: "organizations.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32324,7 +32324,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-aws-us-gov-global",
 				}: endpoint{
-					Hostname: "organizations.us-gov-west-1.amazonaws.com",
+					Hostname: "organizations.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32337,7 +32337,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "outposts.us-gov-east-1.amazonaws.com",
+					Hostname: "outposts.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32345,7 +32345,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "outposts.us-gov-west-1.amazonaws.com",
+					Hostname: "outposts.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32357,7 +32357,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "participant.connect.us-gov-west-1.amazonaws.com",
+					Hostname: "participant.connect.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32376,7 +32376,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "pinpoint-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32385,7 +32385,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "pinpoint.us-gov-west-1.amazonaws.com",
+					Hostname: "pinpoint.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32394,7 +32394,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "pinpoint-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "pinpoint-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32406,7 +32406,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "polly-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "polly-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32419,7 +32419,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "polly-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "polly-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32428,7 +32428,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "portal.sso.us-gov-east-1.amazonaws.com",
+					Hostname: "portal.sso.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32436,7 +32436,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "portal.sso.us-gov-west-1.amazonaws.com",
+					Hostname: "portal.sso.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32458,7 +32458,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "ram.us-gov-east-1.amazonaws.com",
+					Hostname: "ram.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32466,7 +32466,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "ram.us-gov-west-1.amazonaws.com",
+					Hostname: "ram.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32478,7 +32478,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "rbin-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "rbin-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32487,7 +32487,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "rbin-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rbin-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32500,7 +32500,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "rbin-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32509,7 +32509,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rbin-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rbin-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32526,7 +32526,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "rds.us-gov-east-1",
 				}: endpoint{
-					Hostname: "rds.us-gov-east-1.amazonaws.com",
+					Hostname: "rds.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32535,7 +32535,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "rds.us-gov-west-1",
 				}: endpoint{
-					Hostname: "rds.us-gov-west-1.amazonaws.com",
+					Hostname: "rds.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32548,12 +32548,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds.us-gov-east-1.amazonaws.com",
+					Hostname: "rds.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "rds.us-gov-east-1.amazonaws.com",
+					Hostname: "rds.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32566,12 +32566,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rds.us-gov-west-1.amazonaws.com",
+					Hostname: "rds.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "rds.us-gov-west-1.amazonaws.com",
+					Hostname: "rds.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32584,7 +32584,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "redshift.us-gov-east-1.amazonaws.com",
+					Hostname: "redshift.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32592,7 +32592,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "redshift.us-gov-west-1.amazonaws.com",
+					Hostname: "redshift.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32604,7 +32604,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "rekognition-fips.us-gov-west-1",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32622,7 +32622,7 @@ var awsusgovPartition = partition{
 					Region:  "rekognition.us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32635,12 +32635,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "rekognition-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "rekognition-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "rekognition-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32684,7 +32684,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "resource-groups.us-gov-east-1.amazonaws.com",
+					Hostname: "resource-groups.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32693,7 +32693,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "resource-groups.us-gov-west-1.amazonaws.com",
+					Hostname: "resource-groups.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32706,7 +32706,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups.us-gov-east-1.amazonaws.com",
+					Hostname: "resource-groups.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -32715,7 +32715,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "resource-groups.us-gov-west-1.amazonaws.com",
+					Hostname: "resource-groups.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -32733,7 +32733,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global",
 				}: endpoint{
-					Hostname: "route53.us-gov.amazonaws.com",
+					Hostname: "route53.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32742,7 +32742,7 @@ var awsusgovPartition = partition{
 					Region:  "aws-us-gov-global",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "route53.us-gov.amazonaws.com",
+					Hostname: "route53.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32750,7 +32750,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-aws-us-gov-global",
 				}: endpoint{
-					Hostname: "route53.us-gov.amazonaws.com",
+					Hostname: "route53.us-gov.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32792,12 +32792,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-gov-west-1.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "runtime-fips.lex.us-gov-west-1.amazonaws.com",
+					Hostname: "runtime-fips.lex.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32822,12 +32822,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "runtime.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "runtime.sagemaker.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "runtime.sagemaker.us-gov-west-1.amazonaws.com",
+					Hostname: "runtime.sagemaker.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32844,14 +32844,14 @@ var awsusgovPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 				defaultKey{
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}-fips.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					SignatureVersions: []string{"s3", "s3v4"},
 				},
 			},
@@ -32859,7 +32859,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "s3-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "s3-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -32868,7 +32868,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "s3-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "s3-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -32877,41 +32877,41 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname:  "s3.us-gov-east-1.amazonaws.com",
+					Hostname:  "s3.us-gov-east-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 				endpointKey{
 					Region:  "us-gov-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:  "s3.dualstack.us-gov-east-1.amazonaws.com",
+					Hostname:  "s3.dualstack.us-gov-east-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 				endpointKey{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:  "s3-fips.us-gov-east-1.amazonaws.com",
+					Hostname:  "s3-fips.us-gov-east-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname:  "s3.us-gov-west-1.amazonaws.com",
+					Hostname:  "s3.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 				endpointKey{
 					Region:  "us-gov-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:  "s3.dualstack.us-gov-west-1.amazonaws.com",
+					Hostname:  "s3.dualstack.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 				endpointKey{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:  "s3-fips.us-gov-west-1.amazonaws.com",
+					Hostname:  "s3-fips.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 			},
@@ -32926,7 +32926,7 @@ var awsusgovPartition = partition{
 					Variant: dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -32934,7 +32934,7 @@ var awsusgovPartition = partition{
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
 					Hostname:          "{service}-fips.dualstack.{region}.{dnsSuffix}",
-					DNSSuffix:         "amazonaws.com",
+					DNSSuffix:         "samsungspc.com",
 					Protocols:         []string{"https"},
 					SignatureVersions: []string{"s3v4"},
 				},
@@ -32943,7 +32943,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname:          "s3-control.us-gov-east-1.amazonaws.com",
+					Hostname:          "s3-control.us-gov-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -32953,7 +32953,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-gov-east-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-gov-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -32963,7 +32963,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-gov-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-gov-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -32973,7 +32973,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-gov-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-gov-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -32982,7 +32982,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-gov-east-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-gov-east-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -32992,7 +32992,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname:          "s3-control.us-gov-west-1.amazonaws.com",
+					Hostname:          "s3-control.us-gov-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33002,7 +33002,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control.dualstack.us-gov-west-1.amazonaws.com",
+					Hostname:          "s3-control.dualstack.us-gov-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33012,7 +33012,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-gov-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-gov-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33022,7 +33022,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant | dualStackVariant,
 				}: endpoint{
-					Hostname:          "s3-control-fips.dualstack.us-gov-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.dualstack.us-gov-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33031,7 +33031,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname:          "s3-control-fips.us-gov-west-1.amazonaws.com",
+					Hostname:          "s3-control-fips.us-gov-west-1.samsungspc.com",
 					SignatureVersions: []string{"s3v4"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33079,12 +33079,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33097,12 +33097,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "secretsmanager-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "secretsmanager-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33115,7 +33115,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33124,7 +33124,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "securityhub-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33137,7 +33137,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33146,7 +33146,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "securityhub-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "securityhub-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33160,7 +33160,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname:  "serverlessrepo.us-gov-east-1.amazonaws.com",
+					Hostname:  "serverlessrepo.us-gov-east-1.samsungspc.com",
 					Protocols: []string{"https"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
@@ -33169,7 +33169,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname:  "serverlessrepo.us-gov-west-1.amazonaws.com",
+					Hostname:  "serverlessrepo.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"https"},
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
@@ -33186,12 +33186,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33204,12 +33204,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "servicecatalog-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicecatalog-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33249,7 +33249,7 @@ var awsusgovPartition = partition{
 					Region:  "servicediscovery",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33258,7 +33258,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "servicediscovery-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33271,12 +33271,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33289,12 +33289,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "servicediscovery-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "servicediscovery-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33318,7 +33318,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "servicequotas.us-gov-east-1.amazonaws.com",
+					Hostname: "servicequotas.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33327,7 +33327,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "servicequotas.us-gov-west-1.amazonaws.com",
+					Hostname: "servicequotas.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33340,7 +33340,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicequotas.us-gov-east-1.amazonaws.com",
+					Hostname: "servicequotas.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33349,7 +33349,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "servicequotas.us-gov-west-1.amazonaws.com",
+					Hostname: "servicequotas.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33358,7 +33358,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "sms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "sms-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33367,7 +33367,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "sms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "sms-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33380,7 +33380,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "sms-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33389,7 +33389,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sms-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "sms-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33405,7 +33405,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "snowball-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "snowball-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33414,7 +33414,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "snowball-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "snowball-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33427,7 +33427,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "snowball-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33436,7 +33436,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "snowball-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "snowball-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33445,7 +33445,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "sns.us-gov-east-1.amazonaws.com",
+					Hostname: "sns.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33454,7 +33454,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "sns.us-gov-west-1.amazonaws.com",
+					Hostname: "sns.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33467,7 +33467,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sns.us-gov-east-1.amazonaws.com",
+					Hostname: "sns.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33478,7 +33478,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname:  "sns.us-gov-west-1.amazonaws.com",
+					Hostname:  "sns.us-gov-west-1.samsungspc.com",
 					Protocols: []string{"http", "https"},
 				},
 			},
@@ -33496,7 +33496,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "sqs.us-gov-east-1.amazonaws.com",
+					Hostname: "sqs.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33504,7 +33504,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname:      "sqs.us-gov-west-1.amazonaws.com",
+					Hostname:      "sqs.us-gov-west-1.samsungspc.com",
 					SSLCommonName: "{region}.queue.{dnsSuffix}",
 					Protocols:     []string{"http", "https"},
 					CredentialScope: credentialScope{
@@ -33526,7 +33526,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "ssm.us-gov-east-1.amazonaws.com",
+					Hostname: "ssm.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33535,7 +33535,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "ssm.us-gov-west-1.amazonaws.com",
+					Hostname: "ssm.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33548,7 +33548,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm.us-gov-east-1.amazonaws.com",
+					Hostname: "ssm.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33557,7 +33557,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "ssm.us-gov-west-1.amazonaws.com",
+					Hostname: "ssm.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33566,7 +33566,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "sso.us-gov-east-1.amazonaws.com",
+					Hostname: "sso.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33574,7 +33574,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "sso.us-gov-west-1.amazonaws.com",
+					Hostname: "sso.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33586,7 +33586,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "states-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "states-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33595,7 +33595,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "states.us-gov-west-1.amazonaws.com",
+					Hostname: "states.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33608,7 +33608,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "states-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33617,7 +33617,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "states.us-gov-west-1.amazonaws.com",
+					Hostname: "states.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33626,7 +33626,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33639,12 +33639,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33657,12 +33657,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "storagegateway-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "storagegateway-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33694,12 +33694,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "streams.dynamodb.us-gov-east-1.amazonaws.com",
+					Hostname: "streams.dynamodb.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "streams.dynamodb.us-gov-east-1.amazonaws.com",
+					Hostname: "streams.dynamodb.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33712,12 +33712,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "streams.dynamodb.us-gov-west-1.amazonaws.com",
+					Hostname: "streams.dynamodb.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "streams.dynamodb.us-gov-west-1.amazonaws.com",
+					Hostname: "streams.dynamodb.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33742,12 +33742,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts.us-gov-east-1.amazonaws.com",
+					Hostname: "sts.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-east-1-fips",
 				}: endpoint{
-					Hostname: "sts.us-gov-east-1.amazonaws.com",
+					Hostname: "sts.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33760,12 +33760,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "sts.us-gov-west-1.amazonaws.com",
+					Hostname: "sts.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "sts.us-gov-west-1.amazonaws.com",
+					Hostname: "sts.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33779,7 +33779,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "aws-us-gov-global",
 				}: endpoint{
-					Hostname: "support.us-gov-west-1.amazonaws.com",
+					Hostname: "support.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33787,7 +33787,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "support.us-gov-west-1.amazonaws.com",
+					Hostname: "support.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33805,7 +33805,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "support.us-gov-west-1.amazonaws.com",
+					Hostname: "support.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33818,7 +33818,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "swf.us-gov-east-1.amazonaws.com",
+					Hostname: "swf.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33826,7 +33826,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "swf.us-gov-west-1.amazonaws.com",
+					Hostname: "swf.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33838,7 +33838,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33847,7 +33847,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "synthetics-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33860,7 +33860,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33869,7 +33869,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "synthetics-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "synthetics-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33888,7 +33888,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "textract-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "textract-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33897,7 +33897,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "textract-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "textract-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33910,7 +33910,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "textract-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33919,7 +33919,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "textract-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "textract-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33939,7 +33939,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-gov-east-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33948,7 +33948,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "fips.transcribe.us-gov-west-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -33961,7 +33961,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-gov-east-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -33970,7 +33970,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "fips.transcribe.us-gov-west-1.amazonaws.com",
+					Hostname: "fips.transcribe.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -33989,7 +33989,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "transfer-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "transfer-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -33998,7 +33998,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "transfer-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "transfer-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34011,7 +34011,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "transfer-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -34020,7 +34020,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "transfer-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "transfer-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -34038,12 +34038,12 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "translate-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "translate-fips.us-gov-west-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1-fips",
 				}: endpoint{
-					Hostname: "translate-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "translate-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34056,7 +34056,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34065,7 +34065,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34074,7 +34074,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "waf-regional.us-gov-east-1.amazonaws.com",
+					Hostname: "waf-regional.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34083,7 +34083,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34091,7 +34091,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "waf-regional.us-gov-west-1.amazonaws.com",
+					Hostname: "waf-regional.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34100,7 +34100,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "waf-regional-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "waf-regional-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34112,7 +34112,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34121,7 +34121,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "wafv2-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34130,7 +34130,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-east-1",
 				}: endpoint{
-					Hostname: "wafv2.us-gov-east-1.amazonaws.com",
+					Hostname: "wafv2.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34139,7 +34139,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34147,7 +34147,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "us-gov-west-1",
 				}: endpoint{
-					Hostname: "wafv2.us-gov-west-1.amazonaws.com",
+					Hostname: "wafv2.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34156,7 +34156,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "wafv2-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "wafv2-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34178,7 +34178,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "workspaces-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "workspaces-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34191,7 +34191,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "workspaces-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "workspaces-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},
@@ -34200,7 +34200,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-east-1",
 				}: endpoint{
-					Hostname: "xray-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "xray-fips.us-gov-east-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-east-1",
 					},
@@ -34209,7 +34209,7 @@ var awsusgovPartition = partition{
 				endpointKey{
 					Region: "fips-us-gov-west-1",
 				}: endpoint{
-					Hostname: "xray-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "xray-fips.us-gov-west-1.samsungspc.com",
 					CredentialScope: credentialScope{
 						Region: "us-gov-west-1",
 					},
@@ -34222,7 +34222,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-east-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-gov-east-1.amazonaws.com",
+					Hostname: "xray-fips.us-gov-east-1.samsungspc.com",
 				},
 				endpointKey{
 					Region: "us-gov-west-1",
@@ -34231,7 +34231,7 @@ var awsusgovPartition = partition{
 					Region:  "us-gov-west-1",
 					Variant: fipsVariant,
 				}: endpoint{
-					Hostname: "xray-fips.us-gov-west-1.amazonaws.com",
+					Hostname: "xray-fips.us-gov-west-1.samsungspc.com",
 				},
 			},
 		},

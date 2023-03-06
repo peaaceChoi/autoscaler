@@ -8,7 +8,7 @@
     "serviceId":"Redshift",
     "signatureVersion":"v4",
     "uid":"redshift-2012-12-01",
-    "xmlNamespace":"http://redshift.amazonaws.com/doc/2012-12-01/"
+    "xmlNamespace":"http://redshift.samsungspc.com/doc/2012-12-01/"
   },
   "operations":{
     "AcceptReservedNodeExchange":{

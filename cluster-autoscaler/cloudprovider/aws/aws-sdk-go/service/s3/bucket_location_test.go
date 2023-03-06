@@ -17,8 +17,8 @@ var s3LocationTests = []struct {
 	body string
 	loc  string
 }{
-	{`<?xml version="1.0" encoding="UTF-8"?><LocationConstraint xmlns="http://s3.amazonaws.com/doc/2006-03-01/"/>`, ``},
-	{`<?xml version="1.0" encoding="UTF-8"?><LocationConstraint xmlns="http://s3.amazonaws.com/doc/2006-03-01/">EU</LocationConstraint>`, `EU`},
+	{`<?xml version="1.0" encoding="UTF-8"?><LocationConstraint xmlns="http://s3.samsungspc.com/doc/2006-03-01/"/>`, ``},
+	{`<?xml version="1.0" encoding="UTF-8"?><LocationConstraint xmlns="http://s3.samsungspc.com/doc/2006-03-01/">EU</LocationConstraint>`, `EU`},
 }
 
 func TestGetBucketLocation(t *testing.T) {

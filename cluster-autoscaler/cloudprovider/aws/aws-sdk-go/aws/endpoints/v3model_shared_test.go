@@ -15,7 +15,7 @@ var testPartitions = partitions{
 	partition{
 		ID:        "part-id",
 		Name:      "partitionName",
-		DNSSuffix: "amazonaws.com",
+		DNSSuffix: "samsungspc.com",
 		RegionRegex: regionRegex{
 			Regexp: func() *regexp.Regexp {
 				reg, _ := regexp.Compile("^(us|eu|ap|sa|ca)\\-\\w+\\-\\d+$")
@@ -82,7 +82,7 @@ var testPartitions = partitions{
 						CredentialScope: credentialScope{
 							Region: "us-east-1",
 						},
-						Hostname: "globalService.amazonaws.com",
+						Hostname: "globalService.samsungspc.com",
 					},
 					{
 						Region: "fips-aws-global",
@@ -90,7 +90,7 @@ var testPartitions = partitions{
 						CredentialScope: credentialScope{
 							Region: "us-east-1",
 						},
-						Hostname: "globalService-fips.amazonaws.com",
+						Hostname: "globalService-fips.samsungspc.com",
 					},
 				},
 			},

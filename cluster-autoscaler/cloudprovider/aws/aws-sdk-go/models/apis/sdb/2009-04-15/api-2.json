@@ -5,7 +5,7 @@
     "endpointPrefix":"sdb",
     "serviceFullName":"Amazon SimpleDB",
     "signatureVersion":"v2",
-    "xmlNamespace":"http://sdb.amazonaws.com/doc/2009-04-15/",
+    "xmlNamespace":"http://sdb.samsungspc.com/doc/2009-04-15/",
     "protocol":"query"
   },
   "operations":{

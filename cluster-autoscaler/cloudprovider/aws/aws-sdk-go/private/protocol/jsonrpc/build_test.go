@@ -2983,7 +2983,7 @@ func TestInputService8ProtocolTestEnumCase2(t *testing.T) {
 }
 
 func TestInputService9ProtocolTestEndpointHostTraitStaticPrefixCase1(t *testing.T) {
-	svc := NewInputService9ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService9ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService9TestShapeInputService9TestCaseOperation1Input{
 		Name: aws.String("myname"),
 	}
@@ -3012,7 +3012,7 @@ func TestInputService9ProtocolTestEndpointHostTraitStaticPrefixCase1(t *testing.
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://data-service.region.amazonaws.com/", r.URL.String())
+	awstesting.AssertURL(t, "https://data-service.region.samsungspc.com/", r.URL.String())
 
 	// assert headers
 	if e, a := "application/x-amz-json-1.1", r.Header.Get("Content-Type"); e != a {
@@ -3024,7 +3024,7 @@ func TestInputService9ProtocolTestEndpointHostTraitStaticPrefixCase1(t *testing.
 }
 
 func TestInputService9ProtocolTestEndpointHostTraitStaticPrefixCase2(t *testing.T) {
-	svc := NewInputService9ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService9ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService9TestShapeInputService9TestCaseOperation2Input{
 		Name: aws.String("myname"),
 	}
@@ -3053,7 +3053,7 @@ func TestInputService9ProtocolTestEndpointHostTraitStaticPrefixCase2(t *testing.
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://foo-myname.service.region.amazonaws.com/", r.URL.String())
+	awstesting.AssertURL(t, "https://foo-myname.service.region.samsungspc.com/", r.URL.String())
 
 	// assert headers
 	if e, a := "application/x-amz-json-1.1", r.Header.Get("Content-Type"); e != a {

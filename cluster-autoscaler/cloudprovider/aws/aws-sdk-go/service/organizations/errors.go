@@ -29,7 +29,7 @@ const (
 	// "AccessDeniedForDependencyException".
 	//
 	// The operation that you attempted requires you to have the iam:CreateServiceLinkedRole
-	// for organizations.amazonaws.com permission so that Organizations can create
+	// for organizations.samsungspc.com permission so that Organizations can create
 	// the required service-linked role. You don't have that permission.
 	ErrCodeAccessDeniedForDependencyException = "AccessDeniedForDependencyException"
 

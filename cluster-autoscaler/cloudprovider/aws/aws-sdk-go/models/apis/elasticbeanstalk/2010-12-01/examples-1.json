@@ -564,7 +564,7 @@
               "CNAME": "my-env.elasticbeanstalk.com",
               "DateCreated": "2015-08-07T20:48:49.599Z",
               "DateUpdated": "2015-08-12T18:16:55.019Z",
-              "EndpointURL": "awseb-e-w-AWSEBLoa-1483140XB0Q4L-109QXY8121.us-west-2.elb.amazonaws.com",
+              "EndpointURL": "awseb-e-w-AWSEBLoa-1483140XB0Q4L-109QXY8121.us-west-2.elb.samsungspc.com",
               "EnvironmentId": "e-rpqsewtp2j",
               "EnvironmentName": "my-env",
               "Health": "Green",
@@ -823,7 +823,7 @@
             {
               "Ec2InstanceId": "i-09c1c867",
               "InfoType": "tail",
-              "Message": "https://elasticbeanstalk-us-west-2-0123456789012.s3.amazonaws.com/resources/environments/logs/tail/e-fyqyju3yjs/i-09c1c867/TailLogs-1440109397703.out?AWSAccessKeyId=AKGPT4J56IAJ2EUBL5CQ&Expires=1440195891&Signature=n%2BEalOV6A2HIOx4Rcfb7LT16bBM%3D",
+              "Message": "https://elasticbeanstalk-us-west-2-0123456789012.s3.samsungspc.com/resources/environments/logs/tail/e-fyqyju3yjs/i-09c1c867/TailLogs-1440109397703.out?AWSAccessKeyId=AKGPT4J56IAJ2EUBL5CQ&Expires=1440195891&Signature=n%2BEalOV6A2HIOx4Rcfb7LT16bBM%3D",
               "SampleTimestamp": "2015-08-20T22:23:17.703Z"
             }
           ]
@@ -867,7 +867,7 @@
           "CNAME": "my-env.elasticbeanstalk.com",
           "DateCreated": "2015-08-12T18:52:53.622Z",
           "DateUpdated": "2015-08-12T19:05:54.744Z",
-          "EndpointURL": "awseb-e-f-AWSEBLoa-1I9XUMP4-8492WNUP202574.us-west-2.elb.amazonaws.com",
+          "EndpointURL": "awseb-e-f-AWSEBLoa-1I9XUMP4-8492WNUP202574.us-west-2.elb.samsungspc.com",
           "EnvironmentId": "e-fh2eravpns",
           "EnvironmentName": "my-env",
           "Health": "Grey",
@@ -997,7 +997,7 @@
           "CNAME": "my-env.elasticbeanstalk.com",
           "DateCreated": "2015-02-03T23:04:54.453Z",
           "DateUpdated": "2015-02-03T23:12:29.119Z",
-          "EndpointURL": "awseb-e-i-AWSEBLoa-1RDLX6TC9VUAO-0123456789.us-west-2.elb.amazonaws.com",
+          "EndpointURL": "awseb-e-i-AWSEBLoa-1RDLX6TC9VUAO-0123456789.us-west-2.elb.samsungspc.com",
           "EnvironmentId": "e-szqipays4h",
           "EnvironmentName": "my-env",
           "Health": "Grey",
@@ -1052,7 +1052,7 @@
           "CNAME": "my-env.elasticbeanstalk.com",
           "DateCreated": "2015-08-07T20:48:49.599Z",
           "DateUpdated": "2015-08-12T18:15:23.804Z",
-          "EndpointURL": "awseb-e-w-AWSEBLoa-14XB83101Q4L-104QXY80921.sa-east-1.elb.amazonaws.com",
+          "EndpointURL": "awseb-e-w-AWSEBLoa-14XB83101Q4L-104QXY80921.sa-east-1.elb.samsungspc.com",
           "EnvironmentId": "e-wtp2rpqsej",
           "EnvironmentName": "my-env",
           "Health": "Grey",

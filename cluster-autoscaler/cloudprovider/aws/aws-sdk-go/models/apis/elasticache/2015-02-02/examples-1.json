@@ -559,7 +559,7 @@
             "CacheSubnetGroupName": "default",
             "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
             "ConfigurationEndpoint": {
-              "Address": "my-memcached2.ameaqx.cfg.use1.cache.amazonaws.com",
+              "Address": "my-memcached2.ameaqx.cfg.use1.cache.samsungspc.com",
               "Port": 11211
             },
             "Engine": "memcached",
@@ -729,7 +729,7 @@
               "CacheSubnetGroupName": "default",
               "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
               "ConfigurationEndpoint": {
-                "Address": "my-mem-cluster.abcdef.cfg.use1.cache.amazonaws.com",
+                "Address": "my-mem-cluster.abcdef.cfg.use1.cache.samsungspc.com",
                 "Port": 11211
               },
               "Engine": "memcached",
@@ -772,7 +772,7 @@
                   "CacheNodeStatus": "available",
                   "CustomerAvailabilityZone": "us-east-1b",
                   "Endpoint": {
-                    "Address": "my-mem-cluster.ameaqx.0001.use1.cache.amazonaws.com",
+                    "Address": "my-mem-cluster.ameaqx.0001.use1.cache.samsungspc.com",
                     "Port": 11211
                   },
                   "ParameterGroupStatus": "in-sync"
@@ -783,7 +783,7 @@
                   "CacheNodeStatus": "available",
                   "CustomerAvailabilityZone": "us-east-1a",
                   "Endpoint": {
-                    "Address": "my-mem-cluster.ameaqx.0002.use1.cache.amazonaws.com",
+                    "Address": "my-mem-cluster.ameaqx.0002.use1.cache.samsungspc.com",
                     "Port": 11211
                   },
                   "ParameterGroupStatus": "in-sync"
@@ -802,7 +802,7 @@
               "CacheSubnetGroupName": "default",
               "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
               "ConfigurationEndpoint": {
-                "Address": "my-mem-cluster.ameaqx.cfg.use1.cache.amazonaws.com",
+                "Address": "my-mem-cluster.ameaqx.cfg.use1.cache.samsungspc.com",
                 "Port": 11211
               },
               "Engine": "memcached",
@@ -2944,7 +2944,7 @@
                     "CurrentRole": "primary",
                     "PreferredAvailabilityZone": "us-east-1b",
                     "ReadEndpoint": {
-                      "Address": "my-redis-rg-001.abcdef.0001.use1.cache.amazonaws.com",
+                      "Address": "my-redis-rg-001.abcdef.0001.use1.cache.samsungspc.com",
                       "Port": 6379
                     }
                   },
@@ -2954,7 +2954,7 @@
                     "CurrentRole": "replica",
                     "PreferredAvailabilityZone": "us-east-1a",
                     "ReadEndpoint": {
-                      "Address": "my-redis-rg-002.abcdef.0001.use1.cache.amazonaws.com",
+                      "Address": "my-redis-rg-002.abcdef.0001.use1.cache.samsungspc.com",
                       "Port": 6379
                     }
                   },
@@ -2964,13 +2964,13 @@
                     "CurrentRole": "replica",
                     "PreferredAvailabilityZone": "us-east-1c",
                     "ReadEndpoint": {
-                      "Address": "my-redis-rg-003.abcdef.0001.use1.cache.amazonaws.com",
+                      "Address": "my-redis-rg-003.abcdef.0001.use1.cache.samsungspc.com",
                       "Port": 6379
                     }
                   }
                 ],
                 "PrimaryEndpoint": {
-                  "Address": "my-redis-rg.abcdef.ng.0001.use1.cache.amazonaws.com",
+                  "Address": "my-redis-rg.abcdef.ng.0001.use1.cache.samsungspc.com",
                   "Port": 6379
                 },
                 "Status": "available"
@@ -3039,7 +3039,7 @@
             "CacheSubnetGroupName": "default",
             "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
             "ConfigurationEndpoint": {
-              "Address": "my-mem-cluster.abcdef.cfg.use1.cache.amazonaws.com",
+              "Address": "my-mem-cluster.abcdef.cfg.use1.cache.samsungspc.com",
               "Port": 11211
             },
             "Engine": "memcached",

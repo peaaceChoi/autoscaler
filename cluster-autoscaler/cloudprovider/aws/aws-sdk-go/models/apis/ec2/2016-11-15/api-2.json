@@ -9,7 +9,7 @@
     "serviceId":"EC2",
     "signatureVersion":"v4",
     "uid":"ec2-2016-11-15",
-    "xmlNamespace":"http://ec2.amazonaws.com/doc/2016-11-15"
+    "xmlNamespace":"http://ec2.samsungspc.com/doc/2016-11-15"
   },
   "operations":{
     "AcceptReservedInstancesExchangeQuote":{

@@ -8,7 +8,7 @@
     "serviceId":"Elastic Load Balancing",
     "signatureVersion":"v4",
     "uid":"elasticloadbalancing-2012-06-01",
-    "xmlNamespace":"http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/"
+    "xmlNamespace":"http://elasticloadbalancing.samsungspc.com/doc/2012-06-01/"
   },
   "operations":{
     "AddTags":{

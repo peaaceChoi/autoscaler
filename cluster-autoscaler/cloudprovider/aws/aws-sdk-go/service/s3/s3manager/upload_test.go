@@ -138,7 +138,7 @@ func TestUploadOrderMulti(t *testing.T) {
 		t.Errorf("Expected %v, but received %v", expected, *ops)
 	}
 
-	if e, a := `https://s3.mock-region.amazonaws.com/Bucket/Key%20-%20value`, resp.Location; e != a {
+	if e, a := `https://s3.mock-region.samsungspc.com/Bucket/Key%20-%20value`, resp.Location; e != a {
 		t.Errorf("Expected %q, but received %q", e, a)
 	}
 
@@ -319,7 +319,7 @@ func TestUploadOrderSingle(t *testing.T) {
 		t.Errorf("Expected %v, but received %v", vals, *ops)
 	}
 
-	if e, a := `https://s3.mock-region.amazonaws.com/Bucket/Key%20-%20value`, resp.Location; e != a {
+	if e, a := `https://s3.mock-region.samsungspc.com/Bucket/Key%20-%20value`, resp.Location; e != a {
 		t.Errorf("Expected %q, but received %q", e, a)
 	}
 
@@ -1476,7 +1476,7 @@ const completeUploadResp = `
   <Bucket>bucket</Bucket>
   <Key>key</Key>
   <ETag>key</ETag>
-  <Location>https://bucket.us-west-2.amazonaws.com/key</Location>
+  <Location>https://bucket.us-west-2.samsungspc.com/key</Location>
   <UploadId>abc123</UploadId>
 </CompleteMultipartUploadResponse>
 `

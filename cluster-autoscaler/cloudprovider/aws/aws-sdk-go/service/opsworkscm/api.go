@@ -2682,7 +2682,7 @@ type CreateServerInput struct {
 	// The ARN of the instance profile that your Amazon EC2 instances use. Although
 	// the AWS OpsWorks console typically creates the instance profile for you,
 	// if you are using API commands instead, run the service-role-creation.yaml
-	// AWS CloudFormation template, located at https://s3.amazonaws.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml.
+	// AWS CloudFormation template, located at https://s3.samsungspc.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml.
 	// This template creates a CloudFormation stack that includes the instance profile
 	// you need.
 	//
@@ -2745,7 +2745,7 @@ type CreateServerInput struct {
 	// The service role that the AWS OpsWorks CM service backend uses to work with
 	// your account. Although the AWS OpsWorks management console typically creates
 	// the service role for you, if you are using the AWS CLI or API commands, run
-	// the service-role-creation.yaml AWS CloudFormation template, located at https://s3.amazonaws.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml.
+	// the service-role-creation.yaml AWS CloudFormation template, located at https://s3.samsungspc.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml.
 	// This template creates a CloudFormation stack that includes the service role
 	// and instance profile that you need.
 	//

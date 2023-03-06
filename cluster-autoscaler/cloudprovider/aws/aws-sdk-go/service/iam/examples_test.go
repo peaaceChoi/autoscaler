@@ -2150,7 +2150,7 @@ func ExampleIAM_UpdateAccountPasswordPolicy_shared00() {
 func ExampleIAM_UpdateAssumeRolePolicy_shared00() {
 	svc := iam.New(session.New())
 	input := &iam.UpdateAssumeRolePolicyInput{
-		PolicyDocument: aws.String("{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.amazonaws.com\"]},\"Action\":[\"sts:AssumeRole\"]}]}"),
+		PolicyDocument: aws.String("{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":[\"ec2.samsungspc.com\"]},\"Action\":[\"sts:AssumeRole\"]}]}"),
 		RoleName:       aws.String("S3AccessForEC2Instances"),
 	}
 

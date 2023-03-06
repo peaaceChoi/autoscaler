@@ -7808,7 +7808,7 @@ type AwsApiGatewayV2ApiDetails struct {
 
 	// The URI of the API.
 	//
-	// Uses the format <api-id>.execute-api.<region>.amazonaws.com
+	// Uses the format <api-id>.execute-api.<region>.samsungspc.com
 	//
 	// The stage name is typically appended to the URI to form a complete path to
 	// a deployed API stage.
@@ -11114,7 +11114,7 @@ type AwsCodeBuildProjectSource struct {
 	//
 	//    * For source code in an CodeCommit repository, the HTTPS clone URL to
 	//    the repository that contains the source code and the build spec file (for
-	//    example, https://git-codecommit.region-ID.amazonaws.com/v1/repos/repo-name
+	//    example, https://git-codecommit.region-ID.samsungspc.com/v1/repos/repo-name
 	//    ).
 	//
 	//    * For source code in an S3 input bucket, one of the following. The path

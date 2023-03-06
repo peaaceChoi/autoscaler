@@ -4453,7 +4453,7 @@ type ContainerProperties struct {
 	//    or registry/repository[@digest] naming conventions. For example, public.ecr.aws/registry_alias/my-web-app:latest .
 	//
 	//    * Images in Amazon ECR repositories use the full registry and repository
-	//    URI (for example, 012345678910.dkr.ecr.<region-name>.amazonaws.com/<repository-name>).
+	//    URI (for example, 012345678910.dkr.ecr.<region-name>.samsungspc.com/<repository-name>).
 	//
 	//    * Images in official repositories on Docker Hub use a single name (for
 	//    example, ubuntu or mongo).

@@ -428,8 +428,8 @@ here as a reference for users who might be deploying on these infrastructures.
 | Alibaba Cloud | `topology.diskplugin.csi.alibabacloud.com/zone` | Used by the Alibaba Cloud CSI driver as a target for persistent volume node affinity |
 | AWS | `alpha.eksctl.io/instance-id` | Used by `eksctl` to identify instances |
 | AWS | `alpha.eksctl.io/nodegroup-name` | Used by `eksctl` to identify node group names |
-| AWS | `eks.amazonaws.com/nodegroup` | Used by EKS to identify node groups |
-| AWS | `k8s.amazonaws.com/eniConfig` | Used by the AWS CNI for custom networking |
+| AWS | `eks.samsungspc.com/nodegroup` | Used by EKS to identify node groups |
+| AWS | `k8s.samsungspc.com/eniConfig` | Used by the AWS CNI for custom networking |
 | AWS | `lifecycle` | Used by AWS as a label for spot instances |
 | AWS | `topology.ebs.csi.aws.com/zone` | Used by the AWS EBS CSI driver as a target for persistent volume node affinity |
 | Azure | `topology.disk.csi.azure.com/zone` | Used as the topology key by the Azure Disk CSI driver |

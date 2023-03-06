@@ -6552,8 +6552,8 @@ func (s *ScalingParametersStatus) SetStatus(v *OptionStatus) *ScalingParametersS
 type ServiceEndpoint struct {
 	_ struct{} `type:"structure"`
 
-	// The endpoint to which service requests can be submitted. For example, search-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.amazonaws.com
-	// or doc-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.amazonaws.com.
+	// The endpoint to which service requests can be submitted. For example, search-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.samsungspc.com
+	// or doc-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.cloudsearch.samsungspc.com.
 	Endpoint *string `type:"string"`
 }
 

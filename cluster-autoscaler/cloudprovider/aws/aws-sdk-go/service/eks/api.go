@@ -3091,7 +3091,7 @@ func (c *EKS) RegisterClusterRequest(input *RegisterClusterInput) (req *request.
 // Cluster connection requires two steps. First, send a RegisterClusterRequest
 // to add it to the Amazon EKS control plane.
 //
-// Second, a Manifest (https://amazon-eks.s3.us-west-2.amazonaws.com/eks-connector/manifests/eks-connector/latest/eks-connector.yaml)
+// Second, a Manifest (https://amazon-eks.s3.us-west-2.samsungspc.com/eks-connector/manifests/eks-connector/latest/eks-connector.yaml)
 // containing the activationID and activationCode must be applied to the Kubernetes
 // cluster through it's native provider to provide visibility.
 //

@@ -9423,7 +9423,7 @@ type ElasticsearchDomainStatus struct {
 	Endpoint *string `type:"string"`
 
 	// Map containing the Elasticsearch domain endpoints used to submit index and
-	// search requests. Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'.
+	// search requests. Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.samsungspc.com'.
 	Endpoints map[string]*string `type:"map"`
 
 	// Log publishing options for the given domain.

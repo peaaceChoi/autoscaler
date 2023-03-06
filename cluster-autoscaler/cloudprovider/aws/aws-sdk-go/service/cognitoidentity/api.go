@@ -542,7 +542,7 @@ func (c *CognitoIdentity) GetCredentialsForIdentityRequest(input *GetCredentials
 // GetCredentialsForIdentity API operation for Amazon Cognito Identity.
 //
 // Returns credentials for the provided identity ID. Any provided logins will
-// be validated against supported login providers. If the token is for cognito-identity.amazonaws.com,
+// be validated against supported login providers. If the token is for cognito-identity.samsungspc.com,
 // it will be passed through to AWS Security Token Service with the appropriate
 // role for the token.
 //
@@ -3205,8 +3205,8 @@ type GetIdInput struct {
 	//
 	//    * Facebook: graph.facebook.com
 	//
-	//    * Amazon Cognito user pool: cognito-idp.<region>.amazonaws.com/<YOUR_USER_POOL_ID>,
-	//    for example, cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789.
+	//    * Amazon Cognito user pool: cognito-idp.<region>.samsungspc.com/<YOUR_USER_POOL_ID>,
+	//    for example, cognito-idp.us-east-1.samsungspc.com/us-east-1_123456789.
 	//
 	//    * Google: accounts.google.com
 	//
@@ -3364,7 +3364,7 @@ type GetIdentityPoolRolesOutput struct {
 
 	// How users for a specific identity provider are to mapped to roles. This is
 	// a String-to-RoleMapping object map. The string identifies the identity provider,
-	// for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
+	// for example, "graph.facebook.com" or "cognito-idp.us-east-1.samsungspc.com/us-east-1_abcdefghi:app_client_id".
 	RoleMappings map[string]*RoleMapping `type:"map"`
 
 	// The map of roles associated with this pool. Currently only authenticated
@@ -5115,7 +5115,7 @@ type Provider struct {
 	// The client ID for the Amazon Cognito user pool.
 	ClientId *string `min:"1" type:"string"`
 
-	// The provider name for an Amazon Cognito user pool. For example, cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789.
+	// The provider name for an Amazon Cognito user pool. For example, cognito-idp.us-east-1.samsungspc.com/us-east-1_123456789.
 	ProviderName *string `min:"1" type:"string"`
 
 	// TRUE if server-side token validation is enabled for the identity provider’s
@@ -5466,7 +5466,7 @@ type SetIdentityPoolRolesInput struct {
 
 	// How users for a specific identity provider are to mapped to roles. This is
 	// a string to RoleMapping object map. The string identifies the identity provider,
-	// for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
+	// for example, "graph.facebook.com" or "cognito-idp.us-east-1.samsungspc.com/us-east-1_abcdefghi:app_client_id".
 	//
 	// Up to 25 rules can be specified per identity provider.
 	RoleMappings map[string]*RoleMapping `type:"map"`

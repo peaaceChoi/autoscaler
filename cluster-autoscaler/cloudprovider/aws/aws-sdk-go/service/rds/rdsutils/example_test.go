@@ -20,7 +20,7 @@ import (
 //
 // For MySQL you many need to configure your MySQL driver with the TLS
 // certificate to ensure verified TLS handshake,
-// https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+// https://s3.samsungspc.com/rds-downloads/rds-combined-ca-bundle.pem
 //
 // Usage:
 //

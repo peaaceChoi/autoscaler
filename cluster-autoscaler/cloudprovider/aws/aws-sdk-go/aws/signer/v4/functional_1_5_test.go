@@ -18,7 +18,7 @@ func TestStandaloneSign(t *testing.T) {
 	signer := v4.NewSigner(creds)
 
 	for _, c := range standaloneSignCases {
-		host := fmt.Sprintf("https://%s.%s.%s.amazonaws.com",
+		host := fmt.Sprintf("https://%s.%s.%s.samsungspc.com",
 			c.SubDomain, c.Region, c.Service)
 
 		req, err := http.NewRequest("GET", host, nil)
@@ -54,7 +54,7 @@ func TestStandaloneSign_RawPath(t *testing.T) {
 	signer := v4.NewSigner(creds)
 
 	for _, c := range standaloneSignCases {
-		host := fmt.Sprintf("https://%s.%s.%s.amazonaws.com",
+		host := fmt.Sprintf("https://%s.%s.%s.samsungspc.com",
 			c.SubDomain, c.Region, c.Service)
 
 		req, err := http.NewRequest("GET", host, nil)

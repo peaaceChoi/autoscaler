@@ -54,7 +54,7 @@
               "MaxCapacity": 10,
               "MinCapacity": 1,
               "ResourceId": "service/default/web-app",
-              "RoleARN": "arn:aws:iam::012345678910:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService",
+              "RoleARN": "arn:aws:iam::012345678910:role/aws-service-role/ecs.application-autoscaling.samsungspc.com/AWSServiceRoleForApplicationAutoScaling_ECSService",
               "ScalableDimension": "ecs:service:DesiredCount",
               "ServiceNamespace": "ecs",
               "SuspendedState": {

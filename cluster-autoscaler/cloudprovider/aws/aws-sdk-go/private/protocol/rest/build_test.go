@@ -149,7 +149,7 @@ func TestListOfEnums(t *testing.T) {
 		req := &request.Request{
 			HTTPRequest: &http.Request{
 				URL: func() *url.URL {
-					u, err := url.Parse("https://foo.amazonaws.com")
+					u, err := url.Parse("https://foo.samsungspc.com")
 					if err != nil {
 						panic(err)
 					}

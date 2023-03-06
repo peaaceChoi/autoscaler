@@ -39,7 +39,7 @@
           "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/4c1731d6-5435-ed4d-be13-d53411a7cfbd",
           "Password": "pasword",
           "Port": 3306,
-          "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.amazonaws.com",
+          "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.samsungspc.com",
           "SslMode": "require",
           "Tags": [
             {
@@ -57,7 +57,7 @@
             "EngineName": "mysql",
             "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/4c1731d6-5435-ed4d-be13-d53411a7cfbd",
             "Port": 3306,
-            "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.amazonaws.com",
+            "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.samsungspc.com",
             "Status": "active",
             "Username": "username"
           }
@@ -284,7 +284,7 @@
             "EngineName": "mysql",
             "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/4c1731d6-5435-ed4d-be13-d53411a7cfbd",
             "Port": 3306,
-            "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.amazonaws.com",
+            "ServerName": "mydb.cx1llnox7iyx.us-west-2.rds.samsungspc.com",
             "Status": "active",
             "Username": "username"
           }

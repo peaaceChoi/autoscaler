@@ -9581,7 +9581,7 @@ type LambdaAuthorizerConfig struct {
 	// is done for you. To use the Command Line Interface (CLI), run the following:
 	//
 	// aws lambda add-permission --function-name "arn:aws:lambda:us-east-2:111122223333:function:my-function"
-	// --statement-id "appsync" --principal appsync.amazonaws.com --action lambda:InvokeFunction
+	// --statement-id "appsync" --principal appsync.samsungspc.com --action lambda:InvokeFunction
 	//
 	// AuthorizerUri is a required field
 	AuthorizerUri *string `locationName:"authorizerUri" type:"string" required:"true"`

@@ -1847,7 +1847,7 @@
       "protocol": "rest-xml",
       "apiVersion": "2014-01-01"
     },
-    "clientEndpoint": "https://service.region.amazonaws.com",
+    "clientEndpoint": "https://service.region.samsungspc.com",
     "shapes": {
       "StaticInputShape": {
         "type": "structure",
@@ -1892,7 +1892,7 @@
         "serialized": {
           "uri": "/path",
           "body": "<StaticOpRequest><Name>myname</Name></StaticOpRequest>",
-          "host": "data-service.region.amazonaws.com"
+          "host": "data-service.region.samsungspc.com"
         }
       },
       {
@@ -1916,7 +1916,7 @@
         "serialized": {
           "uri": "/path",
           "body": "<MemberRefOpRequest><Name>myname</Name></MemberRefOpRequest>",
-          "host": "foo-myname.service.region.amazonaws.com"
+          "host": "foo-myname.service.region.samsungspc.com"
         }
       }
     ]

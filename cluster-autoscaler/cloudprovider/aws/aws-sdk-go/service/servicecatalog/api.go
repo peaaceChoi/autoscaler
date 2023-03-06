@@ -19971,7 +19971,7 @@ type ProvisioningArtifactProperties struct {
 	// The URL of the CloudFormation template in Amazon S3. Specify the URL in JSON
 	// format as follows:
 	//
-	// "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..."
+	// "LoadTemplateFromURL": "https://s3.samsungspc.com/cf-templates-ozkq9d3hgiq2-us-east-1/..."
 	//
 	// ImportFromPhysicalId: The physical id of the resource that contains the template.
 	// Currently only supports CloudFormation stack arn. Specify the physical id

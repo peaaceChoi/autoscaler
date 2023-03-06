@@ -129,7 +129,7 @@ func TestGetManagedNodegroupNoTaintsOrLabels(t *testing.T) {
 	assert.Equal(t, cacheObj.labels["amiType"], amiType)
 	assert.Equal(t, cacheObj.labels["capacityType"], capacityType)
 	assert.Equal(t, cacheObj.labels["k8sVersion"], k8sVersion)
-	assert.Equal(t, cacheObj.labels["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, cacheObj.labels["eks.samsungspc.com/nodegroup"], nodegroupName)
 }
 
 func TestGetManagedNodegroupWithTaintsAndLabels(t *testing.T) {
@@ -202,7 +202,7 @@ func TestGetManagedNodegroupWithTaintsAndLabels(t *testing.T) {
 	assert.Equal(t, cacheObj.labels["amiType"], amiType)
 	assert.Equal(t, cacheObj.labels["capacityType"], capacityType)
 	assert.Equal(t, cacheObj.labels["k8sVersion"], k8sVersion)
-	assert.Equal(t, cacheObj.labels["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, cacheObj.labels["eks.samsungspc.com/nodegroup"], nodegroupName)
 }
 
 func TestGetManagedNodegroupInfoObjectWithError(t *testing.T) {
@@ -303,7 +303,7 @@ func TestGetManagedNodegroupInfoObjectNoCachedNodegroup(t *testing.T) {
 	assert.Equal(t, mngInfoObject.labels["amiType"], amiType)
 	assert.Equal(t, mngInfoObject.labels["capacityType"], capacityType)
 	assert.Equal(t, mngInfoObject.labels["k8sVersion"], k8sVersion)
-	assert.Equal(t, mngInfoObject.labels["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, mngInfoObject.labels["eks.samsungspc.com/nodegroup"], nodegroupName)
 	k.AssertCalled(t, "DescribeNodegroup", &eks.DescribeNodegroupInput{
 		ClusterName:   &clusterName,
 		NodegroupName: &nodegroupName,
@@ -387,7 +387,7 @@ func TestGetManagedNodegroupLabelsNoCachedNodegroup(t *testing.T) {
 	assert.Equal(t, labelsMap["amiType"], amiType)
 	assert.Equal(t, labelsMap["capacityType"], capacityType)
 	assert.Equal(t, labelsMap["k8sVersion"], k8sVersion)
-	assert.Equal(t, labelsMap["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, labelsMap["eks.samsungspc.com/nodegroup"], nodegroupName)
 	k.AssertCalled(t, "DescribeNodegroup", &eks.DescribeNodegroupInput{
 		ClusterName:   &clusterName,
 		NodegroupName: &nodegroupName,
@@ -482,7 +482,7 @@ func TestGetManagedNodegroupLabelsWithCachedNodegroupThatExpires(t *testing.T) {
 	assert.Equal(t, newLabelsMap["amiType"], amiType)
 	assert.Equal(t, newLabelsMap["capacityType"], capacityType)
 	assert.Equal(t, newLabelsMap["k8sVersion"], k8sVersion)
-	assert.Equal(t, newLabelsMap["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, newLabelsMap["eks.samsungspc.com/nodegroup"], nodegroupName)
 	k.AssertCalled(t, "DescribeNodegroup", &eks.DescribeNodegroupInput{
 		ClusterName:   &clusterName,
 		NodegroupName: &nodegroupName,

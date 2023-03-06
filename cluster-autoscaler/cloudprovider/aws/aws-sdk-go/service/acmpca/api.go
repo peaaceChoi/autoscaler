@@ -278,7 +278,7 @@ func (c *ACMPCA) CreatePermissionRequest(input *CreatePermissionInput) (req *req
 // CreatePermission API operation for AWS Certificate Manager Private Certificate Authority.
 //
 // Grants one or more permissions on a private CA to the Certificate Manager
-// (ACM) service principal (acm.amazonaws.com). These permissions allow ACM
+// (ACM) service principal (acm.samsungspc.com). These permissions allow ACM
 // to issue and renew ACM certificates that reside in the same Amazon Web Services
 // account as the CA.
 //
@@ -513,7 +513,7 @@ func (c *ACMPCA) DeletePermissionRequest(input *DeletePermissionInput) (req *req
 // DeletePermission API operation for AWS Certificate Manager Private Certificate Authority.
 //
 // Revokes permissions on a private CA granted to the Certificate Manager (ACM)
-// service principal (acm.amazonaws.com).
+// service principal (acm.samsungspc.com).
 //
 // These permissions allow ACM to issue and renew ACM certificates that reside
 // in the same Amazon Web Services account as the CA. If you revoke these permissions,
@@ -1800,7 +1800,7 @@ func (c *ACMPCA) ListPermissionsRequest(input *ListPermissionsInput) (req *reque
 // ListPermissions API operation for AWS Certificate Manager Private Certificate Authority.
 //
 // List all permissions on a private CA, if any, granted to the Certificate
-// Manager (ACM) service principal (acm.amazonaws.com).
+// Manager (ACM) service principal (acm.samsungspc.com).
 //
 // These permissions allow ACM to issue and renew ACM certificates that reside
 // in the same Amazon Web Services account as the CA.
@@ -3856,7 +3856,7 @@ type CreatePermissionInput struct {
 	CertificateAuthorityArn *string `min:"5" type:"string" required:"true"`
 
 	// The Amazon Web Services service or identity that receives the permission.
-	// At this time, the only valid principal is acm.amazonaws.com.
+	// At this time, the only valid principal is acm.samsungspc.com.
 	//
 	// Principal is a required field
 	Principal *string `type:"string" required:"true"`
@@ -4439,7 +4439,7 @@ type DeletePermissionInput struct {
 	CertificateAuthorityArn *string `min:"5" type:"string" required:"true"`
 
 	// The Amazon Web Services service or identity that will have its CA permissions
-	// revoked. At this time, the only valid service principal is acm.amazonaws.com
+	// revoked. At this time, the only valid service principal is acm.samsungspc.com
 	//
 	// Principal is a required field
 	Principal *string `type:"string" required:"true"`
@@ -7262,7 +7262,7 @@ type Permission struct {
 	Policy *string `min:"1" type:"string"`
 
 	// The Amazon Web Services service or entity that holds the permission. At this
-	// time, the only valid principal is acm.amazonaws.com.
+	// time, the only valid principal is acm.samsungspc.com.
 	Principal *string `type:"string"`
 
 	// The ID of the account that assigned the permission.

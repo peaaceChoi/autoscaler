@@ -5360,7 +5360,7 @@ type CreateMedicalVocabularyInput struct {
 	//
 	// Here's an example URI path:
 	//
-	// https://s3.us-east-1.amazonaws.com/my-s3-bucket/my-vocab-file.txt
+	// https://s3.us-east-1.samsungspc.com/my-s3-bucket/my-vocab-file.txt
 	//
 	// VocabularyFileUri is a required field
 	VocabularyFileUri *string `min:"1" type:"string" required:"true"`
@@ -5730,7 +5730,7 @@ type CreateVocabularyInput struct {
 	//
 	// Here's an example URI path:
 	//
-	// https://s3.us-east-1.amazonaws.com/my-s3-bucket/my-vocab-file.txt
+	// https://s3.us-east-1.samsungspc.com/my-s3-bucket/my-vocab-file.txt
 	//
 	// Note that if you include VocabularyFileUri in your request, you cannot use
 	// the Phrases flag; you must choose one or the other.
@@ -12052,11 +12052,11 @@ type UpdateMedicalVocabularyInput struct {
 	// The URI must be in the same Amazon Web Services Region as the resource that
 	// you are calling. The following is the format for a URI:
 	//
-	// https://s3.aws-region.amazonaws.com/bucket-name/keyprefix/objectkey
+	// https://s3.aws-region.samsungspc.com/bucket-name/keyprefix/objectkey
 	//
 	// For example:
 	//
-	// https://s3.us-east-1.amazonaws.com/DOC-EXAMPLE-BUCKET/vocab.txt
+	// https://s3.us-east-1.samsungspc.com/DOC-EXAMPLE-BUCKET/vocab.txt
 	//
 	// For more information about Amazon S3 object names, see Object Keys (https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-keys)
 	// in the Amazon S3 Developer Guide.
@@ -12346,11 +12346,11 @@ type UpdateVocabularyInput struct {
 	// vocabulary. The URI must be in the same region as the API endpoint that you
 	// are calling. The general form is:
 	//
-	// https://s3.aws-region.amazonaws.com/bucket-name/keyprefix/objectkey
+	// https://s3.aws-region.samsungspc.com/bucket-name/keyprefix/objectkey
 	//
 	// For example:
 	//
-	// https://s3.us-east-1.amazonaws.com/DOC-EXAMPLE-BUCKET/vocab.txt
+	// https://s3.us-east-1.samsungspc.com/DOC-EXAMPLE-BUCKET/vocab.txt
 	//
 	// For more information about S3 object names, see Object Keys (https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-keys)
 	// in the Amazon S3 Developer Guide.

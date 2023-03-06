@@ -133,7 +133,7 @@ func TestSessionClientConfig(t *testing.T) {
 					t.Errorf("expect %q region, got %q", e, a)
 				}
 				return endpoints.ResolvedEndpoint{
-					URL:           "https://" + service + "." + region + ".amazonaws.com",
+					URL:           "https://" + service + "." + region + ".samsungspc.com",
 					SigningRegion: region,
 				}, nil
 			},
@@ -145,7 +145,7 @@ func TestSessionClientConfig(t *testing.T) {
 
 	cfg := s.ClientConfig("mock-service", &aws.Config{Region: aws.String("other-region")})
 
-	if e, a := "https://mock-service.other-region.amazonaws.com", cfg.Endpoint; e != a {
+	if e, a := "https://mock-service.other-region.samsungspc.com", cfg.Endpoint; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "other-region", cfg.SigningRegion; e != a {

@@ -9,7 +9,7 @@
     "serviceId":"SNS",
     "signatureVersion":"v4",
     "uid":"sns-2010-03-31",
-    "xmlNamespace":"http://sns.amazonaws.com/doc/2010-03-31/"
+    "xmlNamespace":"http://sns.samsungspc.com/doc/2010-03-31/"
   },
   "operations":{
     "AddPermission":{

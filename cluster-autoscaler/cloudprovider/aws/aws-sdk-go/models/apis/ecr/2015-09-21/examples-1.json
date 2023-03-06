@@ -163,7 +163,7 @@
             {
               "authorizationToken": "QVdTOkN...",
               "expiresAt": "1470951892432",
-              "proxyEndpoint": "https://012345678901.dkr.ecr.us-west-2.amazonaws.com"
+              "proxyEndpoint": "https://012345678901.dkr.ecr.us-west-2.samsungspc.com"
             }
           ]
         },

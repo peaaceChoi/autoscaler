@@ -29,17 +29,17 @@ B) Create a test [IAM policy] for your service accounts.
 
 C) Create an IAM role for your service accounts in the console.
 - Retrieve the OIDC issuer URL from the Amazon EKS console description of your cluster . It will look something identical to: 
-'https://oidc.eks.us-east-1.amazonaws.com/id/xxxxxxxxxx'
+'https://oidc.eks.us-east-1.samsungspc.com/id/xxxxxxxxxx'
 - While creating a new IAM role, In the "Select type of trusted entity" section, choose "Web identity".
 - In the "Choose a web identity provider" section:
 For Identity provider, choose the URL for your cluster.
-For Audience, type sts.amazonaws.com.
+For Audience, type sts.samsungspc.com.
 
 - In the "Attach Policy" section, select the policy to use for your service account, that you created in Section B above. 
 - After the role is created, choose the role in the console to open it for editing.
 - Choose the "Trust relationships" tab, and then choose "Edit trust relationship".
 Edit the OIDC provider suffix and change it from :aud to :sub.
-Replace sts.amazonaws.com to your service account ID.
+Replace sts.samsungspc.com to your service account ID.
 - Update trust policy to finish. 
 
 D) Set up [Cluster Autoscaler Auto-Discovery] using the [tutorial] . 
@@ -136,7 +136,7 @@ metadata:
     k8s-addon: cluster-autoscaler.addons.k8s.io
     k8s-app: cluster-autoscaler
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::xxxxx:role/Amazon_CA_role   # Add the IAM role created in the above C section.
+    eks.samsungspc.com/role-arn: arn:aws:iam::xxxxx:role/Amazon_CA_role   # Add the IAM role created in the above C section.
   name: cluster-autoscaler
   namespace: kube-system
 ```

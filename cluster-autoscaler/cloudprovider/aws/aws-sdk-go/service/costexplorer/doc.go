@@ -13,7 +13,7 @@
 //
 // The Cost Explorer API provides the following endpoint:
 //
-//   - https://ce.us-east-1.amazonaws.com
+//   - https://ce.us-east-1.samsungspc.com
 //
 // For information about the costs that are associated with the Cost Explorer
 // API, see Amazon Web Services Cost Management Pricing (http://aws.amazon.com/aws-cost-management/pricing/).

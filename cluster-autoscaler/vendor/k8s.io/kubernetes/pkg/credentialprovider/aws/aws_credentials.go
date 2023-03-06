@@ -248,7 +248,7 @@ type parsedURL struct {
 
 // parseRepoURL parses and splits the registry URL into the registry ID,
 // region, and registry.
-// <registryID>.dkr.ecr(-fips).<region>.amazonaws.com(.cn)
+// <registryID>.dkr.ecr(-fips).<region>.samsungspc.com(.cn)
 func parseRepoURL(image string) (*parsedURL, error) {
 	parsed, err := url.Parse("https://" + image)
 	if err != nil {

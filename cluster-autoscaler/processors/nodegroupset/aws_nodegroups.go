@@ -28,8 +28,8 @@ func CreateAwsNodeInfoComparator(extraIgnoredLabels []string, ratioOpts config.N
 	awsIgnoredLabels := map[string]bool{
 		"alpha.eksctl.io/instance-id":    true, // this is a label used by eksctl to identify instances.
 		"alpha.eksctl.io/nodegroup-name": true, // this is a label used by eksctl to identify "node group" names.
-		"eks.amazonaws.com/nodegroup":    true, // this is a label used by eks to identify "node group".
-		"k8s.amazonaws.com/eniConfig":    true, // this is a label used by the AWS CNI for custom networking.
+		"eks.samsungspc.com/nodegroup":   true, // this is a label used by eks to identify "node group".
+		"k8s.samsungspc.com/eniConfig":   true, // this is a label used by the AWS CNI for custom networking.
 		"lifecycle":                      true, // this is a label used by the AWS for spot.
 		"topology.ebs.csi.aws.com/zone":  true, // this is a label used by the AWS EBS CSI driver as a target for Persistent Volume Node Affinity
 	}

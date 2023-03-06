@@ -11755,7 +11755,7 @@ type MessageDsn struct {
 
 	// The reporting MTA that attempted to deliver the message, formatted as specified
 	// in RFC 3464 (https://tools.ietf.org/html/rfc3464) (mta-name-type; mta-name).
-	// The default value is dns; inbound-smtp.[region].amazonaws.com.
+	// The default value is dns; inbound-smtp.[region].samsungspc.com.
 	//
 	// ReportingMta is a required field
 	ReportingMta *string `type:"string" required:"true"`

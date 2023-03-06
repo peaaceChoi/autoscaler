@@ -1391,7 +1391,7 @@ func ExampleS3_PutBucketAcl_shared00() {
 	input := &s3.PutBucketAclInput{
 		Bucket:           aws.String("examplebucket"),
 		GrantFullControl: aws.String("id=examplee7a2f25102679df27bb0ae12b3f85be6f290b936c4393484"),
-		GrantWrite:       aws.String("uri=http://acs.amazonaws.com/groups/s3/LogDelivery"),
+		GrantWrite:       aws.String("uri=http://acs.samsungspc.com/groups/s3/LogDelivery"),
 	}
 
 	result, err := svc.PutBucketAcl(input)
@@ -1537,7 +1537,7 @@ func ExampleS3_PutBucketLogging_shared00() {
 					{
 						Grantee: &s3.Grantee{
 							Type: aws.String("Group"),
-							URI:  aws.String("http://acs.amazonaws.com/groups/global/AllUsers"),
+							URI:  aws.String("http://acs.samsungspc.com/groups/global/AllUsers"),
 						},
 						Permission: aws.String("READ"),
 					},
@@ -2041,7 +2041,7 @@ func ExampleS3_PutObjectAcl_shared00() {
 		AccessControlPolicy: &s3.AccessControlPolicy{},
 		Bucket:              aws.String("examplebucket"),
 		GrantFullControl:    aws.String("emailaddress=user1@example.com,emailaddress=user2@example.com"),
-		GrantRead:           aws.String("uri=http://acs.amazonaws.com/groups/global/AllUsers"),
+		GrantRead:           aws.String("uri=http://acs.samsungspc.com/groups/global/AllUsers"),
 		Key:                 aws.String("HappyFace.jpg"),
 	}
 

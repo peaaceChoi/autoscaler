@@ -38,36 +38,36 @@
 // connect to one of the following endpoints. Stacks can only be accessed or
 // managed within the endpoint in which they are created.
 //
-//   - opsworks.us-east-1.amazonaws.com
+//   - opsworks.us-east-1.samsungspc.com
 //
-//   - opsworks.us-east-2.amazonaws.com
+//   - opsworks.us-east-2.samsungspc.com
 //
-//   - opsworks.us-west-1.amazonaws.com
+//   - opsworks.us-west-1.samsungspc.com
 //
-//   - opsworks.us-west-2.amazonaws.com
+//   - opsworks.us-west-2.samsungspc.com
 //
-//   - opsworks.ca-central-1.amazonaws.com (API only; not available in the
+//   - opsworks.ca-central-1.samsungspc.com (API only; not available in the
 //     AWS console)
 //
-//   - opsworks.eu-west-1.amazonaws.com
+//   - opsworks.eu-west-1.samsungspc.com
 //
-//   - opsworks.eu-west-2.amazonaws.com
+//   - opsworks.eu-west-2.samsungspc.com
 //
-//   - opsworks.eu-west-3.amazonaws.com
+//   - opsworks.eu-west-3.samsungspc.com
 //
-//   - opsworks.eu-central-1.amazonaws.com
+//   - opsworks.eu-central-1.samsungspc.com
 //
-//   - opsworks.ap-northeast-1.amazonaws.com
+//   - opsworks.ap-northeast-1.samsungspc.com
 //
-//   - opsworks.ap-northeast-2.amazonaws.com
+//   - opsworks.ap-northeast-2.samsungspc.com
 //
-//   - opsworks.ap-south-1.amazonaws.com
+//   - opsworks.ap-south-1.samsungspc.com
 //
-//   - opsworks.ap-southeast-1.amazonaws.com
+//   - opsworks.ap-southeast-1.samsungspc.com
 //
-//   - opsworks.ap-southeast-2.amazonaws.com
+//   - opsworks.ap-southeast-2.samsungspc.com
 //
-//   - opsworks.sa-east-1.amazonaws.com
+//   - opsworks.sa-east-1.samsungspc.com
 //
 // # Chef Versions
 //

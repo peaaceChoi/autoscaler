@@ -41,7 +41,7 @@
 //
 // The Amazon Web Services Budgets API provides the following endpoint:
 //
-//   - https://budgets.amazonaws.com
+//   - https://budgets.samsungspc.com
 //
 // For information about costs that are associated with the Amazon Web Services
 // Budgets API, see Amazon Web Services Cost Management Pricing (https://aws.amazon.com/aws-cost-management/pricing/).

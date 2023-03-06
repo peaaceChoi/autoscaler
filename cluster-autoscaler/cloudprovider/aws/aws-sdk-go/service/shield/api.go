@@ -187,7 +187,7 @@ func (c *Shield) AssociateDRTRoleRequest(input *AssociateDRTRoleInput) (req *req
 // managed policy to the role that you'll specify in the request. You can access
 // this policy in the IAM console at AWSShieldDRTAccessPolicy (https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/service-role/AWSShieldDRTAccessPolicy).
 // For more information see Adding and removing IAM identity permissions (https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
-// The role must also trust the service principal drt.shield.amazonaws.com.
+// The role must also trust the service principal drt.shield.samsungspc.com.
 // For more information, see IAM JSON policy elements: Principal (https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html).
 //
 // The SRT will have access only to your WAF and Shield resources. By submitting

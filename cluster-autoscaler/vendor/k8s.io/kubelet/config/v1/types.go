@@ -62,7 +62,7 @@ type CredentialProvider struct {
 	// - If the imageMatch contains a port, then the port must match in the image as well.
 	//
 	// Example values of matchImages:
-	//   - 123456789.dkr.ecr.us-east-1.amazonaws.com
+	//   - 123456789.dkr.ecr.us-east-1.samsungspc.com
 	//   - *.azurecr.io
 	//   - gcr.io
 	//   - *.*.registry.io

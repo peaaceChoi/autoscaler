@@ -459,13 +459,13 @@ func TestEndpointCache_Get_prune(t *testing.T) {
 		Addresses: []WeightedAddress{
 			{
 				URL: &url.URL{
-					Host: "foo.amazonaws.com",
+					Host: "foo.samsungspc.com",
 				},
 				Expired: time.Now().Add(5 * time.Minute),
 			},
 			{
 				URL: &url.URL{
-					Host: "bar.amazonaws.com",
+					Host: "bar.samsungspc.com",
 				},
 				Expired: time.Now().Add(5 * -time.Minute),
 			},
@@ -481,7 +481,7 @@ func TestEndpointCache_Get_prune(t *testing.T) {
 	if err != nil {
 		t.Errorf("expect no error, got %v", err)
 	}
-	if e, a := "foo.amazonaws.com", weightedAddress.URL.Host; e != a {
+	if e, a := "foo.samsungspc.com", weightedAddress.URL.Host; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 

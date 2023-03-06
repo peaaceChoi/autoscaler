@@ -568,7 +568,7 @@ func (c *S3) CreateBucketRequest(input *CreateBucketInput) (req *request.Request
 // to create buckets in the Europe (Ireland) Region. For more information, see
 // Accessing a bucket (https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html#access-bucket-intro).
 //
-// If you send your create bucket request to the s3.amazonaws.com endpoint,
+// If you send your create bucket request to the s3.samsungspc.com endpoint,
 // the request goes to the us-east-1 Region. Accordingly, the signature calculations
 // in Signature Version 4 must use us-east-1 as the Region, even if the location
 // constraint in the request specifies another Region where the bucket is to
@@ -5527,7 +5527,7 @@ func (c *S3) HeadBucketRequest(input *HeadBucketInput) (req *request.Request, ou
 // To use this API against an access point, you must provide the alias of the
 // access point in place of the bucket name or specify the access point ARN.
 // When using the access point ARN, you must direct requests to the access point
-// hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+// hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 // When using the Amazon Web Services SDKs, you provide the ARN in place of
 // the bucket name. For more information see, Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html).
 //
@@ -7189,7 +7189,7 @@ func (c *S3) PutBucketAclRequest(input *PutBucketAclInput) (req *request.Request
 //     x-amz-grant-write header grants create, overwrite, and delete objects
 //     permission to LogDelivery group predefined by Amazon S3 and two Amazon
 //     Web Services accounts identified by their email addresses. x-amz-grant-write:
-//     uri="http://acs.amazonaws.com/groups/s3/LogDelivery", id="111122223333",
+//     uri="http://acs.samsungspc.com/groups/s3/LogDelivery", id="111122223333",
 //     id="555566667777"
 //
 // You can use either a canned ACL or specify access permissions explicitly.
@@ -7205,7 +7205,7 @@ func (c *S3) PutBucketAclRequest(input *PutBucketAclInput) (req *request.Request
 //     </Grantee> DisplayName is optional and ignored in the request
 //
 //   - By URI: <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-//     xsi:type="Group"><URI><>http://acs.amazonaws.com/groups/global/AuthenticatedUsers<></URI></Grantee>
+//     xsi:type="Group"><URI><>http://acs.samsungspc.com/groups/global/AuthenticatedUsers<></URI></Grantee>
 //
 //   - By Email address: <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 //     xsi:type="AmazonCustomerByEmail"><EmailAddress><>Grantees@email.com<></EmailAddress>lt;/Grantee>
@@ -8190,12 +8190,12 @@ func (c *S3) PutBucketLoggingRequest(input *PutBucketLoggingInput) (req *request
 //     Object acl request, appears as the CanonicalUser.
 //
 //   - By URI: <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-//     xsi:type="Group"><URI><>http://acs.amazonaws.com/groups/global/AuthenticatedUsers<></URI></Grantee>
+//     xsi:type="Group"><URI><>http://acs.samsungspc.com/groups/global/AuthenticatedUsers<></URI></Grantee>
 //
 // To enable logging, you use LoggingEnabled and its children request elements.
 // To disable logging, you use an empty BucketLoggingStatus request element:
 //
-// <BucketLoggingStatus xmlns="http://doc.s3.amazonaws.com/2006-03-01" />
+// <BucketLoggingStatus xmlns="http://doc.s3.samsungspc.com/2006-03-01" />
 //
 // For more information about server access logging, see Server Access Logging
 // (https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) in
@@ -9632,7 +9632,7 @@ func (c *S3) PutObjectAclRequest(input *PutObjectAclInput) (req *request.Request
 //     </Grantee> DisplayName is optional and ignored in the request.
 //
 //   - By URI: <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-//     xsi:type="Group"><URI><>http://acs.amazonaws.com/groups/global/AuthenticatedUsers<></URI></Grantee>
+//     xsi:type="Group"><URI><>http://acs.samsungspc.com/groups/global/AuthenticatedUsers<></URI></Grantee>
 //
 //   - By Email address: <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 //     xsi:type="AmazonCustomerByEmail"><EmailAddress><>Grantees@email.com<></EmailAddress>lt;/Grantee>
@@ -11245,7 +11245,7 @@ type AbortMultipartUploadInput struct {
 	// The bucket name to which the upload was taking place.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -11253,7 +11253,7 @@ type AbortMultipartUploadInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -12632,7 +12632,7 @@ type CompleteMultipartUploadInput struct {
 	// Name of the bucket to which the multipart upload was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -12640,7 +12640,7 @@ type CompleteMultipartUploadInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -12688,7 +12688,7 @@ type CompleteMultipartUploadInput struct {
 	Key *string `location:"uri" locationName:"Key" min:"1" type:"string" required:"true"`
 
 	// The container for the multipart upload request information.
-	MultipartUpload *CompletedMultipartUpload `locationName:"CompleteMultipartUpload" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	MultipartUpload *CompletedMultipartUpload `locationName:"CompleteMultipartUpload" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Confirms that the requester knows that they will be charged for the request.
 	// Bucket owners need not specify this parameter in their requests. For information
@@ -12894,7 +12894,7 @@ type CompleteMultipartUploadOutput struct {
 	// the access point ARN or access point alias if used.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -12902,7 +12902,7 @@ type CompleteMultipartUploadOutput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -13341,7 +13341,7 @@ type CopyObjectInput struct {
 	// The name of the destination bucket.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -13349,7 +13349,7 @@ type CopyObjectInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -14301,7 +14301,7 @@ type CreateBucketInput struct {
 	Bucket *string `location:"uri" locationName:"Bucket" type:"string" required:"true"`
 
 	// The configuration information for the bucket.
-	CreateBucketConfiguration *CreateBucketConfiguration `locationName:"CreateBucketConfiguration" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	CreateBucketConfiguration *CreateBucketConfiguration `locationName:"CreateBucketConfiguration" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Allows grantee the read, write, read ACP, and write ACP permissions on the
 	// bucket.
@@ -14485,7 +14485,7 @@ type CreateMultipartUploadInput struct {
 	// The name of the bucket to which to initiate the upload
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -14493,7 +14493,7 @@ type CreateMultipartUploadInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -14932,7 +14932,7 @@ type CreateMultipartUploadOutput struct {
 	// not return the access point ARN or access point alias if used.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -14940,7 +14940,7 @@ type CreateMultipartUploadOutput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -16902,7 +16902,7 @@ type DeleteObjectInput struct {
 	// The bucket name of the bucket containing the object.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -16910,7 +16910,7 @@ type DeleteObjectInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -17125,7 +17125,7 @@ type DeleteObjectTaggingInput struct {
 	// The bucket name containing the objects from which to remove the tags.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -17133,7 +17133,7 @@ type DeleteObjectTaggingInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -17292,7 +17292,7 @@ type DeleteObjectsInput struct {
 	// The bucket name containing the objects to delete.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -17300,7 +17300,7 @@ type DeleteObjectsInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -17341,7 +17341,7 @@ type DeleteObjectsInput struct {
 	// Container for the request.
 	//
 	// Delete is a required field
-	Delete *Delete `locationName:"Delete" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	Delete *Delete `locationName:"Delete" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The account ID of the expected bucket owner. If the bucket is owned by a
 	// different account, the request fails with the HTTP status code 403 Forbidden
@@ -21302,7 +21302,7 @@ type GetObjectAclInput struct {
 	// The bucket name that contains the object for which to get the ACL information.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -21492,7 +21492,7 @@ type GetObjectAttributesInput struct {
 	// The name of the bucket that contains the object.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -21500,7 +21500,7 @@ type GetObjectAttributesInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -21909,17 +21909,17 @@ type GetObjectInput struct {
 	// The bucket name containing the object.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
 	// in the Amazon S3 User Guide.
 	//
-	// When using an Object Lambda access point the hostname takes the form AccessPointName-AccountId.s3-object-lambda.Region.amazonaws.com.
+	// When using an Object Lambda access point the hostname takes the form AccessPointName-AccountId.s3-object-lambda.Region.samsungspc.com.
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -22235,7 +22235,7 @@ type GetObjectLegalHoldInput struct {
 	// retrieve.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -22406,7 +22406,7 @@ type GetObjectLockConfigurationInput struct {
 	// The bucket whose Object Lock configuration you want to retrieve.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -22938,7 +22938,7 @@ type GetObjectRetentionInput struct {
 	// retrieve.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -23109,7 +23109,7 @@ type GetObjectTaggingInput struct {
 	// The bucket name containing the object for which to get the tagging information.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -23117,7 +23117,7 @@ type GetObjectTaggingInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -23801,7 +23801,7 @@ type HeadBucketInput struct {
 	// The bucket name.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -23809,7 +23809,7 @@ type HeadBucketInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -23932,7 +23932,7 @@ type HeadObjectInput struct {
 	// The name of the bucket containing the object.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -23940,7 +23940,7 @@ type HeadObjectInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -26836,7 +26836,7 @@ type ListMultipartUploadsInput struct {
 	// The name of the bucket to which the multipart upload was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -26844,7 +26844,7 @@ type ListMultipartUploadsInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -27509,7 +27509,7 @@ type ListObjectsInput struct {
 	// The name of the bucket containing the objects.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -27517,7 +27517,7 @@ type ListObjectsInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -27820,7 +27820,7 @@ type ListObjectsV2Input struct {
 	// Bucket name to list.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -27828,7 +27828,7 @@ type ListObjectsV2Input struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -28064,7 +28064,7 @@ type ListObjectsV2Output struct {
 	// The bucket name.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -28072,7 +28072,7 @@ type ListObjectsV2Output struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -28188,7 +28188,7 @@ type ListPartsInput struct {
 	// The name of the bucket to which the parts are being uploaded.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -28196,7 +28196,7 @@ type ListPartsInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -30684,7 +30684,7 @@ type PutBucketAccelerateConfigurationInput struct {
 	// Container for setting the transfer acceleration state.
 	//
 	// AccelerateConfiguration is a required field
-	AccelerateConfiguration *AccelerateConfiguration `locationName:"AccelerateConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	AccelerateConfiguration *AccelerateConfiguration `locationName:"AccelerateConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The name of the bucket for which the accelerate configuration is set.
 	//
@@ -30838,7 +30838,7 @@ type PutBucketAclInput struct {
 	ACL *string `location:"header" locationName:"x-amz-acl" type:"string" enum:"BucketCannedACL"`
 
 	// Contains the elements that set the ACL permissions for an object per grantee.
-	AccessControlPolicy *AccessControlPolicy `locationName:"AccessControlPolicy" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	AccessControlPolicy *AccessControlPolicy `locationName:"AccessControlPolicy" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The bucket to which to apply the ACL.
 	//
@@ -31052,7 +31052,7 @@ type PutBucketAnalyticsConfigurationInput struct {
 	// The configuration and any analyses for the analytics filter.
 	//
 	// AnalyticsConfiguration is a required field
-	AnalyticsConfiguration *AnalyticsConfiguration `locationName:"AnalyticsConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	AnalyticsConfiguration *AnalyticsConfiguration `locationName:"AnalyticsConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The name of the bucket to which an analytics configuration is stored.
 	//
@@ -31209,7 +31209,7 @@ type PutBucketCorsInput struct {
 	// S3 User Guide.
 	//
 	// CORSConfiguration is a required field
-	CORSConfiguration *CORSConfiguration `locationName:"CORSConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	CORSConfiguration *CORSConfiguration `locationName:"CORSConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Indicates the algorithm used to create the checksum for the object when using
 	// the SDK. This header will not provide any additional functionality if not
@@ -31401,7 +31401,7 @@ type PutBucketEncryptionInput struct {
 	// Specifies the default server-side-encryption configuration.
 	//
 	// ServerSideEncryptionConfiguration is a required field
-	ServerSideEncryptionConfiguration *ServerSideEncryptionConfiguration `locationName:"ServerSideEncryptionConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	ServerSideEncryptionConfiguration *ServerSideEncryptionConfiguration `locationName:"ServerSideEncryptionConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -31543,7 +31543,7 @@ type PutBucketIntelligentTieringConfigurationInput struct {
 	// Container for S3 Intelligent-Tiering configuration.
 	//
 	// IntelligentTieringConfiguration is a required field
-	IntelligentTieringConfiguration *IntelligentTieringConfiguration `locationName:"IntelligentTieringConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	IntelligentTieringConfiguration *IntelligentTieringConfiguration `locationName:"IntelligentTieringConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -31686,7 +31686,7 @@ type PutBucketInventoryConfigurationInput struct {
 	// Specifies the inventory configuration.
 	//
 	// InventoryConfiguration is a required field
-	InventoryConfiguration *InventoryConfiguration `locationName:"InventoryConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	InventoryConfiguration *InventoryConfiguration `locationName:"InventoryConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -31849,7 +31849,7 @@ type PutBucketLifecycleConfigurationInput struct {
 	ExpectedBucketOwner *string `location:"header" locationName:"x-amz-expected-bucket-owner" type:"string"`
 
 	// Container for lifecycle rules. You can add as many as 1,000 rules.
-	LifecycleConfiguration *BucketLifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	LifecycleConfiguration *BucketLifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -32004,7 +32004,7 @@ type PutBucketLifecycleInput struct {
 	ExpectedBucketOwner *string `location:"header" locationName:"x-amz-expected-bucket-owner" type:"string"`
 
 	// Container for lifecycle rules. You can add as many as 1000 rules.
-	LifecycleConfiguration *LifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	LifecycleConfiguration *LifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -32137,7 +32137,7 @@ type PutBucketLoggingInput struct {
 	// Container for logging status information.
 	//
 	// BucketLoggingStatus is a required field
-	BucketLoggingStatus *BucketLoggingStatus `locationName:"BucketLoggingStatus" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	BucketLoggingStatus *BucketLoggingStatus `locationName:"BucketLoggingStatus" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Indicates the algorithm used to create the checksum for the object when using
 	// the SDK. This header will not provide any additional functionality if not
@@ -32309,7 +32309,7 @@ type PutBucketMetricsConfigurationInput struct {
 	// Specifies the metrics configuration.
 	//
 	// MetricsConfiguration is a required field
-	MetricsConfiguration *MetricsConfiguration `locationName:"MetricsConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	MetricsConfiguration *MetricsConfiguration `locationName:"MetricsConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -32454,7 +32454,7 @@ type PutBucketNotificationConfigurationInput struct {
 	// If this element is empty, notifications are turned off for the bucket.
 	//
 	// NotificationConfiguration is a required field
-	NotificationConfiguration *NotificationConfiguration `locationName:"NotificationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	NotificationConfiguration *NotificationConfiguration `locationName:"NotificationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Skips validation of Amazon SQS, Amazon SNS, and Lambda destinations. True
 	// or false value.
@@ -32620,7 +32620,7 @@ type PutBucketNotificationInput struct {
 	// The container for the configuration.
 	//
 	// NotificationConfiguration is a required field
-	NotificationConfiguration *NotificationConfigurationDeprecated `locationName:"NotificationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	NotificationConfiguration *NotificationConfigurationDeprecated `locationName:"NotificationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -32757,7 +32757,7 @@ type PutBucketOwnershipControlsInput struct {
 	// that you want to apply to this Amazon S3 bucket.
 	//
 	// OwnershipControls is a required field
-	OwnershipControls *OwnershipControls `locationName:"OwnershipControls" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	OwnershipControls *OwnershipControls `locationName:"OwnershipControls" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -33081,7 +33081,7 @@ type PutBucketReplicationInput struct {
 	// size of a replication configuration is 2 MB.
 	//
 	// ReplicationConfiguration is a required field
-	ReplicationConfiguration *ReplicationConfiguration `locationName:"ReplicationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	ReplicationConfiguration *ReplicationConfiguration `locationName:"ReplicationConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// A token to allow Object Lock to be enabled for an existing bucket.
 	Token *string `location:"header" locationName:"x-amz-bucket-object-lock-token" type:"string"`
@@ -33252,7 +33252,7 @@ type PutBucketRequestPaymentInput struct {
 	// Container for Payer.
 	//
 	// RequestPaymentConfiguration is a required field
-	RequestPaymentConfiguration *RequestPaymentConfiguration `locationName:"RequestPaymentConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	RequestPaymentConfiguration *RequestPaymentConfiguration `locationName:"RequestPaymentConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -33414,7 +33414,7 @@ type PutBucketTaggingInput struct {
 	// Container for the TagSet and Tag elements.
 	//
 	// Tagging is a required field
-	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -33580,7 +33580,7 @@ type PutBucketVersioningInput struct {
 	// Container for setting the versioning state.
 	//
 	// VersioningConfiguration is a required field
-	VersioningConfiguration *VersioningConfiguration `locationName:"VersioningConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	VersioningConfiguration *VersioningConfiguration `locationName:"VersioningConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -33743,7 +33743,7 @@ type PutBucketWebsiteInput struct {
 	// Container for the request.
 	//
 	// WebsiteConfiguration is a required field
-	WebsiteConfiguration *WebsiteConfiguration `locationName:"WebsiteConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	WebsiteConfiguration *WebsiteConfiguration `locationName:"WebsiteConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -33876,13 +33876,13 @@ type PutObjectAclInput struct {
 	ACL *string `location:"header" locationName:"x-amz-acl" type:"string" enum:"ObjectCannedACL"`
 
 	// Contains the elements that set the ACL permissions for an object per grantee.
-	AccessControlPolicy *AccessControlPolicy `locationName:"AccessControlPolicy" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	AccessControlPolicy *AccessControlPolicy `locationName:"AccessControlPolicy" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The bucket name that contains the object to which you want to attach the
 	// ACL.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -33947,7 +33947,7 @@ type PutObjectAclInput struct {
 	// Key for which the PUT action was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -33955,7 +33955,7 @@ type PutObjectAclInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -34179,7 +34179,7 @@ type PutObjectInput struct {
 	// The bucket name to which the PUT action was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -34187,7 +34187,7 @@ type PutObjectInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -34730,7 +34730,7 @@ type PutObjectLegalHoldInput struct {
 	// on.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -34772,7 +34772,7 @@ type PutObjectLegalHoldInput struct {
 
 	// Container element for the legal hold configuration you want to apply to the
 	// specified object.
-	LegalHold *ObjectLockLegalHold `locationName:"LegalHold" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	LegalHold *ObjectLockLegalHold `locationName:"LegalHold" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Confirms that the requester knows that they will be charged for the request.
 	// Bucket owners need not specify this parameter in their requests. For information
@@ -34968,7 +34968,7 @@ type PutObjectLockConfigurationInput struct {
 	ExpectedBucketOwner *string `location:"header" locationName:"x-amz-expected-bucket-owner" type:"string"`
 
 	// The Object Lock configuration that you want to apply to the specified bucket.
-	ObjectLockConfiguration *ObjectLockConfiguration `locationName:"ObjectLockConfiguration" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	ObjectLockConfiguration *ObjectLockConfiguration `locationName:"ObjectLockConfiguration" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// Confirms that the requester knows that they will be charged for the request.
 	// Bucket owners need not specify this parameter in their requests. For information
@@ -35318,7 +35318,7 @@ type PutObjectRetentionInput struct {
 	// configuration to.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -35370,7 +35370,7 @@ type PutObjectRetentionInput struct {
 	RequestPayer *string `location:"header" locationName:"x-amz-request-payer" type:"string" enum:"RequestPayer"`
 
 	// The container element for the Object Retention configuration.
-	Retention *ObjectLockRetention `locationName:"Retention" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	Retention *ObjectLockRetention `locationName:"Retention" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The version ID for the object that you want to apply this Object Retention
 	// configuration to.
@@ -35537,7 +35537,7 @@ type PutObjectTaggingInput struct {
 	// The bucket name containing the object.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -35545,7 +35545,7 @@ type PutObjectTaggingInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -35595,7 +35595,7 @@ type PutObjectTaggingInput struct {
 	// Container for the TagSet and Tag elements
 	//
 	// Tagging is a required field
-	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The versionId of the object that the tag-set will be added to.
 	VersionId *string `location:"querystring" locationName:"versionId" type:"string"`
@@ -35798,7 +35798,7 @@ type PutPublicAccessBlockInput struct {
 	// in the Amazon S3 User Guide.
 	//
 	// PublicAccessBlockConfiguration is a required field
-	PublicAccessBlockConfiguration *PublicAccessBlockConfiguration `locationName:"PublicAccessBlockConfiguration" type:"structure" required:"true" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	PublicAccessBlockConfiguration *PublicAccessBlockConfiguration `locationName:"PublicAccessBlockConfiguration" type:"structure" required:"true" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 }
 
 // String returns the string representation.
@@ -36923,7 +36923,7 @@ type RestoreObjectInput struct {
 	// The bucket name containing the object to restore.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -36931,7 +36931,7 @@ type RestoreObjectInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -36975,7 +36975,7 @@ type RestoreObjectInput struct {
 	RequestPayer *string `location:"header" locationName:"x-amz-request-payer" type:"string" enum:"RequestPayer"`
 
 	// Container for restore job parameters.
-	RestoreRequest *RestoreRequest `locationName:"RestoreRequest" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	RestoreRequest *RestoreRequest `locationName:"RestoreRequest" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// VersionId used to reference a specific version of the object.
 	VersionId *string `location:"querystring" locationName:"versionId" type:"string"`
@@ -37768,7 +37768,7 @@ func (e *SelectObjectContentEventStreamUnknownEvent) UnmarshalEvent(
 // format for the response. For more information, see S3Select API Documentation
 // (https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html).
 type SelectObjectContentInput struct {
-	_ struct{} `locationName:"SelectObjectContentRequest" type:"structure" xmlURI:"http://s3.amazonaws.com/doc/2006-03-01/"`
+	_ struct{} `locationName:"SelectObjectContentRequest" type:"structure" xmlURI:"http://s3.samsungspc.com/doc/2006-03-01/"`
 
 	// The S3 bucket.
 	//
@@ -39167,7 +39167,7 @@ type UploadPartCopyInput struct {
 	// The bucket name.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -39175,7 +39175,7 @@ type UploadPartCopyInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)
@@ -39638,7 +39638,7 @@ type UploadPartInput struct {
 	// The name of the bucket to which the multipart upload was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -39646,7 +39646,7 @@ type UploadPartInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)

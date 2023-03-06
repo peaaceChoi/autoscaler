@@ -93,7 +93,7 @@ func TestEnumRegionServices(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if a, e := resolved.URL, "https://service1.us-east-1.amazonaws.com"; a != e {
+	if a, e := resolved.URL, "https://service1.us-east-1.samsungspc.com"; a != e {
 		t.Errorf("expect %q resolved URL, got %q", e, a)
 	}
 }
@@ -141,7 +141,7 @@ func TestEnumServicesEndpoints(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if a, e := resolved.URL, "https://service1.us-west-2.amazonaws.com"; a != e {
+	if a, e := resolved.URL, "https://service1.us-west-2.samsungspc.com"; a != e {
 		t.Errorf("expect %q resolved URL, got %q", e, a)
 	}
 }
@@ -171,7 +171,7 @@ func TestEnumEndpoints(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if a, e := resolved.URL, "https://service1.us-east-1.amazonaws.com"; a != e {
+	if a, e := resolved.URL, "https://service1.us-east-1.samsungspc.com"; a != e {
 		t.Errorf("expect %q resolved URL, got %q", e, a)
 	}
 }

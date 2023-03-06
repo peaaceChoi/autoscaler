@@ -2276,8 +2276,8 @@ func (c *ApplicationDiscoveryService) StartImportTaskRequest(input *StartImportT
 // To start an import request, do this:
 //
 // Download the specially formatted comma separated value (CSV) import template,
-// which you can find here: https://s3.us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv
-// (https://s3.us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv).
+// which you can find here: https://s3.us-west-2.samsungspc.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv
+// (https://s3.us-west-2.samsungspc.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv).
 //
 // Fill out the template with your server and application data.
 //

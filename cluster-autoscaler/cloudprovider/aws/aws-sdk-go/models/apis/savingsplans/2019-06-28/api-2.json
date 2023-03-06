@@ -3,7 +3,7 @@
   "metadata":{
     "apiVersion":"2019-06-28",
     "endpointPrefix":"savingsplans",
-    "globalEndpoint":"savingsplans.amazonaws.com",
+    "globalEndpoint":"savingsplans.samsungspc.com",
     "jsonVersion":"1.0",
     "protocol":"rest-json",
     "serviceAbbreviation":"AWSSavingsPlans",

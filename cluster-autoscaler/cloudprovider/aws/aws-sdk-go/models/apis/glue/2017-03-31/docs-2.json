@@ -2360,7 +2360,7 @@
         "JDBCConnectorTarget$ConnectorName": "<p>The name of a connector that will be used.</p>",
         "JDBCConnectorTarget$ConnectionType": "<p>The type of connection, such as marketplace.jdbc or custom.jdbc, designating a connection to a JDBC data target.</p>",
         "JoinColumn$From": "<p>The column to be joined.</p>",
-        "KafkaStreamingSourceOptions$BootstrapServers": "<p>A list of bootstrap server URLs, for example, as <code>b-1.vpc-test-2.o4q88o.c6.kafka.us-east-1.amazonaws.com:9094</code>. This option must be specified in the API call or defined in the table metadata in the Data Catalog.</p>",
+        "KafkaStreamingSourceOptions$BootstrapServers": "<p>A list of bootstrap server URLs, for example, as <code>b-1.vpc-test-2.o4q88o.c6.kafka.us-east-1.samsungspc.com:9094</code>. This option must be specified in the API call or defined in the table metadata in the Data Catalog.</p>",
         "KafkaStreamingSourceOptions$SecurityProtocol": "<p>The protocol used to communicate with brokers. The possible values are <code>\"SSL\"</code> or <code>\"PLAINTEXT\"</code>.</p>",
         "KafkaStreamingSourceOptions$ConnectionName": "<p>The name of the connection.</p>",
         "KafkaStreamingSourceOptions$TopicName": "<p>The topic name as specified in Apache Kafka. You must specify at least one of <code>\"topicName\"</code>, <code>\"assign\"</code> or <code>\"subscribePattern\"</code>.</p>",

@@ -21837,7 +21837,7 @@ type GameSession struct {
 	//
 	//    * TLS-enabled fleets: <unique identifier>.<region identifier>.amazongamelift.com.
 	//
-	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.amazonaws.com.
+	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.samsungspc.com.
 	//    (See Amazon EC2 Instance IP Addressing (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses).)
 	//
 	// When connecting to a game session that is running on a TLS-enabled fleet,
@@ -22061,7 +22061,7 @@ type GameSessionConnectionInfo struct {
 	//
 	//    * TLS-enabled fleets: <unique identifier>.<region identifier>.amazongamelift.com.
 	//
-	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.amazonaws.com.
+	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.samsungspc.com.
 	//    (See Amazon EC2 Instance IP Addressing (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses).)
 	//
 	// When connecting to a game session that is running on a TLS-enabled fleet,
@@ -22263,7 +22263,7 @@ type GameSessionPlacement struct {
 	//
 	//    * TLS-enabled fleets: <unique identifier>.<region identifier>.amazongamelift.com.
 	//
-	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.amazonaws.com.
+	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.samsungspc.com.
 	//    (See Amazon EC2 Instance IP Addressing (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses).)
 	//
 	// When connecting to a game session that is running on a TLS-enabled fleet,
@@ -22944,7 +22944,7 @@ type Instance struct {
 	//
 	//    * TLS-enabled fleets: <unique identifier>.<region identifier>.amazongamelift.com.
 	//
-	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.amazonaws.com.
+	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.samsungspc.com.
 	//    (See Amazon EC2 Instance IP Addressing (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses).)
 	//
 	// When connecting to a game session that is running on a TLS-enabled fleet,
@@ -25704,7 +25704,7 @@ type PlayerSession struct {
 	//
 	//    * TLS-enabled fleets: <unique identifier>.<region identifier>.amazongamelift.com.
 	//
-	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.amazonaws.com.
+	//    * Non-TLS-enabled fleets: ec2-<unique identifier>.compute.samsungspc.com.
 	//    (See Amazon EC2 Instance IP Addressing (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#concepts-public-addresses).)
 	//
 	// When connecting to a game session that is running on a TLS-enabled fleet,

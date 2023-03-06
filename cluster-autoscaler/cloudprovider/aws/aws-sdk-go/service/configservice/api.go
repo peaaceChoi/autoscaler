@@ -9411,7 +9411,7 @@ func (c *ConfigService) PutOrganizationConfigRuleRequest(input *PutOrganizationC
 //
 // To use this API with delegated administrator, register a delegated administrator
 // by calling Amazon Web Services Organization register-delegated-administrator
-// for config-multiaccountsetup.amazonaws.com.
+// for config-multiaccountsetup.samsungspc.com.
 //
 // You can use this action to create both Config custom rules and Config managed
 // rules. If you are adding a new Config custom rule, you must first create
@@ -9606,13 +9606,13 @@ func (c *ConfigService) PutOrganizationConformancePackRequest(input *PutOrganiza
 // calling this API with a delegated administrator, you must ensure Organizations
 // ListDelegatedAdministrator permissions are added.
 //
-// This API enables organization service access for config-multiaccountsetup.amazonaws.com
+// This API enables organization service access for config-multiaccountsetup.samsungspc.com
 // through the EnableAWSServiceAccess action and creates a service linked role
 // AWSServiceRoleForConfigMultiAccountSetup in the master or delegated administrator
 // account of your organization. The service linked role is created only when
 // the role does not exist in the caller account. To use this API with delegated
 // administrator, register a delegated administrator by calling Amazon Web Services
-// Organization register-delegate-admin for config-multiaccountsetup.amazonaws.com.
+// Organization register-delegate-admin for config-multiaccountsetup.samsungspc.com.
 //
 // Prerequisite: Ensure you call EnableAllFeatures API to enable all features
 // in an organization.
@@ -23441,7 +23441,7 @@ type MemberAccountStatus struct {
 	// rule status is created in the member account. When master account calls PutOrganizationConfigRule
 	// action for the second time, Config rule status is updated in the member account.
 	// Config rule status is deleted when the master account deletes OrganizationConfigRule
-	// and disables service access for config-multiaccountsetup.amazonaws.com.
+	// and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the rule to:
 	//
@@ -24898,7 +24898,7 @@ type OrganizationConfigRuleStatus struct {
 	// accounts. Additionally, Config rule status is updated when one or more member
 	// accounts join or leave an organization. Config rule status is deleted when
 	// the master account deletes OrganizationConfigRule in all the member accounts
-	// and disables service access for config-multiaccountsetup.amazonaws.com.
+	// and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the rule to:
 	//
@@ -25109,7 +25109,7 @@ type OrganizationConformancePackDetailedStatus struct {
 	// account calls PutOrganizationConformancePack action for the second time,
 	// conformance pack status is updated in the member account. Conformance pack
 	// status is deleted when the master account deletes OrganizationConformancePack
-	// and disables service access for config-multiaccountsetup.amazonaws.com.
+	// and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the conformance pack to:
 	//
@@ -25225,7 +25225,7 @@ type OrganizationConformancePackStatus struct {
 	// is updated in all the member accounts. Additionally, conformance pack status
 	// is updated when one or more member accounts join or leave an organization.
 	// Conformance pack status is deleted when the master account deletes OrganizationConformancePack
-	// in all the member accounts and disables service access for config-multiaccountsetup.amazonaws.com.
+	// in all the member accounts and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the conformance pack to:
 	//
@@ -26010,7 +26010,7 @@ type OrganizationResourceDetailedStatusFilters struct {
 	// account calls PutOrganizationConformancePack action for the second time,
 	// conformance pack status is updated in the member account. Conformance pack
 	// status is deleted when the master account deletes OrganizationConformancePack
-	// and disables service access for config-multiaccountsetup.amazonaws.com.
+	// and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the conformance pack to:
 	//
@@ -30283,7 +30283,7 @@ type StatusDetailFilters struct {
 	// rule status is created in the member account. When master account calls PutOrganizationConfigRule
 	// action for the second time, Config rule status is updated in the member account.
 	// Config rule status is deleted when the master account deletes OrganizationConfigRule
-	// and disables service access for config-multiaccountsetup.amazonaws.com.
+	// and disables service access for config-multiaccountsetup.samsungspc.com.
 	//
 	// Config sets the state of the rule to:
 	//

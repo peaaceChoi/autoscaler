@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "service": "<fullname>Amazon OpenSearch Configuration Service</fullname> <p>Use the Amazon OpenSearch configuration API to create, configure, and manage Amazon OpenSearch Service domains.</p> <p>For sample code that uses the configuration API, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-configuration-samples.html\"> Amazon OpenSearch Service Developer Guide</a>. The guide also contains <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/request-signing.html\"> sample code for sending signed HTTP requests to the OpenSearch APIs</a>. </p> <p>The endpoint for configuration service requests is region-specific: es.<i>region</i>.amazonaws.com. For example, es.us-east-1.amazonaws.com. For a current list of supported regions and endpoints, see <a href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#service-regions\" target=\"_blank\">Regions and Endpoints</a>. </p>",
+  "service": "<fullname>Amazon OpenSearch Configuration Service</fullname> <p>Use the Amazon OpenSearch configuration API to create, configure, and manage Amazon OpenSearch Service domains.</p> <p>For sample code that uses the configuration API, see the <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-configuration-samples.html\"> Amazon OpenSearch Service Developer Guide</a>. The guide also contains <a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/request-signing.html\"> sample code for sending signed HTTP requests to the OpenSearch APIs</a>. </p> <p>The endpoint for configuration service requests is region-specific: es.<i>region</i>.samsungspc.com. For example, es.us-east-1.samsungspc.com. For a current list of supported regions and endpoints, see <a href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html#service-regions\" target=\"_blank\">Regions and Endpoints</a>. </p>",
   "operations": {
     "AcceptInboundConnection": "<p>Allows the remote domain owner to accept an inbound cross-cluster connection request.</p>",
     "AddTags": "<p>Attaches tags to an existing domain. Tags are a set of case-sensitive key value pairs. An domain can have up to 10 tags. See <a href=\"http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains.html#managedomains-awsresorcetagging\" target=\"_blank\"> Tagging Amazon OpenSearch Service domains</a> for more information. </p>",
@@ -886,7 +886,7 @@
     "EndpointsMap": {
       "base": null,
       "refs": {
-        "DomainStatus$Endpoints": "<p>Map containing the domain endpoints used to submit index and search requests. Example <code>key, value</code>: <code>'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'</code>. </p>"
+        "DomainStatus$Endpoints": "<p>Map containing the domain endpoints used to submit index and search requests. Example <code>key, value</code>: <code>'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.samsungspc.com'</code>. </p>"
       }
     },
     "EngineType": {
@@ -1706,7 +1706,7 @@
       }
     },
     "ServiceUrl": {
-      "base": "<p>The endpoint to which service requests are submitted. For example, <code> search-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.es.amazonaws.com </code> or <code>doc-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.es.amazonaws.com</code>. </p>",
+      "base": "<p>The endpoint to which service requests are submitted. For example, <code> search-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.es.samsungspc.com </code> or <code>doc-imdb-movies-oopcnjfn6ugofer3zx5iadxxca.eu-west-1.es.samsungspc.com</code>. </p>",
       "refs": {
         "DomainStatus$Endpoint": "<p>The domain endpoint that you use to submit index and search requests.</p>",
         "EndpointsMap$value": null

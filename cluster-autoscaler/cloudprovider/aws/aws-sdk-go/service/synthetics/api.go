@@ -1621,7 +1621,7 @@ type Canary struct {
 	// Lambda Actions (https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html).
 	EngineArn *string `min:"1" type:"string"`
 
-	// The ARN of the IAM role used to run the canary. This role must include lambda.amazonaws.com
+	// The ARN of the IAM role used to run the canary. This role must include lambda.samsungspc.com
 	// as a principal in the trust policy.
 	ExecutionRoleArn *string `min:"1" type:"string"`
 
@@ -2631,7 +2631,7 @@ type CreateCanaryInput struct {
 	Code *CanaryCodeInput `type:"structure" required:"true"`
 
 	// The ARN of the IAM role to be used to run the canary. This role must already
-	// exist, and must include lambda.amazonaws.com as a principal in the trust
+	// exist, and must include lambda.samsungspc.com as a principal in the trust
 	// policy. The role must also have the following permissions:
 	//
 	//    * s3:PutObject
@@ -4271,7 +4271,7 @@ type UpdateCanaryInput struct {
 	Code *CanaryCodeInput `type:"structure"`
 
 	// The ARN of the IAM role to be used to run the canary. This role must already
-	// exist, and must include lambda.amazonaws.com as a principal in the trust
+	// exist, and must include lambda.samsungspc.com as a principal in the trust
 	// policy. The role must also have the following permissions:
 	//
 	//    * s3:PutObject

@@ -1735,7 +1735,7 @@
       }
     },
     "InvalidSmsRoleTrustRelationshipException": {
-      "base": "<p>This exception is thrown when the trust relationship is not valid for the role provided for SMS configuration. This can happen if you don't trust <code>cognito-idp.amazonaws.com</code> or the external ID provided in the role does not match what is provided in the SMS configuration for the user pool.</p>",
+      "base": "<p>This exception is thrown when the trust relationship is not valid for the role provided for SMS configuration. This can happen if you don't trust <code>cognito-idp.samsungspc.com</code> or the external ID provided in the role does not match what is provided in the SMS configuration for the user pool.</p>",
       "refs": {
       }
     },
@@ -2650,7 +2650,7 @@
         "UserContextDataType$EncodedData": "<p>Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.</p>",
         "UserMFASettingListType$member": null,
         "UserPoolType$SmsConfigurationFailure": "<p>The reason why the SMS configuration can't send the messages to your users.</p> <p>This message might include comma-separated values to describe why your SMS configuration can't send messages to user pool end users.</p> <dl> <dt>InvalidSmsRoleAccessPolicyException</dt> <dd> <p>The Identity and Access Management role that Amazon Cognito uses to send SMS messages isn't properly configured. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SmsConfigurationType.html\">SmsConfigurationType</a>.</p> </dd> <dt>SNSSandbox</dt> <dd> <p>The Amazon Web Services account is in the SNS SMS Sandbox and messages will only reach verified end users. This parameter won’t get populated with SNSSandbox if the IAM user creating the user pool doesn’t have SNS permissions. To learn how to move your Amazon Web Services account out of the sandbox, see <a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-sms-sandbox-moving-to-production.html\">Moving out of the SMS sandbox</a>.</p> </dd> </dl>",
-        "UserPoolType$EmailConfigurationFailure": "<p>Deprecated. Review error codes from API requests with <code>EventSource:cognito-idp.amazonaws.com</code> in CloudTrail for information about problems with user pool email configuration.</p>",
+        "UserPoolType$EmailConfigurationFailure": "<p>Deprecated. Review error codes from API requests with <code>EventSource:cognito-idp.samsungspc.com</code> in CloudTrail for information about problems with user pool email configuration.</p>",
         "VerifySoftwareTokenRequest$FriendlyDeviceName": "<p>The friendly device name.</p>"
       }
     },

@@ -81,7 +81,7 @@ func ExampleLambda_AddPermission_shared00() {
 	input := &lambda.AddPermissionInput{
 		Action:        aws.String("lambda:InvokeFunction"),
 		FunctionName:  aws.String("my-function"),
-		Principal:     aws.String("s3.amazonaws.com"),
+		Principal:     aws.String("s3.samsungspc.com"),
 		SourceAccount: aws.String("123456789012"),
 		SourceArn:     aws.String("arn:aws:s3:::my-bucket-1xpuxmplzrlbh/*"),
 		StatementId:   aws.String("s3"),

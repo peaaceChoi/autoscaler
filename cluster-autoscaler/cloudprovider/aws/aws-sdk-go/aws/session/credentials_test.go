@@ -424,7 +424,7 @@ const ec2MetadataResponse = `{
 	}`
 
 const assumeRoleRespMsg = `
-<AssumeRoleResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+<AssumeRoleResponse xmlns="https://sts.samsungspc.com/doc/2011-06-15/">
   <AssumeRoleResult>
     <AssumedRoleUser>
       <Arn>arn:aws:sts::account_id:assumed-role/role/session_name</Arn>
@@ -443,7 +443,7 @@ const assumeRoleRespMsg = `
 </AssumeRoleResponse>
 `
 
-var assumeRoleWithWebIdentityResponse = `<AssumeRoleWithWebIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+var assumeRoleWithWebIdentityResponse = `<AssumeRoleWithWebIdentityResponse xmlns="https://sts.samsungspc.com/doc/2011-06-15/">
   <AssumeRoleWithWebIdentityResult>
     <SubjectFromWebIdentityToken>amzn1.account.AF6RHO7KZU5XRVQJGXK6HB56KR2A</SubjectFromWebIdentityToken>
     <Audience>client.5498841531868486423.1548@apps.example.com</Audience>

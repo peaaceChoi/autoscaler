@@ -32151,7 +32151,7 @@ type CreateJobInput struct {
 	//
 	// The placeholder link is of the following form:
 	//
-	// ${aws:iot:s3-presigned-url:https://s3.amazonaws.com/bucket/key}
+	// ${aws:iot:s3-presigned-url:https://s3.samsungspc.com/bucket/key}
 	//
 	// where bucket is your bucket name and key is the object in the bucket to which
 	// you are linking.
@@ -32454,7 +32454,7 @@ type CreateJobTemplateInput struct {
 	//
 	// The placeholder link is of the following form:
 	//
-	// ${aws:iot:s3-presigned-url:https://s3.amazonaws.com/bucket/key}
+	// ${aws:iot:s3-presigned-url:https://s3.samsungspc.com/bucket/key}
 	//
 	// where bucket is your bucket name and key is the object in the bucket to which
 	// you are linking.
@@ -39396,7 +39396,7 @@ func (s *DescribeEndpointInput) SetEndpointType(v string) *DescribeEndpointInput
 type DescribeEndpointOutput struct {
 	_ struct{} `type:"structure"`
 
-	// The endpoint. The format of the endpoint is as follows: identifier.iot.region.amazonaws.com.
+	// The endpoint. The format of the endpoint is as follows: identifier.iot.region.samsungspc.com.
 	EndpointAddress *string `locationName:"endpointAddress" type:"string"`
 }
 
@@ -42712,7 +42712,7 @@ func (s *DocumentParameter) SetRegex(v string) *DocumentParameter {
 
 // The summary of a domain configuration. A domain configuration specifies custom
 // IoT-specific information about a domain. A domain configuration can be associated
-// with an Amazon Web Services-managed domain (for example, dbc123defghijk.iot.us-west-2.amazonaws.com),
+// with an Amazon Web Services-managed domain (for example, dbc123defghijk.iot.us-west-2.samsungspc.com),
 // a customer managed domain, or a default endpoint.
 //
 //   - Data

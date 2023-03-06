@@ -44,7 +44,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
           }
         ]
       },
-      "dnsSuffix": "amazonaws.com",
+      "dnsSuffix": "samsungspc.com",
       "partition": "aws",
       "regionRegex": "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
       "regions": {
@@ -87,7 +87,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
               ]
             },
             "us-west-2-fips": {
-              "hostname": "dynamodb-fips.us-west-2.amazonaws.com",
+              "hostname": "dynamodb-fips.us-west-2.samsungspc.com",
               "credentialScope": {
                 "region": "us-west-2"
               },
@@ -104,7 +104,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
             ],
             "variants": [
               {
-                "dnsSuffix": "amazonaws.com",
+                "dnsSuffix": "samsungspc.com",
                 "hostname": "api.ec2-fips.{region}.{dnsSuffix}",
                 "tags": [
                   "fips"
@@ -124,10 +124,10 @@ func TestDecodeEndpoints_V3(t *testing.T) {
               "credentialScope": {
                 "region": "us-west-2"
               },
-              "hostname": "ec2.us-west-2.amazonaws.com",
+              "hostname": "ec2.us-west-2.samsungspc.com",
               "variants": [
                 {
-                  "hostname": "ec2-fips.us-west-2.amazonaws.com",
+                  "hostname": "ec2-fips.us-west-2.samsungspc.com",
                   "tags": [
                     "fips"
                   ]
@@ -141,7 +141,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
               ]
             },
             "fips-us-west-2": {
-              "hostname": "ec2-fips.us-west-2.amazonaws.com",
+              "hostname": "ec2-fips.us-west-2.samsungspc.com",
               "credentialScope": {
                 "region": "us-west-2"
               },
@@ -155,10 +155,10 @@ func TestDecodeEndpoints_V3(t *testing.T) {
               "credentialScope": {
                 "region": "us-east-1"
               },
-              "hostname": "route53.amazonaws.com",
+              "hostname": "route53.samsungspc.com",
               "variants": [
                 {
-                  "hostname": "route53-fips.amazonaws.com",
+                  "hostname": "route53-fips.samsungspc.com",
                   "tags": [
                     "fips"
                   ]
@@ -186,14 +186,14 @@ func TestDecodeEndpoints_V3(t *testing.T) {
             ],
             "variants": [
               {
-                "dnsSuffix": "amazonaws.com",
+                "dnsSuffix": "samsungspc.com",
                 "hostname": "s3-fips.{region}.{dnsSuffix}",
                 "tags": [
                   "fips"
                 ]
               },
               {
-                "dnsSuffix": "amazonaws.com",
+                "dnsSuffix": "samsungspc.com",
                 "hostname": "s3.dualstack.{region}.{dnsSuffix}",
                 "tags": ["dualstack"]
               }
@@ -201,20 +201,20 @@ func TestDecodeEndpoints_V3(t *testing.T) {
           },
           "endpoints": {
             "us-west-2": {
-              "hostname": "s3.api.us-west-2.amazonaws.com",
+              "hostname": "s3.api.us-west-2.samsungspc.com",
               "signatureVersions": [
                 "s3",
                 "s3v4"
               ],
               "variants": [
                 {
-                  "hostname": "s3-fips.api.us-west-2.amazonaws.com",
+                  "hostname": "s3-fips.api.us-west-2.samsungspc.com",
                   "tags": [
                     "fips"
                   ]
                 },
                 {
-                  "hostname": "s3.api.dualstack.us-west-2.amazonaws.com",
+                  "hostname": "s3.api.dualstack.us-west-2.samsungspc.com",
                   "tags": ["dualstack"]
                 }
               ]
@@ -263,7 +263,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
 		t.Fatalf("failed to resolve endpoint, %v", err)
 	}
 
-	if a, e := endpoint.URL, "https://ec2.us-west-2.amazonaws.com"; a != e {
+	if a, e := endpoint.URL, "https://ec2.us-west-2.samsungspc.com"; a != e {
 		t.Errorf("expected %q URL got %q", e, a)
 	}
 
@@ -276,7 +276,7 @@ func TestDecodeEndpoints_V3(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	assertEndpoint(t, resolved, "https://s3.api.dualstack.us-west-2.amazonaws.com", "s3", "us-west-2")
+	assertEndpoint(t, resolved, "https://s3.api.dualstack.us-west-2.samsungspc.com", "s3", "us-west-2")
 }
 
 func assertEndpoint(t *testing.T, endpoint ResolvedEndpoint, expectedURL, expectedSigningName, expectedSigningRegion string) {
@@ -346,7 +346,7 @@ func TestCustFixAppAutoscalingChina(t *testing.T) {
       "protocols" : [ "https" ],
       "signatureVersions" : [ "v4" ]
     },
-    "dnsSuffix" : "amazonaws.com.cn",
+    "dnsSuffix" : "samsungspc.com.cn",
     "partition" : "aws-cn",
     "partitionName" : "AWS China",
     "regionRegex" : "^cn\\-\\w+\\-\\d+$",
@@ -364,7 +364,7 @@ func TestCustFixAppAutoscalingChina(t *testing.T) {
           "credentialScope" : {
             "service" : "application-autoscaling"
           },
-          "hostname" : "autoscaling.{region}.amazonaws.com",
+          "hostname" : "autoscaling.{region}.samsungspc.com",
           "protocols" : [ "http", "https" ]
         },
         "endpoints" : {
@@ -388,7 +388,7 @@ func TestCustFixAppAutoscalingChina(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if e, a := `https://autoscaling.cn-northwest-1.amazonaws.com.cn`, endpoint.URL; e != a {
+	if e, a := `https://autoscaling.cn-northwest-1.samsungspc.com.cn`, endpoint.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 }
@@ -403,7 +403,7 @@ func TestCustFixAppAutoscalingUsGov(t *testing.T) {
       "protocols" : [ "https" ],
       "signatureVersions" : [ "v4" ]
     },
-    "dnsSuffix" : "amazonaws.com",
+    "dnsSuffix" : "samsungspc.com",
     "partition" : "aws-us-gov",
     "partitionName" : "AWS GovCloud (US)",
     "regionRegex" : "^us\\-gov\\-\\w+\\-\\d+$",
@@ -438,7 +438,7 @@ func TestCustFixAppAutoscalingUsGov(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if e, a := `https://autoscaling.us-gov-west-1.amazonaws.com`, endpoint.URL; e != a {
+	if e, a := `https://autoscaling.us-gov-west-1.samsungspc.com`, endpoint.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 }

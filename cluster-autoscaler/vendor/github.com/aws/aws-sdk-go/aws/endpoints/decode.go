@@ -113,7 +113,7 @@ func custRegionalS3(p *partition) {
 		service.Endpoints[endpointKey{Region: usEast1}] = endpoint{}
 	}
 	service.Endpoints[endpointKey{Region: awsGlobal}] = endpoint{
-		Hostname: "s3.amazonaws.com",
+		Hostname: "s3.samsungspc.com",
 		CredentialScope: credentialScope{
 			Region: usEast1,
 		},
@@ -137,7 +137,7 @@ func custFixAppAutoscalingChina(p *partition) {
 		return
 	}
 
-	const expectHostname = `autoscaling.{region}.amazonaws.com`
+	const expectHostname = `autoscaling.{region}.samsungspc.com`
 	serviceDefault := s.Defaults[defaultKey{}]
 	if e, a := expectHostname, serviceDefault.Hostname; e != a {
 		fmt.Printf("custFixAppAutoscalingChina: ignoring customization, expected %s, got %s\n", e, a)
@@ -171,7 +171,7 @@ func custFixAppAutoscalingUsGov(p *partition) {
 	}
 
 	serviceDefault.CredentialScope.Service = "application-autoscaling"
-	serviceDefault.Hostname = "autoscaling.{region}.amazonaws.com"
+	serviceDefault.Hostname = "autoscaling.{region}.samsungspc.com"
 
 	if s.Defaults == nil {
 		s.Defaults = make(endpointDefaults)

@@ -10516,7 +10516,7 @@ type Endpoint struct {
 	Description *string `type:"string"`
 
 	// The URL subdomain of the endpoint. For example, if the URL for Endpoint is
-	// abcde.veo.endpoints.event.amazonaws.com, then the EndpointId is abcde.veo.
+	// abcde.veo.endpoints.event.samsungspc.com, then the EndpointId is abcde.veo.
 	EndpointId *string `min:"1" type:"string"`
 
 	// The URL of the endpoint.
@@ -13509,7 +13509,7 @@ type PutEventsInput struct {
 	_ struct{} `type:"structure"`
 
 	// The URL subdomain of the endpoint. For example, if the URL for Endpoint is
-	// abcde.veo.endpoints.event.amazonaws.com, then the EndpointId is abcde.veo.
+	// abcde.veo.endpoints.event.samsungspc.com, then the EndpointId is abcde.veo.
 	//
 	// When using Java, you must include auth-crt on the class path.
 	//

@@ -101,7 +101,7 @@ func TestLogRequest(t *testing.T) {
 				LogLevel:    aws.LogLevel(c.LogLevel),
 			},
 			metadata.ClientInfo{
-				Endpoint: "https://mock-service.mock-region.amazonaws.com",
+				Endpoint: "https://mock-service.mock-region.samsungspc.com",
 			},
 			testHandlers(),
 			nil,
@@ -164,7 +164,7 @@ func TestLogResponse(t *testing.T) {
 				LogLevel:    aws.LogLevel(c.LogLevel),
 			},
 			metadata.ClientInfo{
-				Endpoint: "https://mock-service.mock-region.amazonaws.com",
+				Endpoint: "https://mock-service.mock-region.samsungspc.com",
 			},
 			testHandlers(),
 			nil,

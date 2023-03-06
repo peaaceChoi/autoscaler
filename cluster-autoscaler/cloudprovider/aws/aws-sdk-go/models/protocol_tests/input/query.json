@@ -989,7 +989,7 @@
       "protocol": "query",
       "apiVersion": "2014-01-01"
     },
-    "clientEndpoint": "https://service.region.amazonaws.com",
+    "clientEndpoint": "https://service.region.samsungspc.com",
     "shapes": {
       "StaticInputShape": {
         "type": "structure",
@@ -1032,7 +1032,7 @@
         "serialized": {
           "uri": "/",
           "body": "Action=StaticOp&Version=2014-01-01&Name=myname",
-          "host": "data-service.region.amazonaws.com"
+          "host": "data-service.region.samsungspc.com"
         }
       },
       {
@@ -1054,7 +1054,7 @@
         "serialized": {
           "uri": "/",
           "body": "Action=MemberRefOp&Version=2014-01-01&Name=myname",
-          "host": "foo-myname.service.region.amazonaws.com"
+          "host": "foo-myname.service.region.samsungspc.com"
         }
       }
     ]

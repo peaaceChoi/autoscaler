@@ -943,8 +943,8 @@ func TestSanitizeHostForHeader(t *testing.T) {
 		url                 string
 		expectedRequestHost string
 	}{
-		{"https://estest.us-east-1.es.amazonaws.com:443", "estest.us-east-1.es.amazonaws.com"},
-		{"https://estest.us-east-1.es.amazonaws.com", "estest.us-east-1.es.amazonaws.com"},
+		{"https://estest.us-east-1.es.samsungspc.com:443", "estest.us-east-1.es.samsungspc.com"},
+		{"https://estest.us-east-1.es.samsungspc.com", "estest.us-east-1.es.samsungspc.com"},
 		{"https://localhost:9200", "localhost:9200"},
 		{"http://localhost:80", "localhost"},
 		{"http://localhost:8080", "localhost:8080"},

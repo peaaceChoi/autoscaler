@@ -34,7 +34,7 @@ type UploadInput struct {
 	// The bucket name to which the PUT action was initiated.
 	//
 	// When using this action with an access point, you must direct requests to
-	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com.
+	// the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.samsungspc.com.
 	// When using this action with an access point through the Amazon Web Services
 	// SDKs, you provide the access point ARN in place of the bucket name. For more
 	// information about access point ARNs, see Using access points (https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-points.html)
@@ -42,7 +42,7 @@ type UploadInput struct {
 	//
 	// When using this action with Amazon S3 on Outposts, you must direct requests
 	// to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form
-	// AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When
+	// AccessPointName-AccountId.outpostID.s3-outposts.Region.samsungspc.com. When
 	// using this action with S3 on Outposts through the Amazon Web Services SDKs,
 	// you provide the Outposts bucket ARN in place of the bucket name. For more
 	// information about S3 on Outposts ARNs, see Using Amazon S3 on Outposts (https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3onOutposts.html)

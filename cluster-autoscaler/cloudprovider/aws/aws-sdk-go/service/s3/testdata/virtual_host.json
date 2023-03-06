@@ -2,7 +2,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -11,7 +11,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.us-west-1.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.us-west-1.samsungspc.com",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -20,7 +20,7 @@
     {
         "Bucket": "bucket-with-number-1",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-with-number-1.s3.us-west-1.amazonaws.com",
+        "ExpectedUri": "https://bucket-with-number-1.s3.us-west-1.samsungspc.com",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -29,7 +29,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.cn-north-1.amazonaws.com.cn",
+        "ExpectedUri": "https://bucket-name.s3.cn-north-1.samsungspc.com.cn",
         "Region": "cn-north-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -38,7 +38,7 @@
     {
         "Bucket": "BucketName",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.amazonaws.com/BucketName",
+        "ExpectedUri": "https://s3.samsungspc.com/BucketName",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -47,7 +47,7 @@
     {
         "Bucket": "BucketName",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.amazonaws.com/BucketName",
+        "ExpectedUri": "https://s3.samsungspc.com/BucketName",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -56,7 +56,7 @@
     {
         "Bucket": "bucket_name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/bucket_name",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/bucket_name",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -65,7 +65,7 @@
     {
         "Bucket": "bucket.name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/bucket.name",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/bucket.name",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -74,7 +74,7 @@
     {
         "Bucket": "-bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/-bucket-name",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/-bucket-name",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -83,7 +83,7 @@
     {
         "Bucket": "bucket-name-",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/bucket-name-",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/bucket-name-",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -92,7 +92,7 @@
     {
         "Bucket": "aa",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/aa",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/aa",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -101,7 +101,7 @@
     {
         "Bucket": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.us-west-1.amazonaws.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "ExpectedUri": "https://s3.us-west-1.samsungspc.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -110,7 +110,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": true,
@@ -119,7 +119,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.samsungspc.com",
         "Region": "us-west-1",
         "UseDualstack": false,
         "UseS3Accelerate": true,
@@ -128,7 +128,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.dualstack.us-east-1.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.dualstack.us-east-1.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": false,
@@ -137,7 +137,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.dualstack.us-west-2.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.dualstack.us-west-2.samsungspc.com",
         "Region": "us-west-2",
         "UseDualstack": true,
         "UseS3Accelerate": false,
@@ -146,7 +146,7 @@
     {
         "Bucket": "bucket.name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://s3.dualstack.us-west-2.amazonaws.com/bucket.name",
+        "ExpectedUri": "https://s3.dualstack.us-west-2.samsungspc.com/bucket.name",
         "Region": "us-west-2",
         "UseDualstack": true,
         "UseS3Accelerate": false,
@@ -155,7 +155,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": true,
@@ -164,7 +164,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "path",
-        "ExpectedUri": "https://s3.amazonaws.com/bucket-name",
+        "ExpectedUri": "https://s3.samsungspc.com/bucket-name",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -173,7 +173,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "path",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": true,
@@ -182,7 +182,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "path",
-        "ExpectedUri": "https://s3.dualstack.us-east-1.amazonaws.com/bucket-name",
+        "ExpectedUri": "https://s3.dualstack.us-east-1.samsungspc.com/bucket-name",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": false,
@@ -191,7 +191,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "path",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": true,
@@ -200,7 +200,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.us-east-1.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.us-east-1.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -209,7 +209,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.us-west-2.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.us-west-2.samsungspc.com",
         "Region": "us-west-2",
         "UseDualstack": false,
         "UseS3Accelerate": false,
@@ -218,7 +218,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3.dualstack.us-east-1.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3.dualstack.us-east-1.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": false,
@@ -227,7 +227,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": false,
         "UseS3Accelerate": true,
@@ -236,7 +236,7 @@
     {
         "Bucket": "bucket-name",
         "ConfiguredAddressingStyle": "default",
-        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.amazonaws.com",
+        "ExpectedUri": "https://bucket-name.s3-accelerate.dualstack.samsungspc.com",
         "Region": "us-east-1",
         "UseDualstack": true,
         "UseS3Accelerate": true,

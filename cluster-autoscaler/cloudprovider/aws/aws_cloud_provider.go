@@ -35,7 +35,7 @@ import (
 
 const (
 	// GPULabel is the label added to nodes with GPU resource.
-	GPULabel = "k8s.amazonaws.com/accelerator"
+	GPULabel = "k8s.samsungspc.com/accelerator"
 )
 
 var (

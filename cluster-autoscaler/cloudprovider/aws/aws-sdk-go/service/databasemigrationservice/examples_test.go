@@ -78,7 +78,7 @@ func ExampleDatabaseMigrationService_CreateEndpoint_shared00() {
 		KmsKeyId:                  aws.String("arn:aws:kms:us-east-1:123456789012:key/4c1731d6-5435-ed4d-be13-d53411a7cfbd"),
 		Password:                  aws.String("pasword"),
 		Port:                      aws.Int64(3306),
-		ServerName:                aws.String("mydb.cx1llnox7iyx.us-west-2.rds.amazonaws.com"),
+		ServerName:                aws.String("mydb.cx1llnox7iyx.us-west-2.rds.samsungspc.com"),
 		SslMode:                   aws.String("require"),
 		Tags: []*databasemigrationservice.Tag{
 			{

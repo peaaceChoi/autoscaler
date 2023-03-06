@@ -173,8 +173,8 @@ func (c *Lambda) AddPermissionRequest(input *AddPermissionInput) (req *request.R
 // To grant permission to another account, specify the account ID as the Principal.
 // To grant permission to an organization defined in Organizations, specify
 // the organization ID as the PrincipalOrgID. For Amazon Web Services services,
-// the principal is a domain-style identifier defined by the service, like s3.amazonaws.com
-// or sns.amazonaws.com. For Amazon Web Services services, you can also specify
+// the principal is a domain-style identifier defined by the service, like s3.samsungspc.com
+// or sns.samsungspc.com. For Amazon Web Services services, you can also specify
 // the ARN of the associated resource as the SourceArn. If you grant permission
 // to a service principal without specifying the source, other accounts could
 // potentially configure resources in their account to invoke your Lambda function.

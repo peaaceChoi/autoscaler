@@ -170,7 +170,7 @@ func TestGetManagedNodegroup(t *testing.T) {
 	assert.Equal(t, labelMap["amiType"], amiType)
 	assert.Equal(t, labelMap["capacityType"], capacityType)
 	assert.Equal(t, labelMap["k8sVersion"], k8sVersion)
-	assert.Equal(t, labelMap["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, labelMap["eks.samsungspc.com/nodegroup"], nodegroupName)
 }
 
 func TestGetManagedNodegroupWithNilValues(t *testing.T) {
@@ -212,7 +212,7 @@ func TestGetManagedNodegroupWithNilValues(t *testing.T) {
 	assert.Equal(t, labelMap["amiType"], amiType)
 	assert.Equal(t, labelMap["capacityType"], capacityType)
 	assert.Equal(t, labelMap["k8sVersion"], k8sVersion)
-	assert.Equal(t, labelMap["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, labelMap["eks.samsungspc.com/nodegroup"], nodegroupName)
 }
 
 func TestGetManagedNodegroupWithEmptyValues(t *testing.T) {
@@ -254,7 +254,7 @@ func TestGetManagedNodegroupWithEmptyValues(t *testing.T) {
 	assert.Equal(t, labelMap["amiType"], amiType)
 	assert.Equal(t, labelMap["capacityType"], capacityType)
 	assert.Equal(t, labelMap["k8sVersion"], k8sVersion)
-	assert.Equal(t, labelMap["eks.amazonaws.com/nodegroup"], nodegroupName)
+	assert.Equal(t, labelMap["eks.samsungspc.com/nodegroup"], nodegroupName)
 }
 
 func TestMoreThen100Groups(t *testing.T) {

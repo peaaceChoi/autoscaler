@@ -13596,7 +13596,7 @@ func (c *IAM) SetSecurityTokenServicePreferencesRequest(input *SetSecurityTokenS
 // used for the Amazon Web Services account.
 //
 // By default, Security Token Service (STS) is available as a global service,
-// and all STS requests go to a single endpoint at https://sts.amazonaws.com.
+// and all STS requests go to a single endpoint at https://sts.samsungspc.com.
 // Amazon Web Services recommends using Regional STS endpoints to reduce latency,
 // build in redundancy, and increase session token availability. For information
 // about Regional endpoints for STS, see Security Token Service endpoints and
@@ -20190,7 +20190,7 @@ type CreateServiceLinkedRoleInput struct {
 
 	// The service principal for the Amazon Web Services service to which this role
 	// is attached. You use a string similar to a URL but without the http:// in
-	// front. For example: elasticbeanstalk.amazonaws.com.
+	// front. For example: elasticbeanstalk.samsungspc.com.
 	//
 	// Service principals are unique and case-sensitive. To find the exact service
 	// principal for your service-linked role, see Amazon Web Services services

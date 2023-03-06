@@ -4341,7 +4341,7 @@ type AdvancedFieldSelector struct {
 	//    write events.
 	//
 	//    * eventSource - For filtering management events only. This can be set
-	//    only to NotEquals kms.amazonaws.com.
+	//    only to NotEquals kms.samsungspc.com.
 	//
 	//    * eventName - Can use any operator. You can use it to ﬁlter in or ﬁlter
 	//    out any data event logged to CloudTrail, such as PutBucket or GetSnapshotBlock.
@@ -6574,7 +6574,7 @@ type EventSelector struct {
 	// An optional list of service event sources from which you do not want management
 	// events to be logged on your trail. In this release, the list can be empty
 	// (disables the filter), or it can filter out Key Management Service or Amazon
-	// RDS Data API events by containing kms.amazonaws.com or rdsdata.amazonaws.com.
+	// RDS Data API events by containing kms.samsungspc.com or rdsdata.samsungspc.com.
 	// By default, ExcludeManagementEventSources is empty, and KMS and Amazon RDS
 	// Data API events are logged to your trail. You can exclude management event
 	// sources only in regions that support the event source.

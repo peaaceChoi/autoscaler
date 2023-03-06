@@ -628,7 +628,7 @@
       "jsonVersion": "1.1",
       "targetPrefix": "com.amazonaws.foo"
     },
-    "clientEndpoint": "https://service.region.amazonaws.com",
+    "clientEndpoint": "https://service.region.samsungspc.com",
     "shapes": {
       "StaticInputShape": {
         "type": "structure",
@@ -675,7 +675,7 @@
           },
           "uri": "/",
           "body": "{\"Name\": \"myname\"}",
-          "host": "data-service.region.amazonaws.com"
+          "host": "data-service.region.samsungspc.com"
         }
       },
       {
@@ -701,7 +701,7 @@
           },
           "uri": "/",
           "body": "{\"Name\": \"myname\"}",
-          "host": "foo-myname.service.region.amazonaws.com"
+          "host": "foo-myname.service.region.samsungspc.com"
         }
       }
     ]

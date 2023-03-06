@@ -1331,7 +1331,7 @@ const (
 	// Required: No
 	// Stability: stable
 	// Examples: 'tibjmsnaming://localhost:7222',
-	// 'https://queue.amazonaws.com/80398EXAMPLE/MyQueue'
+	// 'https://queue.samsungspc.com/80398EXAMPLE/MyQueue'
 	MessagingURLKey = attribute.Key("messaging.url")
 	// A value used by the messaging system as an identifier for the message,
 	// represented as a string.

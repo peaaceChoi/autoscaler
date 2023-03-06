@@ -27,9 +27,9 @@
 // in the CLI by using these parameters and commands:
 //
 //   - Use the following parameter with each command to specify both the endpoint
-//     and its region: --endpoint-url https://organizations.us-east-1.amazonaws.com
+//     and its region: --endpoint-url https://organizations.us-east-1.samsungspc.com
 //     (from commercial Amazon Web Services Regions outside of China) or --endpoint-url
-//     https://organizations.cn-northwest-1.amazonaws.com.cn (from Amazon Web
+//     https://organizations.cn-northwest-1.samsungspc.com.cn (from Amazon Web
 //     Services Regions in China)
 //
 //   - Use the default endpoint, but configure your default region with this

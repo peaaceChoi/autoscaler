@@ -6401,7 +6401,7 @@ func (s *CloudWatchMetrics) SetIsEnabled(v bool) *CloudWatchMetrics {
 }
 
 type CreateAccessPointForObjectLambdaInput struct {
-	_ struct{} `locationName:"CreateAccessPointForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"CreateAccessPointForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for owner of the specified Object Lambda
 	// Access Point.
@@ -6524,7 +6524,7 @@ func (s *CreateAccessPointForObjectLambdaOutput) SetObjectLambdaAccessPointArn(v
 }
 
 type CreateAccessPointInput struct {
-	_ struct{} `locationName:"CreateAccessPointRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"CreateAccessPointRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for the owner of the bucket for which
 	// you want to create an access point.
@@ -6787,7 +6787,7 @@ type CreateBucketInput struct {
 	// The configuration information for the bucket.
 	//
 	// This is not supported by Amazon S3 on Outposts buckets.
-	CreateBucketConfiguration *CreateBucketConfiguration `locationName:"CreateBucketConfiguration" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	CreateBucketConfiguration *CreateBucketConfiguration `locationName:"CreateBucketConfiguration" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// Allows grantee the read, write, read ACP, and write ACP permissions on the
 	// bucket.
@@ -6988,7 +6988,7 @@ func (s *CreateBucketOutput) SetLocation(v string) *CreateBucketOutput {
 }
 
 type CreateJobInput struct {
-	_ struct{} `locationName:"CreateJobRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"CreateJobRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID that creates the job.
 	//
@@ -7234,7 +7234,7 @@ func (s *CreateJobOutput) SetJobId(v string) *CreateJobOutput {
 }
 
 type CreateMultiRegionAccessPointInput struct {
-	_ struct{} `locationName:"CreateMultiRegionAccessPointRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"CreateMultiRegionAccessPointRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for the owner of the Multi-Region Access
 	// Point. The owner of the Multi-Region Access Point also must own the underlying
@@ -8600,7 +8600,7 @@ func (s DeleteJobTaggingOutput) GoString() string {
 }
 
 type DeleteMultiRegionAccessPointInput struct {
-	_ struct{} `locationName:"DeleteMultiRegionAccessPointRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"DeleteMultiRegionAccessPointRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for the owner of the Multi-Region Access
 	// Point.
@@ -14870,7 +14870,7 @@ func (s *PublicAccessBlockConfiguration) SetRestrictPublicBuckets(v bool) *Publi
 }
 
 type PutAccessPointConfigurationForObjectLambdaInput struct {
-	_ struct{} `locationName:"PutAccessPointConfigurationForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutAccessPointConfigurationForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The account ID for the account that owns the specified Object Lambda Access
 	// Point.
@@ -14984,7 +14984,7 @@ func (s PutAccessPointConfigurationForObjectLambdaOutput) GoString() string {
 }
 
 type PutAccessPointPolicyForObjectLambdaInput struct {
-	_ struct{} `locationName:"PutAccessPointPolicyForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutAccessPointPolicyForObjectLambdaRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The account ID for the account that owns the specified Object Lambda Access
 	// Point.
@@ -15093,7 +15093,7 @@ func (s PutAccessPointPolicyForObjectLambdaOutput) GoString() string {
 }
 
 type PutAccessPointPolicyInput struct {
-	_ struct{} `locationName:"PutAccessPointPolicyRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutAccessPointPolicyRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for owner of the bucket associated with
 	// the specified access point.
@@ -15271,7 +15271,7 @@ type PutBucketLifecycleConfigurationInput struct {
 	Bucket *string `location:"uri" locationName:"name" min:"3" type:"string" required:"true"`
 
 	// Container for lifecycle rules. You can add as many as 1,000 rules.
-	LifecycleConfiguration *LifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	LifecycleConfiguration *LifecycleConfiguration `locationName:"LifecycleConfiguration" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 }
 
 // String returns the string representation.
@@ -15407,7 +15407,7 @@ func (s PutBucketLifecycleConfigurationOutput) GoString() string {
 }
 
 type PutBucketPolicyInput struct {
-	_ struct{} `locationName:"PutBucketPolicyRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutBucketPolicyRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID of the Outposts bucket.
 	//
@@ -15601,7 +15601,7 @@ type PutBucketTaggingInput struct {
 	Bucket *string `location:"uri" locationName:"name" min:"3" type:"string" required:"true"`
 
 	// Tagging is a required field
-	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	Tagging *Tagging `locationName:"Tagging" type:"structure" required:"true" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 }
 
 // String returns the string representation.
@@ -15740,7 +15740,7 @@ func (s PutBucketTaggingOutput) GoString() string {
 }
 
 type PutJobTaggingInput struct {
-	_ struct{} `locationName:"PutJobTaggingRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutJobTaggingRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID associated with the S3 Batch Operations
 	// job.
@@ -15859,7 +15859,7 @@ func (s PutJobTaggingOutput) GoString() string {
 }
 
 type PutMultiRegionAccessPointPolicyInput struct {
-	_ struct{} `locationName:"PutMultiRegionAccessPointPolicyRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutMultiRegionAccessPointPolicyRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The Amazon Web Services account ID for the owner of the Multi-Region Access
 	// Point.
@@ -16053,7 +16053,7 @@ type PutPublicAccessBlockInput struct {
 	// Amazon Web Services account.
 	//
 	// PublicAccessBlockConfiguration is a required field
-	PublicAccessBlockConfiguration *PublicAccessBlockConfiguration `locationName:"PublicAccessBlockConfiguration" type:"structure" required:"true" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	PublicAccessBlockConfiguration *PublicAccessBlockConfiguration `locationName:"PublicAccessBlockConfiguration" type:"structure" required:"true" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 }
 
 // String returns the string representation.
@@ -16134,7 +16134,7 @@ func (s PutPublicAccessBlockOutput) GoString() string {
 }
 
 type PutStorageLensConfigurationInput struct {
-	_ struct{} `locationName:"PutStorageLensConfigurationRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutStorageLensConfigurationRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The account ID of the requester.
 	//
@@ -16268,7 +16268,7 @@ func (s PutStorageLensConfigurationOutput) GoString() string {
 }
 
 type PutStorageLensConfigurationTaggingInput struct {
-	_ struct{} `locationName:"PutStorageLensConfigurationTaggingRequest" type:"structure" xmlURI:"http://awss3control.amazonaws.com/doc/2018-08-20/"`
+	_ struct{} `locationName:"PutStorageLensConfigurationTaggingRequest" type:"structure" xmlURI:"http://awss3control.samsungspc.com/doc/2018-08-20/"`
 
 	// The account ID of the requester.
 	//

@@ -15,7 +15,7 @@
 // This is the AWS WAF Classic API Reference for using AWS WAF Classic with
 // Amazon CloudFront. The AWS WAF Classic actions and data types listed in the
 // reference are available for protecting Amazon CloudFront distributions. You
-// can use these actions and data types via the endpoint waf.amazonaws.com.
+// can use these actions and data types via the endpoint waf.samsungspc.com.
 // This guide is for developers who need detailed information about the AWS
 // WAF Classic API actions, data types, and errors. For detailed information
 // about AWS WAF Classic features and an overview of how to use the AWS WAF

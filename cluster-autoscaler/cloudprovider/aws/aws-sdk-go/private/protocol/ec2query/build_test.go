@@ -2530,7 +2530,7 @@ func TestInputService10ProtocolTestEnumCase2(t *testing.T) {
 }
 
 func TestInputService11ProtocolTestEndpointHostTraitCase1(t *testing.T) {
-	svc := NewInputService11ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService11ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService11TestShapeInputService11TestCaseOperation1Input{
 		Name: aws.String("myname"),
 	}
@@ -2559,11 +2559,11 @@ func TestInputService11ProtocolTestEndpointHostTraitCase1(t *testing.T) {
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://data-service.region.amazonaws.com/", r.URL.String())
+	awstesting.AssertURL(t, "https://data-service.region.samsungspc.com/", r.URL.String())
 }
 
 func TestInputService11ProtocolTestEndpointHostTraitCase2(t *testing.T) {
-	svc := NewInputService11ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.amazonaws.com")})
+	svc := NewInputService11ProtocolTest(unit.Session, &aws.Config{Endpoint: aws.String("https://service.region.samsungspc.com")})
 	input := &InputService11TestShapeInputService11TestCaseOperation2Input{
 		Name: aws.String("myname"),
 	}
@@ -2592,5 +2592,5 @@ func TestInputService11ProtocolTestEndpointHostTraitCase2(t *testing.T) {
 	}
 
 	// assert URL
-	awstesting.AssertURL(t, "https://foo-myname.service.region.amazonaws.com/", r.URL.String())
+	awstesting.AssertURL(t, "https://foo-myname.service.region.samsungspc.com/", r.URL.String())
 }

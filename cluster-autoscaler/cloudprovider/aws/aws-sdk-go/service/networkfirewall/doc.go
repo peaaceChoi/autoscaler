@@ -11,7 +11,7 @@
 //     signatures, handling request retries, and error handling. For general
 //     information about using the Amazon Web Services REST APIs, see Amazon
 //     Web Services APIs (https://docs.aws.amazon.com/general/latest/gr/aws-apis.html).
-//     To access Network Firewall using the REST API endpoint: https://network-firewall.<region>.amazonaws.com
+//     To access Network Firewall using the REST API endpoint: https://network-firewall.<region>.samsungspc.com
 //
 //   - Alternatively, you can use one of the Amazon Web Services SDKs to access
 //     an API that's tailored to the programming language or platform that you're

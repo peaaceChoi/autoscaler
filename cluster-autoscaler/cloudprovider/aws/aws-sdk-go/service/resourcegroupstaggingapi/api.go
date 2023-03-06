@@ -79,7 +79,7 @@ func (c *ResourceGroupsTaggingAPI) DescribeReportCreationRequest(input *Describe
 //     see Prerequisites and Permissions for Using Tag Policies (https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
 //     in the Organizations User Guide.
 //
-//   - You must enable the tag policies service principal (tagpolicies.tag.amazonaws.com)
+//   - You must enable the tag policies service principal (tagpolicies.tag.samsungspc.com)
 //     to integrate with Organizations For information, see EnableAWSServiceAccess
 //     (https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html).
 //
@@ -215,7 +215,7 @@ func (c *ResourceGroupsTaggingAPI) GetComplianceSummaryRequest(input *GetComplia
 //     see Prerequisites and Permissions for Using Tag Policies (https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
 //     in the Organizations User Guide.
 //
-//   - You must enable the tag policies service principal (tagpolicies.tag.amazonaws.com)
+//   - You must enable the tag policies service principal (tagpolicies.tag.samsungspc.com)
 //     to integrate with Organizations For information, see EnableAWSServiceAccess
 //     (https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html).
 //
@@ -911,7 +911,7 @@ func (c *ResourceGroupsTaggingAPI) StartReportCreationRequest(input *StartReport
 //     see Prerequisites and Permissions for Using Tag Policies (https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
 //     in the Organizations User Guide.
 //
-//   - You must enable the tag policies service principal (tagpolicies.tag.amazonaws.com)
+//   - You must enable the tag policies service principal (tagpolicies.tag.samsungspc.com)
 //     to integrate with Organizations For information, see EnableAWSServiceAccess
 //     (https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html).
 //
@@ -1344,7 +1344,7 @@ func (s *ConcurrentModificationException) RequestID() string {
 //     see Prerequisites and Permissions for Using Tag Policies (https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies-prereqs.html)
 //     in the Organizations User Guide.
 //
-//   - You must enable the tag policies service principal (tagpolicies.tag.amazonaws.com)
+//   - You must enable the tag policies service principal (tagpolicies.tag.samsungspc.com)
 //     to integrate with Organizations For information, see EnableAWSServiceAccess
 //     (https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnableAWSServiceAccess.html).
 //

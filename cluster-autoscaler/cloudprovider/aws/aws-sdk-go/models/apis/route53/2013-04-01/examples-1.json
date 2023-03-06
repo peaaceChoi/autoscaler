@@ -192,7 +192,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-123456789.us-east-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-123456789.us-east-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z3AADJGX6KTTL2"
                   },
@@ -206,7 +206,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-987654321.us-west-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-987654321.us-west-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z1H1FL5HABSF5"
                   },
@@ -315,7 +315,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-123456789.us-east-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-123456789.us-east-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z3AADJGX6KTTL2"
                   },
@@ -329,7 +329,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-987654321.us-west-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-987654321.us-west-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z1H1FL5HABSF5"
                   },
@@ -438,7 +438,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-123456789.us-east-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-123456789.us-east-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z3AADJGX6KTTL2"
                   },
@@ -452,7 +452,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-987654321.us-west-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-987654321.us-west-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z1H1FL5HABSF5"
                   },
@@ -597,7 +597,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-123456789.us-east-2.elb.amazonaws.com ",
+                    "DNSName": "example-com-123456789.us-east-2.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z3AADJGX6KTTL2"
                   },
@@ -613,7 +613,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-234567890.sa-east-1.elb.amazonaws.com ",
+                    "DNSName": "example-com-234567890.sa-east-1.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z2P70J7HTTTPLU"
                   },
@@ -629,7 +629,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-234567890.eu-central-1.elb.amazonaws.com ",
+                    "DNSName": "example-com-234567890.eu-central-1.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z215JYRZR1TBD5"
                   },
@@ -645,7 +645,7 @@
                 "Action": "CREATE",
                 "ResourceRecordSet": {
                   "AliasTarget": {
-                    "DNSName": "example-com-234567890.ap-southeast-1.elb.amazonaws.com ",
+                    "DNSName": "example-com-234567890.ap-southeast-1.elb.samsungspc.com ",
                     "EvaluateTargetHealth": true,
                     "HostedZoneId": "Z1LMS91P8CMLE5"
                   },

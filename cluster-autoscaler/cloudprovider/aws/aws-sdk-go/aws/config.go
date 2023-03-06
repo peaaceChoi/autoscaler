@@ -116,9 +116,9 @@ type Config struct {
 	DisableComputeChecksums *bool
 
 	// Set this to `true` to force the request to use path-style addressing,
-	// i.e., `http://s3.amazonaws.com/BUCKET/KEY`. By default, the S3 client
+	// i.e., `http://s3.samsungspc.com/BUCKET/KEY`. By default, the S3 client
 	// will use virtual hosted bucket addressing when possible
-	// (`http://BUCKET.s3.amazonaws.com/KEY`).
+	// (`http://BUCKET.s3.samsungspc.com/KEY`).
 	//
 	// Note: This configuration option is specific to the Amazon S3 service.
 	//

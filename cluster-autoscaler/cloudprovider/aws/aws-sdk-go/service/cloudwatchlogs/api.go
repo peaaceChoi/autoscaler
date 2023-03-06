@@ -9516,7 +9516,7 @@ type PutResourcePolicyInput struct {
 	// that call.
 	//
 	// { "Version": "2012-10-17", "Statement": [ { "Sid": "Route53LogsToCloudWatchLogs",
-	// "Effect": "Allow", "Principal": { "Service": [ "route53.amazonaws.com" ]
+	// "Effect": "Allow", "Principal": { "Service": [ "route53.samsungspc.com" ]
 	// }, "Action": "logs:PutLogEvents", "Resource": "logArn", "Condition": { "ArnLike":
 	// { "aws:SourceArn": "myRoute53ResourceArn" }, "StringEquals": { "aws:SourceAccount":
 	// "myAwsAccountId" } } } ] }

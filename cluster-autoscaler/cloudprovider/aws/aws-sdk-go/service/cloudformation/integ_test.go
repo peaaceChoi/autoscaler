@@ -43,7 +43,7 @@ func TestInteg_01_CreateStack(t *testing.T) {
 	svc := cloudformation.New(sess)
 	params := &cloudformation.CreateStackInput{
 		StackName:   aws.String("fakestack"),
-		TemplateURL: aws.String("http://s3.amazonaws.com/foo/bar"),
+		TemplateURL: aws.String("http://s3.samsungspc.com/foo/bar"),
 	}
 	_, err := svc.CreateStackWithContext(ctx, params, func(r *request.Request) {
 		r.Handlers.Validate.RemoveByName("core.ValidateParametersHandler")

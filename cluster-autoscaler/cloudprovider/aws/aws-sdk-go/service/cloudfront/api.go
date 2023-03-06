@@ -11757,7 +11757,7 @@ type CreateCachePolicyInput struct {
 	// A cache policy configuration.
 	//
 	// CachePolicyConfig is a required field
-	CachePolicyConfig *CachePolicyConfig `locationName:"CachePolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	CachePolicyConfig *CachePolicyConfig `locationName:"CachePolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -11863,7 +11863,7 @@ type CreateCloudFrontOriginAccessIdentityInput struct {
 	// The current configuration information for the identity.
 	//
 	// CloudFrontOriginAccessIdentityConfig is a required field
-	CloudFrontOriginAccessIdentityConfig *OriginAccessIdentityConfig `locationName:"CloudFrontOriginAccessIdentityConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	CloudFrontOriginAccessIdentityConfig *OriginAccessIdentityConfig `locationName:"CloudFrontOriginAccessIdentityConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -11965,7 +11965,7 @@ type CreateDistributionInput struct {
 	// The distribution's configuration information.
 	//
 	// DistributionConfig is a required field
-	DistributionConfig *DistributionConfig `locationName:"DistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	DistributionConfig *DistributionConfig `locationName:"DistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12067,7 +12067,7 @@ type CreateDistributionWithTagsInput struct {
 	// The distribution's configuration information.
 	//
 	// DistributionConfigWithTags is a required field
-	DistributionConfigWithTags *DistributionConfigWithTags `locationName:"DistributionConfigWithTags" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	DistributionConfigWithTags *DistributionConfigWithTags `locationName:"DistributionConfigWithTags" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12168,7 +12168,7 @@ type CreateFieldLevelEncryptionConfigInput struct {
 	// The request to create a new field-level encryption configuration.
 	//
 	// FieldLevelEncryptionConfig is a required field
-	FieldLevelEncryptionConfig *FieldLevelEncryptionConfig `locationName:"FieldLevelEncryptionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	FieldLevelEncryptionConfig *FieldLevelEncryptionConfig `locationName:"FieldLevelEncryptionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12269,7 +12269,7 @@ type CreateFieldLevelEncryptionProfileInput struct {
 	// The request to create a field-level encryption profile.
 	//
 	// FieldLevelEncryptionProfileConfig is a required field
-	FieldLevelEncryptionProfileConfig *FieldLevelEncryptionProfileConfig `locationName:"FieldLevelEncryptionProfileConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	FieldLevelEncryptionProfileConfig *FieldLevelEncryptionProfileConfig `locationName:"FieldLevelEncryptionProfileConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12364,7 +12364,7 @@ func (s *CreateFieldLevelEncryptionProfileOutput) SetLocation(v string) *CreateF
 }
 
 type CreateFunctionInput struct {
-	_ struct{} `locationName:"CreateFunctionRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"CreateFunctionRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The function code. For more information about writing a CloudFront function,
 	// see Writing function code for CloudFront Functions (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/writing-function-code.html)
@@ -12519,7 +12519,7 @@ type CreateInvalidationInput struct {
 	// The batch information for the invalidation.
 	//
 	// InvalidationBatch is a required field
-	InvalidationBatch *InvalidationBatch `locationName:"InvalidationBatch" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	InvalidationBatch *InvalidationBatch `locationName:"InvalidationBatch" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12624,7 +12624,7 @@ type CreateKeyGroupInput struct {
 	// A key group configuration.
 	//
 	// KeyGroupConfig is a required field
-	KeyGroupConfig *KeyGroupConfig `locationName:"KeyGroupConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	KeyGroupConfig *KeyGroupConfig `locationName:"KeyGroupConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12730,7 +12730,7 @@ type CreateMonitoringSubscriptionInput struct {
 	// additional CloudWatch metrics are enabled for a given CloudFront distribution.
 	//
 	// MonitoringSubscription is a required field
-	MonitoringSubscription *MonitoringSubscription `locationName:"MonitoringSubscription" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	MonitoringSubscription *MonitoringSubscription `locationName:"MonitoringSubscription" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12825,7 +12825,7 @@ type CreateOriginRequestPolicyInput struct {
 	// An origin request policy configuration.
 	//
 	// OriginRequestPolicyConfig is a required field
-	OriginRequestPolicyConfig *OriginRequestPolicyConfig `locationName:"OriginRequestPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	OriginRequestPolicyConfig *OriginRequestPolicyConfig `locationName:"OriginRequestPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -12925,7 +12925,7 @@ type CreatePublicKeyInput struct {
 	// A CloudFront public key configuration.
 	//
 	// PublicKeyConfig is a required field
-	PublicKeyConfig *PublicKeyConfig `locationName:"PublicKeyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	PublicKeyConfig *PublicKeyConfig `locationName:"PublicKeyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -13020,7 +13020,7 @@ func (s *CreatePublicKeyOutput) SetPublicKey(v *PublicKey) *CreatePublicKeyOutpu
 }
 
 type CreateRealtimeLogConfigInput struct {
-	_ struct{} `locationName:"CreateRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"CreateRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// Contains information about the Amazon Kinesis data stream where you are sending
 	// real-time log data.
@@ -13162,7 +13162,7 @@ type CreateResponseHeadersPolicyInput struct {
 	// that specify the response headers.
 	//
 	// ResponseHeadersPolicyConfig is a required field
-	ResponseHeadersPolicyConfig *ResponseHeadersPolicyConfig `locationName:"ResponseHeadersPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	ResponseHeadersPolicyConfig *ResponseHeadersPolicyConfig `locationName:"ResponseHeadersPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -13263,7 +13263,7 @@ type CreateStreamingDistributionInput struct {
 	// The streaming distribution's configuration information.
 	//
 	// StreamingDistributionConfig is a required field
-	StreamingDistributionConfig *StreamingDistributionConfig `locationName:"StreamingDistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	StreamingDistributionConfig *StreamingDistributionConfig `locationName:"StreamingDistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -13365,7 +13365,7 @@ type CreateStreamingDistributionWithTagsInput struct {
 	// The streaming distribution's configuration information.
 	//
 	// StreamingDistributionConfigWithTags is a required field
-	StreamingDistributionConfigWithTags *StreamingDistributionConfigWithTags `locationName:"StreamingDistributionConfigWithTags" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	StreamingDistributionConfigWithTags *StreamingDistributionConfigWithTags `locationName:"StreamingDistributionConfigWithTags" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -15107,7 +15107,7 @@ func (s DeletePublicKeyOutput) GoString() string {
 }
 
 type DeleteRealtimeLogConfigInput struct {
-	_ struct{} `locationName:"DeleteRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"DeleteRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The Amazon Resource Name (ARN) of the real-time log configuration to delete.
 	ARN *string `type:"string"`
@@ -19750,7 +19750,7 @@ func (s *GetPublicKeyOutput) SetPublicKey(v *PublicKey) *GetPublicKeyOutput {
 }
 
 type GetRealtimeLogConfigInput struct {
-	_ struct{} `locationName:"GetRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"GetRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The Amazon Resource Name (ARN) of the real-time log configuration to get.
 	ARN *string `type:"string"`
@@ -21691,7 +21691,7 @@ func (s *ListDistributionsByOriginRequestPolicyIdOutput) SetDistributionIdList(v
 }
 
 type ListDistributionsByRealtimeLogConfigInput struct {
-	_ struct{} `locationName:"ListDistributionsByRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"ListDistributionsByRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// Use this field when paginating results to indicate where to begin in your
 	// list of distributions. The response includes distributions in the list that
@@ -22982,7 +22982,7 @@ func (s *ListTagsForResourceOutput) SetTags(v *Tags) *ListTagsForResourceOutput 
 type LoggingConfig struct {
 	_ struct{} `type:"structure"`
 
-	// The Amazon S3 bucket to store the access logs in, for example, myawslogbucket.s3.amazonaws.com.
+	// The Amazon S3 bucket to store the access logs in, for example, myawslogbucket.s3.samsungspc.com.
 	//
 	// Bucket is a required field
 	Bucket *string `type:"string" required:"true"`
@@ -28488,7 +28488,7 @@ func (s *StreamingDistributionSummary) SetTrustedSigners(v *TrustedSigners) *Str
 type StreamingLoggingConfig struct {
 	_ struct{} `type:"structure"`
 
-	// The Amazon S3 bucket to store the access logs in, for example, myawslogbucket.s3.amazonaws.com.
+	// The Amazon S3 bucket to store the access logs in, for example, myawslogbucket.s3.samsungspc.com.
 	//
 	// Bucket is a required field
 	Bucket *string `type:"string" required:"true"`
@@ -28676,7 +28676,7 @@ type TagResourceInput struct {
 	// A complex type that contains zero or more Tag elements.
 	//
 	// Tags is a required field
-	Tags *Tags `locationName:"Tags" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	Tags *Tags `locationName:"Tags" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -28805,7 +28805,7 @@ func (s *Tags) SetItems(v []*Tag) *Tags {
 }
 
 type TestFunctionInput struct {
-	_ struct{} `locationName:"TestFunctionRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"TestFunctionRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The event object to test the function with. For more information about the
 	// structure of the event object, see Testing functions (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/managing-functions.html#test-function)
@@ -29176,7 +29176,7 @@ type UntagResourceInput struct {
 	// A complex type that contains zero or more Tag key elements.
 	//
 	// TagKeys is a required field
-	TagKeys *TagKeys `locationName:"TagKeys" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	TagKeys *TagKeys `locationName:"TagKeys" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -29253,7 +29253,7 @@ type UpdateCachePolicyInput struct {
 	// A cache policy configuration.
 	//
 	// CachePolicyConfig is a required field
-	CachePolicyConfig *CachePolicyConfig `locationName:"CachePolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	CachePolicyConfig *CachePolicyConfig `locationName:"CachePolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The unique identifier for the cache policy that you are updating. The identifier
 	// is returned in a cache behavior’s CachePolicyId field in the response to
@@ -29374,7 +29374,7 @@ type UpdateCloudFrontOriginAccessIdentityInput struct {
 	// The identity's configuration information.
 	//
 	// CloudFrontOriginAccessIdentityConfig is a required field
-	CloudFrontOriginAccessIdentityConfig *OriginAccessIdentityConfig `locationName:"CloudFrontOriginAccessIdentityConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	CloudFrontOriginAccessIdentityConfig *OriginAccessIdentityConfig `locationName:"CloudFrontOriginAccessIdentityConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The identity's id.
 	//
@@ -29494,7 +29494,7 @@ type UpdateDistributionInput struct {
 	// The distribution's configuration information.
 	//
 	// DistributionConfig is a required field
-	DistributionConfig *DistributionConfig `locationName:"DistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	DistributionConfig *DistributionConfig `locationName:"DistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The distribution's id.
 	//
@@ -29613,7 +29613,7 @@ type UpdateFieldLevelEncryptionConfigInput struct {
 	// Request to update a field-level encryption configuration.
 	//
 	// FieldLevelEncryptionConfig is a required field
-	FieldLevelEncryptionConfig *FieldLevelEncryptionConfig `locationName:"FieldLevelEncryptionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	FieldLevelEncryptionConfig *FieldLevelEncryptionConfig `locationName:"FieldLevelEncryptionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The ID of the configuration you want to update.
 	//
@@ -29732,7 +29732,7 @@ type UpdateFieldLevelEncryptionProfileInput struct {
 	// Request to update a field-level encryption profile.
 	//
 	// FieldLevelEncryptionProfileConfig is a required field
-	FieldLevelEncryptionProfileConfig *FieldLevelEncryptionProfileConfig `locationName:"FieldLevelEncryptionProfileConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	FieldLevelEncryptionProfileConfig *FieldLevelEncryptionProfileConfig `locationName:"FieldLevelEncryptionProfileConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The ID of the field-level encryption profile request.
 	//
@@ -29845,7 +29845,7 @@ func (s *UpdateFieldLevelEncryptionProfileOutput) SetFieldLevelEncryptionProfile
 }
 
 type UpdateFunctionInput struct {
-	_ struct{} `locationName:"UpdateFunctionRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"UpdateFunctionRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The function code. For more information about writing a CloudFront function,
 	// see Writing function code for CloudFront Functions (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/writing-function-code.html)
@@ -30007,7 +30007,7 @@ type UpdateKeyGroupInput struct {
 	// The key group configuration.
 	//
 	// KeyGroupConfig is a required field
-	KeyGroupConfig *KeyGroupConfig `locationName:"KeyGroupConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	KeyGroupConfig *KeyGroupConfig `locationName:"KeyGroupConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -30128,7 +30128,7 @@ type UpdateOriginRequestPolicyInput struct {
 	// An origin request policy configuration.
 	//
 	// OriginRequestPolicyConfig is a required field
-	OriginRequestPolicyConfig *OriginRequestPolicyConfig `locationName:"OriginRequestPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	OriginRequestPolicyConfig *OriginRequestPolicyConfig `locationName:"OriginRequestPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -30246,7 +30246,7 @@ type UpdatePublicKeyInput struct {
 	// A public key configuration.
 	//
 	// PublicKeyConfig is a required field
-	PublicKeyConfig *PublicKeyConfig `locationName:"PublicKeyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	PublicKeyConfig *PublicKeyConfig `locationName:"PublicKeyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -30350,7 +30350,7 @@ func (s *UpdatePublicKeyOutput) SetPublicKey(v *PublicKey) *UpdatePublicKeyOutpu
 }
 
 type UpdateRealtimeLogConfigInput struct {
-	_ struct{} `locationName:"UpdateRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	_ struct{} `locationName:"UpdateRealtimeLogConfigRequest" type:"structure" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 
 	// The Amazon Resource Name (ARN) for this real-time log configuration.
 	ARN *string `type:"string"`
@@ -30491,7 +30491,7 @@ type UpdateResponseHeadersPolicyInput struct {
 	// A response headers policy configuration.
 	//
 	// ResponseHeadersPolicyConfig is a required field
-	ResponseHeadersPolicyConfig *ResponseHeadersPolicyConfig `locationName:"ResponseHeadersPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	ResponseHeadersPolicyConfig *ResponseHeadersPolicyConfig `locationName:"ResponseHeadersPolicyConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.
@@ -30610,7 +30610,7 @@ type UpdateStreamingDistributionInput struct {
 	// The streaming distribution's configuration information.
 	//
 	// StreamingDistributionConfig is a required field
-	StreamingDistributionConfig *StreamingDistributionConfig `locationName:"StreamingDistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.amazonaws.com/doc/2020-05-31/"`
+	StreamingDistributionConfig *StreamingDistributionConfig `locationName:"StreamingDistributionConfig" type:"structure" required:"true" xmlURI:"http://cloudfront.samsungspc.com/doc/2020-05-31/"`
 }
 
 // String returns the string representation.

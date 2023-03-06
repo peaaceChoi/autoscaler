@@ -36,7 +36,7 @@ but it already exists
 					Header:     http.Header{},
 					Body: ioutil.NopCloser(strings.NewReader(
 						`<?xml version="1.0" encoding="UTF-8"?>
-<ErrorResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/">
+<ErrorResponse xmlns="https://route53.samsungspc.com/doc/2013-04-01/">
   <Error>
 	<Code>InvalidDomainName</Code>
 	<Message>The domain name is invalid</Message>
@@ -55,7 +55,7 @@ but it already exists
 					Header:     http.Header{},
 					Body: ioutil.NopCloser(strings.NewReader(
 						`<?xml version="1.0" encoding="UTF-8"?>
-<InvalidChangeBatch xmlns="https://route53.amazonaws.com/doc/2013-04-01/">
+<InvalidChangeBatch xmlns="https://route53.samsungspc.com/doc/2013-04-01/">
   <Messages>
 	<Message>` + errorMessage + `</Message>
   </Messages>

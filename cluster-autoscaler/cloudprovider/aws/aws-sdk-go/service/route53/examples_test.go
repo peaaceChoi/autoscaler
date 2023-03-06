@@ -276,7 +276,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared03() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-123456789.us-east-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-123456789.us-east-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z3AADJGX6KTTL2"),
 						},
@@ -290,7 +290,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared03() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-987654321.us-west-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-987654321.us-west-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z1H1FL5HABSF5"),
 						},
@@ -424,7 +424,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared05() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-123456789.us-east-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-123456789.us-east-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z3AADJGX6KTTL2"),
 						},
@@ -438,7 +438,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared05() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-987654321.us-west-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-987654321.us-west-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z1H1FL5HABSF5"),
 						},
@@ -574,7 +574,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared07() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-123456789.us-east-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-123456789.us-east-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z3AADJGX6KTTL2"),
 						},
@@ -588,7 +588,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared07() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-987654321.us-west-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-987654321.us-west-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z1H1FL5HABSF5"),
 						},
@@ -760,7 +760,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared09() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-123456789.us-east-2.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-123456789.us-east-2.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z3AADJGX6KTTL2"),
 						},
@@ -776,7 +776,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared09() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-234567890.sa-east-1.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-234567890.sa-east-1.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z2P70J7HTTTPLU"),
 						},
@@ -792,7 +792,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared09() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-234567890.eu-central-1.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-234567890.eu-central-1.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z215JYRZR1TBD5"),
 						},
@@ -808,7 +808,7 @@ func ExampleRoute53_ChangeResourceRecordSets_shared09() {
 					Action: aws.String("CREATE"),
 					ResourceRecordSet: &route53.ResourceRecordSet{
 						AliasTarget: &route53.AliasTarget{
-							DNSName:              aws.String("example-com-234567890.ap-southeast-1.elb.amazonaws.com "),
+							DNSName:              aws.String("example-com-234567890.ap-southeast-1.elb.samsungspc.com "),
 							EvaluateTargetHealth: aws.Bool(true),
 							HostedZoneId:         aws.String("Z1LMS91P8CMLE5"),
 						},

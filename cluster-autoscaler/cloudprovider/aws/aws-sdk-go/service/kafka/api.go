@@ -6994,32 +6994,32 @@ type GetBootstrapBrokersOutput struct {
 
 	// A string that contains one or more DNS names (or IP addresses) and SASL IAM
 	// port pairs. The following is an example.
-	//  { "BootstrapBrokerStringSaslIam": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9198,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9198,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9198"}
+	//  { "BootstrapBrokerStringSaslIam": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9198,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9198,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9198"}
 	BootstrapBrokerStringPublicSaslIam *string `locationName:"bootstrapBrokerStringPublicSaslIam" type:"string"`
 
 	// A string containing one or more DNS names (or IP addresses) and SASL SCRAM
 	// port pairs. The following is an example.
-	//  { "BootstrapBrokerStringSaslScram": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9196,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9196,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9196"}
+	//  { "BootstrapBrokerStringSaslScram": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9196,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9196,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9196"}
 	BootstrapBrokerStringPublicSaslScram *string `locationName:"bootstrapBrokerStringPublicSaslScram" type:"string"`
 
 	// A string containing one or more DNS names (or IP addresses) and TLS port
 	// pairs. The following is an example.
-	//  { "BootstrapBrokerStringTls": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9194,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9194,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9194"}
+	//  { "BootstrapBrokerStringTls": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9194,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9194,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9194"}
 	BootstrapBrokerStringPublicTls *string `locationName:"bootstrapBrokerStringPublicTls" type:"string"`
 
 	// A string that contains one or more DNS names (or IP addresses) and SASL IAM
 	// port pairs. The following is an example.
-	//  { "BootstrapBrokerStringSaslIam": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9098,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9098,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9098"}
+	//  { "BootstrapBrokerStringSaslIam": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9098,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9098,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9098"}
 	BootstrapBrokerStringSaslIam *string `locationName:"bootstrapBrokerStringSaslIam" type:"string"`
 
 	// A string containing one or more DNS names (or IP addresses) and SASL SCRAM
 	// port pairs. The following is an example.
-	//  { "BootstrapBrokerStringSaslScram": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9096,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9096,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9096"}
+	//  { "BootstrapBrokerStringSaslScram": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9096,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9096,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9096"}
 	BootstrapBrokerStringSaslScram *string `locationName:"bootstrapBrokerStringSaslScram" type:"string"`
 
 	// A string containing one or more DNS names (or IP addresses) and TLS port
 	// pairs. The following is an example.
-	//  { "BootstrapBrokerStringTls": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9094,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9094,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.amazonaws.com:9094"}
+	//  { "BootstrapBrokerStringTls": "b-3.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9094,b-1.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9094,b-2.exampleClusterName.abcde.c2.kafka.us-east-1.samsungspc.com:9094"}
 	BootstrapBrokerStringTls *string `locationName:"bootstrapBrokerStringTls" type:"string"`
 }
 

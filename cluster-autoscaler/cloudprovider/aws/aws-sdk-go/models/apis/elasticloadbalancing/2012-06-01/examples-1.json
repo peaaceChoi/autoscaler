@@ -166,7 +166,7 @@
           ]
         },
         "output": {
-          "DNSName": "my-load-balancer-1234567890.us-west-2.elb.amazonaws.com"
+          "DNSName": "my-load-balancer-1234567890.us-west-2.elb.samsungspc.com"
         },
         "comments": {
           "input": {
@@ -194,7 +194,7 @@
           "LoadBalancerName": "my-load-balancer"
         },
         "output": {
-          "DNSName": "my-load-balancer-123456789.us-west-2.elb.amazonaws.com"
+          "DNSName": "my-load-balancer-123456789.us-west-2.elb.samsungspc.com"
         },
         "comments": {
           "input": {
@@ -232,7 +232,7 @@
           ]
         },
         "output": {
-          "DNSName": "my-load-balancer-1234567890.us-west-2.elb.amazonaws.com"
+          "DNSName": "my-load-balancer-1234567890.us-west-2.elb.samsungspc.com"
         },
         "comments": {
           "input": {
@@ -267,7 +267,7 @@
           "LoadBalancerName": "my-load-balancer"
         },
         "output": {
-          "DNSName": "my-load-balancer-123456789.us-west-2.elb.amazonaws.com"
+          "DNSName": "my-load-balancer-123456789.us-west-2.elb.samsungspc.com"
         },
         "comments": {
           "input": {
@@ -299,7 +299,7 @@
           ]
         },
         "output": {
-          "DNSName": "internal-my-load-balancer-123456789.us-west-2.elb.amazonaws.com"
+          "DNSName": "internal-my-load-balancer-123456789.us-west-2.elb.samsungspc.com"
         },
         "comments": {
           "input": {
@@ -662,10 +662,10 @@
                   ]
                 }
               ],
-              "CanonicalHostedZoneName": "my-load-balancer-1234567890.us-west-2.elb.amazonaws.com",
+              "CanonicalHostedZoneName": "my-load-balancer-1234567890.us-west-2.elb.samsungspc.com",
               "CanonicalHostedZoneNameID": "Z3DZXE0EXAMPLE",
               "CreatedTime": "2015-03-19T03:24:02.650Z",
-              "DNSName": "my-load-balancer-1234567890.us-west-2.elb.amazonaws.com",
+              "DNSName": "my-load-balancer-1234567890.us-west-2.elb.samsungspc.com",
               "HealthCheck": {
                 "HealthyThreshold": 2,
                 "Interval": 30,

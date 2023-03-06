@@ -154,7 +154,7 @@ func TestUnmarshalEndpoints(t *testing.T) {
 	var inputs = []byte(`
 {
 	"aws-global": {
-	  "hostname": "cloudfront.amazonaws.com",
+	  "hostname": "cloudfront.samsungspc.com",
 	  "protocols": [
 		"http",
 		"https"
@@ -182,7 +182,7 @@ func TestUnmarshalEndpoints(t *testing.T) {
 	if !ok {
 		t.Errorf("expect found, was not")
 	}
-	if e, a := "cloudfront.amazonaws.com", s.Hostname; e != a {
+	if e, a := "cloudfront.samsungspc.com", s.Hostname; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := []string{"http", "https"}, s.Protocols; !reflect.DeepEqual(e, a) {
@@ -287,7 +287,7 @@ func TestResolveEndpoint(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://service2.us-west-2.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://service2.us-west-2.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-west-2", resolved.SigningRegion; e != a {
@@ -307,7 +307,7 @@ func TestResolveEndpoint_DisableSSL(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "http://service2.us-west-2.amazonaws.com", resolved.URL; e != a {
+	if e, a := "http://service2.us-west-2.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-west-2", resolved.SigningRegion; e != a {
@@ -339,7 +339,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 			Service:                  "ec2",
 			Region:                   "us-west-2",
 			Options:                  UseDualStackOption,
-			ExpectedURL:              "https://ec2.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://ec2.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "ec2",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -348,7 +348,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 			Service:                  "s3",
 			Region:                   "us-west-2",
 			Options:                  UseDualStackOption,
-			ExpectedURL:              "https://s3.dualstack.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3.dualstack.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -357,7 +357,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 			Service:                  "s3-control",
 			Region:                   "us-west-2",
 			Options:                  UseDualStackOption,
-			ExpectedURL:              "https://s3-control.dualstack.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3-control.dualstack.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3-control",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -375,7 +375,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 			Service:                  "s3",
 			Region:                   "us-west-2",
 			Options:                  UseDualStackEndpointOption,
-			ExpectedURL:              "https://s3.dualstack.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3.dualstack.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -384,7 +384,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 			Service:                  "s3-control",
 			Region:                   "us-west-2",
 			Options:                  UseDualStackEndpointOption,
-			ExpectedURL:              "https://s3-control.dualstack.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3-control.dualstack.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3-control",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -396,7 +396,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 				options.UseDualStack = true
 				options.UseDualStackEndpoint = DualStackEndpointStateDisabled
 			},
-			ExpectedURL:              "https://s3.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -408,7 +408,7 @@ func TestResolveEndpoint_UseDualStack_UseDualStackEndpoint(t *testing.T) {
 				options.UseDualStack = true
 				options.UseDualStackEndpoint = DualStackEndpointStateDisabled
 			},
-			ExpectedURL:              "https://s3-control.us-west-2.amazonaws.com",
+			ExpectedURL:              "https://s3-control.us-west-2.samsungspc.com",
 			ExpectedSigningName:      "s3-control",
 			ExpectedSigningRegion:    "us-west-2",
 			ExpectSigningNameDerived: true,
@@ -447,7 +447,7 @@ func TestResolveEndpoint_HTTPProtocol(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "http://httpService.us-west-2.amazonaws.com", resolved.URL; e != a {
+	if e, a := "http://httpService.us-west-2.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-west-2", resolved.SigningRegion; e != a {
@@ -482,7 +482,7 @@ func TestResolveEndpoint_ResolveUnknownService(t *testing.T) {
 		t.Fatalf("expect no error, got %v", err)
 	}
 
-	if e, a := "https://unknown-service.us-region-1.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://unknown-service.us-region-1.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-region-1", resolved.SigningRegion; e != a {
@@ -502,7 +502,7 @@ func TestResolveEndpoint_UnknownMatchedRegion(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://s3.us-region-1.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://s3.us-region-1.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-region-1", resolved.SigningRegion; e != a {
@@ -519,7 +519,7 @@ func TestResolveEndpoint_UnknownRegion(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://s3.unknownregion.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://s3.unknownregion.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "unknownregion", resolved.SigningRegion; e != a {
@@ -562,7 +562,7 @@ func TestResolveEndpoint_NotRegionalized(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://globalService.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://globalService.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-east-1", resolved.SigningRegion; e != a {
@@ -582,7 +582,7 @@ func TestResolveEndpoint_AwsGlobal(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://globalService.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://globalService.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-east-1", resolved.SigningRegion; e != a {
@@ -610,7 +610,7 @@ func TestEndpointFor_RegionalFlag(t *testing.T) {
 			service:                  "acm",
 			region:                   "ap-northeast-1",
 			regional:                 true,
-			ExpectURL:                "https://acm.ap-northeast-1.amazonaws.com",
+			ExpectURL:                "https://acm.ap-northeast-1.samsungspc.com",
 			ExpectSigningMethod:      "v4",
 			ExpectSigningNameDerived: true,
 			ExpectSigningRegion:      "ap-northeast-1",
@@ -619,7 +619,7 @@ func TestEndpointFor_RegionalFlag(t *testing.T) {
 			service:                  "acm",
 			region:                   "ap-northeast-1",
 			regional:                 false,
-			ExpectURL:                "https://acm.ap-northeast-1.amazonaws.com",
+			ExpectURL:                "https://acm.ap-northeast-1.samsungspc.com",
 			ExpectSigningMethod:      "v4",
 			ExpectSigningNameDerived: true,
 			ExpectSigningRegion:      "ap-northeast-1",
@@ -760,7 +760,7 @@ func TestResolveEndpoint_FipsAwsGlobal(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expect no error, got %v", err)
 	}
-	if e, a := "https://route53-fips.amazonaws.com", resolved.URL; e != a {
+	if e, a := "https://route53-fips.samsungspc.com", resolved.URL; e != a {
 		t.Errorf("expect %v, got %v", e, a)
 	}
 	if e, a := "us-east-1", resolved.SigningRegion; e != a {
@@ -782,7 +782,7 @@ func TestEC2MetadataService(t *testing.T) {
 			"foo": {
 				Endpoints: serviceEndpoints{
 					endpointKey{Region: "us-west-2"}: endpoint{
-						Hostname:          "foo.us-west-2.amazonaws.com",
+						Hostname:          "foo.us-west-2.samsungspc.com",
 						Protocols:         []string{"http"},
 						SignatureVersions: []string{"v4"},
 					},
@@ -810,7 +810,7 @@ func TestEC2MetadataService(t *testing.T) {
 			"foo": {
 				Endpoints: serviceEndpoints{
 					endpointKey{Region: "us-west-2"}: endpoint{
-						Hostname:          "foo.us-west-2.amazonaws.com",
+						Hostname:          "foo.us-west-2.samsungspc.com",
 						Protocols:         []string{"http"},
 						SignatureVersions: []string{"v4"},
 					},

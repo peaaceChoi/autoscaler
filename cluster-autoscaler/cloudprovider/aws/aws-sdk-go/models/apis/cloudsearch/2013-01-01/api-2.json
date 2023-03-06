@@ -8,7 +8,7 @@
     "serviceId":"CloudSearch",
     "signatureVersion":"v4",
     "uid":"cloudsearch-2013-01-01",
-    "xmlNamespace":"http://cloudsearch.amazonaws.com/doc/2013-01-01/"
+    "xmlNamespace":"http://cloudsearch.samsungspc.com/doc/2013-01-01/"
   },
   "operations":{
     "BuildSuggesters":{

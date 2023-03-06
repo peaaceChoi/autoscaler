@@ -45377,7 +45377,7 @@ type KafkaStreamingSourceOptions struct {
 	// "topicName", "assign" or "subscribePattern".
 	Assign *string `type:"string"`
 
-	// A list of bootstrap server URLs, for example, as b-1.vpc-test-2.o4q88o.c6.kafka.us-east-1.amazonaws.com:9094.
+	// A list of bootstrap server URLs, for example, as b-1.vpc-test-2.o4q88o.c6.kafka.us-east-1.samsungspc.com:9094.
 	// This option must be specified in the API call or defined in the table metadata
 	// in the Data Catalog.
 	BootstrapServers *string `type:"string"`

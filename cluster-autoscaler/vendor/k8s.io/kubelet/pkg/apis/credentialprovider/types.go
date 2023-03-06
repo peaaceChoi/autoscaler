@@ -94,7 +94,7 @@ type CredentialProviderResponse struct {
 	// stopping after the first successfully authenticated pull.
 	//
 	// Example keys:
-	//   - 123456789.dkr.ecr.us-east-1.amazonaws.com
+	//   - 123456789.dkr.ecr.us-east-1.samsungspc.com
 	//   - *.azurecr.io
 	//   - gcr.io
 	//   - *.*.registry.io

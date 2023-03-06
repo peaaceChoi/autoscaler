@@ -17862,7 +17862,7 @@ type CreateScheduledActionOutput struct {
 
 	// The IAM role to assume to run the scheduled action. This IAM role must have
 	// permission to run the Amazon Redshift API operation in the scheduled action.
-	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.amazonaws.com)
+	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.samsungspc.com)
 	// to assume permissions on your behalf. For more information about the IAM
 	// role to use with the Amazon Redshift scheduler, see Using Identity-Based
 	// Policies for Amazon Redshift (https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-identity-based.html)
@@ -28954,7 +28954,7 @@ type ModifyScheduledActionOutput struct {
 
 	// The IAM role to assume to run the scheduled action. This IAM role must have
 	// permission to run the Amazon Redshift API operation in the scheduled action.
-	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.amazonaws.com)
+	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.samsungspc.com)
 	// to assume permissions on your behalf. For more information about the IAM
 	// role to use with the Amazon Redshift scheduler, see Using Identity-Based
 	// Policies for Amazon Redshift (https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-identity-based.html)
@@ -32701,7 +32701,7 @@ type ScheduledAction struct {
 
 	// The IAM role to assume to run the scheduled action. This IAM role must have
 	// permission to run the Amazon Redshift API operation in the scheduled action.
-	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.amazonaws.com)
+	// This IAM role must allow the Amazon Redshift scheduler (Principal scheduler.redshift.samsungspc.com)
 	// to assume permissions on your behalf. For more information about the IAM
 	// role to use with the Amazon Redshift scheduler, see Using Identity-Based
 	// Policies for Amazon Redshift (https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-identity-based.html)

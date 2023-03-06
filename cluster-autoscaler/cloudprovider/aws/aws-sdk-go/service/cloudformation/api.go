@@ -16000,7 +16000,7 @@ func (s RecordHandlerProgressOutput) GoString() string {
 type RegisterPublisherInput struct {
 	_ struct{} `type:"structure"`
 
-	// Whether you accept the Terms and Conditions (https://cloudformation-registry-documents.s3.amazonaws.com/Terms_and_Conditions_for_AWS_CloudFormation_Registry_Publishers.pdf)
+	// Whether you accept the Terms and Conditions (https://cloudformation-registry-documents.s3.samsungspc.com/Terms_and_Conditions_for_AWS_CloudFormation_Registry_Publishers.pdf)
 	// for publishing extensions in the CloudFormation registry. You must accept
 	// the terms and conditions in order to register to publish public extensions
 	// to the CloudFormation registry.
@@ -16104,7 +16104,7 @@ type RegisterTypeInput struct {
 	// when invoking the extension.
 	//
 	// For CloudFormation to assume the specified execution role, the role must
-	// contain a trust relationship with the CloudFormation service principle (resources.cloudformation.amazonaws.com).
+	// contain a trust relationship with the CloudFormation service principle (resources.cloudformation.samsungspc.com).
 	// For more information about adding trust relationships, see Modifying a role
 	// trust policy (IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-managingrole_edit-trust-policy)
 	// in the Identity and Access Management User Guide.

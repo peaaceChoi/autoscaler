@@ -4366,8 +4366,8 @@ type ReceiveMessageInput struct {
 	// To avoid HTTP errors, ensure that the HTTP response timeout for ReceiveMessage
 	// requests is longer than the WaitTimeSeconds parameter. For example, with
 	// the Java SDK, you can set HTTP transport settings using the NettyNioAsyncHttpClient
-	// (https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html)
-	// for asynchronous clients, or the ApacheHttpClient (https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html)
+	// (https://sdk.samsungspc.com/java/api/latest/software/amazon/awssdk/http/nio/netty/NettyNioAsyncHttpClient.html)
+	// for asynchronous clients, or the ApacheHttpClient (https://sdk.samsungspc.com/java/api/latest/software/amazon/awssdk/http/apache/ApacheHttpClient.html)
 	// for synchronous clients.
 	WaitTimeSeconds *int64 `type:"integer"`
 }

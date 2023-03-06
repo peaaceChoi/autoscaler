@@ -7,7 +7,7 @@
 // API reference documentation. For more information, see What Is Amazon MWAA?
 // (https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html).
 //
-//	<p> <b>Endpoints</b> </p> <ul> <li> <p> <code>api.airflow.{region}.amazonaws.com</code>
+//	<p> <b>Endpoints</b> </p> <ul> <li> <p> <code>api.airflow.{region}.samsungspc.com</code>
 //	- This endpoint is used for environment management.</p> <ul> <li> <p>
 //	<a href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateEnvironment.html">CreateEnvironment</a>
 //	</p> </li> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_DeleteEnvironment.html">DeleteEnvironment</a>
@@ -17,11 +17,11 @@
 //	</p> </li> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_TagResource.html">TagResource</a>
 //	</p> </li> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_UntagResource.html">UntagResource</a>
 //	</p> </li> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateEnvironment.html">UpdateEnvironment</a>
-//	</p> </li> </ul> </li> <li> <p> <code>env.airflow.{region}.amazonaws.com</code>
+//	</p> </li> </ul> </li> <li> <p> <code>env.airflow.{region}.samsungspc.com</code>
 //	- This endpoint is used to operate the Airflow environment.</p> <ul> <li>
 //	<p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html
 //	">CreateCliToken</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_CreateWebLoginToken.html">CreateWebLoginToken</a>
-//	</p> </li> </ul> </li> <li> <p> <code>ops.airflow.{region}.amazonaws.com</code>
+//	</p> </li> </ul> </li> <li> <p> <code>ops.airflow.{region}.samsungspc.com</code>
 //	- This endpoint is used to push environment metrics that track environment
 //	health.</p> <ul> <li> <p> <a href="https://docs.aws.amazon.com/mwaa/latest/API/API_PublishMetrics.html
 //	">PublishMetrics</a> </p> </li> </ul> </li> </ul> <p> <b>Regions</b> </p>

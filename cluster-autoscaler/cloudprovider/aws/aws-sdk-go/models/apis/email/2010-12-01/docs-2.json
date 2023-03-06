@@ -1533,7 +1533,7 @@
     "ReportingMta": {
       "base": null,
       "refs": {
-        "MessageDsn$ReportingMta": "<p>The reporting MTA that attempted to deliver the message, formatted as specified in <a href=\"https://tools.ietf.org/html/rfc3464\">RFC 3464</a> (<code>mta-name-type; mta-name</code>). The default value is <code>dns; inbound-smtp.[region].amazonaws.com</code>.</p>"
+        "MessageDsn$ReportingMta": "<p>The reporting MTA that attempted to deliver the message, formatted as specified in <a href=\"https://tools.ietf.org/html/rfc3464\">RFC 3464</a> (<code>mta-name-type; mta-name</code>). The default value is <code>dns; inbound-smtp.[region].samsungspc.com</code>.</p>"
       }
     },
     "ReputationOptions": {

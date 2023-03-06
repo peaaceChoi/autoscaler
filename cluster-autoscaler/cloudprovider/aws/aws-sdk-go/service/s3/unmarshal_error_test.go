@@ -179,7 +179,7 @@ const completeMultiResp = `
 163
 <?xml version="1.0" encoding="UTF-8"?>
 
-<CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://bucket.s3-us-west-2.amazonaws.com/key</Location><Bucket>bucket</Bucket><Key>key</Key><ETag>&quot;a7d414b9133d6483d9a1c4e04e856e3b-2&quot;</ETag></CompleteMultipartUploadResult>
+<CompleteMultipartUploadResult xmlns="http://s3.samsungspc.com/doc/2006-03-01/"><Location>https://bucket.s3-us-west-2.samsungspc.com/key</Location><Bucket>bucket</Bucket><Key>key</Key><ETag>&quot;a7d414b9133d6483d9a1c4e04e856e3b-2&quot;</ETag></CompleteMultipartUploadResult>
 0
 `
 

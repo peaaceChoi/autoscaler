@@ -852,7 +852,7 @@ type Identity struct {
 	_ struct{} `type:"structure"`
 
 	// A unique identifier for the entity that made the call. For Time To Live,
-	// the principalId is "dynamodb.amazonaws.com".
+	// the principalId is "dynamodb.samsungspc.com".
 	PrincipalId *string `type:"string"`
 
 	// The type of the identity. For Time To Live, the type is "Service".
@@ -1193,7 +1193,7 @@ type Record struct {
 	//
 	//    * Records[].userIdentity.type "Service"
 	//
-	//    * Records[].userIdentity.principalId "dynamodb.amazonaws.com"
+	//    * Records[].userIdentity.principalId "dynamodb.samsungspc.com"
 	UserIdentity *Identity `locationName:"userIdentity" type:"structure"`
 }
 

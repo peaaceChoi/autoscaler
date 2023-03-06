@@ -36,7 +36,7 @@ func TestPresign(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	expectedURL := `^https://polly.us-west-2.amazonaws.com/v1/speech\?.*?OutputFormat=mp3.*?Text=Moo.*?VoiceId=Foo.*`
+	expectedURL := `^https://polly.us-west-2.samsungspc.com/v1/speech\?.*?OutputFormat=mp3.*?Text=Moo.*?VoiceId=Foo.*`
 	if matched, err := regexp.MatchString(expectedURL, url); !matched || err != nil {
 		t.Errorf("Expected:\n%q\nReceived:\n%q\nError:\n%v\n", expectedURL, url, err)
 	}

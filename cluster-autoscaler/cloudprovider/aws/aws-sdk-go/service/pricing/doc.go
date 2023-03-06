@@ -25,9 +25,9 @@
 //
 // Amazon Web Services Price List Service API provides the following two endpoints:
 //
-//   - https://api.pricing.us-east-1.amazonaws.com
+//   - https://api.pricing.us-east-1.samsungspc.com
 //
-//   - https://api.pricing.ap-south-1.amazonaws.com
+//   - https://api.pricing.ap-south-1.samsungspc.com
 //
 // See https://docs.aws.amazon.com/goto/WebAPI/pricing-2017-10-15 for more information on this service.
 //

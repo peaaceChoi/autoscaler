@@ -33783,7 +33783,7 @@ type CreateImageVersionInput struct {
 	// this version. The path is an Amazon Elastic Container Registry (ECR) URI
 	// in the following format:
 	//
-	// <acct-id>.dkr.ecr.<region>.amazonaws.com/<repo-name[:tag] or [@digest]>
+	// <acct-id>.dkr.ecr.<region>.samsungspc.com/<repo-name[:tag] or [@digest]>
 	//
 	// BaseImage is a required field
 	BaseImage *string `min:"1" type:"string" required:"true"`
@@ -35970,7 +35970,7 @@ type CreateNotebookInstanceInput struct {
 	// When you send any requests to Amazon Web Services resources from the notebook
 	// instance, SageMaker assumes this role to perform tasks on your behalf. You
 	// must grant this role necessary permissions so SageMaker can perform these
-	// tasks. The policy must allow the SageMaker service principal (sagemaker.amazonaws.com)
+	// tasks. The policy must allow the SageMaker service principal (sagemaker.samsungspc.com)
 	// permissions to assume this role. For more information, see SageMaker Roles
 	// (https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html).
 	//

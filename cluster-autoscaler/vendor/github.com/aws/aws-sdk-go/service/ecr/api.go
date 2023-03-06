@@ -4291,8 +4291,8 @@ type AuthorizationData struct {
 	ExpiresAt *time.Time `locationName:"expiresAt" type:"timestamp"`
 
 	// The registry URL to use for this authorization token in a docker login command.
-	// The Amazon ECR registry URL format is https://aws_account_id.dkr.ecr.region.amazonaws.com.
-	// For example, https://012345678910.dkr.ecr.us-east-1.amazonaws.com..
+	// The Amazon ECR registry URL format is https://aws_account_id.dkr.ecr.region.samsungspc.com.
+	// For example, https://012345678910.dkr.ecr.us-east-1.samsungspc.com..
 	ProxyEndpoint *string `locationName:"proxyEndpoint" type:"string"`
 }
 

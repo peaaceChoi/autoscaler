@@ -2604,7 +2604,7 @@
               "Association": {
                 "AssociationId": "eipassoc-0fbb766a",
                 "IpOwnerId": "123456789012",
-                "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
+                "PublicDnsName": "ec2-203-0-113-12.compute-1.samsungspc.com",
                 "PublicIp": "203.0.113.12"
               },
               "Attachment": {
@@ -2634,7 +2634,7 @@
                   "Association": {
                     "AssociationId": "eipassoc-0fbb766a",
                     "IpOwnerId": "123456789012",
-                    "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
+                    "PublicDnsName": "ec2-203-0-113-12.compute-1.samsungspc.com",
                     "PublicIp": "203.0.113.12"
                   },
                   "Primary": true,
@@ -2669,47 +2669,47 @@
         "output": {
           "Regions": [
             {
-              "Endpoint": "ec2.ap-south-1.amazonaws.com",
+              "Endpoint": "ec2.ap-south-1.samsungspc.com",
               "RegionName": "ap-south-1"
             },
             {
-              "Endpoint": "ec2.eu-west-1.amazonaws.com",
+              "Endpoint": "ec2.eu-west-1.samsungspc.com",
               "RegionName": "eu-west-1"
             },
             {
-              "Endpoint": "ec2.ap-southeast-1.amazonaws.com",
+              "Endpoint": "ec2.ap-southeast-1.samsungspc.com",
               "RegionName": "ap-southeast-1"
             },
             {
-              "Endpoint": "ec2.ap-southeast-2.amazonaws.com",
+              "Endpoint": "ec2.ap-southeast-2.samsungspc.com",
               "RegionName": "ap-southeast-2"
             },
             {
-              "Endpoint": "ec2.eu-central-1.amazonaws.com",
+              "Endpoint": "ec2.eu-central-1.samsungspc.com",
               "RegionName": "eu-central-1"
             },
             {
-              "Endpoint": "ec2.ap-northeast-2.amazonaws.com",
+              "Endpoint": "ec2.ap-northeast-2.samsungspc.com",
               "RegionName": "ap-northeast-2"
             },
             {
-              "Endpoint": "ec2.ap-northeast-1.amazonaws.com",
+              "Endpoint": "ec2.ap-northeast-1.samsungspc.com",
               "RegionName": "ap-northeast-1"
             },
             {
-              "Endpoint": "ec2.us-east-1.amazonaws.com",
+              "Endpoint": "ec2.us-east-1.samsungspc.com",
               "RegionName": "us-east-1"
             },
             {
-              "Endpoint": "ec2.sa-east-1.amazonaws.com",
+              "Endpoint": "ec2.sa-east-1.samsungspc.com",
               "RegionName": "sa-east-1"
             },
             {
-              "Endpoint": "ec2.us-west-1.amazonaws.com",
+              "Endpoint": "ec2.us-west-1.samsungspc.com",
               "RegionName": "us-west-1"
             },
             {
-              "Endpoint": "ec2.us-west-2.amazonaws.com",
+              "Endpoint": "ec2.us-west-2.samsungspc.com",
               "RegionName": "us-west-2"
             }
           ]

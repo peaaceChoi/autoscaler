@@ -3,7 +3,7 @@
   "metadata":{
     "apiVersion":"2013-04-01",
     "endpointPrefix":"route53",
-    "globalEndpoint":"route53.amazonaws.com",
+    "globalEndpoint":"route53.samsungspc.com",
     "protocol":"rest-xml",
     "serviceAbbreviation":"Route 53",
     "serviceFullName":"Amazon Route 53",
@@ -38,7 +38,7 @@
       "input":{
         "shape":"AssociateVPCWithHostedZoneRequest",
         "locationName":"AssociateVPCWithHostedZoneRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"AssociateVPCWithHostedZoneResponse"},
       "errors":[
@@ -61,7 +61,7 @@
       "input":{
         "shape":"ChangeResourceRecordSetsRequest",
         "locationName":"ChangeResourceRecordSetsRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"ChangeResourceRecordSetsResponse"},
       "errors":[
@@ -81,7 +81,7 @@
       "input":{
         "shape":"ChangeTagsForResourceRequest",
         "locationName":"ChangeTagsForResourceRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"ChangeTagsForResourceResponse"},
       "errors":[
@@ -102,7 +102,7 @@
       "input":{
         "shape":"CreateHealthCheckRequest",
         "locationName":"CreateHealthCheckRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateHealthCheckResponse"},
       "errors":[
@@ -121,7 +121,7 @@
       "input":{
         "shape":"CreateHostedZoneRequest",
         "locationName":"CreateHostedZoneRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateHostedZoneResponse"},
       "errors":[
@@ -146,7 +146,7 @@
       "input":{
         "shape":"CreateKeySigningKeyRequest",
         "locationName":"CreateKeySigningKeyRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateKeySigningKeyResponse"},
       "errors":[
@@ -172,7 +172,7 @@
       "input":{
         "shape":"CreateQueryLoggingConfigRequest",
         "locationName":"CreateQueryLoggingConfigRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateQueryLoggingConfigResponse"},
       "errors":[
@@ -194,7 +194,7 @@
       "input":{
         "shape":"CreateReusableDelegationSetRequest",
         "locationName":"CreateReusableDelegationSetRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateReusableDelegationSetResponse"},
       "errors":[
@@ -217,7 +217,7 @@
       "input":{
         "shape":"CreateTrafficPolicyRequest",
         "locationName":"CreateTrafficPolicyRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateTrafficPolicyResponse"},
       "errors":[
@@ -237,7 +237,7 @@
       "input":{
         "shape":"CreateTrafficPolicyInstanceRequest",
         "locationName":"CreateTrafficPolicyInstanceRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateTrafficPolicyInstanceResponse"},
       "errors":[
@@ -258,7 +258,7 @@
       "input":{
         "shape":"CreateTrafficPolicyVersionRequest",
         "locationName":"CreateTrafficPolicyVersionRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateTrafficPolicyVersionResponse"},
       "errors":[
@@ -278,7 +278,7 @@
       "input":{
         "shape":"CreateVPCAssociationAuthorizationRequest",
         "locationName":"CreateVPCAssociationAuthorizationRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"CreateVPCAssociationAuthorizationResponse"},
       "errors":[
@@ -421,7 +421,7 @@
       "input":{
         "shape":"DeleteVPCAssociationAuthorizationRequest",
         "locationName":"DeleteVPCAssociationAuthorizationRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"DeleteVPCAssociationAuthorizationResponse"},
       "errors":[
@@ -460,7 +460,7 @@
       "input":{
         "shape":"DisassociateVPCFromHostedZoneRequest",
         "locationName":"DisassociateVPCFromHostedZoneRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"DisassociateVPCFromHostedZoneResponse"},
       "errors":[
@@ -844,7 +844,7 @@
       "input":{
         "shape":"ListTagsForResourcesRequest",
         "locationName":"ListTagsForResourcesRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"ListTagsForResourcesResponse"},
       "errors":[
@@ -957,7 +957,7 @@
       "input":{
         "shape":"UpdateHealthCheckRequest",
         "locationName":"UpdateHealthCheckRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"UpdateHealthCheckResponse"},
       "errors":[
@@ -975,7 +975,7 @@
       "input":{
         "shape":"UpdateHostedZoneCommentRequest",
         "locationName":"UpdateHostedZoneCommentRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"UpdateHostedZoneCommentResponse"},
       "errors":[
@@ -993,7 +993,7 @@
       "input":{
         "shape":"UpdateTrafficPolicyCommentRequest",
         "locationName":"UpdateTrafficPolicyCommentRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"UpdateTrafficPolicyCommentResponse"},
       "errors":[
@@ -1011,7 +1011,7 @@
       "input":{
         "shape":"UpdateTrafficPolicyInstanceRequest",
         "locationName":"UpdateTrafficPolicyInstanceRequest",
-        "xmlNamespace":{"uri":"https://route53.amazonaws.com/doc/2013-04-01/"}
+        "xmlNamespace":{"uri":"https://route53.samsungspc.com/doc/2013-04-01/"}
       },
       "output":{"shape":"UpdateTrafficPolicyInstanceResponse"},
       "errors":[
